@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "aff9b90001c9bdd55050b0915757c9ac",
+    "content-hash": "ca184af5442b676532d99a838a1195d2",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -1452,6 +1452,51 @@
             "time": "2017-05-04T11:12:50+00:00"
         },
         {
+            "name": "opensoft/doctrine-postgres-types",
+            "version": "1.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/opensoft/doctrine-postgres-types.git",
+                "reference": "7e69bdfeb2ae61c2f1e90872370cdf0135fb3006"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/opensoft/doctrine-postgres-types/zipball/7e69bdfeb2ae61c2f1e90872370cdf0135fb3006",
+                "reference": "7e69bdfeb2ae61c2f1e90872370cdf0135fb3006",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/dbal": "2.*",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.*|5.*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Doctrine\\DBAL\\PostgresTypes\\": "src/Doctrine/DBAL/PostgresTypes"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Richard Fullmer",
+                    "email": "richard.fullmer@opensoftdev.com"
+                }
+            ],
+            "description": "Provide some common postgres types for doctrine",
+            "time": "2016-08-31T16:56:34+00:00"
+        },
+        {
             "name": "paragonie/random_compat",
             "version": "v2.0.11",
             "source": {
@@ -1677,16 +1722,114 @@
             "time": "2018-01-20T00:28:24+00:00"
         },
         {
+            "name": "sandstorm/crudforms",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sandstorm/CrudForms.git",
+                "reference": "4a130ef7df563115b436b022d60da0d6c63d6d5b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sandstorm/CrudForms/zipball/4a130ef7df563115b436b022d60da0d6c63d6d5b",
+                "reference": "4a130ef7df563115b436b022d60da0d6c63d6d5b",
+                "shasum": ""
+            },
+            "require": {
+                "neos/flow": "~4.0"
+            },
+            "conflict": {
+                "typo3/flow": "<=3.3"
+            },
+            "type": "neos-package",
+            "extra": {
+                "applied-flow-migrations": [
+                    "TYPO3.TYPO3CR-20150510103823",
+                    "TYPO3.FLOW3-201201261636",
+                    "TYPO3.Fluid-201205031303",
+                    "TYPO3.FLOW3-201205292145",
+                    "TYPO3.FLOW3-201206271128",
+                    "TYPO3.Flow-201211151101",
+                    "TYPO3.Neos.NodeTypes-130516220640",
+                    "TYPO3.TypoScript-130516234520",
+                    "TYPO3.TypoScript-130516235550",
+                    "TYPO3.TYPO3CR-130523180140",
+                    "TYPO3.Neos.NodeTypes-201309111655",
+                    "TYPO3.Neos-201310021548",
+                    "TYPO3.Flow-201310031523",
+                    "TYPO3.Flow-201405111147",
+                    "TYPO3.Neos-201409071922",
+                    "TYPO3.TYPO3CR-140911160326",
+                    "TYPO3.Neos-201410010000",
+                    "TYPO3.TYPO3CR-141101082142",
+                    "TYPO3.Neos-20141113115300",
+                    "TYPO3.Fluid-20141121091700",
+                    "TYPO3.Neos-20141218134700",
+                    "TYPO3.Fluid-20150214130800",
+                    "TYPO3.Neos-201407061038",
+                    "TYPO3.Flow-201212051340",
+                    "TYPO3.Fluid-20141113120800",
+                    "TYPO3.Flow-20141113121400",
+                    "Typo3.Neos.NodeTypes-201309111655",
+                    "TYPO3.TYPO3CR-20140911160326",
+                    "TYPO3.Flow-201209251426",
+                    "TYPO3.FLOW3-201209201112",
+                    "TYPO3.Neos-20150303231600",
+                    "TYPO3.Flow-20151113161300",
+                    "TYPO3.Flow-20161115140400",
+                    "TYPO3.Flow-20161115140430",
+                    "Neos.Flow-20161124204700",
+                    "Neos.Flow-20161124204701",
+                    "Neos.Flow-20161124224015",
+                    "Neos.Eel-20161124230101",
+                    "Neos.Kickstart-20161124230102",
+                    "Neos.Kickstarter-20161125110814",
+                    "Neos.Flow-20161125124112",
+                    "TYPO3.FluidAdaptor-20161130112935"
+                ]
+            },
+            "autoload": {
+                "psr-4": {
+                    "Sandstorm\\CrudForms\\": "Classes"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Kurfuerst",
+                    "homepage": "https://www.sandstorm.de",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Create easy CRUD forms for Domain Models in Flow and Neos CMS",
+            "homepage": "https://github.com/sandstorm/CrudForms",
+            "keywords": [
+                "Forms",
+                "Lists",
+                "Neos",
+                "controller",
+                "crud",
+                "flow",
+                "model"
+            ],
+            "time": "2017-03-15T12:38:05+00:00"
+        },
+        {
             "name": "sandstorm/osqueryfleet-core",
             "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "Source/Sandstorm.OsqueryFleet.Core",
-                "reference": "209227ca2560856bbe7e739d642dd6617b9b6388",
+                "reference": "b649fe23609081b6704cc38090114fdc2496261f",
                 "shasum": null
             },
             "require": {
-                "neos/flow": "*"
+                "neos/flow": "*",
+                "opensoft/doctrine-postgres-types": "^1.3.1",
+                "symfony/process": "^4.0"
             },
             "type": "neos-package",
             "extra": {
@@ -1727,6 +1870,34 @@
             "autoload": {
                 "psr-4": {
                     "Sandstorm\\OsqueryFleet\\OsqueryApi\\": "Classes/"
+                }
+            }
+        },
+        {
+            "name": "sandstorm/osqueryfleet-ui",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "Source/Sandstorm.OsqueryFleet.Ui",
+                "reference": "8ce144e4e7bf02230a1dc03199d98b2edfb2cb12",
+                "shasum": null
+            },
+            "require": {
+                "neos/flow": "*",
+                "sandstorm/crudforms": "^2.0"
+            },
+            "type": "neos-package",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                },
+                "neos": {
+                    "package-key": "Sandstorm.OsqueryFleet.Ui"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Sandstorm\\OsqueryFleet\\Ui\\": "Classes/"
                 }
             }
         },
@@ -1962,6 +2133,55 @@
                 "shim"
             ],
             "time": "2018-01-30T19:27:44+00:00"
+        },
+        {
+            "name": "symfony/process",
+            "version": "v4.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/process.git",
+                "reference": "e1712002d81de6f39f854bc5bbd9e9f4bb6345b4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/process/zipball/e1712002d81de6f39f854bc5bbd9e9f4bb6345b4",
+                "reference": "e1712002d81de6f39f854bc5bbd9e9f4bb6345b4",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Process\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Process Component",
+            "homepage": "https://symfony.com",
+            "time": "2018-01-29T09:06:29+00:00"
         },
         {
             "name": "symfony/yaml",
@@ -3609,6 +3829,7 @@
     "stability-flags": {
         "sandstorm/osqueryfleet-core": 20,
         "sandstorm/osqueryfleet-osqueryapi": 20,
+        "sandstorm/osqueryfleet-ui": 20,
         "neos/behat": 20
     },
     "prefer-stable": false,

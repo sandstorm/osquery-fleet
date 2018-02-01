@@ -1,0 +1,9 @@
+Neos:
+  Flow:
+    persistence:
+      backendOptions:
+        dbname: osqueryfleet
+        user: sebastian
+        password: ''
+        host: localhost
+        driver: pdo_pgsql

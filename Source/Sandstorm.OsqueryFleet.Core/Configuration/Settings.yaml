@@ -1,0 +1,9 @@
+Neos:
+  Flow:
+    persistence:
+      doctrine:
+        dbal:
+          mappingTypes:
+            'text_array':
+              dbType: 'text_array'
+              className: 'Doctrine\DBAL\PostgresTypes\TextArrayType'
