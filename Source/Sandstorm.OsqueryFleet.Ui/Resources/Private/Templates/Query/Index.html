@@ -1,0 +1,19 @@
+{namespace crud=Sandstorm\CrudForms\ViewHelpers}
+<f:layout name="Default"/>
+
+<f:section name="Content">
+    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
+        <h1 class="h2">Queries</h1>
+
+        <div class="btn-toolbar mb-2 mb-md-0">
+            <div class="btn-group mr-2">
+                <f:link.action action="new" class="btn btn-sm btn-outline-secondary">Create new</f:link.action>
+            </div>
+        </div>
+    </div>
+
+    <f:flashMessages class="flashmessages"/>
+
+    <f:render partial="CrudForms/Bootstrap4/Listing" arguments="{crud:listDefinition(objects: objects, model: model)}"/>
+
+</f:section>

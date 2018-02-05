@@ -1,4 +1,12 @@
 -
+  name: 'default with action and format and object'
+  uriPattern: 'ui/{@controller}/{object}/{@action}'
+  defaults:
+    '@format':     'html'
+    '@package': 'Sandstorm.OsqueryFleet.Ui'
+  appendExceedingArguments: true
+
+-
   name: 'default with action and format'
   uriPattern: 'ui/{@controller}/{@action}'
   defaults:

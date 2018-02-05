@@ -1,0 +1,29 @@
+-
+  name: 'Enroll'
+  uriPattern: 'api/osquery/enroll'
+  defaults:
+    '@package': 'Sandstorm.OsqueryFleet.Core'
+    '@controller': 'OsqueryApi'
+    '@action': 'enroll'
+    '@format': 'json'
+  appendExceedingArguments: true
+
+-
+  name: 'Configuration'
+  uriPattern: 'api/osquery/config'
+  defaults:
+    '@package': 'Sandstorm.OsqueryFleet.Core'
+    '@controller': 'OsqueryApi'
+    '@action': 'config'
+    '@format': 'json'
+  appendExceedingArguments: true
+
+-
+  name: 'Logging'
+  uriPattern: 'api/osquery/log'
+  defaults:
+    '@package': 'Sandstorm.OsqueryFleet.Core'
+    '@controller': 'OsqueryApi'
+    '@action': 'log'
+    '@format': 'json'
+  appendExceedingArguments: true

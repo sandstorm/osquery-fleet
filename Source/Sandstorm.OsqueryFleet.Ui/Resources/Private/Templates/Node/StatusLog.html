@@ -1,0 +1,44 @@
+{namespace crud=Sandstorm\CrudForms\ViewHelpers}
+{namespace osquery=Sandstorm\OsqueryFleet\Ui\ViewHelpers}
+<f:layout name="Default"/>
+
+<f:section name="Content">
+    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
+        <h1 class="h2">Status Logs for Node {node.hostIdentifier} {node.hostName}</h1>
+
+        <div class="btn-toolbar mb-2 mb-md-0">
+            <div class="btn-group mr-2">
+                <f:link.action action="index">Back</f:link.action>
+            </div>
+        </div>
+    </div>
+
+    <f:flashMessages class="flashmessages"/>
+
+    <f:widget.paginate objects="{logs}" as="paginatedLogs" configuration="{itemsPerPage: 200, maximumNumberOfLinks: 20}">
+        <table class="table">
+            <thead class="thead-default">
+            <tr>
+
+                <th>timestamp</th>
+                <th>filename:line</th>
+                <th>message</th>
+            </tr>
+            </thead>
+            <tbody>
+            <f:for each="{paginatedLogs}" as="logLine">
+                <tr class="{osquery:renderSeverity(severity: logLine.severity)}">
+                    <td>
+                        {logLine.timestamp -> f:format.date(format: 'd.m.Y H:i:s')}
+                    </td>
+                    <td>
+                        {logLine.filename}:{logLine.line}
+                    </td>
+                    <td>{logLine.severity} {logLine.message}</td>
+                </tr>
+            </f:for>
+            </tbody>
+        </table>
+    </f:widget.paginate>
+
+</f:section>

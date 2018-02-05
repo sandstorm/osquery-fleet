@@ -1,0 +1,51 @@
+{namespace osquery=Sandstorm\OsqueryFleet\Ui\ViewHelpers}
+
+<osquery:uniqueId>
+    <a href="#" data-toggle="modal" data-target="#{id}">
+        Configuration
+    </a>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="{id}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Configuration</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <osquery:configuration node="{object}">
+                        <h6>Active Query Packs</h6>
+                        <ul>
+                        <f:for each="{configuration.queryPacks}" as="queryPack">
+                            <li>{queryPack.identifier} - {queryPack.name}</li>
+                        </f:for>
+                        </ul>
+
+                        <h6>Active Queries</h6>
+                        <ul>
+                            <f:for each="{configuration.queries}" as="query">
+                                <li>{query.identifier} - {query.name}</li>
+                            </f:for>
+                        </ul>
+                    </osquery:configuration>
+
+                    <f:link.action action="showConfiguration" arguments="{object: object}" target="_blank">
+                        Show full configuration (opens in new tab)
+                    </f:link.action>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <f:link.action action="statusLog" class="btn btn-secondary" arguments="{object: object}">
+        Status Log
+    </f:link.action>
+</osquery:uniqueId>

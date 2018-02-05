@@ -1,6 +1,6 @@
 Packages
 .idea
-Build
+Build/BuildEssentials
 Configuration/PackageStates.php
 Readme.rst
 Upgrading.rst

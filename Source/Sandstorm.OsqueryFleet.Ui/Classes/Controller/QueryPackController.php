@@ -19,4 +19,8 @@ class QueryPackController extends ActionController
         return QueryPack::class;
     }
 
+    public function previewAction(QueryPack $object)
+    {
+        return $object->getProcessedJson();
+    }
 }

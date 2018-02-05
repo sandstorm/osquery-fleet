@@ -5,5 +5,13 @@ Neos:
         dbal:
           mappingTypes:
             'text_array':
-              dbType: 'text_array'
+              dbType: '_text'
               className: 'Doctrine\DBAL\PostgresTypes\TextArrayType'
+    mvc:
+      routes:
+        'Sandstorm.OsqueryFleet.Core': true
+
+Sandstorm:
+  OsqueryFleet:
+    Core:
+      enrollSecret: 'todo'

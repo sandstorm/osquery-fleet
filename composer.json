@@ -18,7 +18,6 @@
     "require": {
         "neos/flow": "~4.3.0",
         "sandstorm/osqueryfleet-core": "1.0.x-dev",
-        "sandstorm/osqueryfleet-osqueryapi": "1.0.x-dev",
         "sandstorm/osqueryfleet-ui": "1.0.x-dev"
     },
     "require-dev": {
@@ -43,10 +42,6 @@
         {
             "type": "path",
             "url": "Source/Sandstorm.OsqueryFleet.Core"
-        },
-        {
-            "type": "path",
-            "url": "Source/Sandstorm.OsqueryFleet.OsqueryApi"
         },
         {
             "type": "path",

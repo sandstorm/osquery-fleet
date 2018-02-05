@@ -31,21 +31,19 @@ class QueryPack
      * NOTE: we cannot use JSON data type here yet; as we have a non-standards-conformant format here (sadly), which supports newlines in strings.
      *
      * @var string
-     * @Crud\FormField(editor="TextArea")
      * @ORM\Column(type="text", nullable=true)
      */
     public $sourceJson;
 
     /**
      * @var string
-     * @Crud\FormField(editor="TextArea")
+     * @Crud\FormField(editor="TextArea", visibleInOverview=false)
      * @ORM\Column(type="text", nullable=true)
      */
     public $jqTransformationRules;
 
 
     /**
-     * @Crud\FormField(readonly=true, editor="TextArea")
      * @var string
      */
     public function getProcessedJson()
@@ -57,9 +55,10 @@ class QueryPack
         }
 
         if ($this->jqTransformationRules !== null) {
+            $jqTransformationRules = trim(preg_replace('/#(.*)$/m', '', $this->jqTransformationRules));
             $process = new Process([
                 '/usr/local/bin/jq',
-                $this->jqTransformationRules
+                $jqTransformationRules
             ]);
             $process->setInput($sourceJson);
             $process->run();
@@ -69,12 +68,8 @@ class QueryPack
         return $sourceJson;
     }
 
-    /**
-     * @param string $processedJson
-     */
-    public function setProcessedJson($processedJson)
+    public function getProcessedJsonAsArray()
     {
-
+        return json_decode($this->getProcessedJson(), TRUE);
     }
-
 }

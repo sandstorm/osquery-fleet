@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "ca184af5442b676532d99a838a1195d2",
+    "content-hash": "f550cba9182b1a34a1f620e43e019d1c",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -1823,7 +1823,7 @@
             "dist": {
                 "type": "path",
                 "url": "Source/Sandstorm.OsqueryFleet.Core",
-                "reference": "b649fe23609081b6704cc38090114fdc2496261f",
+                "reference": "7f91dfda84964451cc4bb64abd1a64b0379e7786",
                 "shasum": null
             },
             "require": {
@@ -1843,33 +1843,6 @@
             "autoload": {
                 "psr-4": {
                     "Sandstorm\\OsqueryFleet\\Core\\": "Classes/"
-                }
-            }
-        },
-        {
-            "name": "sandstorm/osqueryfleet-osqueryapi",
-            "version": "dev-master",
-            "dist": {
-                "type": "path",
-                "url": "Source/Sandstorm.OsqueryFleet.OsqueryApi",
-                "reference": "a1d13c27d02bd7bbf5840c067f45dbfe78a5a65d",
-                "shasum": null
-            },
-            "require": {
-                "neos/flow": "*"
-            },
-            "type": "neos-package",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                },
-                "neos": {
-                    "package-key": "Sandstorm.OsqueryFleet.OsqueryApi"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Sandstorm\\OsqueryFleet\\OsqueryApi\\": "Classes/"
                 }
             }
         },
@@ -3828,7 +3801,6 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "sandstorm/osqueryfleet-core": 20,
-        "sandstorm/osqueryfleet-osqueryapi": 20,
         "sandstorm/osqueryfleet-ui": 20,
         "neos/behat": 20
     },

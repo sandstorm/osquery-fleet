@@ -1,0 +1,4 @@
+-
+  requestFilter: 'isPackage("Neos.FluidAdaptor") && isSubPackage("ViewHelpers\Widget") && isController("Paginate") && isAction("index")'
+  options:
+    templatePathAndFilename: 'resource://Sandstorm.OsqueryFleet.Ui/Private/Templates/ViewHelpers/Widget/Paginate/Index.html'
