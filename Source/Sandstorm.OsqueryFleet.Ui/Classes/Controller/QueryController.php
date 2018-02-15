@@ -31,6 +31,7 @@ class QueryController extends ActionController
     {
         $results = $this->snapshotLogRepository->findMostRecentResultForEachNode($object->identifier);
         $this->view->assign('results', $results);
+        $this->view->assign('query', $object);
     }
 
 }

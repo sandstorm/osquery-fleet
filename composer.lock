@@ -681,7 +681,7 @@
         },
         {
             "name": "neos/cache",
-            "version": "4.3.2",
+            "version": "4.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/neos/cache.git",
@@ -762,7 +762,7 @@
         },
         {
             "name": "neos/eel",
-            "version": "4.3.2",
+            "version": "4.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/neos/eel.git",
@@ -803,7 +803,7 @@
         },
         {
             "name": "neos/error-messages",
-            "version": "4.3.2",
+            "version": "4.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/neos/error-messages.git",
@@ -837,16 +837,16 @@
         },
         {
             "name": "neos/flow",
-            "version": "4.3.2",
+            "version": "4.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/neos/flow.git",
-                "reference": "aa3a6636c3f3db5e1e6a7dc8738f071eb1701e8e"
+                "reference": "8da76ba02e6b5ae72415e6f8c68fcc6e6298dc1c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neos/flow/zipball/aa3a6636c3f3db5e1e6a7dc8738f071eb1701e8e",
-                "reference": "aa3a6636c3f3db5e1e6a7dc8738f071eb1701e8e",
+                "url": "https://api.github.com/repos/neos/flow/zipball/8da76ba02e6b5ae72415e6f8c68fcc6e6298dc1c",
+                "reference": "8da76ba02e6b5ae72415e6f8c68fcc6e6298dc1c",
                 "shasum": ""
             },
             "require": {
@@ -910,11 +910,11 @@
             ],
             "description": "Flow Application Framework",
             "homepage": "http://flow.neos.io",
-            "time": "2018-01-09T10:55:44+00:00"
+            "time": "2018-02-06T09:57:39+00:00"
         },
         {
             "name": "neos/flow-log",
-            "version": "4.3.2",
+            "version": "4.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/neos/flow-log.git",
@@ -951,16 +951,16 @@
         },
         {
             "name": "neos/fluid-adaptor",
-            "version": "4.3.2",
+            "version": "4.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/neos/fluidadaptor.git",
-                "reference": "31623cbb97dfd8bb08b555c0270543e7b993470c"
+                "reference": "21487d6f83d823de378cf83b263eb584c1522525"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neos/fluidadaptor/zipball/31623cbb97dfd8bb08b555c0270543e7b993470c",
-                "reference": "31623cbb97dfd8bb08b555c0270543e7b993470c",
+                "url": "https://api.github.com/repos/neos/fluidadaptor/zipball/21487d6f83d823de378cf83b263eb584c1522525",
+                "reference": "21487d6f83d823de378cf83b263eb584c1522525",
                 "shasum": ""
             },
             "require": {
@@ -981,11 +981,11 @@
                 "MIT"
             ],
             "description": "Fluid Templating Framework Adaptor",
-            "time": "2018-01-09T00:22:52+00:00"
+            "time": "2018-01-12T00:32:59+00:00"
         },
         {
             "name": "neos/utility-arrays",
-            "version": "4.3.2",
+            "version": "4.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/neos/utility-arrays.git",
@@ -1026,7 +1026,7 @@
         },
         {
             "name": "neos/utility-files",
-            "version": "4.3.2",
+            "version": "4.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/neos/utility-files.git",
@@ -1067,7 +1067,7 @@
         },
         {
             "name": "neos/utility-lock",
-            "version": "4.3.2",
+            "version": "4.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/neos/utility-lock.git",
@@ -1104,7 +1104,7 @@
         },
         {
             "name": "neos/utility-mediatypes",
-            "version": "4.3.2",
+            "version": "4.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/neos/utility-mediatypes.git",
@@ -1145,7 +1145,7 @@
         },
         {
             "name": "neos/utility-objecthandling",
-            "version": "4.3.2",
+            "version": "4.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/neos/utility-objecthandling.git",
@@ -1186,7 +1186,7 @@
         },
         {
             "name": "neos/utility-opcodecache",
-            "version": "4.3.2",
+            "version": "4.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/neos/utility-opcodecache.git",
@@ -1222,7 +1222,7 @@
         },
         {
             "name": "neos/utility-pdo",
-            "version": "4.3.2",
+            "version": "4.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/neos/utility-pdo.git",
@@ -1258,7 +1258,7 @@
         },
         {
             "name": "neos/utility-schema",
-            "version": "4.3.2",
+            "version": "4.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/neos/utility-schema.git",
@@ -1299,7 +1299,7 @@
         },
         {
             "name": "neos/utility-unicode",
-            "version": "4.3.2",
+            "version": "4.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/neos/utility-unicode.git",
@@ -1335,27 +1335,27 @@
         },
         {
             "name": "ocramius/package-versions",
-            "version": "1.2.0",
+            "version": "1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Ocramius/PackageVersions.git",
-                "reference": "ad8a245decad4897cc6b432743913dad0d69753c"
+                "reference": "4489d5002c49d55576fa0ba786f42dbb009be46f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Ocramius/PackageVersions/zipball/ad8a245decad4897cc6b432743913dad0d69753c",
-                "reference": "ad8a245decad4897cc6b432743913dad0d69753c",
+                "url": "https://api.github.com/repos/Ocramius/PackageVersions/zipball/4489d5002c49d55576fa0ba786f42dbb009be46f",
+                "reference": "4489d5002c49d55576fa0ba786f42dbb009be46f",
                 "shasum": ""
             },
             "require": {
-                "composer-plugin-api": "^1.0",
-                "php": "~7.0"
+                "composer-plugin-api": "^1.0.0",
+                "php": "^7.1.0"
             },
             "require-dev": {
-                "composer/composer": "^1.3",
+                "composer/composer": "^1.6.3",
                 "ext-zip": "*",
-                "humbug/humbug": "dev-master",
-                "phpunit/phpunit": "^6.4"
+                "infection/infection": "^0.7.1",
+                "phpunit/phpunit": "^7.0.0"
             },
             "type": "composer-plugin",
             "extra": {
@@ -1380,7 +1380,7 @@
                 }
             ],
             "description": "Composer plugin that provides efficient querying for installed package versions (no runtime IO)",
-            "time": "2017-11-24T11:07:03+00:00"
+            "time": "2018-02-05T13:05:30+00:00"
         },
         {
             "name": "ocramius/proxy-manager",
@@ -1823,12 +1823,13 @@
             "dist": {
                 "type": "path",
                 "url": "Source/Sandstorm.OsqueryFleet.Core",
-                "reference": "7f91dfda84964451cc4bb64abd1a64b0379e7786",
+                "reference": "43b9e2ee28b7f94332cdc88f83c0b382e5ab0395",
                 "shasum": null
             },
             "require": {
                 "neos/flow": "*",
                 "opensoft/doctrine-postgres-types": "^1.3.1",
+                "sentry/sentry": "^1.8.2",
                 "symfony/process": "^4.0"
             },
             "type": "neos-package",
@@ -1873,6 +1874,70 @@
                     "Sandstorm\\OsqueryFleet\\Ui\\": "Classes/"
                 }
             }
+        },
+        {
+            "name": "sentry/sentry",
+            "version": "1.8.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/getsentry/sentry-php.git",
+                "reference": "3241b135120c25d6522e46246386df0ab48e13c5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/getsentry/sentry-php/zipball/3241b135120c25d6522e46246386df0ab48e13c5",
+                "reference": "3241b135120c25d6522e46246386df0ab48e13c5",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "php": "^5.3|^7.0"
+            },
+            "conflict": {
+                "raven/raven": "*"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^1.8.0",
+                "monolog/monolog": "*",
+                "phpunit/phpunit": "^4.8.35 || ^5.7"
+            },
+            "suggest": {
+                "ext-hash": "*",
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "monolog/monolog": "Automatically capture Monolog events as breadcrumbs"
+            },
+            "bin": [
+                "bin/sentry"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.9.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Raven_": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "David Cramer",
+                    "email": "dcramer@gmail.com"
+                }
+            ],
+            "description": "A PHP client for Sentry (http://getsentry.com)",
+            "homepage": "http://getsentry.com",
+            "keywords": [
+                "log",
+                "logging"
+            ],
+            "time": "2017-12-21T16:05:46+00:00"
         },
         {
             "name": "symfony/console",

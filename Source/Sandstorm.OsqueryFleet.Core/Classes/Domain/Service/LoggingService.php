@@ -39,6 +39,12 @@ class LoggingService
      */
     protected $snapshotLogRepository;
 
+    /**
+     * @Flow\Inject
+     * @var AlertingService
+     */
+    protected $alertingService;
+
     public function log(LogRequest $logRequest): void
     {
         switch ($logRequest->log_type) {
@@ -97,6 +103,7 @@ class LoggingService
         $snapshotLog->queryOrQueryPackIdentifier = $row['name'];
         $snapshotLog->timestamp = \DateTimeImmutable::createFromFormat('U', $row['unixTime']);
 
-        $this->snapshotLogRepository->logLine($snapshotLog, $nodeIdentifier);
+        $snapshotLogIdentifier = $this->snapshotLogRepository->logLine($snapshotLog, $nodeIdentifier);
+        $this->alertingService->evaluateAlert($snapshotLogIdentifier, $row['name']);
     }
 }

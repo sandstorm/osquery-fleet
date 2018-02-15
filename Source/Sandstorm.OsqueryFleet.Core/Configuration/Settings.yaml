@@ -10,8 +10,15 @@ Neos:
     mvc:
       routes:
         'Sandstorm.OsqueryFleet.Core': true
+    reflection:
+      ignoredTags:
+        'doc': TRUE
 
 Sandstorm:
   OsqueryFleet:
     Core:
       enrollSecret: 'todo'
+      alerting:
+        rulePersistenceBackendOptions:
+          user: sandstorm_readonly
+          password: foo

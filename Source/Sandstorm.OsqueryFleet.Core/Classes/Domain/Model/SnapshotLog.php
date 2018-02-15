@@ -35,4 +35,13 @@ class SnapshotLog
      * @var array
      */
     public $snapshot;
+
+    /**
+     * if TRUE, an alert has been triggered (attached to the query). if FALSE, the alert has NOT been triggered. If NULL, the alert has
+     * not yet been checked (should never happen!)
+     *
+     * @var boolean
+     * @ORM\Column(nullable=true)
+     */
+    public $alert;
 }

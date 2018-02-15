@@ -49,4 +49,12 @@ class Node
      * @var \DateTimeImmutable
      */
     public $mostRecentEnrollmentTimestamp;
+
+    /**
+     * @return string
+     */
+    public function getHostIdentifier(): string
+    {
+        return $this->hostIdentifier;
+    }
 }

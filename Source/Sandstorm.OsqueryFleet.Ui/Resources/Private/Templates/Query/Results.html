@@ -1,0 +1,39 @@
+{namespace crud=Sandstorm\CrudForms\ViewHelpers}
+<f:layout name="Default"/>
+
+<f:section name="Content">
+    <h1>Query results for "{query.identifier}"</h1>
+    <f:link.action action="index">go back</f:link.action>
+    <f:for each="{results}" as="result">
+        <h2>Host {result.node.hostIdentifier}</h2>
+        {result.timestamp -> f:format.date(format: 'd.m.Y H:i:s')}
+
+        <f:if condition="{result.snapshot.0}">
+            <f:then>
+                <table>
+                    <thead class="thead-default">
+                    <tr>
+                        <f:for each="{result.snapshot.0}" as="ignore" key="key">
+                            <th>
+                                {key}
+                            </th>
+                        </f:for>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <f:for each="{result.snapshot}" as="line">
+                        <tr>
+                            <f:for each="{line}" as="cell">
+                                <td>{cell}</td>
+                            </f:for>
+                        </tr>
+                    </f:for>
+                    </tbody>
+                </table>
+            </f:then>
+            <f:else>
+                <b>no data</b>
+            </f:else>
+        </f:if>
+    </f:for>
+</f:section>

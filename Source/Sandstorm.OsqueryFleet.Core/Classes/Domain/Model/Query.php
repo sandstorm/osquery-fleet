@@ -53,4 +53,12 @@ class Query
      */
     public $snapshot;
 
+    /**
+     * Alert SQL "where" part
+     *
+     * @var string
+     * @ORM\Column(type="text", nullable=true)
+     */
+    public $alertSqlWherePart;
+
 }
