@@ -1,0 +1,12 @@
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: var(--goldenUnit);
+}
+.form-group__label {
+    flex-basis: calc(var(--goldenUnit) * 2);
+    line-height: calc(var(--goldenUnit) * 2);
+}
+.form-group__control {
+    flex-grow: 1;
+}

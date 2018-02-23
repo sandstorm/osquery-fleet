@@ -32,6 +32,7 @@ class QueryPack
      *
      * @var string
      * @ORM\Column(type="text", nullable=true)
+     * @Crud\FormField(visible=false)
      */
     public $sourceJson;
 

@@ -4,23 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <link rel="stylesheet" href="../../Public/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.34.0/codemirror.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.34.0/addon/merge/merge.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.34.0/addon/hint/show-hint.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.34.0/codemirror.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.34.0/mode/javascript/javascript.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.34.0/mode/sql/sql.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.34.0/addon/hint/show-hint.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.34.0/addon/hint/sql-hint.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/diff_match_patch/20121119/diff_match_patch.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.34.0/addon/merge/merge.min.js"></script>
     <script src="../../Public/schema_for_codemirror.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/diff_match_patch/20121119/diff_match_patch.js"></script>
 </head>
 <body class="l-body">
 
-<div class="l-logo logo">osquery Fleet</div>
+<div class="l-logo"><div class="logo">osquery Fleet</div></div>
 
 <div class="l-searchbar searchbar">
     <input class="searchbar__input" type="text" placeholder="Search" aria-label="Search">
@@ -50,5 +39,7 @@
 <main role="main" class="l-main">
     <f:render section="Content"/>
 </main>
+
+<script src="../../Public/dist/index.js"></script>
 </body>
 </html>

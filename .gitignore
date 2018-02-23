@@ -9,3 +9,5 @@ Web
 flow
 flow.bat
 Data/
+.cache
+node_modules

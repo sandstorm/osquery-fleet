@@ -1,0 +1,36 @@
+:root {
+    --layout-headerHeight: calc(var(--goldenUnit) * 6);
+    --layout-sidebarBackgroundColor: #7FDBFF;
+}
+.l-body {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-rows: var(--layout-headerHeight) 1fr;
+    grid-template-columns: calc(var(--goldenUnit) * 25) 1fr;
+    grid-template-areas:
+        "logo searchbar"
+        "sidebar main";
+
+    font-family: 'Work Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.l-logo {
+    grid-area: logo;
+    background-color: var(--layout-sidebarBackgroundColor);
+    line-height: var(--layout-headerHeight);
+}
+
+.l-searchbar {
+    grid-area: searchbar;
+}
+
+.l-sidebar {
+    grid-area: sidebar;
+    background-color: var(--layout-sidebarBackgroundColor);
+}
+
+.l-main {
+    grid-area: main;
+    overflow: auto;
+}

@@ -8,6 +8,8 @@
     <f:form action="create" objectName="object" object="{object}" enctype="multipart/form-data">
         <f:render partial="CrudForms/Bootstrap4/Form" arguments="{crud:formDefinition(object: object, model: model)}" />
 
+        <f:form.hidden property="sourceJson" id="queryPackSourceJson" data="{processed: '{object.processedJson}', previewUrl: '{f:uri.action(action: \'preview\')}'}"/>
+
         <f:link.action action="index" class="button">Cancel</f:link.action>
         <f:form.submit value="create query pack" class="button button--primary" />
     </f:form>

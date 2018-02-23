@@ -1,0 +1,6 @@
+.searchbar {
+    display: flex;
+}
+.searchbar__input {
+    flex-grow: 1;
+}
