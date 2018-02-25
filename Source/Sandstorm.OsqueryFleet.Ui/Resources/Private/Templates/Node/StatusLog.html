@@ -3,21 +3,18 @@
 <f:layout name="Default"/>
 
 <f:section name="Content">
-    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
-        <h1 class="h2">Status Logs for Node {node.hostIdentifier} {node.hostName}</h1>
-
-        <div class="button-toolbar mb-2 mb-md-0">
-            <div class="button-group mr-2">
-                <f:link.action action="index">Back</f:link.action>
-            </div>
+    <div class="header">
+        <h1>Status Log for <code>{node.hostName}</code></h1>
+        <div class="header__toolbar">
+            <f:link.action action="index" class="button button-secondary">go back</f:link.action>
         </div>
     </div>
 
     <f:flashMessages class="flashmessages"/>
 
     <f:widget.paginate objects="{logs}" as="paginatedLogs" configuration="{itemsPerPage: 200, maximumNumberOfLinks: 20}">
-        <table class="table">
-            <thead class="thead-default">
+        <table>
+            <thead>
             <tr>
 
                 <th>timestamp</th>

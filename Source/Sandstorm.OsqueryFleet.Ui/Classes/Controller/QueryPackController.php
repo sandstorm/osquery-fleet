@@ -23,4 +23,9 @@ class QueryPackController extends ActionController
     {
         return $object->getProcessedJson();
     }
+
+    protected function getErrorFlashMessage()
+    {
+        return false;
+    }
 }

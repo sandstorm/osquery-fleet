@@ -1,0 +1,19 @@
+.sidebarMenu {
+    padding: 0;
+    list-style-type: none;
+}
+
+.sidebarMenu__item a {
+    --borderColorStripSize: 4px;
+    display: block;
+    padding-left: calc(4 * var(--goldenUnit) - var(--borderColorStripSize));
+    color: #202020;
+    border-left: var(--borderColorStripSize) solid rgba(0,0,0,0);
+    box-sizing: border-box;
+}
+
+.sidebarMenu__item a:hover {
+    text-decoration: none;
+    border-left-color: var(--sandstormBlue);
+    background: #F1F1F1;
+}

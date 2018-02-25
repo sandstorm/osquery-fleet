@@ -1,11 +1,11 @@
 {namespace crud=Sandstorm\CrudForms\ViewHelpers}
 <fieldset>
     <f:for each="{fields}" as="field">
-        <div class="form-group {field.configuration.formFieldWrapperClassName}">
-            <label class="form-group__label">{field.label}</label>
+        <div class="input-field {f:validation.ifHasErrors(for: 'object.{field.property}', then: 'input-invalid')}">
+            <label>{field.label}</label>
             <f:if condition="{field.editor}">
                 <f:then>
-                    <f:render partial="CrudForms/Helpers/Editor/{field.editor}" arguments="{formFieldClass: 'form-group__control {f:validation.ifHasErrors(for: \'object.{field.property}\', then: \' is-invalid\')}', field: field, object: object, value: '{object -> crud:internal.objectAccess(property: field.property)}'}"/>
+                    <f:render partial="CrudForms/Helpers/Editor/{field.editor}" arguments="{formFieldClass: 'form-group__control ', field: field, object: object, value: '{object -> crud:internal.objectAccess(property: field.property)}'}"/>
                 </f:then>
                 <f:else>
                     <f:render partial="CrudForms/Helpers/Editor/String" arguments="{formFieldClass: 'form-group__control {f:validation.ifHasErrors(for: \'object.{field.property}\', then: \' is-invalid\')}', field: field, object: object, value: '{object -> crud:internal.objectAccess(property: field.property)}'}"/>
@@ -13,11 +13,11 @@
             </f:if>
             <f:validation.results for="object.{field.property}">
                 <f:if condition="{validationResults.flattenedErrors}">
-                    <div class="invalid-feedback">
+                    <p class="input-hint">
                         <f:for each="{validationResults.errors}" as="error">
                             {error}
                         </f:for>
-                    </div>
+                    </p>
                 </f:if>
             </f:validation.results>
 

@@ -42,6 +42,13 @@ class NodeController extends ActionController
         die();
     }
 
+    public function configurationAjaxAction(Node $object)
+    {
+        $configuration = $this->configurationService->getConfigurationForNode(new ConfigurationRequest($object->nodeKey));
+        $this->view->assign('configuration', $configuration);
+        $this->view->assign('object', $object);
+    }
+
     public function statusLogAction(Node $object)
     {
         $this->view->assign('node', $object);

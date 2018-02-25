@@ -1,0 +1,20 @@
+{namespace crud=Sandstorm\CrudForms\ViewHelpers}
+{namespace osquery=Sandstorm\OsqueryFleet\Ui\ViewHelpers}
+
+    <h6>Active Query Packs</h6>
+    <ul>
+        <f:for each="{configuration.queryPacks}" as="queryPack">
+            <li>{queryPack.identifier} - {queryPack.name}</li>
+        </f:for>
+    </ul>
+
+    <h6>Active Queries</h6>
+    <ul>
+        <f:for each="{configuration.queries}" as="query">
+            <li>{query.identifier} - {query.name}</li>
+        </f:for>
+    </ul>
+
+<f:link.action action="showConfiguration" arguments="{object: object}" target="_blank">
+    Show full configuration (opens in new tab)
+</f:link.action>

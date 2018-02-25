@@ -18,6 +18,7 @@ class QueryPack
      * @var string
      * @Crud\FormField
      * @Flow\Validate(type="regularExpression", options={"regularExpression" = "/^([a-zA-Z0-9_-])*$/"})
+     * @Flow\Validate(type="NotEmpty")
      */
     public $identifier;
 

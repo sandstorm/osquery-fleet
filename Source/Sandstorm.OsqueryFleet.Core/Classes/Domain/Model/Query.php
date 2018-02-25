@@ -19,12 +19,14 @@ class Query
      * @var string
      * @Crud\FormField
      * @Flow\Validate(type="regularExpression", options={"regularExpression" = "/^([a-zA-Z0-9_-])*$/"})
+     * @Flow\Validate(type="NotEmpty")
      */
     public $identifier;
 
     /**
      * @var string
      * @Crud\FormField
+     * @Flow\Validate(type="NotEmpty")
      */
     public $name;
 
@@ -42,6 +44,7 @@ class Query
      *
      * @var integer
      * @Crud\FormField
+     * @Flow\Validate(type="NotEmpty")
      */
     public $interval;
 

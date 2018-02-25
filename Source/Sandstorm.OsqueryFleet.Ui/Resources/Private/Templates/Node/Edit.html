@@ -3,13 +3,18 @@
 
 <f:section name="Content">
 
-    <f:flashMessages class="flashmessages"/>
-
     <f:form action="update" objectName="object" object="{object}" enctype="multipart/form-data">
-        <f:render partial="CrudForms/Bootstrap4/Form" arguments="{crud:formDefinition(object: object, model: model)}" />
+        <div class="header">
+            <h1>Node <code>{object.hostName}</code></h1>
+            <div class="header__toolbar">
+                <f:form.submit value="save" class="button button-primary"/>
+                <f:link.action action="index" class="button button-secondary">cancel</f:link.action>
+            </div>
+        </div>
 
-        <f:link.action action="index" class="button">Cancel</f:link.action>
-        <f:form.submit value="save" class="button button--primary" />
+        <f:flashMessages class="flashmessages"/>
+
+        <f:render partial="CrudForms/Custom/Form" arguments="{crud:formDefinition(object: object, model: model)}"/>
     </f:form>
 
 </f:section>

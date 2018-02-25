@@ -1,0 +1,17 @@
+.crudformsTable tr .crudformsTable__listingActions > * {
+    visibility: hidden;
+}
+
+.crudformsTable tr:hover .crudformsTable__listingActions > * {
+    visibility: inherit;
+}
+
+.crudformsTable__listingActions {
+    display: flex;
+    justify-content:flex-end;
+}
+
+.crudformsTable__listingActions > * {
+    display: block;
+    padding: 0 calc(var(--goldenUnit) * 2);
+}

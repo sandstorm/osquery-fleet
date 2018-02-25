@@ -6,6 +6,7 @@ export default (CodeMirror, queryPackSourceJsonElement) => {
     const previewUrl = queryPackSourceJsonElement.getAttribute('data-previewUrl');
 
     const editorElement = document.createElement('div');
+    editorElement.classList.add('queryPackCodeMirror');
     insertAfter(editorElement, queryPackSourceJsonElement);
 
     const dv = CodeMirror.MergeView(editorElement, {

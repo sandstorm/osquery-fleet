@@ -5,11 +5,10 @@
 @import 'codemirror/addon/hint/show-hint.css';
 
 @import 'Style/layout.css';
-@import 'Style/Components/searchbar.css';
-@import 'Style/Components/logo.css';
-@import 'Style/Components/form-group.css';
+@import 'Style/Components/*.css';
 
 :root {
     --goldenUnit: 8px;
     --sandstormBlue: #0099ff;
+    --state-primary: var(--sandstormBlue);
 }

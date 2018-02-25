@@ -60,646 +60,11 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__style_css__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__style_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__style_css__);
-
-__webpack_require__(13);
-
-
-/***/ }),
-/* 1 */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-var content = __webpack_require__(2);
-
-if(typeof content === 'string') content = [[module.i, content, '']];
-
-var transform;
-var insertInto;
-
-
-
-var options = {"hmr":true}
-
-options.transform = transform
-options.insertInto = undefined;
-
-var update = __webpack_require__(4)(content, options);
-
-if(content.locals) module.exports = content.locals;
-
-if(false) {
-	module.hot.accept("!!../../node_modules/css-loader/index.js??ref--0-1!../../node_modules/postcss-loader/lib/index.js!./style.css", function() {
-		var newContent = require("!!../../node_modules/css-loader/index.js??ref--0-1!../../node_modules/postcss-loader/lib/index.js!./style.css");
-
-		if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-
-		var locals = (function(a, b) {
-			var key, idx = 0;
-
-			for(key in a) {
-				if(!b || a[key] !== b[key]) return false;
-				idx++;
-			}
-
-			for(key in b) idx--;
-
-			return idx === 0;
-		}(content.locals, newContent.locals));
-
-		if(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');
-
-		update(newContent);
-	});
-
-	module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 2 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(3)(false);
-// imports
-
-
-// module
-exports.push([module.i, "/*!\n  Shoelace.css {{version}}\n  (c) A Beautiful Site, LLC\n\n  Released under the MIT license\n  Source: https://github.com/claviska/shoelace-css\n*/\n\n/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */\n\n/* Document\n   ========================================================================== */\n\n/**\n * 1. Correct the line height in all browsers.\n * 2. Prevent adjustments of font size after orientation changes in\n *    IE on Windows Phone and in iOS.\n */\n\nhtml {\n  line-height: 1.15; /* 1 */\n  -ms-text-size-adjust: 100%; /* 2 */\n  -webkit-text-size-adjust: 100%; /* 2 */\n}\n\n/* Sections\n   ========================================================================== */\n\n/**\n * Remove the margin in all browsers (opinionated).\n */\n\nbody {\n  margin: 0;\n}\n\n/**\n * Add the correct display in IE 9-.\n */\n\narticle,\naside,\nfooter,\nheader,\nnav,\nsection {\n  display: block;\n}\n\n/**\n * Correct the font size and margin on `h1` elements within `section` and\n * `article` contexts in Chrome, Firefox, and Safari.\n */\n\nh1 {\n  font-size: 2em;\n  margin: 0.67em 0;\n}\n\n/* Grouping content\n   ========================================================================== */\n\n/**\n * Add the correct display in IE 9-.\n * 1. Add the correct display in IE.\n */\n\nfigcaption,\nfigure,\nmain { /* 1 */\n  display: block;\n}\n\n/**\n * Add the correct margin in IE 8.\n */\n\nfigure {\n  margin: 1em 40px;\n}\n\n/**\n * 1. Add the correct box sizing in Firefox.\n * 2. Show the overflow in Edge and IE.\n */\n\nhr {\n  -webkit-box-sizing: content-box;\n          box-sizing: content-box; /* 1 */\n  height: 0; /* 1 */\n  overflow: visible; /* 2 */\n}\n\n/**\n * 1. Correct the inheritance and scaling of font size in all browsers.\n * 2. Correct the odd `em` font sizing in all browsers.\n */\n\npre {\n  font-family: monospace, monospace; /* 1 */\n  font-size: 1em; /* 2 */\n}\n\n/* Text-level semantics\n   ========================================================================== */\n\n/**\n * 1. Remove the gray background on active links in IE 10.\n * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.\n */\n\na {\n  background-color: transparent; /* 1 */\n  -webkit-text-decoration-skip: objects; /* 2 */\n}\n\n/**\n * 1. Remove the bottom border in Chrome 57- and Firefox 39-.\n * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.\n */\n\nabbr[title] {\n  border-bottom: none; /* 1 */\n  text-decoration: underline; /* 2 */\n  -webkit-text-decoration: underline dotted;\n          text-decoration: underline dotted; /* 2 */\n}\n\n/**\n * Prevent the duplicate application of `bolder` by the next rule in Safari 6.\n */\n\nb,\nstrong {\n  font-weight: inherit;\n}\n\n/**\n * Add the correct font weight in Chrome, Edge, and Safari.\n */\n\nb,\nstrong {\n  font-weight: bolder;\n}\n\n/**\n * 1. Correct the inheritance and scaling of font size in all browsers.\n * 2. Correct the odd `em` font sizing in all browsers.\n */\n\ncode,\nkbd,\nsamp {\n  font-family: monospace, monospace; /* 1 */\n  font-size: 1em; /* 2 */\n}\n\n/**\n * Add the correct font style in Android 4.3-.\n */\n\ndfn {\n  font-style: italic;\n}\n\n/**\n * Add the correct background and color in IE 9-.\n */\n\nmark {\n  background-color: #ff0;\n  color: #000;\n}\n\n/**\n * Add the correct font size in all browsers.\n */\n\nsmall {\n  font-size: 80%;\n}\n\n/**\n * Prevent `sub` and `sup` elements from affecting the line height in\n * all browsers.\n */\n\nsub,\nsup {\n  font-size: 75%;\n  line-height: 0;\n  position: relative;\n  vertical-align: baseline;\n}\n\nsub {\n  bottom: -0.25em;\n}\n\nsup {\n  top: -0.5em;\n}\n\n/* Embedded content\n   ========================================================================== */\n\n/**\n * Add the correct display in IE 9-.\n */\n\naudio,\nvideo {\n  display: inline-block;\n}\n\n/**\n * Add the correct display in iOS 4-7.\n */\n\naudio:not([controls]) {\n  display: none;\n  height: 0;\n}\n\n/**\n * Remove the border on images inside links in IE 10-.\n */\n\nimg {\n  border-style: none;\n}\n\n/**\n * Hide the overflow in IE.\n */\n\nsvg:not(:root) {\n  overflow: hidden;\n}\n\n/* Forms\n   ========================================================================== */\n\n/**\n * 1. Change the font styles in all browsers (opinionated).\n * 2. Remove the margin in Firefox and Safari.\n */\n\nbutton,\ninput,\noptgroup,\nselect,\ntextarea {\n  font-family: sans-serif; /* 1 */\n  font-size: 100%; /* 1 */\n  line-height: 1.15; /* 1 */\n  margin: 0; /* 2 */\n}\n\n/**\n * Show the overflow in IE.\n * 1. Show the overflow in Edge.\n */\n\nbutton,\ninput { /* 1 */\n  overflow: visible;\n}\n\n/**\n * Remove the inheritance of text transform in Edge, Firefox, and IE.\n * 1. Remove the inheritance of text transform in Firefox.\n */\n\nbutton,\nselect { /* 1 */\n  text-transform: none;\n}\n\n/**\n * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`\n *    controls in Android 4.\n * 2. Correct the inability to style clickable types in iOS and Safari.\n */\n\nbutton,\nhtml [type=\"button\"], /* 1 */\n[type=\"reset\"],\n[type=\"submit\"] {\n  -webkit-appearance: button; /* 2 */\n}\n\n/**\n * Remove the inner border and padding in Firefox.\n */\n\nbutton::-moz-focus-inner,\n[type=\"button\"]::-moz-focus-inner,\n[type=\"reset\"]::-moz-focus-inner,\n[type=\"submit\"]::-moz-focus-inner {\n  border-style: none;\n  padding: 0;\n}\n\n/**\n * Restore the focus styles unset by the previous rule.\n */\n\nbutton:-moz-focusring,\n[type=\"button\"]:-moz-focusring,\n[type=\"reset\"]:-moz-focusring,\n[type=\"submit\"]:-moz-focusring {\n  outline: 1px dotted ButtonText;\n}\n\n/**\n * Correct the padding in Firefox.\n */\n\nfieldset {\n  padding: 0.35em 0.75em 0.625em;\n}\n\n/**\n * 1. Correct the text wrapping in Edge and IE.\n * 2. Correct the color inheritance from `fieldset` elements in IE.\n * 3. Remove the padding so developers are not caught out when they zero out\n *    `fieldset` elements in all browsers.\n */\n\nlegend {\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box; /* 1 */\n  color: inherit; /* 2 */\n  display: table; /* 1 */\n  max-width: 100%; /* 1 */\n  padding: 0; /* 3 */\n  white-space: normal; /* 1 */\n}\n\n/**\n * 1. Add the correct display in IE 9-.\n * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.\n */\n\nprogress {\n  display: inline-block; /* 1 */\n  vertical-align: baseline; /* 2 */\n}\n\n/**\n * Remove the default vertical scrollbar in IE.\n */\n\ntextarea {\n  overflow: auto;\n}\n\n/**\n * 1. Add the correct box sizing in IE 10-.\n * 2. Remove the padding in IE 10-.\n */\n\n[type=\"checkbox\"],\n[type=\"radio\"] {\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box; /* 1 */\n  padding: 0; /* 2 */\n}\n\n/**\n * Correct the cursor style of increment and decrement buttons in Chrome.\n */\n\n[type=\"number\"]::-webkit-inner-spin-button,\n[type=\"number\"]::-webkit-outer-spin-button {\n  height: auto;\n}\n\n/**\n * 1. Correct the odd appearance in Chrome and Safari.\n * 2. Correct the outline style in Safari.\n */\n\n[type=\"search\"] {\n  -webkit-appearance: textfield; /* 1 */\n  outline-offset: -2px; /* 2 */\n}\n\n/**\n * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.\n */\n\n[type=\"search\"]::-webkit-search-cancel-button,\n[type=\"search\"]::-webkit-search-decoration {\n  -webkit-appearance: none;\n}\n\n/**\n * 1. Correct the inability to style clickable types in iOS and Safari.\n * 2. Change font properties to `inherit` in Safari.\n */\n\n::-webkit-file-upload-button {\n  -webkit-appearance: button; /* 1 */\n  font: inherit; /* 2 */\n}\n\n/* Interactive\n   ========================================================================== */\n\n/*\n * Add the correct display in IE 9-.\n * 1. Add the correct display in Edge, IE, and Firefox.\n */\n\ndetails, /* 1 */\nmenu {\n  display: block;\n}\n\n/*\n * Add the correct display in all browsers.\n */\n\nsummary {\n  display: list-item;\n}\n\n/* Scripting\n   ========================================================================== */\n\n/**\n * Add the correct display in IE 9-.\n */\n\ncanvas {\n  display: inline-block;\n}\n\n/**\n * Add the correct display in IE.\n */\n\ntemplate {\n  display: none;\n}\n\n/* Hidden\n   ========================================================================== */\n\n/**\n * Add the correct display in IE 10-.\n */\n\n[hidden] {\n  display: none;\n}\n\n/*! Content */\n\n/***************************************************************************************************\n* Resets\n***************************************************************************************************/\n\n/* Box sizing reset */\n\nhtml {\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n}\n\n*,\n*::before,\n*::after {\n  -webkit-box-sizing: inherit;\n          box-sizing: inherit;\n}\n\n/* Hidden property reset */\n\n[hidden] {\n  display: none !important;\n}\n\n/***************************************************************************************************\n* The basics\n***************************************************************************************************/\n\nbody {\n  background: white;\n  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue;\n  font-weight: 400;\n  font-size: 16px;\n  font-size: 1rem;\n  color: #111;\n  line-height: 1.5;\n}\n\na {\n  color: #0074d9;\n  text-decoration: none;\n}\n\na:hover {\n  color: #0074d9;\n  text-decoration: underline;\n}\n\nabbr[title] {\n  text-decoration: none;\n  border-bottom: dashed 2px currentcolor;\n}\n\nb,\nstrong {\n  font-weight: 700;\n}\n\nblockquote {\n  font-size: 120%;\n  border-left: solid 6.4px #ddd;\n  border-left: solid .4rem #ddd;\n  padding: 8px 8px 8px 16px;\n  padding: .5rem .5rem .5rem 1rem;\n  margin-bottom: 24px;\n  margin-bottom: 1.5rem;\n  margin-left: 0;\n}\n\nblockquote :last-child {\n  margin-bottom: 0;\n}\n\ncode {\n  font-family: Menlo, Consolas, \"DejaVu Sans Mono\", monospace;\n  font-size: 90%;\n  color: #111;\n  background-color: #f2f2f2;\n  border-radius: .25rem;\n  padding: 3.2px 6.4px;\n  padding: 0.2rem 0.4rem;\n}\n\ndel {\n  color: #ff4136;\n}\n\nfigure {\n  margin-top: 0;\n  margin-bottom: 24px;\n  margin-bottom: 1.5rem;\n}\n\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue;\n  font-weight: 300;\n  line-height: 1.1;\n  color: inherit;\n  margin-top: 0;\n  margin-bottom: 8px;\n  margin-bottom: .5rem;\n}\n\nh1 { font-size: 40px; font-size: 2.5rem; }\n\nh2 { font-size: 32px; font-size: 2rem; }\n\nh3 { font-size: 28px; font-size: 1.75rem; }\n\nh4 { font-size: 24px; font-size: 1.5rem; }\n\nh5 { font-size: 20px; font-size: 1.25rem; }\n\nh6 { font-size: 16px; font-size: 1rem; }\n\nhr {\n  border: none;\n  border-top: solid 1px #ddd;\n  margin: 32px 0;\n  margin: 2rem 0;\n}\n\nimg {\n  height: auto;\n  max-width: 100%;\n  vertical-align: middle;\n}\n\nins {\n  color: #2ecc40;\n}\n\nkbd {\n  font-family: Menlo, Consolas, \"DejaVu Sans Mono\", monospace;\n  font-size: 90%;\n  color: white;\n  background-color: #111;\n  border-radius: .25rem;\n  padding: 3.2px 6.4px;\n  padding: 0.2rem 0.4rem;\n}\n\nmark {\n  color: inherit;\n  background-color: #ffdc00;\n  padding: 3.2px 6.4px;\n  padding: 0.2rem 0.4rem;\n}\n\np {\n  margin-top: 0;\n  margin-bottom: 24px;\n  margin-bottom: 1.5rem;\n}\n\npre {\n  max-height: none;\n  overflow-y: auto;\n  font-family: Menlo, Consolas, \"DejaVu Sans Mono\", monospace;\n  color: #111;\n  background-color: #f2f2f2;\n  border-radius: .25rem;\n  padding: 16px;\n  padding: 1rem;\n  margin-top: 0;\n  margin-bottom: 24px;\n  margin-bottom: 1.5rem;\n}\n\nsmall {\n  font-size: 80%;\n}\n\n/***************************************************************************************************\n* Lists\n***************************************************************************************************/\n\ndl {\n  margin-bottom: 24px;\n  margin-bottom: 1.5rem;\n}\n\ndt {\n  font-weight: 700;\n}\n\ndd {\n  margin-left: 0;\n  margin-bottom: 24px;\n  margin-bottom: 1.5rem;\n}\n\nol,\nul {\n  line-height: 1.5;\n  margin-top: 0;\n  margin-bottom: 24px;\n  margin-bottom: 1.5rem\n}\n\nol ol,\n  ol ul,\n  ul ol,\n  ul ul {\n  margin-bottom: 0;\n}\n\n/***************************************************************************************************\n* Placeholders\n***************************************************************************************************/\n\n::-webkit-input-placeholder {\n  color: #aaa;\n}\n\n:-ms-input-placeholder {\n  color: #aaa;\n}\n\n::-ms-input-placeholder {\n  color: #aaa;\n}\n\n::placeholder {\n  color: #aaa;\n}\n\n/***************************************************************************************************\n* Selections\n***************************************************************************************************/\n\n::-moz-selection {\n  background-color: #0074d9;\n  color: white;\n  text-shadow: none !important;\n}\n\n::selection {\n  background-color: #0074d9;\n  color: white;\n  text-shadow: none !important;\n}\n\n/*! Alerts */\n\n.alert {\n  color: rgb(0, 68, 128);\n  background-color: rgb(191, 220, 246);\n  border-color: rgb(181, 209, 234);\n  border-style: solid;\n  border-width: 1px;\n  border-radius: .25rem;\n  padding: 16px 16px;\n  padding: 1rem 1rem;\n  margin-top: 0;\n  margin-bottom: 24px;\n  margin-bottom: 1.5rem\n}\n\n.alert:empty {\n  display: none;\n}\n\n.alert a {\n  color: currentcolor;\n  font-weight: 700;\n}\n\n.alert > :last-child {\n  margin-bottom: 0;\n}\n\n.alert {/*Variations\n*/\n}\n\n.alert.alert-secondary {\n  color: rgb(64, 64, 64);\n  background-color: rgb(234, 234, 234);\n  border-color: rgb(222, 222, 222);\n}\n\n.alert.alert-info {\n  color: rgb(26, 101, 101);\n  background-color: rgb(206, 242, 242);\n  border-color: rgb(196, 230, 230);\n}\n\n.alert.alert-success {\n  color: rgb(24, 104, 33);\n  background-color: rgb(203, 242, 207);\n  border-color: rgb(193, 230, 197);\n}\n\n.alert.alert-warning {\n  color: rgb(128, 60, 0);\n  background-color: rgb(255, 225, 198);\n  border-color: rgb(242, 214, 188);\n}\n\n.alert.alert-danger {\n  color: rgb(128, 6, 0);\n  background-color: rgb(255, 208, 205);\n  border-color: rgb(242, 198, 195);\n}\n\n.alert.alert-light {\n  color: rgb(128, 128, 128);\n  background-color: rgb(255, 255, 255);\n  border-color: rgb(242, 242, 242);\n}\n\n.alert.alert-dark {\n  color: rgb(64, 64, 64);\n  background-color: rgb(196, 196, 196);\n  border-color: rgb(186, 186, 186);\n}\n\n/*! Badges */\n\n.badge {\n  font-size: .8em;\n  color: white;\n  background-color: #0074d9;\n  border-radius: 1em;\n  padding: .2em .6em;\n  vertical-align: baseline;\n  display: inline-block;\n  -webkit-transition: .1s all;\n  transition: .1s all\n}\n\n.badge:empty {\n  display: none;\n}\n\n.badge {/*Variations\n*/\n}\n\n.badge.badge-secondary {\n  color: white;\n  background-color: #aaa;\n}\n\n.badge.badge-success {\n  color: white;\n  background-color: #2ecc40;\n}\n\n.badge.badge-info {\n  color: white;\n  background-color: #39cccc;\n}\n\n.badge.badge-warning {\n  color: white;\n  background-color: #ff851b;\n}\n\n.badge.badge-danger {\n  color: white;\n  background-color: #ff4136;\n}\n\n.badge.badge-light {\n  color: #111;\n  background-color: white;\n}\n\n.badge.badge-dark {\n  color: white;\n  background-color: #111;\n}\n\n/* Badge links */\n\na.badge:hover {\n  color: white;\n  background-color: rgb(0, 104, 195);\n  text-decoration: none;\n}\n\na.badge:focus {\n  outline: none;\n  -webkit-box-shadow: 0 0 0 2px rgba(0, 116, 217, 0.5);\n          box-shadow: 0 0 0 2px rgba(0, 116, 217, 0.5);\n}\n\na.badge.badge-secondary:hover {\n  color: white;\n  background-color: rgb(153, 153, 153);\n}\n\na.badge.badge-secondary:focus {\n  -webkit-box-shadow: 0 0 0 2px rgba(170, 170, 170, 0.5);\n          box-shadow: 0 0 0 2px rgba(170, 170, 170, 0.5);\n}\n\na.badge.badge-success:hover {\n  color: white;\n  background-color: rgb(41, 184, 58);\n}\n\na.badge.badge-success:focus {\n  -webkit-box-shadow: 0 0 0 2px rgba(46, 204, 64, 0.5);\n          box-shadow: 0 0 0 2px rgba(46, 204, 64, 0.5);\n}\n\na.badge.badge-info:hover {\n  color: white;\n  background-color: rgb(51, 184, 184);\n}\n\na.badge.badge-info:focus {\n  -webkit-box-shadow: 0 0 0 2px rgba(57, 204, 204, 0.5);\n          box-shadow: 0 0 0 2px rgba(57, 204, 204, 0.5);\n}\n\na.badge.badge-warning:hover {\n  color: white;\n  background-color: rgb(230, 120, 24);\n}\n\na.badge.badge-warning:focus {\n  -webkit-box-shadow: 0 0 0 2px rgba(255, 133, 27, 0.5);\n          box-shadow: 0 0 0 2px rgba(255, 133, 27, 0.5);\n}\n\na.badge.badge-danger:hover {\n  color: white;\n  background-color: rgb(230, 59, 49);\n}\n\na.badge.badge-danger:focus {\n  -webkit-box-shadow: 0 0 0 2px rgba(255, 65, 54, 0.5);\n          box-shadow: 0 0 0 2px rgba(255, 65, 54, 0.5);\n}\n\na.badge.badge-light:hover {\n  color: #111;\n  background-color: rgb(230, 230, 230);\n}\n\na.badge.badge-light:focus {\n  -webkit-box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);\n          box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);\n}\n\na.badge.badge-dark:hover {\n  color: white;\n  background-color: rgb(41, 41, 41);\n}\n\na.badge.badge-dark:focus {\n  -webkit-box-shadow: 0 0 0 2px rgba(17, 17, 17, 0.5);\n          box-shadow: 0 0 0 2px rgba(17, 17, 17, 0.5);\n}\n\n/*! Buttons */\n\nbutton,\n.button {\n  font-family: inherit;\n  font-size: 16px;\n  font-size: 1rem;\n  font-weight: inherit;\n  text-align: center;\n  text-decoration: none;\n  color: white;\n  background-color: #0074d9;\n  border-radius: .25rem;\n  border-style: solid;\n  border-width: 1px;\n  border-color: #0074d9;\n  border-top-color: rgb(25, 130, 221);\n  border-bottom-color: rgb(0, 104, 195);\n  height: 36px;\n  height: 2.25rem;\n  line-height: calc(2.25rem - 2px);\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n  vertical-align: middle;\n  white-space: nowrap;\n  padding: 0 .75em; /* ems for relative sizing */\n  cursor: pointer;\n  display: inline-block;\n  -webkit-transition: .1s all;\n  transition: .1s all\n}\n\nbutton:hover, .button:hover {\n  color: white;\n  text-decoration: none;\n  background-color: rgb(0, 104, 195);\n  border-color: rgb(0, 104, 195);\n  border-top-color: rgb(0, 116, 217);\n  border-bottom-color: rgb(0, 93, 174);\n}\n\nbutton:active,\n  button.active,\n  .button:active,\n  .button.active {\n  background-color: rgb(0, 104, 195);\n  border-color: rgb(0, 104, 195);\n  border-top-color: rgb(0, 93, 174);\n  border-bottom-color: rgb(0, 104, 195);\n}\n\nbutton:focus, .button:focus {\n  outline: none;\n  -webkit-box-shadow: 0 0 0 2px rgba(0, 116, 217, 0.5);\n          box-shadow: 0 0 0 2px rgba(0, 116, 217, 0.5);\n}\n\nbutton:disabled,\n  button.disabled,\n  .button:disabled,\n  .button.disabled {\n  background-color: rgb(0, 104, 195);\n  border-top-color: rgb(25, 130, 221);\n  border-bottom-color: rgb(0, 104, 195);\n  -webkit-box-shadow: none;\n          box-shadow: none;\n  text-decoration: none;\n  opacity: .5;\n  cursor: not-allowed;\n}\n\nbutton,\n.button {/*Sizes\n*/\n}\n\nbutton.button-xs, .button.button-xs {\n  font-size: 10px;\n  font-size: .625rem;\n  height: 20px;\n  height: 1.25rem;\n  line-height: calc(1.25rem - 2px);\n}\n\nbutton.button-sm, .button.button-sm {\n  font-size: 14px;\n  font-size: .875rem;\n  height: 28px;\n  height: 1.75rem;\n  line-height: calc(1.75rem - 2px);\n}\n\nbutton.button-lg, .button.button-lg {\n  font-size: 20px;\n  font-size: 1.25rem;\n  height: 44px;\n  height: 2.75rem;\n  line-height: calc(2.75rem - 2px);\n}\n\nbutton.button-xl, .button.button-xl {\n  font-size: 24px;\n  font-size: 1.5rem;\n  height: 52px;\n  height: 3.25rem;\n  line-height: calc(3.25rem - 2px);\n}\n\nbutton,\n.button {/*Variations\n*/\n}\n\nbutton.button-secondary, .button.button-secondary {\n  color: white;\n  background-color: #aaa;\n  border-color: #aaa;\n  border-top-color: rgb(179, 179, 179);\n  border-bottom-color: rgb(153, 153, 153);\n}\n\nbutton.button-secondary:hover, .button.button-secondary:hover {\n  color: white;\n  background-color: rgb(153, 153, 153);\n  border-color: rgb(153, 153, 153);\n  border-top-color: rgb(170, 170, 170);\n  border-bottom-color: rgb(136, 136, 136);\n}\n\nbutton.button-secondary:active,\n    button.button-secondary.active,\n    .button.button-secondary:active,\n    .button.button-secondary.active {\n  background-color: rgb(153, 153, 153);\n  border-color: rgb(153, 153, 153);\n  border-top-color: rgb(136, 136, 136);\n  border-bottom-color: rgb(153, 153, 153);\n}\n\nbutton.button-secondary:focus, .button.button-secondary:focus {\n  outline: none;\n  -webkit-box-shadow: 0 0 0 2px rgba(170, 170, 170, 0.5);\n          box-shadow: 0 0 0 2px rgba(170, 170, 170, 0.5);\n}\n\nbutton.button-secondary:disabled,\n    button.button-secondary.disabled,\n    .button.button-secondary:disabled,\n    .button.button-secondary.disabled {\n  background-color: rgb(153, 153, 153);\n  border-top-color: rgb(179, 179, 179);\n  border-bottom-color: rgb(153, 153, 153);\n  -webkit-box-shadow: none;\n          box-shadow: none;\n}\n\nbutton.button-success, .button.button-success {\n  color: white;\n  background-color: #2ecc40;\n  border-color: #2ecc40;\n  border-top-color: rgb(67, 209, 83);\n  border-bottom-color: rgb(41, 184, 58);\n}\n\nbutton.button-success:hover, .button.button-success:hover {\n  color: white;\n  background-color: rgb(41, 184, 58);\n  border-color: rgb(41, 184, 58);\n  border-top-color: rgb(46, 204, 64);\n  border-bottom-color: rgb(37, 163, 51);\n}\n\nbutton.button-success:active,\n    button.button-success.active,\n    .button.button-success:active,\n    .button.button-success.active {\n  background-color: rgb(41, 184, 58);\n  border-color: rgb(41, 184, 58);\n  border-top-color: rgb(37, 163, 51);\n  border-bottom-color: rgb(41, 184, 58);\n}\n\nbutton.button-success:focus, .button.button-success:focus {\n  outline: none;\n  -webkit-box-shadow: 0 0 0 2px rgba(46, 204, 64, 0.5);\n          box-shadow: 0 0 0 2px rgba(46, 204, 64, 0.5);\n}\n\nbutton.button-success:disabled,\n    button.button-success.disabled,\n    .button.button-success:disabled,\n    .button.button-success.disabled {\n  background-color: rgb(41, 184, 58);\n  border-top-color: rgb(67, 209, 83);\n  border-bottom-color: rgb(41, 184, 58);\n  -webkit-box-shadow: none;\n          box-shadow: none;\n}\n\nbutton.button-info, .button.button-info {\n  color: white;\n  background-color: #39cccc;\n  border-color: #39cccc;\n  border-top-color: rgb(77, 209, 209);\n  border-bottom-color: rgb(51, 184, 184);\n}\n\nbutton.button-info:hover, .button.button-info:hover {\n  color: white;\n  background-color: rgb(51, 184, 184);\n  border-color: rgb(51, 184, 184);\n  border-top-color: rgb(57, 204, 204);\n  border-bottom-color: rgb(46, 163, 163);\n}\n\nbutton.button-info:active,\n    button.button-info.active,\n    .button.button-info:active,\n    .button.button-info.active {\n  background-color: rgb(51, 184, 184);\n  border-color: rgb(51, 184, 184);\n  border-top-color: rgb(46, 163, 163);\n  border-bottom-color: rgb(51, 184, 184);\n}\n\nbutton.button-info:focus, .button.button-info:focus {\n  outline: none;\n  -webkit-box-shadow: 0 0 0 2px rgba(57, 204, 204, 0.5);\n          box-shadow: 0 0 0 2px rgba(57, 204, 204, 0.5);\n}\n\nbutton.button-info:disabled,\n    button.button-info.disabled,\n    .button.button-info:disabled,\n    .button.button-info.disabled {\n  background-color: rgb(51, 184, 184);\n  border-top-color: rgb(77, 209, 209);\n  border-bottom-color: rgb(51, 184, 184);\n  -webkit-box-shadow: none;\n          box-shadow: none;\n}\n\nbutton.button-warning, .button.button-warning {\n  color: white;\n  background-color: #ff851b;\n  border-color: #ff851b;\n  border-top-color: rgb(255, 145, 50);\n  border-bottom-color: rgb(230, 120, 24);\n}\n\nbutton.button-warning:hover, .button.button-warning:hover {\n  color: white;\n  background-color: rgb(230, 120, 24);\n  border-color: rgb(230, 120, 24);\n  border-top-color: rgb(255, 133, 27);\n  border-bottom-color: rgb(204, 106, 22);\n}\n\nbutton.button-warning:active,\n    button.button-warning.active,\n    .button.button-warning:active,\n    .button.button-warning.active {\n  background-color: rgb(230, 120, 24);\n  border-color: rgb(230, 120, 24);\n  border-top-color: rgb(204, 106, 22);\n  border-bottom-color: rgb(230, 120, 24);\n}\n\nbutton.button-warning:focus, .button.button-warning:focus {\n  outline: none;\n  -webkit-box-shadow: 0 0 0 2px rgba(255, 133, 27, 0.5);\n          box-shadow: 0 0 0 2px rgba(255, 133, 27, 0.5);\n}\n\nbutton.button-warning:disabled,\n    button.button-warning.disabled,\n    .button.button-warning:disabled,\n    .button.button-warning.disabled {\n  background-color: rgb(230, 120, 24);\n  border-top-color: rgb(255, 145, 50);\n  border-bottom-color: rgb(230, 120, 24);\n  -webkit-box-shadow: none;\n          box-shadow: none;\n}\n\nbutton.button-danger, .button.button-danger {\n  color: white;\n  background-color: #ff4136;\n  border-color: #ff4136;\n  border-top-color: rgb(255, 84, 74);\n  border-bottom-color: rgb(230, 59, 49);\n}\n\nbutton.button-danger:hover, .button.button-danger:hover {\n  color: white;\n  background-color: rgb(230, 59, 49);\n  border-color: rgb(230, 59, 49);\n  border-top-color: rgb(255, 65, 54);\n  border-bottom-color: rgb(204, 52, 43);\n}\n\nbutton.button-danger:active,\n    button.button-danger.active,\n    .button.button-danger:active,\n    .button.button-danger.active {\n  background-color: rgb(230, 59, 49);\n  border-color: rgb(230, 59, 49);\n  border-top-color: rgb(204, 52, 43);\n  border-bottom-color: rgb(230, 59, 49);\n}\n\nbutton.button-danger:focus, .button.button-danger:focus {\n  outline: none;\n  -webkit-box-shadow: 0 0 0 2px rgba(255, 65, 54, 0.5);\n          box-shadow: 0 0 0 2px rgba(255, 65, 54, 0.5);\n}\n\nbutton.button-danger:disabled,\n    button.button-danger.disabled,\n    .button.button-danger:disabled,\n    .button.button-danger.disabled {\n  background-color: rgb(230, 59, 49);\n  border-top-color: rgb(255, 84, 74);\n  border-bottom-color: rgb(230, 59, 49);\n  -webkit-box-shadow: none;\n          box-shadow: none;\n}\n\nbutton.button-light, .button.button-light {\n  color: #111;\n  background-color: rgb(230, 230, 230);\n  border-color: rgb(230, 230, 230);\n  border-top-color: rgb(233, 233, 233);\n  border-bottom-color: rgb(207, 207, 207);\n}\n\nbutton.button-light:hover, .button.button-light:hover {\n  color: #111;\n  background-color: rgb(207, 207, 207);\n  border-color: rgb(207, 207, 207);\n  border-top-color: rgb(230, 230, 230);\n  border-bottom-color: rgb(184, 184, 184);\n}\n\nbutton.button-light:active,\n    button.button-light.active,\n    .button.button-light:active,\n    .button.button-light.active {\n  background-color: rgb(207, 207, 207);\n  border-color: rgb(207, 207, 207);\n  border-top-color: rgb(184, 184, 184);\n  border-bottom-color: rgb(207, 207, 207);\n}\n\nbutton.button-light:focus, .button.button-light:focus {\n  outline: none;\n  -webkit-box-shadow: 0 0 0 2px rgba(230, 230, 230, 0.5);\n          box-shadow: 0 0 0 2px rgba(230, 230, 230, 0.5);\n}\n\nbutton.button-light:disabled,\n    button.button-light.disabled,\n    .button.button-light:disabled,\n    .button.button-light.disabled {\n  background-color: rgb(207, 207, 207);\n  border-top-color: rgb(233, 233, 233);\n  border-bottom-color: rgb(207, 207, 207);\n  -webkit-box-shadow: none;\n          box-shadow: none;\n}\n\nbutton.button-dark, .button.button-dark {\n  color: white;\n  background-color: rgb(41, 41, 41);\n  border-color: rgb(41, 41, 41);\n  border-top-color: rgb(62, 62, 62);\n  border-bottom-color: rgb(37, 37, 37);\n}\n\nbutton.button-dark:hover, .button.button-dark:hover {\n  color: white;\n  background-color: rgb(37, 37, 37);\n  border-color: rgb(37, 37, 37);\n  border-top-color: rgb(41, 41, 41);\n  border-bottom-color: rgb(33, 33, 33);\n}\n\nbutton.button-dark:active,\n    button.button-dark.active,\n    .button.button-dark:active,\n    .button.button-dark.active {\n  background-color: rgb(37, 37, 37);\n  border-color: rgb(37, 37, 37);\n  border-top-color: rgb(33, 33, 33);\n  border-bottom-color: rgb(37, 37, 37);\n}\n\nbutton.button-dark:focus, .button.button-dark:focus {\n  outline: none;\n  -webkit-box-shadow: 0 0 0 2px rgba(41, 41, 41, 0.5);\n          box-shadow: 0 0 0 2px rgba(41, 41, 41, 0.5);\n}\n\nbutton.button-dark:disabled,\n    button.button-dark.disabled,\n    .button.button-dark:disabled,\n    .button.button-dark.disabled {\n  background-color: rgb(37, 37, 37);\n  border-top-color: rgb(62, 62, 62);\n  border-bottom-color: rgb(37, 37, 37);\n  -webkit-box-shadow: none;\n          box-shadow: none;\n}\n\nbutton,\n.button {/*Block buttons\n*/\n}\n\nbutton.button-block, .button.button-block {\n  width: 100% !important;\n  display: block;\n}\n\nbutton,\n.button {/*Link buttons\n*/\n}\n\nbutton.button-link, .button.button-link {\n  border-color: transparent;\n  background-color: transparent;\n  color: #0074d9;\n  text-decoration: none;\n  -webkit-box-shadow: none;\n          box-shadow: none;\n}\n\nbutton.button-link:hover,\n  button.button-link:focus,\n  .button.button-link:hover,\n  .button.button-link:focus {\n  border-color: transparent;\n  background-color: transparent;\n  color: #0074d9;\n  text-decoration: underline;\n  -webkit-box-shadow: none;\n          box-shadow: none;\n}\n\n/* Loader buttons */\n\n.button-loader,\n.button-loader:hover {\n  position: relative;\n  min-width: 2em;\n  color: transparent !important;\n  overflow: hidden;\n}\n\n.button-loader::after {\n  content: '';\n  position: absolute;\n  top: calc(50% - 0.5em);\n  left: calc(50% - 0.5em);\n  width: 1em;\n  height: 1em;\n  border-radius: 50%;\n  border: solid .15em rgba(255, 255, 255, 0.2);\n  border-top-color: white;\n  border-left-color: white;\n  display: inline-block;\n  -webkit-animation: button-loader 750ms linear infinite;\n          animation: button-loader 750ms linear infinite;\n}\n\n.button-secondary.button-loader::after {\n  border-color: rgba(255, 255, 255, 0.2);\n  border-top-color: white;\n  border-left-color: white;\n}\n\n.button-success.button-loader::after {\n  border-color: rgba(255, 255, 255, 0.2);\n  border-top-color: white;\n  border-left-color: white;\n}\n\n.button-info.button-loader::after {\n  border-color: rgba(255, 255, 255, 0.2);\n  border-top-color: white;\n  border-left-color: white;\n}\n\n.button-warning.button-loader::after {\n  border-color: rgba(255, 255, 255, 0.2);\n  border-top-color: white;\n  border-left-color: white;\n}\n\n.button-danger.button-loader::after {\n  border-color: rgba(255, 255, 255, 0.2);\n  border-top-color: white;\n  border-left-color: white;\n}\n\n.button-light.button-loader::after {\n  border-color: rgba(17, 17, 17, 0.2);\n  border-top-color: #111;\n  border-left-color: #111;\n}\n\n.button-dark.button-loader::after {\n  border-color: rgba(255, 255, 255, 0.2);\n  border-top-color: white;\n  border-left-color: white;\n}\n\n@-webkit-keyframes button-loader {\n  0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }\n  100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }\n}\n\n@keyframes button-loader {\n  0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }\n  100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }\n}\n\n/*! Dropdowns */\n\n.dropdown {\n  position: relative;\n  display: inline-block\n}\n\n.dropdown .dropdown-trigger::after {\n  content: '';\n  width: .5em;\n  height: .5em;\n  border-top: solid 2px currentcolor;\n  border-right: solid 2px currentcolor;\n  margin-left: .5em;\n  margin-top: -0.5em;\n  -webkit-transform: rotate(135deg);\n          transform: rotate(135deg);\n  display: inline-block;\n  vertical-align: middle;\n}\n\n.dropdown.dropdown-top .dropdown-trigger::after {\n  -webkit-transform: rotate(315deg);\n          transform: rotate(315deg);\n  margin-top: 0;\n}\n\n.dropdown {/*Menu\n*/\n}\n\n.dropdown .dropdown-menu {\n  position: absolute;\n  top: calc(100% + 1px);\n  left: 0;\n  z-index: 100;\n  min-width: 160px;\n  min-width: 10rem;\n  max-width: 400px;\n  max-width: 25rem;\n  max-height: none;\n  line-height: 1.5;\n  font-size: inherit;\n  font-weight: inherit;\n  text-align: left;\n  background-color: white;\n  border: solid 1px #ddd;\n  border-radius: .25rem;\n  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, .05);\n          box-shadow: 0 1px 0 rgba(0, 0, 0, .05);\n  display: none;\n  padding: 4px 0;\n  padding: .25rem 0;\n  overflow-y: auto;\n  -webkit-transform: translateZ(0);\n          transform: translateZ(0);\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n}\n\n.dropdown .dropdown-menu a {\n  position: relative;\n  color: #111;\n  text-decoration: none;\n  padding: .25rem calc(1rem + 0.5em);\n  display: block;\n  white-space: nowrap;\n  overflow-x: hidden;\n  text-overflow: ellipsis;\n}\n\n.dropdown .dropdown-menu a:focus {\n  outline: none;\n  color: #111;\n  background-color: rgb(242, 242, 242);\n}\n\n.dropdown .dropdown-menu a:hover {\n  color: white;\n  background-color: #0074d9;\n}\n\n.dropdown .dropdown-menu a.disabled {\n  background-color: transparent;\n  color: #111;\n  outline: none;\n  cursor: not-allowed;\n  opacity: .5;\n}\n\n.dropdown .dropdown-menu a.checked::before {\n  position: absolute;\n  left: calc(0.5rem - 0.1em);\n  content: '\\2713';\n  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue;\n  font-weight: 600;\n}\n\n.dropdown .dropdown-menu hr {\n  width: 100%;\n  border-top: solid 1px #ddd;\n  margin: 4px 0;\n  margin: .25rem 0;\n}\n\n.dropdown .dropdown-menu .dropdown-heading {\n  font-size: 80%;\n  font-weight: inherit;\n  color: #aaa;\n  padding: .25rem calc(1rem + 0.5em);\n  cursor: default;\n}\n\n.dropdown.dropdown-top .dropdown-menu {\n  top: auto;\n  bottom: calc(100% + 1px);\n}\n\n.dropdown.dropdown-left .dropdown-menu {\n  left: auto;\n  right: 0;\n}\n\n.dropdown.dropdown.active .dropdown-menu {\n  display: block;\n}\n\n/*! File buttons */\n\n.file-button {\n  position: relative\n}\n\n.file-button input[type=\"file\"] {\n  position: absolute;\n  height: 1px;\n  width: 1px;\n  background: none;\n  border: 0;\n  clip: rect(0 0 0 0);\n  -webkit-clip-path: inset(50%);\n          clip-path: inset(50%);\n  overflow: hidden;\n  padding: 0;/*When the input receives focus, simulate button focus states on the label\n*/\n}\n\n.file-button input[type=\"file\"]:focus + label {\n  -webkit-box-shadow: 0 0 0 2px rgba(0, 116, 217, 0.5);\n          box-shadow: 0 0 0 2px rgba(0, 116, 217, 0.5);\n}\n\n.file-button input[type=\"file\"]:focus + label.button-secondary {\n  -webkit-box-shadow: 0 0 0 2px rgba(170, 170, 170, 0.5);\n          box-shadow: 0 0 0 2px rgba(170, 170, 170, 0.5);\n}\n\n.file-button input[type=\"file\"]:focus + label.button-success {\n  -webkit-box-shadow: 0 0 0 2px rgba(46, 204, 64, 0.5);\n          box-shadow: 0 0 0 2px rgba(46, 204, 64, 0.5);\n}\n\n.file-button input[type=\"file\"]:focus + label.button-info {\n  -webkit-box-shadow: 0 0 0 2px rgba(57, 204, 204, 0.5);\n          box-shadow: 0 0 0 2px rgba(57, 204, 204, 0.5);\n}\n\n.file-button input[type=\"file\"]:focus + label.button-warning {\n  -webkit-box-shadow: 0 0 0 2px rgba(255, 133, 27, 0.5);\n          box-shadow: 0 0 0 2px rgba(255, 133, 27, 0.5);\n}\n\n.file-button input[type=\"file\"]:focus + label.button-danger {\n  -webkit-box-shadow: 0 0 0 2px rgba(255, 65, 54, 0.5);\n          box-shadow: 0 0 0 2px rgba(255, 65, 54, 0.5);\n}\n\n.file-button input[type=\"file\"]:focus + label.button-light {\n  -webkit-box-shadow: 0 0 0 2px rgba(230, 230, 230, 0.5);\n          box-shadow: 0 0 0 2px rgba(230, 230, 230, 0.5);\n}\n\n.file-button input[type=\"file\"]:focus + label.button-dark {\n  -webkit-box-shadow: 0 0 0 2px rgba(41, 41, 41, 0.5);\n          box-shadow: 0 0 0 2px rgba(41, 41, 41, 0.5);\n}\n\n/*! Forms */\n\nfieldset {\n  border: solid 1px #ddd;\n  border-radius: .25rem;\n  padding: 24px 32px;\n  padding: 1.5rem 2rem;\n  margin-bottom: 24px;\n  margin-bottom: 1.5rem\n}\n\nfieldset legend {\n  font-weight: 700;\n  padding: 0 4px;\n  padding: 0 .25rem;\n}\n\nfieldset > :last-child {\n  margin-bottom: 0;\n}\n\nlabel {\n  color: inherit;\n  display: inline-block;\n  margin-bottom: 4px;\n  margin-bottom: .25rem\n}\n\nlabel + label {\n  margin-left: 16px;\n  margin-left: 1rem;\n}\n\ninput[type=\"color\"],\ninput[type=\"date\"],\ninput[type=\"datetime-local\"],\ninput[type=\"email\"],\ninput[type=\"month\"],\ninput[type=\"number\"],\ninput[type=\"password\"],\ninput[type=\"search\"],\ninput[type=\"tel\"],\ninput[type=\"text\"],\ninput[type=\"time\"],\ninput[type=\"url\"],\ninput[type=\"week\"],\nselect,\ntextarea {\n  width: 100%;\n  font-family: inherit;\n  font-size: 16px;\n  font-size: 1rem;\n  font-weight: inherit;\n  color: #111;\n  border: solid 1px #ddd;\n  border-radius: .25rem;\n  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);\n          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);\n  background-color: white;\n  height: 36px;\n  height: 2.25rem;\n  line-height: 36px;\n  line-height: 2.25rem;\n  vertical-align: middle;\n  display: block;\n  padding-left: 8px;\n  padding-left: .5rem;\n  padding-right: 8px;\n  padding-right: .5rem;\n  margin: 0;\n  -webkit-transition:\n    .1s border-color,\n    .1s background-color,\n    .1s color;\n  transition:\n    .1s border-color,\n    .1s background-color,\n    .1s color;\n  white-space: nowrap;\n  -moz-appearance: none;\n  -webkit-appearance: none\n}\n\ninput[type=\"color\"]:focus, input[type=\"date\"]:focus, input[type=\"datetime-local\"]:focus, input[type=\"email\"]:focus, input[type=\"month\"]:focus, input[type=\"number\"]:focus, input[type=\"password\"]:focus, input[type=\"search\"]:focus, input[type=\"tel\"]:focus, input[type=\"text\"]:focus, input[type=\"time\"]:focus, input[type=\"url\"]:focus, input[type=\"week\"]:focus, select:focus, textarea:focus {\n  outline: none;\n  border-color: #0074d9;\n}\n\ninput[type=\"color\"][disabled], input[type=\"date\"][disabled], input[type=\"datetime-local\"][disabled], input[type=\"email\"][disabled], input[type=\"month\"][disabled], input[type=\"number\"][disabled], input[type=\"password\"][disabled], input[type=\"search\"][disabled], input[type=\"tel\"][disabled], input[type=\"text\"][disabled], input[type=\"time\"][disabled], input[type=\"url\"][disabled], input[type=\"week\"][disabled], select[disabled], textarea[disabled] {\n  opacity: .5;\n  cursor: not-allowed;\n}\n\ninput[type=\"color\"][readonly], input[type=\"date\"][readonly], input[type=\"datetime-local\"][readonly], input[type=\"email\"][readonly], input[type=\"month\"][readonly], input[type=\"number\"][readonly], input[type=\"password\"][readonly], input[type=\"search\"][readonly], input[type=\"tel\"][readonly], input[type=\"text\"][readonly], input[type=\"time\"][readonly], input[type=\"url\"][readonly], input[type=\"week\"][readonly], select[readonly], textarea[readonly] {\n  background-color: #f2f2f2;\n}\n\ninput[type=\"color\"][type=\"color\"], input[type=\"date\"][type=\"color\"], input[type=\"datetime-local\"][type=\"color\"], input[type=\"email\"][type=\"color\"], input[type=\"month\"][type=\"color\"], input[type=\"number\"][type=\"color\"], input[type=\"password\"][type=\"color\"], input[type=\"search\"][type=\"color\"], input[type=\"tel\"][type=\"color\"], input[type=\"text\"][type=\"color\"], input[type=\"time\"][type=\"color\"], input[type=\"url\"][type=\"color\"], input[type=\"week\"][type=\"color\"], select[type=\"color\"], textarea[type=\"color\"] {\n  padding: 8px;\n  padding: .5rem;\n}\n\ninput[type=\"color\"][type=\"color\"]::-webkit-color-swatch-wrapper, input[type=\"date\"][type=\"color\"]::-webkit-color-swatch-wrapper, input[type=\"datetime-local\"][type=\"color\"]::-webkit-color-swatch-wrapper, input[type=\"email\"][type=\"color\"]::-webkit-color-swatch-wrapper, input[type=\"month\"][type=\"color\"]::-webkit-color-swatch-wrapper, input[type=\"number\"][type=\"color\"]::-webkit-color-swatch-wrapper, input[type=\"password\"][type=\"color\"]::-webkit-color-swatch-wrapper, input[type=\"search\"][type=\"color\"]::-webkit-color-swatch-wrapper, input[type=\"tel\"][type=\"color\"]::-webkit-color-swatch-wrapper, input[type=\"text\"][type=\"color\"]::-webkit-color-swatch-wrapper, input[type=\"time\"][type=\"color\"]::-webkit-color-swatch-wrapper, input[type=\"url\"][type=\"color\"]::-webkit-color-swatch-wrapper, input[type=\"week\"][type=\"color\"]::-webkit-color-swatch-wrapper, select[type=\"color\"]::-webkit-color-swatch-wrapper, textarea[type=\"color\"]::-webkit-color-swatch-wrapper {\n  padding: 0;\n}\n\ninput[type=\"color\"][type=\"color\"]::-webkit-color-swatch, input[type=\"date\"][type=\"color\"]::-webkit-color-swatch, input[type=\"datetime-local\"][type=\"color\"]::-webkit-color-swatch, input[type=\"email\"][type=\"color\"]::-webkit-color-swatch, input[type=\"month\"][type=\"color\"]::-webkit-color-swatch, input[type=\"number\"][type=\"color\"]::-webkit-color-swatch, input[type=\"password\"][type=\"color\"]::-webkit-color-swatch, input[type=\"search\"][type=\"color\"]::-webkit-color-swatch, input[type=\"tel\"][type=\"color\"]::-webkit-color-swatch, input[type=\"text\"][type=\"color\"]::-webkit-color-swatch, input[type=\"time\"][type=\"color\"]::-webkit-color-swatch, input[type=\"url\"][type=\"color\"]::-webkit-color-swatch, input[type=\"week\"][type=\"color\"]::-webkit-color-swatch, select[type=\"color\"]::-webkit-color-swatch, textarea[type=\"color\"]::-webkit-color-swatch {\n  border: none;\n  border-radius: .25rem;\n}\n\ninput[type=\"color\"].input-xs, input[type=\"date\"].input-xs, input[type=\"datetime-local\"].input-xs, input[type=\"email\"].input-xs, input[type=\"month\"].input-xs, input[type=\"number\"].input-xs, input[type=\"password\"].input-xs, input[type=\"search\"].input-xs, input[type=\"tel\"].input-xs, input[type=\"text\"].input-xs, input[type=\"time\"].input-xs, input[type=\"url\"].input-xs, input[type=\"week\"].input-xs, select.input-xs, textarea.input-xs {\n  font-size: 10px;\n  font-size: .625rem;\n  height: 20px;\n  height: 1.25rem;\n  line-height: 20px;\n  line-height: 1.25rem;\n}\n\ninput[type=\"color\"].input-sm, input[type=\"date\"].input-sm, input[type=\"datetime-local\"].input-sm, input[type=\"email\"].input-sm, input[type=\"month\"].input-sm, input[type=\"number\"].input-sm, input[type=\"password\"].input-sm, input[type=\"search\"].input-sm, input[type=\"tel\"].input-sm, input[type=\"text\"].input-sm, input[type=\"time\"].input-sm, input[type=\"url\"].input-sm, input[type=\"week\"].input-sm, select.input-sm, textarea.input-sm {\n  font-size: 14px;\n  font-size: .875rem;\n  height: 28px;\n  height: 1.75rem;\n  line-height: 28px;\n  line-height: 1.75rem;\n}\n\ninput[type=\"color\"].input-lg, input[type=\"date\"].input-lg, input[type=\"datetime-local\"].input-lg, input[type=\"email\"].input-lg, input[type=\"month\"].input-lg, input[type=\"number\"].input-lg, input[type=\"password\"].input-lg, input[type=\"search\"].input-lg, input[type=\"tel\"].input-lg, input[type=\"text\"].input-lg, input[type=\"time\"].input-lg, input[type=\"url\"].input-lg, input[type=\"week\"].input-lg, select.input-lg, textarea.input-lg {\n  font-size: 20px;\n  font-size: 1.25rem;\n  height: 44px;\n  height: 2.75rem;\n  line-height: 44px;\n  line-height: 2.75rem;\n}\n\ninput[type=\"color\"].input-xl, input[type=\"date\"].input-xl, input[type=\"datetime-local\"].input-xl, input[type=\"email\"].input-xl, input[type=\"month\"].input-xl, input[type=\"number\"].input-xl, input[type=\"password\"].input-xl, input[type=\"search\"].input-xl, input[type=\"tel\"].input-xl, input[type=\"text\"].input-xl, input[type=\"time\"].input-xl, input[type=\"url\"].input-xl, input[type=\"week\"].input-xl, select.input-xl, textarea.input-xl {\n  font-size: 24px;\n  font-size: 1.5rem;\n  height: 52px;\n  height: 3.25rem;\n  line-height: 52px;\n  line-height: 3.25rem;\n}\n\ninput[type=\"checkbox\"],\ninput[type=\"radio\"] {\n  vertical-align: 1px;\n}\n\nselect {\n  position: relative;\n  background-image: url(\"data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='41px' height='26px' viewBox='0 0 41 26' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdefs%3E%3C/defs%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cpolygon id='Path-3' fill='%23000000' points='0 5.38215461 19.9830489 25.3652035 40.1398855 5.20836689 34.9315186 0 19.8691842 15.0623344 4.83971338 0.0328636246'%3E%3C/polygon%3E%3C/g%3E%3C/svg%3E%0A\");\n  background-position: right 6.4px center;\n  background-position: right .4rem center;\n  background-repeat: no-repeat;\n  background-size: .75rem;\n  padding-top: 0;\n  padding-bottom: 0;\n  padding-right: 24px;\n  padding-right: 1.5rem;\n}\n\ntextarea,\ntextarea.input-xs,\ntextarea.input-sm,\ntextarea.input-lg,\ntextarea.input-xl {\n  height: auto;\n  resize: vertical;\n  line-height: 1.5;\n  white-space: normal;\n}\n\n/* Range */\n\ninput[type=\"range\"] {\n  -webkit-appearance: none;\n  width: 100%;\n  height: 36px;\n  height: 2.25rem;\n  line-height: 36px;\n  line-height: 2.25rem;\n  vertical-align: middle\n}\n\ninput[type=\"range\"]:focus {\n  outline: none;\n}\n\ninput[type=\"range\"] {/*Webkit\n*/\n}\n\ninput[type=\"range\"]::-webkit-slider-runnable-track {\n  width: 100%;\n  height: 8px;\n  height: .5rem;\n  cursor: pointer;\n  background: #f2f2f2;\n  border-radius: .25rem;\n  border: none;\n  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);\n          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);\n}\n\ninput[type=\"range\"]::-webkit-slider-thumb {\n  border: none;\n  width: 20px;\n  width: 1.25rem;\n  height: 20px;\n  height: 1.25rem;\n  border-radius: 50%;\n  background: #0074d9;\n  cursor: pointer;\n  -webkit-appearance: none;\n  margin-top: -6px;\n  margin-top: -0.375rem;\n}\n\ninput[type=\"range\"]:focus::-webkit-slider-runnable-track {\n  background: #f2f2f2;\n}\n\ninput[type=\"range\"]:focus::-webkit-slider-thumb {\n  -webkit-box-shadow: 0 0 0 2px rgba(0, 116, 217, 0.5);\n          box-shadow: 0 0 0 2px rgba(0, 116, 217, 0.5);\n}\n\ninput[type=\"range\"] {/*Firefox\n*/\n}\n\ninput[type=\"range\"]::-moz-range-track {\n  width: 100%;\n  height: 8px;\n  height: .5rem;\n  cursor: pointer;\n  background: #f2f2f2;\n  border-radius: .25rem;\n  border: none;\n  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);\n}\n\ninput[type=\"range\"]::-moz-range-thumb {\n  border: none;\n  height: 20px;\n  height: 1.25rem;\n  width: 20px;\n  width: 1.25rem;\n  border-radius: 50%;\n  background: #0074d9;\n  cursor: pointer;\n}\n\ninput[type=\"range\"]:focus::-moz-range-thumb {\n  box-shadow: 0 0 0 2px rgba(0, 116, 217, 0.5);\n}\n\ninput[type=\"range\"] {/*IE / Edge\n*/\n}\n\ninput[type=\"range\"]::-ms-track {\n  width: 100%;\n  height: 8px;\n  height: .5rem;\n  cursor: pointer;\n  background: transparent;\n  border-color: transparent;\n  color: transparent;\n}\n\ninput[type=\"range\"]::-ms-fill-lower {\n  background: #f2f2f2;\n  border: none;\n  border-radius: .25rem;\n}\n\ninput[type=\"range\"]::-ms-fill-upper {\n  background: #f2f2f2;\n  border: none;\n  border-radius: .25rem;\n}\n\ninput[type=\"range\"]::-ms-thumb {\n  border: none;\n  height: 20px;\n  height: 1.25rem;\n  width: 20px;\n  width: 1.25rem;\n  border-radius: 50%;\n  background: #0074d9;\n  cursor: pointer;\n  margin-top: -4px;\n  margin-top: -0.25rem;\n}\n\ninput[type=\"range\"]:focus::-ms-thumb {\n  box-shadow: 0 0 0 2px rgba(0, 116, 217, 0.5);\n}\n\ninput[type=\"range\"]:focus::-ms-fill-lower {\n  background: #f2f2f2;\n}\n\ninput[type=\"range\"]:focus::-ms-fill-upper {\n  background: #f2f2f2;\n}\n\n/* Input fields */\n\n.input-field {\n  margin-bottom: 24px;\n  margin-bottom: 1.5rem;\n}\n\n/* Input groups */\n\n.input-group {\n  width: 100%;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  margin-bottom: 24px;\n  margin-bottom: 1.5rem\n}\n\n.input-group > input,\n  .input-group > button,\n  .input-group > .button,\n  .input-group > .dropdown button,\n  .input-group > .dropdown .button,\n  .input-group > .file-button label,\n  .input-group > .input-icon input,\n  .input-group > .input-icon select {\n  border-radius: 0;\n}\n\n.input-group > input:first-child,\n  .input-group > button:first-child,\n  .input-group > .button:first-child,\n  .input-group > .dropdown:first-child button,\n  .input-group > .dropdown:first-child .button,\n  .input-group > .file-button:first-child label,\n  .input-group > .input-icon:first-child input,\n  .input-group > .input-icon:first-child select {\n  border-top-left-radius: 4px;\n  border-top-left-radius: .25rem;\n  border-bottom-left-radius: 4px;\n  border-bottom-left-radius: .25rem;\n}\n\n.input-group > input:last-child,\n  .input-group > button:last-child,\n  .input-group > .button:last-child,\n  .input-group > .dropdown:last-child button,\n  .input-group > .dropdown:last-child .button,\n  .input-group > .file-button:last-child label,\n  .input-group > .input-icon:last-child input,\n  .input-group > .input-icon:last-child select {\n  border-top-right-radius: 4px;\n  border-top-right-radius: .25rem;\n  border-bottom-right-radius: 4px;\n  border-bottom-right-radius: .25rem;\n}\n\n.input-group > input + input {\n  border-left-width: 0;\n}\n\n.input-group > input + input:focus {\n  border-left-width: 1px;\n  margin-left: -1px;\n}\n\n.input-group {/*Force a new stacking context so focus rings don't get truncated by adjacent elements\n*/\n}\n\n.input-group button:focus,\n  .input-group .button:focus,\n  .input-group .file-button input[type=\"file\"]:focus + label {\n  -webkit-transform: translateZ(0);\n          transform: translateZ(0);\n}\n\n/* Input hints */\n\n.input-hint {\n  font-size: 80%;\n  color: #aaa;\n  margin: 4px 0 0 0;\n  margin: .25rem 0 0 0;\n  display: block;\n}\n\n/* Input groups can have input hints, but we need to adjust margins a bit */\n\n.input-group + .input-hint {\n  margin-top: -20px;\n  margin-top: -1.25rem; /* input group margin - input hint margin */\n  margin-bottom: 24px;\n  margin-bottom: 1.5rem;\n}\n\n/* Input addons */\n\n.input-addon {\n  font-size: 16px;\n  font-size: 1rem;\n  height: 36px;\n  height: 2.25rem;\n  line-height: 36px;\n  line-height: 2.25rem;\n  border-top: solid 1px #ddd;\n  border-bottom: solid 1px #ddd;\n  background: #f2f2f2;\n  color: #aaa;\n  padding: 0 8px;\n  padding: 0 .5rem;\n  white-space: nowrap\n}\n\n.input-addon:first-child {\n  border-left: solid 1px #ddd;\n  border-top-left-radius: 4px;\n  border-top-left-radius: .25rem;\n  border-bottom-left-radius: 4px;\n  border-bottom-left-radius: .25rem;\n}\n\n.input-addon:last-child {\n  border-right: solid 1px #ddd;\n  border-top-right-radius: 4px;\n  border-top-right-radius: .25rem;\n  border-bottom-right-radius: 4px;\n  border-bottom-right-radius: .25rem;\n}\n\n.input-addon.input-addon-xs {\n  font-size: 10px;\n  font-size: .625rem;\n  height: 20px;\n  height: 1.25rem;\n  line-height: 20px;\n  line-height: 1.25rem;\n}\n\n.input-addon.input-addon-sm {\n  font-size: 14px;\n  font-size: .875rem;\n  height: 28px;\n  height: 1.75rem;\n  line-height: 28px;\n  line-height: 1.75rem;\n}\n\n.input-addon.input-addon-lg {\n  font-size: 20px;\n  font-size: 1.25rem;\n  height: 44px;\n  height: 2.75rem;\n  line-height: 44px;\n  line-height: 2.75rem;\n}\n\n.input-addon.input-addon-xl {\n  font-size: 24px;\n  font-size: 1.5rem;\n  height: 52px;\n  height: 3.25rem;\n  line-height: 52px;\n  line-height: 3.25rem;\n}\n\n/* Input icons */\n\n.input-icon {\n  position: relative;\n  width: 100%\n\n  /* Change default position for select controls so icons don't get hidden */\n}\n\n.input-icon select {\n  position: static;\n}\n\n.input-icon input:not(:first-child),\n  .input-icon select:not(:first-child) {\n  padding-left: 2em;\n}\n\n.input-icon input:not(:last-child) {\n  padding-right: 2em;\n}\n\n.input-icon :first-child:not(input):not(select), .input-icon :last-child:not(input):not(select) {\n  position: absolute;\n  top: 0;\n  left: .5em;\n  height: 36px;\n  height: 2.25rem;\n  line-height: 36px;\n  line-height: 2.25rem;\n  color: #aaa;\n  vertical-align: middle;\n  pointer-events: none;\n}\n\n.input-icon :last-child:not(input):not(select) {\n  left: auto;\n  right: .5em;\n}\n\n.input-icon.input-icon-xs :first-child:not(input):not(select), .input-icon.input-icon-xs :last-child:not(input):not(select) {\n  font-size: 10px;\n  font-size: .625rem;\n  height: 20px;\n  height: 1.25rem;\n  line-height: 20px;\n  line-height: 1.25rem;\n}\n\n.input-icon.input-icon-sm :first-child:not(input):not(select), .input-icon.input-icon-sm :last-child:not(input):not(select) {\n  font-size: 14px;\n  font-size: .875rem;\n  height: 28px;\n  height: 1.75rem;\n  line-height: 28px;\n  line-height: 1.75rem;\n}\n\n.input-icon.input-icon-lg :first-child:not(input):not(select), .input-icon.input-icon-lg :last-child:not(input):not(select) {\n  font-size: 20px;\n  font-size: 1.25rem;\n  height: 44px;\n  height: 2.75rem;\n  line-height: 44px;\n  line-height: 2.75rem;\n}\n\n.input-icon.input-icon-xl :first-child:not(input):not(select), .input-icon.input-icon-xl :last-child:not(input):not(select) {\n  font-size: 24px;\n  font-size: 1.5rem;\n  height: 52px;\n  height: 3.25rem;\n  line-height: 52px;\n  line-height: 3.25rem;\n}\n\n/* Validation */\n\n.input-invalid label {\n  color: #ff4136 !important;\n}\n\n.input-invalid input,\n  .input-invalid select,\n  .input-invalid textarea {\n  color: #ff4136 !important;\n  border-color: #ff4136 !important;\n}\n\n.input-invalid .input-icon :first-child:not(input):not(select), .input-invalid .input-icon :last-child:not(input):not(select) {\n  color: #ff4136;\n}\n\n.input-valid label {\n  color: #2ecc40 !important;\n}\n\n.input-valid input,\n  .input-valid select,\n  .input-valid textarea {\n  color: #2ecc40 !important;\n  border-color: #2ecc40 !important;\n}\n\n.input-valid .input-icon :first-child:not(input):not(select), .input-valid .input-icon :last-child:not(input):not(select) {\n  color: #2ecc40;\n}\n\n/*! Grid System\n\n  Forked from Bootstrap 4.\n\n  Copyright (c) 2011-2017 Twitter, Inc.\n  Copyright (c) 2011-2017 The Bootstrap Authors\n\n  Licensed under the MIT license.\n*/\n\n/* Containers */\n\n.container,\n.container-fluid {\n  width: 100%;\n  margin-right: auto;\n  margin-left: auto;\n  padding-right: 16px;\n  padding-right: 1rem;\n  padding-left: 16px;\n  padding-left: 1rem;\n}\n\n@media only screen and (min-width: 576px) {\n  .container {\n    max-width: 540px;\n  }\n}\n\n@media only screen and (min-width: 768px) {\n  .container {\n    max-width: 720px;\n  }\n}\n\n@media only screen and (min-width: 992px) {\n  .container {\n    max-width: 960px;\n  }\n}\n\n@media only screen and (min-width: 1200px) {\n  .container {\n    max-width: 1140px;\n  }\n}\n\n/* Rows */\n\n.row {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n  margin-right: -16px;\n  margin-right: -1rem;\n  margin-left: -16px;\n  margin-left: -1rem;\n}\n\n.row-flush {\n  margin-left: 0;\n  margin-right: 0;\n\n  > .col,\n  > [class*=\"col-\"] {\n    padding-left: 0;\n    padding-right: 0;\n  }\n}\n\n.row-start { -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; }\n\n.row-center { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }\n\n.row-end { -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; }\n\n.row-around { -ms-flex-pack: distribute; justify-content: space-around; }\n\n.row-between { -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }\n\n@media only screen and (min-width: 576px) {\n  .row-sm-start { -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; }\n  .row-sm-center { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }\n  .row-sm-end { -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; }\n  .row-sm-around { -ms-flex-pack: distribute; justify-content: space-around; }\n  .row-sm-between { -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }\n}\n\n@media only screen and (min-width: 768px) {\n  .row-md-start { -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; }\n  .row-md-center { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }\n  .row-md-end { -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; }\n  .row-md-around { -ms-flex-pack: distribute; justify-content: space-around; }\n  .row-md-between { -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }\n}\n\n@media only screen and (min-width: 992px) {\n  .row-lg-start { -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; }\n  .row-lg-center { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }\n  .row-lg-end { -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; }\n  .row-lg-around { -ms-flex-pack: distribute; justify-content: space-around; }\n  .row-lg-between { -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }\n}\n\n@media only screen and (min-width: 1200px) {\n  .row-xl-start { -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; }\n  .row-xl-center { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }\n  .row-xl-end { -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; }\n  .row-xl-around { -ms-flex-pack: distribute; justify-content: space-around; }\n  .row-xl-between { -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }\n}\n\n/* Columns */\n\n.col, .col-auto, .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12,\n.col-sm, .col-sm-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12,\n.col-md, .col-md-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12,\n.col-lg, .col-lg-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12,\n.col-xl, .col-xl-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12 {\n  position: relative;\n  width: 100%;\n  min-height: 1px;\n  padding-right: 16px;\n  padding-right: 1rem;\n  padding-left: 16px;\n  padding-left: 1rem;\n}\n\n.col {\n  -ms-flex-preferred-size: 0;\n      flex-basis: 0;\n  -webkit-box-flex: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1;\n  max-width: 100%;\n}\n\n.col-auto {\n  -webkit-box-flex: 0;\n      -ms-flex: 0 0 auto;\n          flex: 0 0 auto;\n  width: auto;\n  max-width: none;\n}\n\n.col-1 {\n  -webkit-box-flex: 0;\n      -ms-flex: 0 0 8.333333%;\n          flex: 0 0 8.333333%;\n  max-width: 8.333333%;\n}\n\n.col-2 {\n  -webkit-box-flex: 0;\n      -ms-flex: 0 0 16.666667%;\n          flex: 0 0 16.666667%;\n  max-width: 16.666667%;\n}\n\n.col-3 {\n  -webkit-box-flex: 0;\n      -ms-flex: 0 0 25%;\n          flex: 0 0 25%;\n  max-width: 25%;\n}\n\n.col-4 {\n  -webkit-box-flex: 0;\n      -ms-flex: 0 0 33.333333%;\n          flex: 0 0 33.333333%;\n  max-width: 33.333333%;\n}\n\n.col-5 {\n  -webkit-box-flex: 0;\n      -ms-flex: 0 0 41.666667%;\n          flex: 0 0 41.666667%;\n  max-width: 41.666667%;\n}\n\n.col-6 {\n  -webkit-box-flex: 0;\n      -ms-flex: 0 0 50%;\n          flex: 0 0 50%;\n  max-width: 50%;\n}\n\n.col-7 {\n  -webkit-box-flex: 0;\n      -ms-flex: 0 0 58.333333%;\n          flex: 0 0 58.333333%;\n  max-width: 58.333333%;\n}\n\n.col-8 {\n  -webkit-box-flex: 0;\n      -ms-flex: 0 0 66.666667%;\n          flex: 0 0 66.666667%;\n  max-width: 66.666667%;\n}\n\n.col-9 {\n  -webkit-box-flex: 0;\n      -ms-flex: 0 0 75%;\n          flex: 0 0 75%;\n  max-width: 75%;\n}\n\n.col-10 {\n  -webkit-box-flex: 0;\n      -ms-flex: 0 0 83.333333%;\n          flex: 0 0 83.333333%;\n  max-width: 83.333333%;\n}\n\n.col-11 {\n  -webkit-box-flex: 0;\n      -ms-flex: 0 0 91.666667%;\n          flex: 0 0 91.666667%;\n  max-width: 91.666667%;\n}\n\n.col-12 {\n  -webkit-box-flex: 0;\n      -ms-flex: 0 0 100%;\n          flex: 0 0 100%;\n  max-width: 100%;\n}\n\n.order-1 { -webkit-box-ordinal-group: 2; -ms-flex-order: 1; order: 1; }\n\n.order-2 { -webkit-box-ordinal-group: 3; -ms-flex-order: 2; order: 2; }\n\n.order-3 { -webkit-box-ordinal-group: 4; -ms-flex-order: 3; order: 3; }\n\n.order-4 { -webkit-box-ordinal-group: 5; -ms-flex-order: 4; order: 4; }\n\n.order-5 { -webkit-box-ordinal-group: 6; -ms-flex-order: 5; order: 5; }\n\n.order-6 { -webkit-box-ordinal-group: 7; -ms-flex-order: 6; order: 6; }\n\n.order-7 { -webkit-box-ordinal-group: 8; -ms-flex-order: 7; order: 7; }\n\n.order-8 { -webkit-box-ordinal-group: 9; -ms-flex-order: 8; order: 8; }\n\n.order-9 { -webkit-box-ordinal-group: 10; -ms-flex-order: 9; order: 9; }\n\n.order-10 { -webkit-box-ordinal-group: 11; -ms-flex-order: 10; order: 10; }\n\n.order-11 { -webkit-box-ordinal-group: 12; -ms-flex-order: 11; order: 11; }\n\n.order-12 { -webkit-box-ordinal-group: 13; -ms-flex-order: 12; order: 12; }\n\n.offset-1 { margin-left: 8.333333%; }\n\n.offset-2 { margin-left: 16.666667%; }\n\n.offset-3 { margin-left: 25%; }\n\n.offset-4 { margin-left: 33.333333%; }\n\n.offset-5 { margin-left: 41.666667%; }\n\n.offset-6 { margin-left: 50%; }\n\n.offset-7 { margin-left: 58.333333%; }\n\n.offset-8 { margin-left: 66.666667%; }\n\n.offset-9 { margin-left: 75%; }\n\n.offset-10 { margin-left: 83.333333%; }\n\n.offset-11 { margin-left: 91.666667%; }\n\n@media only screen and (min-width: 576px) {\n  .col-sm {\n    -ms-flex-preferred-size: 0;\n        flex-basis: 0;\n    -webkit-box-flex: 1;\n        -ms-flex-positive: 1;\n            flex-grow: 1;\n    max-width: 100%;\n  }\n\n  .col-sm-auto {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 auto;\n            flex: 0 0 auto;\n    width: auto;\n    max-width: none;\n  }\n\n  .col-sm-1 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 8.333333%;\n            flex: 0 0 8.333333%;\n    max-width: 8.333333%;\n  }\n\n  .col-sm-2 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 16.666667%;\n            flex: 0 0 16.666667%;\n    max-width: 16.666667%;\n  }\n\n  .col-sm-3 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 25%;\n            flex: 0 0 25%;\n    max-width: 25%;\n  }\n\n  .col-sm-4 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 33.333333%;\n            flex: 0 0 33.333333%;\n    max-width: 33.333333%;\n  }\n\n  .col-sm-5 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 41.666667%;\n            flex: 0 0 41.666667%;\n    max-width: 41.666667%;\n  }\n\n  .col-sm-6 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 50%;\n            flex: 0 0 50%;\n    max-width: 50%;\n  }\n\n  .col-sm-7 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 58.333333%;\n            flex: 0 0 58.333333%;\n    max-width: 58.333333%;\n  }\n\n  .col-sm-8 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 66.666667%;\n            flex: 0 0 66.666667%;\n    max-width: 66.666667%;\n  }\n\n  .col-sm-9 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 75%;\n            flex: 0 0 75%;\n    max-width: 75%;\n  }\n\n  .col-sm-10 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 83.333333%;\n            flex: 0 0 83.333333%;\n    max-width: 83.333333%;\n  }\n\n  .col-sm-11 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 91.666667%;\n            flex: 0 0 91.666667%;\n    max-width: 91.666667%;\n  }\n\n  .col-sm-12 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 100%;\n            flex: 0 0 100%;\n    max-width: 100%;\n  }\n\n  .order-sm-1 { -webkit-box-ordinal-group: 2; -ms-flex-order: 1; order: 1; }\n  .order-sm-2 { -webkit-box-ordinal-group: 3; -ms-flex-order: 2; order: 2; }\n  .order-sm-3 { -webkit-box-ordinal-group: 4; -ms-flex-order: 3; order: 3; }\n  .order-sm-4 { -webkit-box-ordinal-group: 5; -ms-flex-order: 4; order: 4; }\n  .order-sm-5 { -webkit-box-ordinal-group: 6; -ms-flex-order: 5; order: 5; }\n  .order-sm-6 { -webkit-box-ordinal-group: 7; -ms-flex-order: 6; order: 6; }\n  .order-sm-7 { -webkit-box-ordinal-group: 8; -ms-flex-order: 7; order: 7; }\n  .order-sm-8 { -webkit-box-ordinal-group: 9; -ms-flex-order: 8; order: 8; }\n  .order-sm-9 { -webkit-box-ordinal-group: 10; -ms-flex-order: 9; order: 9; }\n  .order-sm-10 { -webkit-box-ordinal-group: 11; -ms-flex-order: 10; order: 10; }\n  .order-sm-11 { -webkit-box-ordinal-group: 12; -ms-flex-order: 11; order: 11; }\n  .order-sm-12 { -webkit-box-ordinal-group: 13; -ms-flex-order: 12; order: 12; }\n\n  .offset-sm-0 { margin-left: 0%; }\n  .offset-sm-1 { margin-left: 8.333333%; }\n  .offset-sm-2 { margin-left: 16.666667%; }\n  .offset-sm-3 { margin-left: 25%; }\n  .offset-sm-4 { margin-left: 33.333333%; }\n  .offset-sm-5 { margin-left: 41.666667%; }\n  .offset-sm-6 { margin-left: 50%; }\n  .offset-sm-7 { margin-left: 58.333333%; }\n  .offset-sm-8 { margin-left: 66.666667%; }\n  .offset-sm-9 { margin-left: 75%; }\n  .offset-sm-10 { margin-left: 83.333333%; }\n  .offset-sm-11 { margin-left: 91.666667%; }\n}\n\n@media only screen and (min-width: 768px) {\n  .col-md {\n    -ms-flex-preferred-size: 0;\n        flex-basis: 0;\n    -webkit-box-flex: 1;\n        -ms-flex-positive: 1;\n            flex-grow: 1;\n    max-width: 100%;\n  }\n\n  .col-md-auto {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 auto;\n            flex: 0 0 auto;\n    width: auto;\n    max-width: none;\n  }\n\n  .col-md-1 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 8.333333%;\n            flex: 0 0 8.333333%;\n    max-width: 8.333333%;\n  }\n\n  .col-md-2 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 16.666667%;\n            flex: 0 0 16.666667%;\n    max-width: 16.666667%;\n  }\n\n  .col-md-3 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 25%;\n            flex: 0 0 25%;\n    max-width: 25%;\n  }\n\n  .col-md-4 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 33.333333%;\n            flex: 0 0 33.333333%;\n    max-width: 33.333333%;\n  }\n\n  .col-md-5 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 41.666667%;\n            flex: 0 0 41.666667%;\n    max-width: 41.666667%;\n  }\n\n  .col-md-6 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 50%;\n            flex: 0 0 50%;\n    max-width: 50%;\n  }\n\n  .col-md-7 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 58.333333%;\n            flex: 0 0 58.333333%;\n    max-width: 58.333333%;\n  }\n\n  .col-md-8 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 66.666667%;\n            flex: 0 0 66.666667%;\n    max-width: 66.666667%;\n  }\n\n  .col-md-9 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 75%;\n            flex: 0 0 75%;\n    max-width: 75%;\n  }\n\n  .col-md-10 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 83.333333%;\n            flex: 0 0 83.333333%;\n    max-width: 83.333333%;\n  }\n\n  .col-md-11 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 91.666667%;\n            flex: 0 0 91.666667%;\n    max-width: 91.666667%;\n  }\n\n  .col-md-12 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 100%;\n            flex: 0 0 100%;\n    max-width: 100%;\n  }\n\n  .order-md-1 { -webkit-box-ordinal-group: 2; -ms-flex-order: 1; order: 1; }\n  .order-md-2 { -webkit-box-ordinal-group: 3; -ms-flex-order: 2; order: 2; }\n  .order-md-3 { -webkit-box-ordinal-group: 4; -ms-flex-order: 3; order: 3; }\n  .order-md-4 { -webkit-box-ordinal-group: 5; -ms-flex-order: 4; order: 4; }\n  .order-md-5 { -webkit-box-ordinal-group: 6; -ms-flex-order: 5; order: 5; }\n  .order-md-6 { -webkit-box-ordinal-group: 7; -ms-flex-order: 6; order: 6; }\n  .order-md-7 { -webkit-box-ordinal-group: 8; -ms-flex-order: 7; order: 7; }\n  .order-md-8 { -webkit-box-ordinal-group: 9; -ms-flex-order: 8; order: 8; }\n  .order-md-9 { -webkit-box-ordinal-group: 10; -ms-flex-order: 9; order: 9; }\n  .order-md-10 { -webkit-box-ordinal-group: 11; -ms-flex-order: 10; order: 10; }\n  .order-md-11 { -webkit-box-ordinal-group: 12; -ms-flex-order: 11; order: 11; }\n  .order-md-12 { -webkit-box-ordinal-group: 13; -ms-flex-order: 12; order: 12; }\n\n  .offset-md-0 { margin-left: 0%; }\n  .offset-md-1 { margin-left: 8.333333%; }\n  .offset-md-2 { margin-left: 16.666667%; }\n  .offset-md-3 { margin-left: 25%; }\n  .offset-md-4 { margin-left: 33.333333%; }\n  .offset-md-5 { margin-left: 41.666667%; }\n  .offset-md-6 { margin-left: 50%; }\n  .offset-md-7 { margin-left: 58.333333%; }\n  .offset-md-8 { margin-left: 66.666667%; }\n  .offset-md-9 { margin-left: 75%; }\n  .offset-md-10 { margin-left: 83.333333%; }\n  .offset-md-11 { margin-left: 91.666667%; }\n}\n\n@media only screen and (min-width: 992px) {\n  .col-lg {\n    -ms-flex-preferred-size: 0;\n        flex-basis: 0;\n    -webkit-box-flex: 1;\n        -ms-flex-positive: 1;\n            flex-grow: 1;\n    max-width: 100%;\n  }\n\n  .col-lg-auto {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 auto;\n            flex: 0 0 auto;\n    width: auto;\n    max-width: none;\n  }\n\n  .col-lg-1 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 8.333333%;\n            flex: 0 0 8.333333%;\n    max-width: 8.333333%;\n  }\n\n  .col-lg-2 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 16.666667%;\n            flex: 0 0 16.666667%;\n    max-width: 16.666667%;\n  }\n\n  .col-lg-3 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 25%;\n            flex: 0 0 25%;\n    max-width: 25%;\n  }\n\n  .col-lg-4 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 33.333333%;\n            flex: 0 0 33.333333%;\n    max-width: 33.333333%;\n  }\n\n  .col-lg-5 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 41.666667%;\n            flex: 0 0 41.666667%;\n    max-width: 41.666667%;\n  }\n\n  .col-lg-6 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 50%;\n            flex: 0 0 50%;\n    max-width: 50%;\n  }\n\n  .col-lg-7 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 58.333333%;\n            flex: 0 0 58.333333%;\n    max-width: 58.333333%;\n  }\n\n  .col-lg-8 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 66.666667%;\n            flex: 0 0 66.666667%;\n    max-width: 66.666667%;\n  }\n\n  .col-lg-9 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 75%;\n            flex: 0 0 75%;\n    max-width: 75%;\n  }\n\n  .col-lg-10 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 83.333333%;\n            flex: 0 0 83.333333%;\n    max-width: 83.333333%;\n  }\n\n  .col-lg-11 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 91.666667%;\n            flex: 0 0 91.666667%;\n    max-width: 91.666667%;\n  }\n\n  .col-lg-12 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 100%;\n            flex: 0 0 100%;\n    max-width: 100%;\n  }\n\n  .order-lg-1 { -webkit-box-ordinal-group: 2; -ms-flex-order: 1; order: 1; }\n  .order-lg-2 { -webkit-box-ordinal-group: 3; -ms-flex-order: 2; order: 2; }\n  .order-lg-3 { -webkit-box-ordinal-group: 4; -ms-flex-order: 3; order: 3; }\n  .order-lg-4 { -webkit-box-ordinal-group: 5; -ms-flex-order: 4; order: 4; }\n  .order-lg-5 { -webkit-box-ordinal-group: 6; -ms-flex-order: 5; order: 5; }\n  .order-lg-6 { -webkit-box-ordinal-group: 7; -ms-flex-order: 6; order: 6; }\n  .order-lg-7 { -webkit-box-ordinal-group: 8; -ms-flex-order: 7; order: 7; }\n  .order-lg-8 { -webkit-box-ordinal-group: 9; -ms-flex-order: 8; order: 8; }\n  .order-lg-9 { -webkit-box-ordinal-group: 10; -ms-flex-order: 9; order: 9; }\n  .order-lg-10 { -webkit-box-ordinal-group: 11; -ms-flex-order: 10; order: 10; }\n  .order-lg-11 { -webkit-box-ordinal-group: 12; -ms-flex-order: 11; order: 11; }\n  .order-lg-12 { -webkit-box-ordinal-group: 13; -ms-flex-order: 12; order: 12; }\n\n  .offset-lg-0 { margin-left: 0%; }\n  .offset-lg-1 { margin-left: 8.333333%; }\n  .offset-lg-2 { margin-left: 16.666667%; }\n  .offset-lg-3 { margin-left: 25%; }\n  .offset-lg-4 { margin-left: 33.333333%; }\n  .offset-lg-5 { margin-left: 41.666667%; }\n  .offset-lg-6 { margin-left: 50%; }\n  .offset-lg-7 { margin-left: 58.333333%; }\n  .offset-lg-8 { margin-left: 66.666667%; }\n  .offset-lg-9 { margin-left: 75%; }\n  .offset-lg-10 { margin-left: 83.333333%; }\n  .offset-lg-11 { margin-left: 91.666667%; }\n}\n\n@media only screen and (min-width: 1200px) {\n  .col-xl {\n    -ms-flex-preferred-size: 0;\n        flex-basis: 0;\n    -webkit-box-flex: 1;\n        -ms-flex-positive: 1;\n            flex-grow: 1;\n    max-width: 100%;\n  }\n\n  .col-xl-auto {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 auto;\n            flex: 0 0 auto;\n    width: auto;\n    max-width: none;\n  }\n\n  .col-xl-1 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 8.333333%;\n            flex: 0 0 8.333333%;\n    max-width: 8.333333%;\n  }\n\n  .col-xl-2 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 16.666667%;\n            flex: 0 0 16.666667%;\n    max-width: 16.666667%;\n  }\n\n  .col-xl-3 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 25%;\n            flex: 0 0 25%;\n    max-width: 25%;\n  }\n\n  .col-xl-4 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 33.333333%;\n            flex: 0 0 33.333333%;\n    max-width: 33.333333%;\n  }\n\n  .col-xl-5 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 41.666667%;\n            flex: 0 0 41.666667%;\n    max-width: 41.666667%;\n  }\n\n  .col-xl-6 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 50%;\n            flex: 0 0 50%;\n    max-width: 50%;\n  }\n\n  .col-xl-7 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 58.333333%;\n            flex: 0 0 58.333333%;\n    max-width: 58.333333%;\n  }\n\n  .col-xl-8 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 66.666667%;\n            flex: 0 0 66.666667%;\n    max-width: 66.666667%;\n  }\n\n  .col-xl-9 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 75%;\n            flex: 0 0 75%;\n    max-width: 75%;\n  }\n\n  .col-xl-10 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 83.333333%;\n            flex: 0 0 83.333333%;\n    max-width: 83.333333%;\n  }\n\n  .col-xl-11 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 91.666667%;\n            flex: 0 0 91.666667%;\n    max-width: 91.666667%;\n  }\n\n  .col-xl-12 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 100%;\n            flex: 0 0 100%;\n    max-width: 100%;\n  }\n\n  .order-xl-1 { -webkit-box-ordinal-group: 2; -ms-flex-order: 1; order: 1; }\n  .order-xl-2 { -webkit-box-ordinal-group: 3; -ms-flex-order: 2; order: 2; }\n  .order-xl-3 { -webkit-box-ordinal-group: 4; -ms-flex-order: 3; order: 3; }\n  .order-xl-4 { -webkit-box-ordinal-group: 5; -ms-flex-order: 4; order: 4; }\n  .order-xl-5 { -webkit-box-ordinal-group: 6; -ms-flex-order: 5; order: 5; }\n  .order-xl-6 { -webkit-box-ordinal-group: 7; -ms-flex-order: 6; order: 6; }\n  .order-xl-7 { -webkit-box-ordinal-group: 8; -ms-flex-order: 7; order: 7; }\n  .order-xl-8 { -webkit-box-ordinal-group: 9; -ms-flex-order: 8; order: 8; }\n  .order-xl-9 { -webkit-box-ordinal-group: 10; -ms-flex-order: 9; order: 9; }\n  .order-xl-10 { -webkit-box-ordinal-group: 11; -ms-flex-order: 10; order: 10; }\n  .order-xl-11 { -webkit-box-ordinal-group: 12; -ms-flex-order: 11; order: 11; }\n  .order-xl-12 { -webkit-box-ordinal-group: 13; -ms-flex-order: 12; order: 12; }\n\n  .offset-xl-0 { margin-left: 0%; }\n  .offset-xl-1 { margin-left: 8.333333%; }\n  .offset-xl-2 { margin-left: 16.666667%; }\n  .offset-xl-3 { margin-left: 25%; }\n  .offset-xl-4 { margin-left: 33.333333%; }\n  .offset-xl-5 { margin-left: 41.666667%; }\n  .offset-xl-6 { margin-left: 50%; }\n  .offset-xl-7 { margin-left: 58.333333%; }\n  .offset-xl-8 { margin-left: 66.666667%; }\n  .offset-xl-9 { margin-left: 75%; }\n  .offset-xl-10 { margin-left: 83.333333%; }\n  .offset-xl-11 { margin-left: 91.666667%; }\n}\n\n/*! Loaders */\n\n.loader {\n  width: 36px;\n  width: 2.25rem;\n  height: 36px;\n  height: 2.25rem;\n  border-radius: 50%;\n  border-style: solid;\n  border-width: 3.2px;\n  border-width: .2rem;\n  border-color: rgb(204, 231, 255);\n  border-top-color: #0074d9;\n  border-left-color: #0074d9;\n  display: inline-block;\n  -webkit-animation: loader 750ms linear infinite;\n          animation: loader 750ms linear infinite;\n  margin: 0 .5em;\n  vertical-align: middle\n\n  /* Sizes */\n}\n\n.loader.loader-xs {\n  width: 20px;\n  width: 1.25rem;\n  height: 20px;\n  height: 1.25rem;\n  border-width: 1.6px;\n  border-width: 0.1rem;\n}\n\n.loader.loader-sm {\n  width: 28px;\n  width: 1.75rem;\n  height: 28px;\n  height: 1.75rem;\n  border-width: 2.133px;\n  border-width: 0.13333rem;\n}\n\n.loader.loader-lg {\n  width: 44px;\n  width: 2.75rem;\n  height: 44px;\n  height: 2.75rem;\n  border-width: 4.8px;\n  border-width: 0.3rem;\n}\n\n.loader.loader-xl {\n  width: 52px;\n  width: 3.25rem;\n  height: 52px;\n  height: 3.25rem;\n  border-width: 6.4px;\n  border-width: 0.4rem;\n}\n\n.loader {/*Variations\n*/\n}\n\n.loader.loader-secondary {\n  border-color: rgb(230, 230, 230);\n  border-top-color: #aaa;\n  border-left-color: #aaa;\n}\n\n.loader.loader-success {\n  border-color: rgb(213, 246, 217);\n  border-top-color: #2ecc40;\n  border-left-color: #2ecc40;\n}\n\n.loader.loader-info {\n  border-color: rgb(214, 245, 245);\n  border-top-color: #39cccc;\n  border-left-color: #39cccc;\n}\n\n.loader.loader-warning {\n  border-color: rgb(255, 228, 204);\n  border-top-color: #ff851b;\n  border-left-color: #ff851b;\n}\n\n.loader.loader-danger {\n  border-color: rgb(255, 207, 204);\n  border-top-color: #ff4136;\n  border-left-color: #ff4136;\n}\n\n.loader.loader-light {\n  border-color: rgb(230, 230, 230);\n  border-top-color: white;\n  border-left-color: white;\n}\n\n.loader.loader-dark {\n  border-color: rgb(230, 230, 230);\n  border-top-color: #111;\n  border-left-color: #111;\n}\n\n/* Background loaders */\n\n.loader-bg {\n  position: relative\n}\n\n.loader-bg::after {\n  content: '';\n  position: absolute;\n  top: calc(50% - 1.125rem);\n  left: calc(50% - 1.125rem);\n  width: 36px;\n  width: 2.25rem;\n  height: 36px;\n  height: 2.25rem;\n  border-radius: 50%;\n  border-style: solid;\n  border-width: 3.2px;\n  border-width: .2rem;\n  border-color: rgb(204, 231, 255);\n  border-top-color: #0074d9;\n  border-left-color: #0074d9;\n  -webkit-animation: loader 750ms linear infinite;\n          animation: loader 750ms linear infinite;\n}\n\n.loader-bg {/*Sizes\n*/\n}\n\n.loader-bg.loader-bg-xs::after {\n  top: calc(50% - 0.625rem);\n  left: calc(50% - 0.625rem);\n  width: 20px;\n  width: 1.25rem;\n  height: 20px;\n  height: 1.25rem;\n  border-width: 1.6px;\n  border-width: 0.1rem;\n}\n\n.loader-bg.loader-bg-sm::after {\n  top: calc(50% - 0.875rem);\n  left: calc(50% - 0.875rem);\n  width: 28px;\n  width: 1.75rem;\n  height: 28px;\n  height: 1.75rem;\n  border-width: 2.133px;\n  border-width: 0.13333rem;\n}\n\n.loader-bg.loader-bg-lg::after {\n  top: calc(50% - 1.375rem);\n  left: calc(50% - 1.375rem);\n  width: 44px;\n  width: 2.75rem;\n  height: 44px;\n  height: 2.75rem;\n  border-width: 4.8px;\n  border-width: 0.3rem;\n}\n\n.loader-bg.loader-bg-xl::after {\n  top: calc(50% - 1.625rem);\n  left: calc(50% - 1.625rem);\n  width: 52px;\n  width: 3.25rem;\n  height: 52px;\n  height: 3.25rem;\n  border-width: 6.4px;\n  border-width: 0.4rem;\n}\n\n.loader-bg {/*Variations\n*/\n}\n\n.loader-bg.loader-bg-secondary::after {\n  border-color: rgb(230, 230, 230);\n  border-top-color: #aaa;\n  border-left-color: #aaa;\n}\n\n.loader-bg.loader-bg-success::after {\n  border-color: rgb(213, 246, 217);\n  border-top-color: #2ecc40;\n  border-left-color: #2ecc40;\n}\n\n.loader-bg.loader-bg-info::after {\n  border-color: rgb(214, 245, 245);\n  border-top-color: #39cccc;\n  border-left-color: #39cccc;\n}\n\n.loader-bg.loader-bg-warning::after {\n  border-color: rgb(255, 228, 204);\n  border-top-color: #ff851b;\n  border-left-color: #ff851b;\n}\n\n.loader-bg.loader-bg-danger::after {\n  border-color: rgb(255, 207, 204);\n  border-top-color: #ff4136;\n  border-left-color: #ff4136;\n}\n\n.loader-bg.loader-bg-light::after {\n  border-color: rgb(230, 230, 230);\n  border-top-color: white;\n  border-left-color: white;\n}\n\n.loader-bg.loader-bg-dark::after {\n  border-color: rgb(230, 230, 230);\n  border-top-color: #111;\n  border-left-color: #111;\n}\n\n@-webkit-keyframes loader {\n  0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }\n  100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }\n}\n\n@keyframes loader {\n  0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }\n  100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }\n}\n\n/*! Progress Bars */\n\n.progress {\n  position: relative;\n  width: 100%;\n  height: 36px;\n  height: 2.25rem;\n  line-height: 36px;\n  line-height: 2.25rem;\n  font-size: 16px;\n  font-size: 1rem;\n  background-color: #f2f2f2;\n  border-radius: .25rem;\n  display: block;\n  overflow: hidden;\n  margin-bottom: 24px;\n  margin-bottom: 1.5rem;\n  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);\n          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05)\n}\n\n.progress .progress-bar {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 0;\n  height: 100%;\n  text-align: center;\n  color: white;\n  background-color: #0074d9;\n  -webkit-transition: .1s width;\n  transition: .1s width;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n  cursor: default;\n}\n\n.progress.progress-indeterminate .progress-bar {\n  width: 75% !important;\n  -webkit-animation: progress-indeterminate ease-in-out 3s infinite;\n          animation: progress-indeterminate ease-in-out 3s infinite;\n}\n\n.progress {/*Sizes\n*/\n}\n\n.progress.progress-xs {\n  font-size: 10px;\n  font-size: .625rem;\n  height: 20px;\n  height: 1.25rem;\n  line-height: 20px;\n  line-height: 1.25rem;\n}\n\n.progress.progress-sm {\n  font-size: 14px;\n  font-size: .875rem;\n  height: 28px;\n  height: 1.75rem;\n  line-height: 28px;\n  line-height: 1.75rem;\n}\n\n.progress.progress-lg {\n  font-size: 20px;\n  font-size: 1.25rem;\n  height: 44px;\n  height: 2.75rem;\n  line-height: 44px;\n  line-height: 2.75rem;\n}\n\n.progress.progress-xl {\n  font-size: 24px;\n  font-size: 1.5rem;\n  height: 52px;\n  height: 3.25rem;\n  line-height: 52px;\n  line-height: 3.25rem;\n}\n\n.progress {/*Variations\n*/\n}\n\n.progress.progress-secondary .progress-bar {\n  background-color: #aaa;\n}\n\n.progress.progress-success .progress-bar {\n  background-color: #2ecc40;\n}\n\n.progress.progress-info .progress-bar {\n  background-color: #39cccc;\n}\n\n.progress.progress-warning .progress-bar {\n  background-color: #ff851b;\n}\n\n.progress.progress-danger .progress-bar {\n  background-color: #ff4136;\n}\n\n.progress.progress-light {\n  background-color: #111;\n}\n\n.progress.progress-light .progress-bar {\n  color: #111;\n  background-color: white;\n}\n\n.progress.progress-dark {\n  background-color: white;\n}\n\n.progress.progress-dark .progress-bar {\n  color: white;\n  background-color: #111;\n}\n\n@-webkit-keyframes progress-indeterminate {\n  0% {\n    left: -65%;\n  }\n\n  50% {\n    left: 90%;\n  }\n\n  100% {\n    left: -65%;\n  }\n}\n\n@keyframes progress-indeterminate {\n  0% {\n    left: -65%;\n  }\n\n  50% {\n    left: 90%;\n  }\n\n  100% {\n    left: -65%;\n  }\n}\n\n/*! Switches */\n\n.switch {\n  font-size: 16px;\n  font-size: 1rem;\n  position: relative\n}\n\n.switch input {\n  position: absolute;\n  height: 1px;\n  width: 1px;\n  background: none;\n  border: 0;\n  clip: rect(0 0 0 0);\n  -webkit-clip-path: inset(50%);\n          clip-path: inset(50%);\n  overflow: hidden;\n  padding: 0;\n}\n\n.switch input + label {\n  position: relative;\n  min-width: 54px;\n  min-width: 3.375rem;\n  border-radius: 1.6875rem;\n  height: 27px;\n  height: 1.6875rem;\n  line-height: 27px;\n  line-height: 1.6875rem;\n  display: inline-block;\n  cursor: pointer;\n  outline: none;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n  vertical-align: middle;\n  text-indent: 62px;\n  text-indent: 3.875rem;\n}\n\n.switch input + label::before,\n    .switch input + label::after {\n  content: '';\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 54px;\n  width: 3.375rem;\n  bottom: 0;\n  display: block;\n}\n\n.switch input + label::before {\n  right: 0;\n  background-color: #ddd;\n  border-radius: 1.6875rem;\n  -webkit-transition: .1s all;\n  transition: .1s all;\n}\n\n.switch input + label::after {\n  top: 2px;\n  left: 2px;\n  width: calc(1.6875rem - 4px);\n  height: calc(1.6875rem - 4px);\n  border-radius: 50%;\n  background-color: white;\n  -webkit-transition: .1s margin;\n  transition: .1s margin;\n}\n\n.switch input:checked + label::before {\n  background-color: #0074d9;\n}\n\n.switch input:checked + label::after {\n  margin-left: 27px;\n  margin-left: 1.6875rem;\n}\n\n.switch input:focus + label::before {\n  outline: none;\n  -webkit-box-shadow: 0 0 0 2px rgba(0, 116, 217, 0.5);\n          box-shadow: 0 0 0 2px rgba(0, 116, 217, 0.5);\n}\n\n.switch input:disabled + label {\n  opacity: .5;\n  cursor: not-allowed;\n}\n\n.switch + .switch {\n  margin-left: 16px;\n  margin-left: 1rem;\n}\n\n.switch {/*Sizes\n*/\n}\n\n.switch.switch-xs {\n  font-size: 10px;\n  font-size: .625rem;\n}\n\n.switch.switch-xs input + label {\n  min-width: 30px;\n  min-width: 1.875rem;\n  height: 15px;\n  height: 0.9375rem;\n  line-height: 15px;\n  line-height: 0.9375rem;\n  text-indent: 38px;\n  text-indent: 2.375rem;\n}\n\n.switch.switch-xs input + label::before,\n      .switch.switch-xs input + label::after {\n  width: 30px;\n  width: 1.875rem;\n}\n\n.switch.switch-xs input + label::after {\n  width: calc(0.9375rem - 4px);\n  height: calc(0.9375rem - 4px);\n}\n\n.switch.switch-xs input:checked + label::after {\n  margin-left: 15px;\n  margin-left: 0.9375rem;\n}\n\n.switch.switch-sm {\n  font-size: 14px;\n  font-size: .875rem;\n}\n\n.switch.switch-sm input + label {\n  min-width: 42px;\n  min-width: 2.625rem;\n  height: 21px;\n  height: 1.3125rem;\n  line-height: 21px;\n  line-height: 1.3125rem;\n  text-indent: 50px;\n  text-indent: 3.125rem;\n}\n\n.switch.switch-sm input + label::before,\n      .switch.switch-sm input + label::after {\n  width: 42px;\n  width: 2.625rem;\n}\n\n.switch.switch-sm input + label::after {\n  width: calc(1.3125rem - 4px);\n  height: calc(1.3125rem - 4px);\n}\n\n.switch.switch-sm input:checked + label::after {\n  margin-left: 21px;\n  margin-left: 1.3125rem;\n}\n\n.switch.switch-lg {\n  font-size: 20px;\n  font-size: 1.25rem;\n}\n\n.switch.switch-lg input + label {\n  min-width: 66px;\n  min-width: 4.125rem;\n  height: 33px;\n  height: 2.0625rem;\n  line-height: 33px;\n  line-height: 2.0625rem;\n  text-indent: 74px;\n  text-indent: 4.625rem;\n}\n\n.switch.switch-lg input + label::before,\n      .switch.switch-lg input + label::after {\n  width: 66px;\n  width: 4.125rem;\n}\n\n.switch.switch-lg input + label::after {\n  width: calc(2.0625rem - 4px);\n  height: calc(2.0625rem - 4px);\n}\n\n.switch.switch-lg input:checked + label::after {\n  margin-left: 33px;\n  margin-left: 2.0625rem;\n}\n\n.switch.switch-xl {\n  font-size: 24px;\n  font-size: 1.5rem;\n}\n\n.switch.switch-xl input + label {\n  min-width: 78px;\n  min-width: 4.875rem;\n  height: 39px;\n  height: 2.4375rem;\n  line-height: 39px;\n  line-height: 2.4375rem;\n  text-indent: 86px;\n  text-indent: 5.375rem;\n}\n\n.switch.switch-xl input + label::before,\n      .switch.switch-xl input + label::after {\n  width: 78px;\n  width: 4.875rem;\n}\n\n.switch.switch-xl input + label::after {\n  width: calc(2.4375rem - 4px);\n  height: calc(2.4375rem - 4px);\n}\n\n.switch.switch-xl input:checked + label::after {\n  margin-left: 39px;\n  margin-left: 2.4375rem;\n}\n\n.switch {/*Variations\n*/\n}\n\n.switch.switch-secondary input {\n  background-color: #ddd;\n}\n\n.switch.switch-secondary input + label::after {\n  background-color: white;\n}\n\n.switch.switch-secondary input + label::before {\n  background-color: #ddd;\n}\n\n.switch.switch-secondary input:checked + label::before {\n  background-color: #aaa;\n}\n\n.switch.switch-secondary input:focus + label::before {\n  -webkit-box-shadow: 0 0 0 2px rgba(170, 170, 170, 0.5);\n          box-shadow: 0 0 0 2px rgba(170, 170, 170, 0.5);\n}\n\n.switch.switch-success input {\n  background-color: #ddd;\n}\n\n.switch.switch-success input + label::after {\n  background-color: white;\n}\n\n.switch.switch-success input + label::before {\n  background-color: #ddd;\n}\n\n.switch.switch-success input:checked + label::before {\n  background-color: #2ecc40;\n}\n\n.switch.switch-success input:focus + label::before {\n  -webkit-box-shadow: 0 0 0 2px rgba(46, 204, 64, 0.5);\n          box-shadow: 0 0 0 2px rgba(46, 204, 64, 0.5);\n}\n\n.switch.switch-info input {\n  background-color: #ddd;\n}\n\n.switch.switch-info input + label::after {\n  background-color: white;\n}\n\n.switch.switch-info input + label::before {\n  background-color: #ddd;\n}\n\n.switch.switch-info input:checked + label::before {\n  background-color: #39cccc;\n}\n\n.switch.switch-info input:focus + label::before {\n  -webkit-box-shadow: 0 0 0 2px rgba(57, 204, 204, 0.5);\n          box-shadow: 0 0 0 2px rgba(57, 204, 204, 0.5);\n}\n\n.switch.switch-warning input {\n  background-color: #ddd;\n}\n\n.switch.switch-warning input + label::after {\n  background-color: white;\n}\n\n.switch.switch-warning input + label::before {\n  background-color: #ddd;\n}\n\n.switch.switch-warning input:checked + label::before {\n  background-color: #ff851b;\n}\n\n.switch.switch-warning input:focus + label::before {\n  -webkit-box-shadow: 0 0 0 2px rgba(255, 133, 27, 0.5);\n          box-shadow: 0 0 0 2px rgba(255, 133, 27, 0.5);\n}\n\n.switch.switch-danger input {\n  background-color: #ddd;\n}\n\n.switch.switch-danger input + label::after {\n  background-color: white;\n}\n\n.switch.switch-danger input + label::before {\n  background-color: #ddd;\n}\n\n.switch.switch-danger input:checked + label::before {\n  background-color: #ff4136;\n}\n\n.switch.switch-danger input:focus + label::before {\n  -webkit-box-shadow: 0 0 0 2px rgba(255, 65, 54, 0.5);\n          box-shadow: 0 0 0 2px rgba(255, 65, 54, 0.5);\n}\n\n.switch.switch-light input {\n  background-color: rgb(230, 230, 230);\n}\n\n.switch.switch-light input + label::after {\n  background-color: white;\n}\n\n.switch.switch-light input + label::before {\n  background-color: rgb(230, 230, 230);\n}\n\n.switch.switch-light input:checked + label::before {\n  background-color: rgb(191, 191, 191);\n}\n\n.switch.switch-light input:focus + label::before {\n  -webkit-box-shadow: 0 0 0 2px rgba(191, 191, 191, 0.5);\n          box-shadow: 0 0 0 2px rgba(191, 191, 191, 0.5);\n}\n\n.switch.switch-dark input {\n  background-color: rgb(77, 77, 77);\n}\n\n.switch.switch-dark input + label::after {\n  background-color: white;\n}\n\n.switch.switch-dark input + label::before {\n  background-color: rgb(77, 77, 77);\n}\n\n.switch.switch-dark input:checked + label::before {\n  background-color: rgb(41, 41, 41);\n}\n\n.switch.switch-dark input:focus + label::before {\n  -webkit-box-shadow: 0 0 0 2px rgba(41, 41, 41, 0.5);\n          box-shadow: 0 0 0 2px rgba(41, 41, 41, 0.5);\n}\n\n/*! Tabs */\n\n.tabs {\n  width: 100%;\n  margin-bottom: 24px;\n  margin-bottom: 1.5rem\n}\n\n.tabs .tabs-nav {\n  margin-bottom: 24px;\n  margin-bottom: 1.5rem;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n}\n\n.tabs .tabs-nav a {\n  color: #0074d9;\n  text-decoration: none;\n  background-color: white;\n  border-radius: .25rem;\n  padding: 8px 16px;\n  padding: 0.5rem 1rem;\n  display: inline-block;\n  -webkit-transition: .1s box-shadow;\n  transition: .1s box-shadow;\n}\n\n.tabs .tabs-nav a:hover {\n  color: #0074d9;\n  background-color: white;\n  text-decoration: none;\n}\n\n.tabs .tabs-nav a.active {\n  color: white;\n  background-color: #0074d9;\n  cursor: default;\n}\n\n.tabs .tabs-nav a.disabled {\n  color: #aaa;\n  background-color: white;\n  cursor: not-allowed;\n}\n\n.tabs .tabs-nav.tabs-nav-block a {\n  display: block;\n}\n\n.tabs .tabs-pane {\n  border: solid 1px #ddd;\n  border-radius: .25rem;\n  padding: 16px 16px;\n  padding: 1rem 1rem;\n}\n\n.tabs .tabs-pane:not(.active) {\n  display: none;\n}\n\n.tabs .tabs-pane > :last-child {\n  margin-bottom: 0;\n}\n\n/*! Tables */\n\ntable {\n  width: 100%;\n  background-color: white;\n  border-collapse: collapse;\n  margin-bottom: 24px;\n  margin-bottom: 1.5rem\n}\n\ntable caption {\n  caption-side: bottom;\n  font-size: 80%;\n  color: #aaa;\n  text-align: center;\n  padding-top: 8px;\n  padding-top: .5rem;\n}\n\ntable th {\n  text-align: left;\n  background-color: transparent;\n  border-bottom: solid 2px #ddd;\n  padding: 8px 12px;\n  padding: .5rem .75rem;\n}\n\ntable td {\n  border-bottom: solid 1px #ddd;\n  padding: 8px 12px;\n  padding: .5rem .75rem;\n}\n\ntable {/*Variations\n*/\n}\n\ntable.table-bordered {\n  border: solid 1px #ddd;\n}\n\ntable.table-bordered td {\n  border-style: solid;\n  border-width: 1px;\n  border-color: #ddd;\n}\n\ntable.table-hoverable tbody tr:hover td {\n  color: white;\n  background-color: #0074d9;\n}\n\ntable.table-striped tr:nth-child(odd) td {\n  background-color: #f2f2f2;\n}\n\n/*! Utilties */\n\n/***************************************************************************************************\n* Text utilities\n***************************************************************************************************/\n\n/* Text color */\n\n.text-primary { color: #0074d9 !important; }\n\n.text-secondary { color: #aaa !important; }\n\n.text-success { color: #2ecc40 !important; }\n\n.text-success { color: #2ecc40 !important; }\n\n.text-info { color: #39cccc !important; }\n\n.text-warning { color: #ff851b !important; }\n\n.text-danger { color: #ff4136 !important; }\n\n.text-light { color: white !important; }\n\n.text-dark { color: #111 !important; }\n\n/* Text style */\n\n.text-small { font-size: 80% !important; }\n\n.text-bold { font-weight: 700 !important; }\n\n.text-italic { font-style: italic !important; }\n\n.text-muted { color: #aaa !important; }\n\n/* Text alignment */\n\n.text-left { text-align: left !important; }\n\n.text-right { text-align: right !important; }\n\n.text-center { text-align: center !important; }\n\n.text-justify { text-align: justify !important; }\n\n/* Text case */\n\n.text-lowercase { text-transform: lowercase !important; }\n\n.text-uppercase { text-transform: uppercase !important; }\n\n.text-capitalize { text-transform: capitalize !important; }\n\n/* Text wrapping */\n\n.text-nowrap { white-space: nowrap !important; }\n\n/***************************************************************************************************\n* Background utilities\n***************************************************************************************************/\n\n.bg-primary { background-color: #0074d9 !important; }\n\n.bg-secondary { background-color: #aaa !important; }\n\n.bg-success { background-color: #2ecc40 !important; }\n\n.bg-info { background-color: #39cccc !important; }\n\n.bg-warning { background-color: #ff851b !important; }\n\n.bg-danger { background-color: #ff4136 !important; }\n\n.bg-light { background-color: white !important; }\n\n.bg-dark { background-color: #111 !important; }\n\n/***************************************************************************************************\n* Display utilities\n***************************************************************************************************/\n\n@media only screen and (min-width: 0) and (max-width: 575px) { .hide-xs { display: none !important; } }\n\n@media only screen and (min-width: 0) { .hide-xs-up { display: none !important; } }\n\n@media only screen and (max-width: 575px) { .hide-xs-down { display: none !important; } }\n\n@media only screen and (min-width: 576px) and (max-width: 767px) { .hide-sm { display: none !important; } }\n\n@media only screen and (min-width: 576px) { .hide-sm-up { display: none !important; } }\n\n@media only screen and (max-width: 767px) { .hide-sm-down { display: none !important; } }\n\n@media only screen and (min-width: 768px) and (max-width: 991px) { .hide-md { display: none !important; } }\n\n@media only screen and (min-width: 768px) { .hide-md-up { display: none !important; } }\n\n@media only screen and (max-width: 991px) { .hide-md-down { display: none !important; } }\n\n@media only screen and (min-width: 992px) and (max-width: 1199px) { .hide-lg { display: none !important; } }\n\n@media only screen and (min-width: 992px) { .hide-lg-up { display: none !important; } }\n\n@media only screen and (max-width: 1199px) { .hide-lg-down { display: none !important; } }\n\n@media only screen and (min-width: 1200px) { .hide-xl { display: none !important; } }\n\n@media only screen and (min-width: 1200px) { .hide-xl-up { display: none !important; } }\n\n@media only screen and (min-width: 0) { .hide-xl-down { display: none !important; } }\n\n/***************************************************************************************************\n* Float utilities\n***************************************************************************************************/\n\n.clearfix::before,\n.clearfix::after {\n  content: '';\n  display: table;\n}\n\n.clearfix::after {\n  clear: both;\n}\n\n.float-left {\n  float: left !important;\n}\n\n.float-right {\n  float: right !important;\n}\n\n/***************************************************************************************************\n* Sizing utilities\n***************************************************************************************************/\n\n.w-0 { width: 0% !important; }\n\n.w-5 { width: 5% !important; }\n\n.w-10 { width: 10% !important; }\n\n.w-15 { width: 15% !important; }\n\n.w-20 { width: 20% !important; }\n\n.w-25 { width: 25% !important; }\n\n.w-30 { width: 30% !important; }\n\n.w-35 { width: 35% !important; }\n\n.w-40 { width: 40% !important; }\n\n.w-45 { width: 45% !important; }\n\n.w-50 { width: 50% !important; }\n\n.w-55 { width: 55% !important; }\n\n.w-60 { width: 60% !important; }\n\n.w-65 { width: 65% !important; }\n\n.w-70 { width: 70% !important; }\n\n.w-75 { width: 75% !important; }\n\n.w-80 { width: 80% !important; }\n\n.w-85 { width: 85% !important; }\n\n.w-90 { width: 90% !important; }\n\n.w-95 { width: 95% !important; }\n\n.w-100 { width: 100% !important; }\n\n.h-0 { height: 0% !important; }\n\n.h-5 { height: 5% !important; }\n\n.h-10 { height: 10% !important; }\n\n.h-15 { height: 15% !important; }\n\n.h-20 { height: 20% !important; }\n\n.h-25 { height: 25% !important; }\n\n.h-30 { height: 30% !important; }\n\n.h-35 { height: 35% !important; }\n\n.h-40 { height: 40% !important; }\n\n.h-45 { height: 45% !important; }\n\n.h-50 { height: 50% !important; }\n\n.h-55 { height: 55% !important; }\n\n.h-60 { height: 60% !important; }\n\n.h-65 { height: 65% !important; }\n\n.h-70 { height: 70% !important; }\n\n.h-75 { height: 75% !important; }\n\n.h-80 { height: 80% !important; }\n\n.h-85 { height: 85% !important; }\n\n.h-90 { height: 90% !important; }\n\n.h-95 { height: 95% !important; }\n\n.h-100 { height: 100% !important; }\n\n.w-max-100 { max-width: 100% !important; }\n\n.h-max-100 { max-width: 100% !important; }\n\n/***************************************************************************************************\n* Spacing utilities\n***************************************************************************************************/\n\n.pad-0 { padding: 0 !important; }\n\n.pad-x-0 { padding-left: 0 !important; padding-right: 0 !important; }\n\n.pad-y-0 { padding-top: 0 !important; padding-bottom: 0 !important; }\n\n.pad-t-0 { padding-top: 0 !important; }\n\n.pad-r-0 { padding-right: 0 !important; }\n\n.pad-b-0 { padding-bottom: 0 !important; }\n\n.pad-l-0 { padding-left: 0 !important; }\n\n.pad-xs { padding: 8px !important; padding: .5rem !important; }\n\n.pad-x-xs { padding-left: 8px !important; padding-left: .5rem !important; padding-right: 8px !important; padding-right: .5rem !important; }\n\n.pad-y-xs { padding-top: 8px !important; padding-top: .5rem !important; padding-bottom: 8px !important; padding-bottom: .5rem !important; }\n\n.pad-t-xs { padding-top: 8px !important; padding-top: .5rem !important; }\n\n.pad-r-xs { padding-right: 8px !important; padding-right: .5rem !important; }\n\n.pad-b-xs { padding-bottom: 8px !important; padding-bottom: .5rem !important; }\n\n.pad-l-xs { padding-left: 8px !important; padding-left: .5rem !important; }\n\n.pad-sm { padding: 16px !important; padding: 1rem !important; }\n\n.pad-x-sm { padding-left: 16px !important; padding-left: 1rem !important; padding-right: 16px !important; padding-right: 1rem !important; }\n\n.pad-y-sm { padding-top: 16px !important; padding-top: 1rem !important; padding-bottom: 16px !important; padding-bottom: 1rem !important; }\n\n.pad-t-sm { padding-top: 16px !important; padding-top: 1rem !important; }\n\n.pad-r-sm { padding-right: 16px !important; padding-right: 1rem !important; }\n\n.pad-b-sm { padding-bottom: 16px !important; padding-bottom: 1rem !important; }\n\n.pad-l-sm { padding-left: 16px !important; padding-left: 1rem !important; }\n\n.pad-md { padding: 24px !important; padding: 1.5rem !important; }\n\n.pad-x-md { padding-left: 24px !important; padding-left: 1.5rem !important; padding-right: 24px !important; padding-right: 1.5rem !important; }\n\n.pad-y-md { padding-top: 24px !important; padding-top: 1.5rem !important; padding-bottom: 24px !important; padding-bottom: 1.5rem !important; }\n\n.pad-t-md { padding-top: 24px !important; padding-top: 1.5rem !important; }\n\n.pad-r-md { padding-right: 24px !important; padding-right: 1.5rem !important; }\n\n.pad-b-md { padding-bottom: 24px !important; padding-bottom: 1.5rem !important; }\n\n.pad-l-md { padding-left: 24px !important; padding-left: 1.5rem !important; }\n\n.pad-lg { padding: 32px !important; padding: 2rem !important; }\n\n.pad-x-lg { padding-left: 32px !important; padding-left: 2rem !important; padding-right: 32px !important; padding-right: 2rem !important; }\n\n.pad-y-lg { padding-top: 32px !important; padding-top: 2rem !important; padding-bottom: 32px !important; padding-bottom: 2rem !important; }\n\n.pad-t-lg { padding-top: 32px !important; padding-top: 2rem !important; }\n\n.pad-r-lg { padding-right: 32px !important; padding-right: 2rem !important; }\n\n.pad-b-lg { padding-bottom: 32px !important; padding-bottom: 2rem !important; }\n\n.pad-l-lg { padding-left: 32px !important; padding-left: 2rem !important; }\n\n.pad-xl { padding: 40px !important; padding: 2.5rem !important; }\n\n.pad-x-xl { padding-left: 40px !important; padding-left: 2.5rem !important; padding-right: 40px !important; padding-right: 2.5rem !important; }\n\n.pad-y-xl { padding-top: 40px !important; padding-top: 2.5rem !important; padding-bottom: 40px !important; padding-bottom: 2.5rem !important; }\n\n.pad-t-xl { padding-top: 40px !important; padding-top: 2.5rem !important; }\n\n.pad-r-xl { padding-right: 40px !important; padding-right: 2.5rem !important; }\n\n.pad-b-xl { padding-bottom: 40px !important; padding-bottom: 2.5rem !important; }\n\n.pad-l-xl { padding-left: 40px !important; padding-left: 2.5rem !important; }\n\n.mar-0 { margin: 0 !important; }\n\n.mar-x-0 { margin-left: 0 !important; margin-right: 0 !important; }\n\n.mar-y-0 { margin-top: 0 !important; margin-bottom: 0 !important; }\n\n.mar-t-0 { margin-top: 0 !important; }\n\n.mar-r-0 { margin-right: 0 !important; }\n\n.mar-b-0 { margin-bottom: 0 !important; }\n\n.mar-l-0 { margin-left: 0 !important; }\n\n.mar-xs { margin: 8px !important; margin: .5rem !important; }\n\n.mar-x-xs { margin-left: 8px !important; margin-left: .5rem !important; margin-right: 8px !important; margin-right: .5rem !important; }\n\n.mar-y-xs { margin-top: 8px !important; margin-top: .5rem !important; margin-bottom: 8px !important; margin-bottom: .5rem !important; }\n\n.mar-t-xs { margin-top: 8px !important; margin-top: .5rem !important; }\n\n.mar-r-xs { margin-right: 8px !important; margin-right: .5rem !important; }\n\n.mar-b-xs { margin-bottom: 8px !important; margin-bottom: .5rem !important; }\n\n.mar-l-xs { margin-left: 8px !important; margin-left: .5rem !important; }\n\n.mar-sm { margin: 16px !important; margin: 1rem !important; }\n\n.mar-x-sm { margin-left: 16px !important; margin-left: 1rem !important; margin-right: 16px !important; margin-right: 1rem !important; }\n\n.mar-y-sm { margin-top: 16px !important; margin-top: 1rem !important; margin-bottom: 16px !important; margin-bottom: 1rem !important; }\n\n.mar-t-sm { margin-top: 16px !important; margin-top: 1rem !important; }\n\n.mar-r-sm { margin-right: 16px !important; margin-right: 1rem !important; }\n\n.mar-b-sm { margin-bottom: 16px !important; margin-bottom: 1rem !important; }\n\n.mar-l-sm { margin-left: 16px !important; margin-left: 1rem !important; }\n\n.mar-md { margin: 24px !important; margin: 1.5rem !important; }\n\n.mar-x-md { margin-left: 24px !important; margin-left: 1.5rem !important; margin-right: 24px !important; margin-right: 1.5rem !important; }\n\n.mar-y-md { margin-top: 24px !important; margin-top: 1.5rem !important; margin-bottom: 24px !important; margin-bottom: 1.5rem !important; }\n\n.mar-t-md { margin-top: 24px !important; margin-top: 1.5rem !important; }\n\n.mar-r-md { margin-right: 24px !important; margin-right: 1.5rem !important; }\n\n.mar-b-md { margin-bottom: 24px !important; margin-bottom: 1.5rem !important; }\n\n.mar-l-md { margin-left: 24px !important; margin-left: 1.5rem !important; }\n\n.mar-lg { margin: 32px !important; margin: 2rem !important; }\n\n.mar-x-lg { margin-left: 32px !important; margin-left: 2rem !important; margin-right: 32px !important; margin-right: 2rem !important; }\n\n.mar-y-lg { margin-top: 32px !important; margin-top: 2rem !important; margin-bottom: 32px !important; margin-bottom: 2rem !important; }\n\n.mar-t-lg { margin-top: 32px !important; margin-top: 2rem !important; }\n\n.mar-r-lg { margin-right: 32px !important; margin-right: 2rem !important; }\n\n.mar-b-lg { margin-bottom: 32px !important; margin-bottom: 2rem !important; }\n\n.mar-l-lg { margin-left: 32px !important; margin-left: 2rem !important; }\n\n.mar-xl { margin: 40px !important; margin: 2.5rem !important; }\n\n.mar-x-xl { margin-left: 40px !important; margin-left: 2.5rem !important; margin-right: 40px !important; margin-right: 2.5rem !important; }\n\n.mar-y-xl { margin-top: 40px !important; margin-top: 2.5rem !important; margin-bottom: 40px !important; margin-bottom: 2.5rem !important; }\n\n.mar-t-xl { margin-top: 40px !important; margin-top: 2.5rem !important; }\n\n.mar-r-xl { margin-right: 40px !important; margin-right: 2.5rem !important; }\n\n.mar-b-xl { margin-bottom: 40px !important; margin-bottom: 2.5rem !important; }\n\n.mar-l-xl { margin-left: 40px !important; margin-left: 2.5rem !important; }\n\n.mar-x-auto { margin-left: auto !important; margin-right: auto !important; }\n\n.mar-y-auto { margin-top: auto !important; margin-bottom: auto !important; }\n\n.mar-xy-auto { margin: auto !important; }\n\n:root {\n  /*************************************************************************************************\n  * Core variables\n  *************************************************************************************************/\n\n  /* Fonts */\n\n  /* Colors (most courtesy of http://clrs.cc/) */\n\n  /* States */\n\n  /* Components */\n\n  /*************************************************************************************************\n  * Alerts\n  *************************************************************************************************/\n\n  /* Default */\n\n  /* Secondary */\n\n  /* Success */\n\n  /* Info */\n\n  /* Warning */\n\n  /* Danger */\n\n  /* Light */\n\n  /* Dark */\n\n  /*************************************************************************************************\n  * Badges\n  *************************************************************************************************/ /* ems for relative sizing */  /* ems for relative sizing */\n\n  /* Default */\n\n  /* Secondary */\n\n  /* Success */\n\n  /* Info */\n\n  /* Warning */\n\n  /* Danger */\n\n  /* Light */\n\n  /* Dark */\n\n  /*************************************************************************************************\n  * Buttons\n  *************************************************************************************************/\n\n  /* Default */\n\n  /* Secondary */\n\n  /* Success */\n\n  /* Info */\n\n  /* Warning */\n\n  /* Danger */\n\n  /* Light */\n\n  /* Dark */\n\n  /*************************************************************************************************\n  * Content\n  *************************************************************************************************/ /* Most browsers use a default font size of 16px */\n\n  /*************************************************************************************************\n  * Dropdowns\n  *************************************************************************************************/\n\n  /*************************************************************************************************\n  * Forms\n  *************************************************************************************************/\n\n  /*************************************************************************************************\n  * Grid\n  *************************************************************************************************/\n\n  /*************************************************************************************************\n  * Loaders\n  *************************************************************************************************/\n\n  /* Default */\n\n  /* Secondary */\n\n  /* Success */\n\n  /* Info */\n\n  /* Warning */\n\n  /* Danger */\n\n  /* Light */\n\n  /* Dark */\n\n  /*************************************************************************************************\n  * Progress Bars\n  *************************************************************************************************/\n\n  /*************************************************************************************************\n  * Switches\n  *************************************************************************************************/\n\n  /* Default */\n\n  /* Secondary */\n\n  /* Success */\n\n  /* Info */\n\n  /* Warning */\n\n  /* Danger */\n\n  /* Light */\n\n  /* Dark */\n\n  /*************************************************************************************************\n  * Tables\n  *************************************************************************************************/\n\n  /*************************************************************************************************\n  * Tabs\n  *************************************************************************************************/\n\n  /*************************************************************************************************\n  * Utilities\n  *************************************************************************************************/\n}\n\n/* Core breakpoints */\n\n/* BASICS */\n\n.CodeMirror {\n  /* Set height, width, borders, and global font properties here */\n  font-family: monospace;\n  height: 300px;\n  color: black;\n  direction: ltr;\n}\n\n/* PADDING */\n\n.CodeMirror-lines {\n  padding: 4px 0; /* Vertical padding around content */\n}\n\n.CodeMirror pre {\n  padding: 0 4px; /* Horizontal padding of content */\n}\n\n.CodeMirror-scrollbar-filler, .CodeMirror-gutter-filler {\n  background-color: white; /* The little square between H and V scrollbars */\n}\n\n/* GUTTER */\n\n.CodeMirror-gutters {\n  border-right: 1px solid #ddd;\n  background-color: #f7f7f7;\n  white-space: nowrap;\n}\n\n.CodeMirror-linenumbers {}\n\n.CodeMirror-linenumber {\n  padding: 0 3px 0 5px;\n  min-width: 20px;\n  text-align: right;\n  color: #999;\n  white-space: nowrap;\n}\n\n.CodeMirror-guttermarker { color: black; }\n\n.CodeMirror-guttermarker-subtle { color: #999; }\n\n/* CURSOR */\n\n.CodeMirror-cursor {\n  border-left: 1px solid black;\n  border-right: none;\n  width: 0;\n}\n\n/* Shown when moving in bi-directional text */\n\n.CodeMirror div.CodeMirror-secondarycursor {\n  border-left: 1px solid silver;\n}\n\n.cm-fat-cursor .CodeMirror-cursor {\n  width: auto;\n  border: 0 !important;\n  background: #7e7;\n}\n\n.cm-fat-cursor div.CodeMirror-cursors {\n  z-index: 1;\n}\n\n.cm-fat-cursor-mark {\n  background-color: rgba(20, 255, 20, .5);\n  -webkit-animation: blink 1.06s steps(1) infinite;\n  animation: blink 1.06s steps(1) infinite;\n}\n\n.cm-animate-fat-cursor {\n  width: auto;\n  border: 0;\n  -webkit-animation: blink 1.06s steps(1) infinite;\n  animation: blink 1.06s steps(1) infinite;\n  background-color: #7e7;\n}\n\n@-webkit-keyframes blink {\n  0% {}\n  50% { background-color: transparent; }\n  100% {}\n}\n\n@keyframes blink {\n  0% {}\n  50% { background-color: transparent; }\n  100% {}\n}\n\n/* Can style cursor different in overwrite (non-insert) mode */\n\n.CodeMirror-overwrite .CodeMirror-cursor {}\n\n.cm-tab { display: inline-block; text-decoration: inherit; }\n\n.CodeMirror-rulers {\n  position: absolute;\n  left: 0; right: 0; top: -50px; bottom: -20px;\n  overflow: hidden;\n}\n\n.CodeMirror-ruler {\n  border-left: 1px solid #ccc;\n  top: 0; bottom: 0;\n  position: absolute;\n}\n\n/* DEFAULT THEME */\n\n.cm-s-default .cm-header {color: blue;}\n\n.cm-s-default .cm-quote {color: #090;}\n\n.cm-negative {color: #d44;}\n\n.cm-positive {color: #292;}\n\n.cm-header, .cm-strong {font-weight: bold;}\n\n.cm-em {font-style: italic;}\n\n.cm-link {text-decoration: underline;}\n\n.cm-strikethrough {text-decoration: line-through;}\n\n.cm-s-default .cm-keyword {color: #708;}\n\n.cm-s-default .cm-atom {color: #219;}\n\n.cm-s-default .cm-number {color: #164;}\n\n.cm-s-default .cm-def {color: #00f;}\n\n.cm-s-default .cm-variable,\n.cm-s-default .cm-punctuation,\n.cm-s-default .cm-property,\n.cm-s-default .cm-operator {}\n\n.cm-s-default .cm-variable-2 {color: #05a;}\n\n.cm-s-default .cm-variable-3, .cm-s-default .cm-type {color: #085;}\n\n.cm-s-default .cm-comment {color: #a50;}\n\n.cm-s-default .cm-string {color: #a11;}\n\n.cm-s-default .cm-string-2 {color: #f50;}\n\n.cm-s-default .cm-meta {color: #555;}\n\n.cm-s-default .cm-qualifier {color: #555;}\n\n.cm-s-default .cm-builtin {color: #30a;}\n\n.cm-s-default .cm-bracket {color: #997;}\n\n.cm-s-default .cm-tag {color: #170;}\n\n.cm-s-default .cm-attribute {color: #00c;}\n\n.cm-s-default .cm-hr {color: #999;}\n\n.cm-s-default .cm-link {color: #00c;}\n\n.cm-s-default .cm-error {color: #f00;}\n\n.cm-invalidchar {color: #f00;}\n\n.CodeMirror-composing { border-bottom: 2px solid; }\n\n/* Default styles for common addons */\n\ndiv.CodeMirror span.CodeMirror-matchingbracket {color: #0b0;}\n\ndiv.CodeMirror span.CodeMirror-nonmatchingbracket {color: #a22;}\n\n.CodeMirror-matchingtag { background: rgba(255, 150, 0, .3); }\n\n.CodeMirror-activeline-background {background: #e8f2ff;}\n\n/* STOP */\n\n/* The rest of this file contains styles related to the mechanics of\n   the editor. You probably shouldn't touch them. */\n\n.CodeMirror {\n  position: relative;\n  overflow: hidden;\n  background: white;\n}\n\n.CodeMirror-scroll {\n  overflow: scroll !important; /* Things will break if this is overridden */\n  /* 30px is the magic margin used to hide the element's real scrollbars */\n  /* See overflow: hidden in .CodeMirror */\n  margin-bottom: -30px; margin-right: -30px;\n  padding-bottom: 30px;\n  height: 100%;\n  outline: none; /* Prevent dragging from highlighting the element */\n  position: relative;\n}\n\n.CodeMirror-sizer {\n  position: relative;\n  border-right: 30px solid transparent;\n}\n\n/* The fake, visible scrollbars. Used to force redraw during scrolling\n   before actual scrolling happens, thus preventing shaking and\n   flickering artifacts. */\n\n.CodeMirror-vscrollbar, .CodeMirror-hscrollbar, .CodeMirror-scrollbar-filler, .CodeMirror-gutter-filler {\n  position: absolute;\n  z-index: 6;\n  display: none;\n}\n\n.CodeMirror-vscrollbar {\n  right: 0; top: 0;\n  overflow-x: hidden;\n  overflow-y: scroll;\n}\n\n.CodeMirror-hscrollbar {\n  bottom: 0; left: 0;\n  overflow-y: hidden;\n  overflow-x: scroll;\n}\n\n.CodeMirror-scrollbar-filler {\n  right: 0; bottom: 0;\n}\n\n.CodeMirror-gutter-filler {\n  left: 0; bottom: 0;\n}\n\n.CodeMirror-gutters {\n  position: absolute; left: 0; top: 0;\n  min-height: 100%;\n  z-index: 3;\n}\n\n.CodeMirror-gutter {\n  white-space: normal;\n  height: 100%;\n  display: inline-block;\n  vertical-align: top;\n  margin-bottom: -30px;\n}\n\n.CodeMirror-gutter-wrapper {\n  position: absolute;\n  z-index: 4;\n  background: none !important;\n  border: none !important;\n}\n\n.CodeMirror-gutter-background {\n  position: absolute;\n  top: 0; bottom: 0;\n  z-index: 4;\n}\n\n.CodeMirror-gutter-elt {\n  position: absolute;\n  cursor: default;\n  z-index: 4;\n}\n\n.CodeMirror-gutter-wrapper ::-moz-selection { background-color: transparent }\n\n.CodeMirror-gutter-wrapper ::selection { background-color: transparent }\n\n.CodeMirror-gutter-wrapper ::-moz-selection { background-color: transparent }\n\n.CodeMirror-lines {\n  cursor: text;\n  min-height: 1px; /* prevents collapsing before first draw */\n}\n\n.CodeMirror pre {\n  /* Reset some styles that the rest of the page might have set */ border-radius: 0;\n  border-width: 0;\n  background: transparent;\n  font-family: inherit;\n  font-size: inherit;\n  margin: 0;\n  white-space: pre;\n  word-wrap: normal;\n  line-height: inherit;\n  color: inherit;\n  z-index: 2;\n  position: relative;\n  overflow: visible;\n  -webkit-tap-highlight-color: transparent;\n  -webkit-font-variant-ligatures: contextual;\n  -webkit-font-feature-settings: \"calt\";\n          font-feature-settings: \"calt\";\n  font-variant-ligatures: contextual;\n}\n\n.CodeMirror-wrap pre {\n  word-wrap: break-word;\n  white-space: pre-wrap;\n  word-break: normal;\n}\n\n.CodeMirror-linebackground {\n  position: absolute;\n  left: 0; right: 0; top: 0; bottom: 0;\n  z-index: 0;\n}\n\n.CodeMirror-linewidget {\n  position: relative;\n  z-index: 2;\n  padding: 0.1px; /* Force widget margins to stay inside of the container */\n}\n\n.CodeMirror-widget {}\n\n.CodeMirror-rtl pre { direction: rtl; }\n\n.CodeMirror-code {\n  outline: none;\n}\n\n/* Force content-box sizing for the elements where we expect it */\n\n.CodeMirror-scroll,\n.CodeMirror-sizer,\n.CodeMirror-gutter,\n.CodeMirror-gutters,\n.CodeMirror-linenumber {\n  -webkit-box-sizing: content-box;\n          box-sizing: content-box;\n}\n\n.CodeMirror-measure {\n  position: absolute;\n  width: 100%;\n  height: 0;\n  overflow: hidden;\n  visibility: hidden;\n}\n\n.CodeMirror-cursor {\n  position: absolute;\n  pointer-events: none;\n}\n\n.CodeMirror-measure pre { position: static; }\n\ndiv.CodeMirror-cursors {\n  visibility: hidden;\n  position: relative;\n  z-index: 3;\n}\n\ndiv.CodeMirror-dragcursors {\n  visibility: visible;\n}\n\n.CodeMirror-focused div.CodeMirror-cursors {\n  visibility: visible;\n}\n\n.CodeMirror-selected { background: #d9d9d9; }\n\n.CodeMirror-focused .CodeMirror-selected { background: #d7d4f0; }\n\n.CodeMirror-crosshair { cursor: crosshair; }\n\n.CodeMirror-line::-moz-selection, .CodeMirror-line > span::-moz-selection, .CodeMirror-line > span > span::-moz-selection { background: #d7d4f0; }\n\n.CodeMirror-line::selection, .CodeMirror-line > span::selection, .CodeMirror-line > span > span::selection { background: #d7d4f0; }\n\n.CodeMirror-line::-moz-selection, .CodeMirror-line > span::-moz-selection, .CodeMirror-line > span > span::-moz-selection { background: #d7d4f0; }\n\n.cm-searching {\n  background-color: #ffa;\n  background-color: rgba(255, 255, 0, .4);\n}\n\n/* Used to force a border model for a node */\n\n.cm-force-border { padding-right: .1px; }\n\n@media print {\n  /* Hide the cursor when printing */\n  .CodeMirror div.CodeMirror-cursors {\n    visibility: hidden;\n  }\n}\n\n/* See issue #2901 */\n\n.cm-tab-wrap-hack:after { content: ''; }\n\n/* Help users use markselection to safely style text background */\n\nspan.CodeMirror-selectedtext { background: none; }\n\n.CodeMirror-merge {\n  position: relative;\n  border: 1px solid #ddd;\n  white-space: pre;\n}\n\n.CodeMirror-merge, .CodeMirror-merge .CodeMirror {\n  height: 350px;\n}\n\n.CodeMirror-merge-2pane .CodeMirror-merge-pane { width: 47%; }\n\n.CodeMirror-merge-2pane .CodeMirror-merge-gap { width: 6%; }\n\n.CodeMirror-merge-3pane .CodeMirror-merge-pane { width: 31%; }\n\n.CodeMirror-merge-3pane .CodeMirror-merge-gap { width: 3.5%; }\n\n.CodeMirror-merge-pane {\n  display: inline-block;\n  white-space: normal;\n  vertical-align: top;\n}\n\n.CodeMirror-merge-pane-rightmost {\n  position: absolute;\n  right: 0px;\n  z-index: 1;\n}\n\n.CodeMirror-merge-gap {\n  z-index: 2;\n  display: inline-block;\n  height: 100%;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  overflow: hidden;\n  border-left: 1px solid #ddd;\n  border-right: 1px solid #ddd;\n  position: relative;\n  background: #f8f8f8;\n}\n\n.CodeMirror-merge-scrolllock-wrap {\n  position: absolute;\n  bottom: 0; left: 50%;\n}\n\n.CodeMirror-merge-scrolllock {\n  position: relative;\n  left: -50%;\n  cursor: pointer;\n  color: #555;\n  line-height: 1;\n}\n\n.CodeMirror-merge-copybuttons-left, .CodeMirror-merge-copybuttons-right {\n  position: absolute;\n  left: 0; top: 0;\n  right: 0; bottom: 0;\n  line-height: 1;\n}\n\n.CodeMirror-merge-copy {\n  position: absolute;\n  cursor: pointer;\n  color: #44c;\n  z-index: 3;\n}\n\n.CodeMirror-merge-copy-reverse {\n  position: absolute;\n  cursor: pointer;\n  color: #44c;\n}\n\n.CodeMirror-merge-copybuttons-left .CodeMirror-merge-copy { left: 2px; }\n\n.CodeMirror-merge-copybuttons-right .CodeMirror-merge-copy { right: 2px; }\n\n.CodeMirror-merge-r-inserted, .CodeMirror-merge-l-inserted {\n  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAAGUlEQVQI12MwuCXy3+CWyH8GBgYGJgYkAABZbAQ9ELXurwAAAABJRU5ErkJggg==);\n  background-position: bottom left;\n  background-repeat: repeat-x;\n}\n\n.CodeMirror-merge-r-deleted, .CodeMirror-merge-l-deleted {\n  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAAGUlEQVQI12M4Kyb2/6yY2H8GBgYGJgYkAABURgPz6Ks7wQAAAABJRU5ErkJggg==);\n  background-position: bottom left;\n  background-repeat: repeat-x;\n}\n\n.CodeMirror-merge-r-chunk { background: #ffffe0; }\n\n.CodeMirror-merge-r-chunk-start { border-top: 1px solid #ee8; }\n\n.CodeMirror-merge-r-chunk-end { border-bottom: 1px solid #ee8; }\n\n.CodeMirror-merge-r-connect { fill: #ffffe0; stroke: #ee8; stroke-width: 1px; }\n\n.CodeMirror-merge-l-chunk { background: #eef; }\n\n.CodeMirror-merge-l-chunk-start { border-top: 1px solid #88e; }\n\n.CodeMirror-merge-l-chunk-end { border-bottom: 1px solid #88e; }\n\n.CodeMirror-merge-l-connect { fill: #eef; stroke: #88e; stroke-width: 1px; }\n\n.CodeMirror-merge-l-chunk.CodeMirror-merge-r-chunk { background: #dfd; }\n\n.CodeMirror-merge-l-chunk-start.CodeMirror-merge-r-chunk-start { border-top: 1px solid #4e4; }\n\n.CodeMirror-merge-l-chunk-end.CodeMirror-merge-r-chunk-end { border-bottom: 1px solid #4e4; }\n\n.CodeMirror-merge-collapsed-widget:before {\n  content: \"(...)\";\n}\n\n.CodeMirror-merge-collapsed-widget {\n  cursor: pointer;\n  color: #88b;\n  background: #eef;\n  border: 1px solid #ddf;\n  font-size: 90%;\n  padding: 0 3px;\n  border-radius: 4px;\n}\n\n.CodeMirror-merge-collapsed-line .CodeMirror-gutter-elt { display: none; }\n\n.CodeMirror-hints {\n  position: absolute;\n  z-index: 10;\n  overflow: hidden;\n  list-style: none;\n\n  margin: 0;\n  padding: 2px;\n\n  -webkit-box-shadow: 2px 3px 5px rgba(0, 0, 0, .2);\n  box-shadow: 2px 3px 5px rgba(0, 0, 0, .2);\n  border-radius: 3px;\n  border: 1px solid silver;\n\n  background: white;\n  font-size: 90%;\n  font-family: monospace;\n\n  max-height: 20em;\n  overflow-y: auto;\n}\n\n.CodeMirror-hint {\n  margin: 0;\n  padding: 0 4px;\n  border-radius: 2px;\n  white-space: pre;\n  color: black;\n  cursor: pointer;\n}\n\nli.CodeMirror-hint-active {\n  background: #08f;\n  color: white;\n}\n\n.l-body {\n    height: 100vh;\n    width: 100vw;\n    display: grid;\n    grid-template-rows: 48px 1fr;\n    grid-template-columns: 200px 1fr;\n    grid-template-areas:\n        \"logo searchbar\"\n        \"sidebar main\";\n\n    font-family: 'Work Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;\n}\n\n.l-logo {\n    grid-area: logo;\n    background-color: #7FDBFF;\n    line-height: 48px;\n}\n\n.l-searchbar {\n    grid-area: searchbar;\n}\n\n.l-sidebar {\n    grid-area: sidebar;\n    background-color: #7FDBFF;\n}\n\n.l-main {\n    grid-area: main;\n    overflow: auto;\n}\n\n.searchbar {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n}\n\n.searchbar__input {\n    -webkit-box-flex: 1;\n        -ms-flex-positive: 1;\n            flex-grow: 1;\n}\n\n.logo {\n    text-align: center;\n    font-size: 20px;\n}\n\n.form-group {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: column;\n            flex-direction: column;\n    margin-bottom: 8px;\n}\n\n.form-group__label {\n    -ms-flex-preferred-size: 16px;\n        flex-basis: 16px;\n    line-height: 16px;\n}\n\n.form-group__control {\n    -webkit-box-flex: 1;\n        -ms-flex-positive: 1;\n            flex-grow: 1;\n}\n", ""]);
-
-// exports
-
-
-/***/ }),
-/* 3 */
-/***/ (function(module, exports) {
-
-/*
-	MIT License http://www.opensource.org/licenses/mit-license.php
-	Author Tobias Koppers @sokra
-*/
-// css base code, injected by the css-loader
-module.exports = function(useSourceMap) {
-	var list = [];
-
-	// return the list of modules as css string
-	list.toString = function toString() {
-		return this.map(function (item) {
-			var content = cssWithMappingToString(item, useSourceMap);
-			if(item[2]) {
-				return "@media " + item[2] + "{" + content + "}";
-			} else {
-				return content;
-			}
-		}).join("");
-	};
-
-	// import a list of modules into the list
-	list.i = function(modules, mediaQuery) {
-		if(typeof modules === "string")
-			modules = [[null, modules, ""]];
-		var alreadyImportedModules = {};
-		for(var i = 0; i < this.length; i++) {
-			var id = this[i][0];
-			if(typeof id === "number")
-				alreadyImportedModules[id] = true;
-		}
-		for(i = 0; i < modules.length; i++) {
-			var item = modules[i];
-			// skip already imported module
-			// this implementation is not 100% perfect for weird media query combinations
-			//  when a module is imported multiple times with different media queries.
-			//  I hope this will never occur (Hey this way we have smaller bundles)
-			if(typeof item[0] !== "number" || !alreadyImportedModules[item[0]]) {
-				if(mediaQuery && !item[2]) {
-					item[2] = mediaQuery;
-				} else if(mediaQuery) {
-					item[2] = "(" + item[2] + ") and (" + mediaQuery + ")";
-				}
-				list.push(item);
-			}
-		}
-	};
-	return list;
-};
-
-function cssWithMappingToString(item, useSourceMap) {
-	var content = item[1] || '';
-	var cssMapping = item[3];
-	if (!cssMapping) {
-		return content;
-	}
-
-	if (useSourceMap && typeof btoa === 'function') {
-		var sourceMapping = toComment(cssMapping);
-		var sourceURLs = cssMapping.sources.map(function (source) {
-			return '/*# sourceURL=' + cssMapping.sourceRoot + source + ' */'
-		});
-
-		return [content].concat(sourceURLs).concat([sourceMapping]).join('\n');
-	}
-
-	return [content].join('\n');
-}
-
-// Adapted from convert-source-map (MIT)
-function toComment(sourceMap) {
-	// eslint-disable-next-line no-undef
-	var base64 = btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap))));
-	var data = 'sourceMappingURL=data:application/json;charset=utf-8;base64,' + base64;
-
-	return '/*# ' + data + ' */';
-}
-
-
-/***/ }),
-/* 4 */
-/***/ (function(module, exports, __webpack_require__) {
-
-/*
-	MIT License http://www.opensource.org/licenses/mit-license.php
-	Author Tobias Koppers @sokra
-*/
-
-var stylesInDom = {};
-
-var	memoize = function (fn) {
-	var memo;
-
-	return function () {
-		if (typeof memo === "undefined") memo = fn.apply(this, arguments);
-		return memo;
-	};
-};
-
-var isOldIE = memoize(function () {
-	// Test for IE <= 9 as proposed by Browserhacks
-	// @see http://browserhacks.com/#hack-e71d8692f65334173fee715c222cb805
-	// Tests for existence of standard globals is to allow style-loader
-	// to operate correctly into non-standard environments
-	// @see https://github.com/webpack-contrib/style-loader/issues/177
-	return window && document && document.all && !window.atob;
-});
-
-var getTarget = function (target) {
-  return document.querySelector(target);
-};
-
-var getElement = (function (fn) {
-	var memo = {};
-
-	return function(target) {
-                // If passing function in options, then use it for resolve "head" element.
-                // Useful for Shadow Root style i.e
-                // {
-                //   insertInto: function () { return document.querySelector("#foo").shadowRoot }
-                // }
-                if (typeof target === 'function') {
-                        return target();
-                }
-                if (typeof memo[target] === "undefined") {
-			var styleTarget = getTarget.call(this, target);
-			// Special case to return head of iframe instead of iframe itself
-			if (window.HTMLIFrameElement && styleTarget instanceof window.HTMLIFrameElement) {
-				try {
-					// This will throw an exception if access to iframe is blocked
-					// due to cross-origin restrictions
-					styleTarget = styleTarget.contentDocument.head;
-				} catch(e) {
-					styleTarget = null;
-				}
-			}
-			memo[target] = styleTarget;
-		}
-		return memo[target]
-	};
-})();
-
-var singleton = null;
-var	singletonCounter = 0;
-var	stylesInsertedAtTop = [];
-
-var	fixUrls = __webpack_require__(5);
-
-module.exports = function(list, options) {
-	if (typeof DEBUG !== "undefined" && DEBUG) {
-		if (typeof document !== "object") throw new Error("The style-loader cannot be used in a non-browser environment");
-	}
-
-	options = options || {};
-
-	options.attrs = typeof options.attrs === "object" ? options.attrs : {};
-
-	// Force single-tag solution on IE6-9, which has a hard limit on the # of <style>
-	// tags it will allow on a page
-	if (!options.singleton && typeof options.singleton !== "boolean") options.singleton = isOldIE();
-
-	// By default, add <style> tags to the <head> element
-        if (!options.insertInto) options.insertInto = "head";
-
-	// By default, add <style> tags to the bottom of the target
-	if (!options.insertAt) options.insertAt = "bottom";
-
-	var styles = listToStyles(list, options);
-
-	addStylesToDom(styles, options);
-
-	return function update (newList) {
-		var mayRemove = [];
-
-		for (var i = 0; i < styles.length; i++) {
-			var item = styles[i];
-			var domStyle = stylesInDom[item.id];
-
-			domStyle.refs--;
-			mayRemove.push(domStyle);
-		}
-
-		if(newList) {
-			var newStyles = listToStyles(newList, options);
-			addStylesToDom(newStyles, options);
-		}
-
-		for (var i = 0; i < mayRemove.length; i++) {
-			var domStyle = mayRemove[i];
-
-			if(domStyle.refs === 0) {
-				for (var j = 0; j < domStyle.parts.length; j++) domStyle.parts[j]();
-
-				delete stylesInDom[domStyle.id];
-			}
-		}
-	};
-};
-
-function addStylesToDom (styles, options) {
-	for (var i = 0; i < styles.length; i++) {
-		var item = styles[i];
-		var domStyle = stylesInDom[item.id];
-
-		if(domStyle) {
-			domStyle.refs++;
-
-			for(var j = 0; j < domStyle.parts.length; j++) {
-				domStyle.parts[j](item.parts[j]);
-			}
-
-			for(; j < item.parts.length; j++) {
-				domStyle.parts.push(addStyle(item.parts[j], options));
-			}
-		} else {
-			var parts = [];
-
-			for(var j = 0; j < item.parts.length; j++) {
-				parts.push(addStyle(item.parts[j], options));
-			}
-
-			stylesInDom[item.id] = {id: item.id, refs: 1, parts: parts};
-		}
-	}
-}
-
-function listToStyles (list, options) {
-	var styles = [];
-	var newStyles = {};
-
-	for (var i = 0; i < list.length; i++) {
-		var item = list[i];
-		var id = options.base ? item[0] + options.base : item[0];
-		var css = item[1];
-		var media = item[2];
-		var sourceMap = item[3];
-		var part = {css: css, media: media, sourceMap: sourceMap};
-
-		if(!newStyles[id]) styles.push(newStyles[id] = {id: id, parts: [part]});
-		else newStyles[id].parts.push(part);
-	}
-
-	return styles;
-}
-
-function insertStyleElement (options, style) {
-	var target = getElement(options.insertInto)
-
-	if (!target) {
-		throw new Error("Couldn't find a style target. This probably means that the value for the 'insertInto' parameter is invalid.");
-	}
-
-	var lastStyleElementInsertedAtTop = stylesInsertedAtTop[stylesInsertedAtTop.length - 1];
-
-	if (options.insertAt === "top") {
-		if (!lastStyleElementInsertedAtTop) {
-			target.insertBefore(style, target.firstChild);
-		} else if (lastStyleElementInsertedAtTop.nextSibling) {
-			target.insertBefore(style, lastStyleElementInsertedAtTop.nextSibling);
-		} else {
-			target.appendChild(style);
-		}
-		stylesInsertedAtTop.push(style);
-	} else if (options.insertAt === "bottom") {
-		target.appendChild(style);
-	} else if (typeof options.insertAt === "object" && options.insertAt.before) {
-		var nextSibling = getElement(options.insertInto + " " + options.insertAt.before);
-		target.insertBefore(style, nextSibling);
-	} else {
-		throw new Error("[Style Loader]\n\n Invalid value for parameter 'insertAt' ('options.insertAt') found.\n Must be 'top', 'bottom', or Object.\n (https://github.com/webpack-contrib/style-loader#insertat)\n");
-	}
-}
-
-function removeStyleElement (style) {
-	if (style.parentNode === null) return false;
-	style.parentNode.removeChild(style);
-
-	var idx = stylesInsertedAtTop.indexOf(style);
-	if(idx >= 0) {
-		stylesInsertedAtTop.splice(idx, 1);
-	}
-}
-
-function createStyleElement (options) {
-	var style = document.createElement("style");
-
-	options.attrs.type = "text/css";
-
-	addAttrs(style, options.attrs);
-	insertStyleElement(options, style);
-
-	return style;
-}
-
-function createLinkElement (options) {
-	var link = document.createElement("link");
-
-	options.attrs.type = "text/css";
-	options.attrs.rel = "stylesheet";
-
-	addAttrs(link, options.attrs);
-	insertStyleElement(options, link);
-
-	return link;
-}
-
-function addAttrs (el, attrs) {
-	Object.keys(attrs).forEach(function (key) {
-		el.setAttribute(key, attrs[key]);
-	});
-}
-
-function addStyle (obj, options) {
-	var style, update, remove, result;
-
-	// If a transform function was defined, run it on the css
-	if (options.transform && obj.css) {
-	    result = options.transform(obj.css);
-
-	    if (result) {
-	    	// If transform returns a value, use that instead of the original css.
-	    	// This allows running runtime transformations on the css.
-	    	obj.css = result;
-	    } else {
-	    	// If the transform function returns a falsy value, don't add this css.
-	    	// This allows conditional loading of css
-	    	return function() {
-	    		// noop
-	    	};
-	    }
-	}
-
-	if (options.singleton) {
-		var styleIndex = singletonCounter++;
-
-		style = singleton || (singleton = createStyleElement(options));
-
-		update = applyToSingletonTag.bind(null, style, styleIndex, false);
-		remove = applyToSingletonTag.bind(null, style, styleIndex, true);
-
-	} else if (
-		obj.sourceMap &&
-		typeof URL === "function" &&
-		typeof URL.createObjectURL === "function" &&
-		typeof URL.revokeObjectURL === "function" &&
-		typeof Blob === "function" &&
-		typeof btoa === "function"
-	) {
-		style = createLinkElement(options);
-		update = updateLink.bind(null, style, options);
-		remove = function () {
-			removeStyleElement(style);
-
-			if(style.href) URL.revokeObjectURL(style.href);
-		};
-	} else {
-		style = createStyleElement(options);
-		update = applyToTag.bind(null, style);
-		remove = function () {
-			removeStyleElement(style);
-		};
-	}
-
-	update(obj);
-
-	return function updateStyle (newObj) {
-		if (newObj) {
-			if (
-				newObj.css === obj.css &&
-				newObj.media === obj.media &&
-				newObj.sourceMap === obj.sourceMap
-			) {
-				return;
-			}
-
-			update(obj = newObj);
-		} else {
-			remove();
-		}
-	};
-}
-
-var replaceText = (function () {
-	var textStore = [];
-
-	return function (index, replacement) {
-		textStore[index] = replacement;
-
-		return textStore.filter(Boolean).join('\n');
-	};
-})();
-
-function applyToSingletonTag (style, index, remove, obj) {
-	var css = remove ? "" : obj.css;
-
-	if (style.styleSheet) {
-		style.styleSheet.cssText = replaceText(index, css);
-	} else {
-		var cssNode = document.createTextNode(css);
-		var childNodes = style.childNodes;
-
-		if (childNodes[index]) style.removeChild(childNodes[index]);
-
-		if (childNodes.length) {
-			style.insertBefore(cssNode, childNodes[index]);
-		} else {
-			style.appendChild(cssNode);
-		}
-	}
-}
-
-function applyToTag (style, obj) {
-	var css = obj.css;
-	var media = obj.media;
-
-	if(media) {
-		style.setAttribute("media", media)
-	}
-
-	if(style.styleSheet) {
-		style.styleSheet.cssText = css;
-	} else {
-		while(style.firstChild) {
-			style.removeChild(style.firstChild);
-		}
-
-		style.appendChild(document.createTextNode(css));
-	}
-}
-
-function updateLink (link, options, obj) {
-	var css = obj.css;
-	var sourceMap = obj.sourceMap;
-
-	/*
-		If convertToAbsoluteUrls isn't defined, but sourcemaps are enabled
-		and there is no publicPath defined then lets turn convertToAbsoluteUrls
-		on by default.  Otherwise default to the convertToAbsoluteUrls option
-		directly
-	*/
-	var autoFixUrls = options.convertToAbsoluteUrls === undefined && sourceMap;
-
-	if (options.convertToAbsoluteUrls || autoFixUrls) {
-		css = fixUrls(css);
-	}
-
-	if (sourceMap) {
-		// http://stackoverflow.com/a/26603875
-		css += "\n/*# sourceMappingURL=data:application/json;base64," + btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap)))) + " */";
-	}
-
-	var blob = new Blob([css], { type: "text/css" });
-
-	var oldSrc = link.href;
-
-	link.href = URL.createObjectURL(blob);
-
-	if(oldSrc) URL.revokeObjectURL(oldSrc);
-}
-
-
-/***/ }),
-/* 5 */
-/***/ (function(module, exports) {
-
-
-/**
- * When source maps are enabled, `style-loader` uses a link element with a data-uri to
- * embed the css on the page. This breaks all relative urls because now they are relative to a
- * bundle instead of the current page.
- *
- * One solution is to only use full urls, but that may be impossible.
- *
- * Instead, this function "fixes" the relative urls to be absolute according to the current page location.
- *
- * A rudimentary test suite is located at `test/fixUrls.js` and can be run via the `npm test` command.
- *
- */
-
-module.exports = function (css) {
-  // get current location
-  var location = typeof window !== "undefined" && window.location;
-
-  if (!location) {
-    throw new Error("fixUrls requires window.location");
-  }
-
-	// blank or null?
-	if (!css || typeof css !== "string") {
-	  return css;
-  }
-
-  var baseUrl = location.protocol + "//" + location.host;
-  var currentDir = baseUrl + location.pathname.replace(/\/[^\/]*$/, "/");
-
-	// convert each url(...)
-	/*
-	This regular expression is just a way to recursively match brackets within
-	a string.
-
-	 /url\s*\(  = Match on the word "url" with any whitespace after it and then a parens
-	   (  = Start a capturing group
-	     (?:  = Start a non-capturing group
-	         [^)(]  = Match anything that isn't a parentheses
-	         |  = OR
-	         \(  = Match a start parentheses
-	             (?:  = Start another non-capturing groups
-	                 [^)(]+  = Match anything that isn't a parentheses
-	                 |  = OR
-	                 \(  = Match a start parentheses
-	                     [^)(]*  = Match anything that isn't a parentheses
-	                 \)  = Match a end parentheses
-	             )  = End Group
-              *\) = Match anything and then a close parens
-          )  = Close non-capturing group
-          *  = Match anything
-       )  = Close capturing group
-	 \)  = Match a close parens
-
-	 /gi  = Get all matches, not the first.  Be case insensitive.
-	 */
-	var fixedCss = css.replace(/url\s*\(((?:[^)(]|\((?:[^)(]+|\([^)(]*\))*\))*)\)/gi, function(fullMatch, origUrl) {
-		// strip quotes (if they exist)
-		var unquotedOrigUrl = origUrl
-			.trim()
-			.replace(/^"(.*)"$/, function(o, $1){ return $1; })
-			.replace(/^'(.*)'$/, function(o, $1){ return $1; });
-
-		// already a full url? no change
-		if (/^(#|data:|http:\/\/|https:\/\/|file:\/\/\/|\s*$)/i.test(unquotedOrigUrl)) {
-		  return fullMatch;
-		}
-
-		// convert the url to a full url
-		var newUrl;
-
-		if (unquotedOrigUrl.indexOf("//") === 0) {
-		  	//TODO: should we add protocol?
-			newUrl = unquotedOrigUrl;
-		} else if (unquotedOrigUrl.indexOf("/") === 0) {
-			// path should be relative to the base url
-			newUrl = baseUrl + unquotedOrigUrl; // already starts with '/'
-		} else {
-			// path should be relative to current directory
-			newUrl = currentDir + unquotedOrigUrl.replace(/^\.\//, ""); // Strip leading './'
-		}
-
-		// send back the fixed url(...)
-		return "url(" + JSON.stringify(newUrl) + ")";
-	});
-
-	// send back the fixed css
-	return fixedCss;
-};
-
-
-/***/ }),
-/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // CodeMirror, copyright (c) by Marijn Haverbeke and others
@@ -10374,7 +9739,7 @@ return CodeMirror$1;
 
 
 /***/ }),
-/* 7 */
+/* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // CodeMirror, copyright (c) by Marijn Haverbeke and others
@@ -10382,7 +9747,1219 @@ return CodeMirror$1;
 
 (function(mod) {
   if (true) // CommonJS
-    mod(__webpack_require__(6));
+    mod(__webpack_require__(0));
+  else if (typeof define == "function" && define.amd) // AMD
+    define(["../../lib/codemirror"], mod);
+  else // Plain browser env
+    mod(CodeMirror);
+})(function(CodeMirror) {
+"use strict";
+
+CodeMirror.defineMode("sql", function(config, parserConfig) {
+  "use strict";
+
+  var client         = parserConfig.client || {},
+      atoms          = parserConfig.atoms || {"false": true, "true": true, "null": true},
+      builtin        = parserConfig.builtin || {},
+      keywords       = parserConfig.keywords || {},
+      operatorChars  = parserConfig.operatorChars || /^[*+\-%<>!=&|~^]/,
+      support        = parserConfig.support || {},
+      hooks          = parserConfig.hooks || {},
+      dateSQL        = parserConfig.dateSQL || {"date" : true, "time" : true, "timestamp" : true};
+
+  function tokenBase(stream, state) {
+    var ch = stream.next();
+
+    // call hooks from the mime type
+    if (hooks[ch]) {
+      var result = hooks[ch](stream, state);
+      if (result !== false) return result;
+    }
+
+    if (support.hexNumber &&
+      ((ch == "0" && stream.match(/^[xX][0-9a-fA-F]+/))
+      || (ch == "x" || ch == "X") && stream.match(/^'[0-9a-fA-F]+'/))) {
+      // hex
+      // ref: http://dev.mysql.com/doc/refman/5.5/en/hexadecimal-literals.html
+      return "number";
+    } else if (support.binaryNumber &&
+      (((ch == "b" || ch == "B") && stream.match(/^'[01]+'/))
+      || (ch == "0" && stream.match(/^b[01]+/)))) {
+      // bitstring
+      // ref: http://dev.mysql.com/doc/refman/5.5/en/bit-field-literals.html
+      return "number";
+    } else if (ch.charCodeAt(0) > 47 && ch.charCodeAt(0) < 58) {
+      // numbers
+      // ref: http://dev.mysql.com/doc/refman/5.5/en/number-literals.html
+      stream.match(/^[0-9]*(\.[0-9]+)?([eE][-+]?[0-9]+)?/);
+      support.decimallessFloat && stream.match(/^\.(?!\.)/);
+      return "number";
+    } else if (ch == "?" && (stream.eatSpace() || stream.eol() || stream.eat(";"))) {
+      // placeholders
+      return "variable-3";
+    } else if (ch == "'" || (ch == '"' && support.doubleQuote)) {
+      // strings
+      // ref: http://dev.mysql.com/doc/refman/5.5/en/string-literals.html
+      state.tokenize = tokenLiteral(ch);
+      return state.tokenize(stream, state);
+    } else if ((((support.nCharCast && (ch == "n" || ch == "N"))
+        || (support.charsetCast && ch == "_" && stream.match(/[a-z][a-z0-9]*/i)))
+        && (stream.peek() == "'" || stream.peek() == '"'))) {
+      // charset casting: _utf8'str', N'str', n'str'
+      // ref: http://dev.mysql.com/doc/refman/5.5/en/string-literals.html
+      return "keyword";
+    } else if (/^[\(\),\;\[\]]/.test(ch)) {
+      // no highlighting
+      return null;
+    } else if (support.commentSlashSlash && ch == "/" && stream.eat("/")) {
+      // 1-line comment
+      stream.skipToEnd();
+      return "comment";
+    } else if ((support.commentHash && ch == "#")
+        || (ch == "-" && stream.eat("-") && (!support.commentSpaceRequired || stream.eat(" ")))) {
+      // 1-line comments
+      // ref: https://kb.askmonty.org/en/comment-syntax/
+      stream.skipToEnd();
+      return "comment";
+    } else if (ch == "/" && stream.eat("*")) {
+      // multi-line comments
+      // ref: https://kb.askmonty.org/en/comment-syntax/
+      state.tokenize = tokenComment(1);
+      return state.tokenize(stream, state);
+    } else if (ch == ".") {
+      // .1 for 0.1
+      if (support.zerolessFloat && stream.match(/^(?:\d+(?:e[+-]?\d+)?)/i))
+        return "number";
+      if (stream.match(/^\.+/))
+        return null
+      // .table_name (ODBC)
+      // // ref: http://dev.mysql.com/doc/refman/5.6/en/identifier-qualifiers.html
+      if (support.ODBCdotTable && stream.match(/^[\w\d_]+/))
+        return "variable-2";
+    } else if (operatorChars.test(ch)) {
+      // operators
+      stream.eatWhile(operatorChars);
+      return null;
+    } else if (ch == '{' &&
+        (stream.match(/^( )*(d|D|t|T|ts|TS)( )*'[^']*'( )*}/) || stream.match(/^( )*(d|D|t|T|ts|TS)( )*"[^"]*"( )*}/))) {
+      // dates (weird ODBC syntax)
+      // ref: http://dev.mysql.com/doc/refman/5.5/en/date-and-time-literals.html
+      return "number";
+    } else {
+      stream.eatWhile(/^[_\w\d]/);
+      var word = stream.current().toLowerCase();
+      // dates (standard SQL syntax)
+      // ref: http://dev.mysql.com/doc/refman/5.5/en/date-and-time-literals.html
+      if (dateSQL.hasOwnProperty(word) && (stream.match(/^( )+'[^']*'/) || stream.match(/^( )+"[^"]*"/)))
+        return "number";
+      if (atoms.hasOwnProperty(word)) return "atom";
+      if (builtin.hasOwnProperty(word)) return "builtin";
+      if (keywords.hasOwnProperty(word)) return "keyword";
+      if (client.hasOwnProperty(word)) return "string-2";
+      return null;
+    }
+  }
+
+  // 'string', with char specified in quote escaped by '\'
+  function tokenLiteral(quote) {
+    return function(stream, state) {
+      var escaped = false, ch;
+      while ((ch = stream.next()) != null) {
+        if (ch == quote && !escaped) {
+          state.tokenize = tokenBase;
+          break;
+        }
+        escaped = !escaped && ch == "\\";
+      }
+      return "string";
+    };
+  }
+  function tokenComment(depth) {
+    return function(stream, state) {
+      var m = stream.match(/^.*?(\/\*|\*\/)/)
+      if (!m) stream.skipToEnd()
+      else if (m[1] == "/*") state.tokenize = tokenComment(depth + 1)
+      else if (depth > 1) state.tokenize = tokenComment(depth - 1)
+      else state.tokenize = tokenBase
+      return "comment"
+    }
+  }
+
+  function pushContext(stream, state, type) {
+    state.context = {
+      prev: state.context,
+      indent: stream.indentation(),
+      col: stream.column(),
+      type: type
+    };
+  }
+
+  function popContext(state) {
+    state.indent = state.context.indent;
+    state.context = state.context.prev;
+  }
+
+  return {
+    startState: function() {
+      return {tokenize: tokenBase, context: null};
+    },
+
+    token: function(stream, state) {
+      if (stream.sol()) {
+        if (state.context && state.context.align == null)
+          state.context.align = false;
+      }
+      if (state.tokenize == tokenBase && stream.eatSpace()) return null;
+
+      var style = state.tokenize(stream, state);
+      if (style == "comment") return style;
+
+      if (state.context && state.context.align == null)
+        state.context.align = true;
+
+      var tok = stream.current();
+      if (tok == "(")
+        pushContext(stream, state, ")");
+      else if (tok == "[")
+        pushContext(stream, state, "]");
+      else if (state.context && state.context.type == tok)
+        popContext(state);
+      return style;
+    },
+
+    indent: function(state, textAfter) {
+      var cx = state.context;
+      if (!cx) return CodeMirror.Pass;
+      var closing = textAfter.charAt(0) == cx.type;
+      if (cx.align) return cx.col + (closing ? 0 : 1);
+      else return cx.indent + (closing ? 0 : config.indentUnit);
+    },
+
+    blockCommentStart: "/*",
+    blockCommentEnd: "*/",
+    lineComment: support.commentSlashSlash ? "//" : support.commentHash ? "#" : "--"
+  };
+});
+
+(function() {
+  "use strict";
+
+  // `identifier`
+  function hookIdentifier(stream) {
+    // MySQL/MariaDB identifiers
+    // ref: http://dev.mysql.com/doc/refman/5.6/en/identifier-qualifiers.html
+    var ch;
+    while ((ch = stream.next()) != null) {
+      if (ch == "`" && !stream.eat("`")) return "variable-2";
+    }
+    stream.backUp(stream.current().length - 1);
+    return stream.eatWhile(/\w/) ? "variable-2" : null;
+  }
+
+  // "identifier"
+  function hookIdentifierDoublequote(stream) {
+    // Standard SQL /SQLite identifiers
+    // ref: http://web.archive.org/web/20160813185132/http://savage.net.au/SQL/sql-99.bnf.html#delimited%20identifier
+    // ref: http://sqlite.org/lang_keywords.html
+    var ch;
+    while ((ch = stream.next()) != null) {
+      if (ch == "\"" && !stream.eat("\"")) return "variable-2";
+    }
+    stream.backUp(stream.current().length - 1);
+    return stream.eatWhile(/\w/) ? "variable-2" : null;
+  }
+
+  // variable token
+  function hookVar(stream) {
+    // variables
+    // @@prefix.varName @varName
+    // varName can be quoted with ` or ' or "
+    // ref: http://dev.mysql.com/doc/refman/5.5/en/user-variables.html
+    if (stream.eat("@")) {
+      stream.match(/^session\./);
+      stream.match(/^local\./);
+      stream.match(/^global\./);
+    }
+
+    if (stream.eat("'")) {
+      stream.match(/^.*'/);
+      return "variable-2";
+    } else if (stream.eat('"')) {
+      stream.match(/^.*"/);
+      return "variable-2";
+    } else if (stream.eat("`")) {
+      stream.match(/^.*`/);
+      return "variable-2";
+    } else if (stream.match(/^[0-9a-zA-Z$\.\_]+/)) {
+      return "variable-2";
+    }
+    return null;
+  };
+
+  // short client keyword token
+  function hookClient(stream) {
+    // \N means NULL
+    // ref: http://dev.mysql.com/doc/refman/5.5/en/null-values.html
+    if (stream.eat("N")) {
+        return "atom";
+    }
+    // \g, etc
+    // ref: http://dev.mysql.com/doc/refman/5.5/en/mysql-commands.html
+    return stream.match(/^[a-zA-Z.#!?]/) ? "variable-2" : null;
+  }
+
+  // these keywords are used by all SQL dialects (however, a mode can still overwrite it)
+  var sqlKeywords = "alter and as asc between by count create delete desc distinct drop from group having in insert into is join like not on or order select set table union update values where limit ";
+
+  // turn a space-separated list into an array
+  function set(str) {
+    var obj = {}, words = str.split(" ");
+    for (var i = 0; i < words.length; ++i) obj[words[i]] = true;
+    return obj;
+  }
+
+  // A generic SQL Mode. It's not a standard, it just try to support what is generally supported
+  CodeMirror.defineMIME("text/x-sql", {
+    name: "sql",
+    keywords: set(sqlKeywords + "begin"),
+    builtin: set("bool boolean bit blob enum long longblob longtext medium mediumblob mediumint mediumtext time timestamp tinyblob tinyint tinytext text bigint int int1 int2 int3 int4 int8 integer float float4 float8 double char varbinary varchar varcharacter precision real date datetime year unsigned signed decimal numeric"),
+    atoms: set("false true null unknown"),
+    operatorChars: /^[*+\-%<>!=]/,
+    dateSQL: set("date time timestamp"),
+    support: set("ODBCdotTable doubleQuote binaryNumber hexNumber")
+  });
+
+  CodeMirror.defineMIME("text/x-mssql", {
+    name: "sql",
+    client: set("charset clear connect edit ego exit go help nopager notee nowarning pager print prompt quit rehash source status system tee"),
+    keywords: set(sqlKeywords + "begin trigger proc view index for add constraint key primary foreign collate clustered nonclustered declare exec"),
+    builtin: set("bigint numeric bit smallint decimal smallmoney int tinyint money float real char varchar text nchar nvarchar ntext binary varbinary image cursor timestamp hierarchyid uniqueidentifier sql_variant xml table "),
+    atoms: set("false true null unknown"),
+    operatorChars: /^[*+\-%<>!=]/,
+    dateSQL: set("date datetimeoffset datetime2 smalldatetime datetime time"),
+    hooks: {
+      "@":   hookVar
+    }
+  });
+
+  CodeMirror.defineMIME("text/x-mysql", {
+    name: "sql",
+    client: set("charset clear connect edit ego exit go help nopager notee nowarning pager print prompt quit rehash source status system tee"),
+    keywords: set(sqlKeywords + "accessible action add after algorithm all analyze asensitive at authors auto_increment autocommit avg avg_row_length before binary binlog both btree cache call cascade cascaded case catalog_name chain change changed character check checkpoint checksum class_origin client_statistics close coalesce code collate collation collations column columns comment commit committed completion concurrent condition connection consistent constraint contains continue contributors convert cross current current_date current_time current_timestamp current_user cursor data database databases day_hour day_microsecond day_minute day_second deallocate dec declare default delay_key_write delayed delimiter des_key_file describe deterministic dev_pop dev_samp deviance diagnostics directory disable discard distinctrow div dual dumpfile each elseif enable enclosed end ends engine engines enum errors escape escaped even event events every execute exists exit explain extended fast fetch field fields first flush for force foreign found_rows full fulltext function general get global grant grants group group_concat handler hash help high_priority hosts hour_microsecond hour_minute hour_second if ignore ignore_server_ids import index index_statistics infile inner innodb inout insensitive insert_method install interval invoker isolation iterate key keys kill language last leading leave left level limit linear lines list load local localtime localtimestamp lock logs low_priority master master_heartbeat_period master_ssl_verify_server_cert masters match max max_rows maxvalue message_text middleint migrate min min_rows minute_microsecond minute_second mod mode modifies modify mutex mysql_errno natural next no no_write_to_binlog offline offset one online open optimize option optionally out outer outfile pack_keys parser partition partitions password phase plugin plugins prepare preserve prev primary privileges procedure processlist profile profiles purge query quick range read read_write reads real rebuild recover references regexp relaylog release remove rename reorganize repair repeatable replace require resignal restrict resume return returns revoke right rlike rollback rollup row row_format rtree savepoint schedule schema schema_name schemas second_microsecond security sensitive separator serializable server session share show signal slave slow smallint snapshot soname spatial specific sql sql_big_result sql_buffer_result sql_cache sql_calc_found_rows sql_no_cache sql_small_result sqlexception sqlstate sqlwarning ssl start starting starts status std stddev stddev_pop stddev_samp storage straight_join subclass_origin sum suspend table_name table_statistics tables tablespace temporary terminated to trailing transaction trigger triggers truncate uncommitted undo uninstall unique unlock upgrade usage use use_frm user user_resources user_statistics using utc_date utc_time utc_timestamp value variables varying view views warnings when while with work write xa xor year_month zerofill begin do then else loop repeat"),
+    builtin: set("bool boolean bit blob decimal double float long longblob longtext medium mediumblob mediumint mediumtext time timestamp tinyblob tinyint tinytext text bigint int int1 int2 int3 int4 int8 integer float float4 float8 double char varbinary varchar varcharacter precision date datetime year unsigned signed numeric"),
+    atoms: set("false true null unknown"),
+    operatorChars: /^[*+\-%<>!=&|^]/,
+    dateSQL: set("date time timestamp"),
+    support: set("ODBCdotTable decimallessFloat zerolessFloat binaryNumber hexNumber doubleQuote nCharCast charsetCast commentHash commentSpaceRequired"),
+    hooks: {
+      "@":   hookVar,
+      "`":   hookIdentifier,
+      "\\":  hookClient
+    }
+  });
+
+  CodeMirror.defineMIME("text/x-mariadb", {
+    name: "sql",
+    client: set("charset clear connect edit ego exit go help nopager notee nowarning pager print prompt quit rehash source status system tee"),
+    keywords: set(sqlKeywords + "accessible action add after algorithm all always analyze asensitive at authors auto_increment autocommit avg avg_row_length before binary binlog both btree cache call cascade cascaded case catalog_name chain change changed character check checkpoint checksum class_origin client_statistics close coalesce code collate collation collations column columns comment commit committed completion concurrent condition connection consistent constraint contains continue contributors convert cross current current_date current_time current_timestamp current_user cursor data database databases day_hour day_microsecond day_minute day_second deallocate dec declare default delay_key_write delayed delimiter des_key_file describe deterministic dev_pop dev_samp deviance diagnostics directory disable discard distinctrow div dual dumpfile each elseif enable enclosed end ends engine engines enum errors escape escaped even event events every execute exists exit explain extended fast fetch field fields first flush for force foreign found_rows full fulltext function general generated get global grant grants group groupby_concat handler hard hash help high_priority hosts hour_microsecond hour_minute hour_second if ignore ignore_server_ids import index index_statistics infile inner innodb inout insensitive insert_method install interval invoker isolation iterate key keys kill language last leading leave left level limit linear lines list load local localtime localtimestamp lock logs low_priority master master_heartbeat_period master_ssl_verify_server_cert masters match max max_rows maxvalue message_text middleint migrate min min_rows minute_microsecond minute_second mod mode modifies modify mutex mysql_errno natural next no no_write_to_binlog offline offset one online open optimize option optionally out outer outfile pack_keys parser partition partitions password persistent phase plugin plugins prepare preserve prev primary privileges procedure processlist profile profiles purge query quick range read read_write reads real rebuild recover references regexp relaylog release remove rename reorganize repair repeatable replace require resignal restrict resume return returns revoke right rlike rollback rollup row row_format rtree savepoint schedule schema schema_name schemas second_microsecond security sensitive separator serializable server session share show shutdown signal slave slow smallint snapshot soft soname spatial specific sql sql_big_result sql_buffer_result sql_cache sql_calc_found_rows sql_no_cache sql_small_result sqlexception sqlstate sqlwarning ssl start starting starts status std stddev stddev_pop stddev_samp storage straight_join subclass_origin sum suspend table_name table_statistics tables tablespace temporary terminated to trailing transaction trigger triggers truncate uncommitted undo uninstall unique unlock upgrade usage use use_frm user user_resources user_statistics using utc_date utc_time utc_timestamp value variables varying view views virtual warnings when while with work write xa xor year_month zerofill begin do then else loop repeat"),
+    builtin: set("bool boolean bit blob decimal double float long longblob longtext medium mediumblob mediumint mediumtext time timestamp tinyblob tinyint tinytext text bigint int int1 int2 int3 int4 int8 integer float float4 float8 double char varbinary varchar varcharacter precision date datetime year unsigned signed numeric"),
+    atoms: set("false true null unknown"),
+    operatorChars: /^[*+\-%<>!=&|^]/,
+    dateSQL: set("date time timestamp"),
+    support: set("ODBCdotTable decimallessFloat zerolessFloat binaryNumber hexNumber doubleQuote nCharCast charsetCast commentHash commentSpaceRequired"),
+    hooks: {
+      "@":   hookVar,
+      "`":   hookIdentifier,
+      "\\":  hookClient
+    }
+  });
+
+  // provided by the phpLiteAdmin project - phpliteadmin.org
+  CodeMirror.defineMIME("text/x-sqlite", {
+    name: "sql",
+    // commands of the official SQLite client, ref: https://www.sqlite.org/cli.html#dotcmd
+    client: set("auth backup bail binary changes check clone databases dbinfo dump echo eqp exit explain fullschema headers help import imposter indexes iotrace limit lint load log mode nullvalue once open output print prompt quit read restore save scanstats schema separator session shell show stats system tables testcase timeout timer trace vfsinfo vfslist vfsname width"),
+    // ref: http://sqlite.org/lang_keywords.html
+    keywords: set(sqlKeywords + "abort action add after all analyze attach autoincrement before begin cascade case cast check collate column commit conflict constraint cross current_date current_time current_timestamp database default deferrable deferred detach each else end escape except exclusive exists explain fail for foreign full glob if ignore immediate index indexed initially inner instead intersect isnull key left limit match natural no notnull null of offset outer plan pragma primary query raise recursive references regexp reindex release rename replace restrict right rollback row savepoint temp temporary then to transaction trigger unique using vacuum view virtual when with without"),
+    // SQLite is weakly typed, ref: http://sqlite.org/datatype3.html. This is just a list of some common types.
+    builtin: set("bool boolean bit blob decimal double float long longblob longtext medium mediumblob mediumint mediumtext time timestamp tinyblob tinyint tinytext text clob bigint int int2 int8 integer float double char varchar date datetime year unsigned signed numeric real"),
+    // ref: http://sqlite.org/syntax/literal-value.html
+    atoms: set("null current_date current_time current_timestamp"),
+    // ref: http://sqlite.org/lang_expr.html#binaryops
+    operatorChars: /^[*+\-%<>!=&|/~]/,
+    // SQLite is weakly typed, ref: http://sqlite.org/datatype3.html. This is just a list of some common types.
+    dateSQL: set("date time timestamp datetime"),
+    support: set("decimallessFloat zerolessFloat"),
+    identifierQuote: "\"",  //ref: http://sqlite.org/lang_keywords.html
+    hooks: {
+      // bind-parameters ref:http://sqlite.org/lang_expr.html#varparam
+      "@":   hookVar,
+      ":":   hookVar,
+      "?":   hookVar,
+      "$":   hookVar,
+      // The preferred way to escape Identifiers is using double quotes, ref: http://sqlite.org/lang_keywords.html
+      "\"":   hookIdentifierDoublequote,
+      // there is also support for backtics, ref: http://sqlite.org/lang_keywords.html
+      "`":   hookIdentifier
+    }
+  });
+
+  // the query language used by Apache Cassandra is called CQL, but this mime type
+  // is called Cassandra to avoid confusion with Contextual Query Language
+  CodeMirror.defineMIME("text/x-cassandra", {
+    name: "sql",
+    client: { },
+    keywords: set("add all allow alter and any apply as asc authorize batch begin by clustering columnfamily compact consistency count create custom delete desc distinct drop each_quorum exists filtering from grant if in index insert into key keyspace keyspaces level limit local_one local_quorum modify nan norecursive nosuperuser not of on one order password permission permissions primary quorum rename revoke schema select set storage superuser table three to token truncate ttl two type unlogged update use user users using values where with writetime"),
+    builtin: set("ascii bigint blob boolean counter decimal double float frozen inet int list map static text timestamp timeuuid tuple uuid varchar varint"),
+    atoms: set("false true infinity NaN"),
+    operatorChars: /^[<>=]/,
+    dateSQL: { },
+    support: set("commentSlashSlash decimallessFloat"),
+    hooks: { }
+  });
+
+  // this is based on Peter Raganitsch's 'plsql' mode
+  CodeMirror.defineMIME("text/x-plsql", {
+    name:       "sql",
+    client:     set("appinfo arraysize autocommit autoprint autorecovery autotrace blockterminator break btitle cmdsep colsep compatibility compute concat copycommit copytypecheck define describe echo editfile embedded escape exec execute feedback flagger flush heading headsep instance linesize lno loboffset logsource long longchunksize markup native newpage numformat numwidth pagesize pause pno recsep recsepchar release repfooter repheader serveroutput shiftinout show showmode size spool sqlblanklines sqlcase sqlcode sqlcontinue sqlnumber sqlpluscompatibility sqlprefix sqlprompt sqlterminator suffix tab term termout time timing trimout trimspool ttitle underline verify version wrap"),
+    keywords:   set("abort accept access add all alter and any array arraylen as asc assert assign at attributes audit authorization avg base_table begin between binary_integer body boolean by case cast char char_base check close cluster clusters colauth column comment commit compress connect connected constant constraint crash create current currval cursor data_base database date dba deallocate debugoff debugon decimal declare default definition delay delete desc digits dispose distinct do drop else elseif elsif enable end entry escape exception exception_init exchange exclusive exists exit external fast fetch file for force form from function generic goto grant group having identified if immediate in increment index indexes indicator initial initrans insert interface intersect into is key level library like limited local lock log logging long loop master maxextents maxtrans member minextents minus mislabel mode modify multiset new next no noaudit nocompress nologging noparallel not nowait number_base object of off offline on online only open option or order out package parallel partition pctfree pctincrease pctused pls_integer positive positiven pragma primary prior private privileges procedure public raise range raw read rebuild record ref references refresh release rename replace resource restrict return returning returns reverse revoke rollback row rowid rowlabel rownum rows run savepoint schema segment select separate session set share snapshot some space split sql start statement storage subtype successful synonym tabauth table tables tablespace task terminate then to trigger truncate type union unique unlimited unrecoverable unusable update use using validate value values variable view views when whenever where while with work"),
+    builtin:    set("abs acos add_months ascii asin atan atan2 average bfile bfilename bigserial bit blob ceil character chartorowid chr clob concat convert cos cosh count dec decode deref dual dump dup_val_on_index empty error exp false float floor found glb greatest hextoraw initcap instr instrb int integer isopen last_day least length lengthb ln lower lpad ltrim lub make_ref max min mlslabel mod months_between natural naturaln nchar nclob new_time next_day nextval nls_charset_decl_len nls_charset_id nls_charset_name nls_initcap nls_lower nls_sort nls_upper nlssort no_data_found notfound null number numeric nvarchar2 nvl others power rawtohex real reftohex round rowcount rowidtochar rowtype rpad rtrim serial sign signtype sin sinh smallint soundex sqlcode sqlerrm sqrt stddev string substr substrb sum sysdate tan tanh to_char text to_date to_label to_multi_byte to_number to_single_byte translate true trunc uid unlogged upper user userenv varchar varchar2 variance varying vsize xml"),
+    operatorChars: /^[*+\-%<>!=~]/,
+    dateSQL:    set("date time timestamp"),
+    support:    set("doubleQuote nCharCast zerolessFloat binaryNumber hexNumber")
+  });
+
+  // Created to support specific hive keywords
+  CodeMirror.defineMIME("text/x-hive", {
+    name: "sql",
+    keywords: set("select alter $elem$ $key$ $value$ add after all analyze and archive as asc before between binary both bucket buckets by cascade case cast change cluster clustered clusterstatus collection column columns comment compute concatenate continue create cross cursor data database databases dbproperties deferred delete delimited desc describe directory disable distinct distribute drop else enable end escaped exclusive exists explain export extended external false fetch fields fileformat first format formatted from full function functions grant group having hold_ddltime idxproperties if import in index indexes inpath inputdriver inputformat insert intersect into is items join keys lateral left like limit lines load local location lock locks mapjoin materialized minus msck no_drop nocompress not of offline on option or order out outer outputdriver outputformat overwrite partition partitioned partitions percent plus preserve procedure purge range rcfile read readonly reads rebuild recordreader recordwriter recover reduce regexp rename repair replace restrict revoke right rlike row schema schemas semi sequencefile serde serdeproperties set shared show show_database sort sorted ssl statistics stored streamtable table tables tablesample tblproperties temporary terminated textfile then tmp to touch transform trigger true unarchive undo union uniquejoin unlock update use using utc utc_tmestamp view when where while with"),
+    builtin: set("bool boolean long timestamp tinyint smallint bigint int float double date datetime unsigned string array struct map uniontype"),
+    atoms: set("false true null unknown"),
+    operatorChars: /^[*+\-%<>!=]/,
+    dateSQL: set("date timestamp"),
+    support: set("ODBCdotTable doubleQuote binaryNumber hexNumber")
+  });
+
+  CodeMirror.defineMIME("text/x-pgsql", {
+    name: "sql",
+    client: set("source"),
+    // https://www.postgresql.org/docs/10/static/sql-keywords-appendix.html
+    keywords: set(sqlKeywords + "a abort abs absent absolute access according action ada add admin after aggregate all allocate also always analyse analyze any are array array_agg array_max_cardinality asensitive assertion assignment asymmetric at atomic attribute attributes authorization avg backward base64 before begin begin_frame begin_partition bernoulli binary bit_length blob blocked bom both breadth c cache call called cardinality cascade cascaded case cast catalog catalog_name ceil ceiling chain characteristics characters character_length character_set_catalog character_set_name character_set_schema char_length check checkpoint class class_origin clob close cluster coalesce cobol collate collation collation_catalog collation_name collation_schema collect column columns column_name command_function command_function_code comment comments commit committed concurrently condition condition_number configuration conflict connect connection connection_name constraint constraints constraint_catalog constraint_name constraint_schema constructor contains content continue control conversion convert copy corr corresponding cost covar_pop covar_samp cross csv cube cume_dist current current_catalog current_date current_default_transform_group current_path current_role current_row current_schema current_time current_timestamp current_transform_group_for_type current_user cursor cursor_name cycle data database datalink datetime_interval_code datetime_interval_precision day db deallocate dec declare default defaults deferrable deferred defined definer degree delimiter delimiters dense_rank depth deref derived describe descriptor deterministic diagnostics dictionary disable discard disconnect dispatch dlnewcopy dlpreviouscopy dlurlcomplete dlurlcompleteonly dlurlcompletewrite dlurlpath dlurlpathonly dlurlpathwrite dlurlscheme dlurlserver dlvalue do document domain dynamic dynamic_function dynamic_function_code each element else empty enable encoding encrypted end end-exec end_frame end_partition enforced enum equals escape event every except exception exclude excluding exclusive exec execute exists exp explain expression extension external extract false family fetch file filter final first first_value flag float floor following for force foreign fortran forward found frame_row free freeze fs full function functions fusion g general generated get global go goto grant granted greatest grouping groups handler header hex hierarchy hold hour id identity if ignore ilike immediate immediately immutable implementation implicit import including increment indent index indexes indicator inherit inherits initially inline inner inout input insensitive instance instantiable instead integrity intersect intersection invoker isnull isolation k key key_member key_type label lag language large last last_value lateral lc_collate lc_ctype lead leading leakproof least left length level library like_regex link listen ln load local localtime localtimestamp location locator lock locked logged lower m map mapping match matched materialized max maxvalue max_cardinality member merge message_length message_octet_length message_text method min minute minvalue mod mode modifies module month more move multiset mumps name names namespace national natural nchar nclob nesting new next nfc nfd nfkc nfkd nil no none normalize normalized nothing notify notnull nowait nth_value ntile null nullable nullif nulls number object occurrences_regex octets octet_length of off offset oids old only open operator option options ordering ordinality others out outer output over overlaps overlay overriding owned owner p pad parallel parameter parameter_mode parameter_name parameter_ordinal_position parameter_specific_catalog parameter_specific_name parameter_specific_schema parser partial partition pascal passing passthrough password percent percentile_cont percentile_disc percent_rank period permission placing plans pli policy portion position position_regex power precedes preceding prepare prepared preserve primary prior privileges procedural procedure program public quote range rank read reads reassign recheck recovery recursive ref references referencing refresh regr_avgx regr_avgy regr_count regr_intercept regr_r2 regr_slope regr_sxx regr_sxy regr_syy reindex relative release rename repeatable replace replica requiring reset respect restart restore restrict restricted result return returned_cardinality returned_length returned_octet_length returned_sqlstate returning returns revoke right role rollback rollup routine routine_catalog routine_name routine_schema row rows row_count row_number rule savepoint scale schema schema_name scope scope_catalog scope_name scope_schema scroll search second section security selective self sensitive sequence sequences serializable server server_name session session_user setof sets share show similar simple size skip snapshot some source space specific specifictype specific_name sql sqlcode sqlerror sqlexception sqlstate sqlwarning sqrt stable standalone start state statement static statistics stddev_pop stddev_samp stdin stdout storage strict strip structure style subclass_origin submultiset substring substring_regex succeeds sum symmetric sysid system system_time system_user t tables tablesample tablespace table_name temp template temporary then ties timezone_hour timezone_minute to token top_level_count trailing transaction transactions_committed transactions_rolled_back transaction_active transform transforms translate translate_regex translation treat trigger trigger_catalog trigger_name trigger_schema trim trim_array true truncate trusted type types uescape unbounded uncommitted under unencrypted unique unknown unlink unlisten unlogged unnamed unnest until untyped upper uri usage user user_defined_type_catalog user_defined_type_code user_defined_type_name user_defined_type_schema using vacuum valid validate validator value value_of varbinary variadic var_pop var_samp verbose version versioning view views volatile when whenever whitespace width_bucket window within work wrapper write xmlagg xmlattributes xmlbinary xmlcast xmlcomment xmlconcat xmldeclaration xmldocument xmlelement xmlexists xmlforest xmliterate xmlnamespaces xmlparse xmlpi xmlquery xmlroot xmlschema xmlserialize xmltable xmltext xmlvalidate year yes loop repeat attach path depends detach zone"),
+    // https://www.postgresql.org/docs/10/static/datatype.html
+    builtin: set("bigint int8 bigserial serial8 bit varying varbit boolean bool box bytea character char varchar cidr circle date double precision float8 inet integer int int4 interval json jsonb line lseg macaddr macaddr8 money numeric decimal path pg_lsn point polygon real float4 smallint int2 smallserial serial2 serial serial4 text time without zone with timetz timestamp timestamptz tsquery tsvector txid_snapshot uuid xml"),
+    atoms: set("false true null unknown"),
+    operatorChars: /^[*+\-%<>!=&|^\/#@?~]/,
+    dateSQL: set("date time timestamp"),
+    support: set("ODBCdotTable decimallessFloat zerolessFloat binaryNumber hexNumber nCharCast charsetCast")
+  });
+
+  // Google's SQL-like query language, GQL
+  CodeMirror.defineMIME("text/x-gql", {
+    name: "sql",
+    keywords: set("ancestor and asc by contains desc descendant distinct from group has in is limit offset on order select superset where"),
+    atoms: set("false true"),
+    builtin: set("blob datetime first key __key__ string integer double boolean null"),
+    operatorChars: /^[*+\-%<>!=]/
+  });
+
+  // Greenplum
+  CodeMirror.defineMIME("text/x-gpsql", {
+    name: "sql",
+    client: set("source"),
+    //https://github.com/greenplum-db/gpdb/blob/master/src/include/parser/kwlist.h
+    keywords: set("abort absolute access action active add admin after aggregate all also alter always analyse analyze and any array as asc assertion assignment asymmetric at authorization backward before begin between bigint binary bit boolean both by cache called cascade cascaded case cast chain char character characteristics check checkpoint class close cluster coalesce codegen collate column comment commit committed concurrency concurrently configuration connection constraint constraints contains content continue conversion copy cost cpu_rate_limit create createdb createexttable createrole createuser cross csv cube current current_catalog current_date current_role current_schema current_time current_timestamp current_user cursor cycle data database day deallocate dec decimal declare decode default defaults deferrable deferred definer delete delimiter delimiters deny desc dictionary disable discard distinct distributed do document domain double drop dxl each else enable encoding encrypted end enum errors escape every except exchange exclude excluding exclusive execute exists explain extension external extract false family fetch fields filespace fill filter first float following for force foreign format forward freeze from full function global grant granted greatest group group_id grouping handler hash having header hold host hour identity if ignore ilike immediate immutable implicit in including inclusive increment index indexes inherit inherits initially inline inner inout input insensitive insert instead int integer intersect interval into invoker is isnull isolation join key language large last leading least left level like limit list listen load local localtime localtimestamp location lock log login mapping master match maxvalue median merge minute minvalue missing mode modifies modify month move name names national natural nchar new newline next no nocreatedb nocreateexttable nocreaterole nocreateuser noinherit nologin none noovercommit nosuperuser not nothing notify notnull nowait null nullif nulls numeric object of off offset oids old on only operator option options or order ordered others out outer over overcommit overlaps overlay owned owner parser partial partition partitions passing password percent percentile_cont percentile_disc placing plans position preceding precision prepare prepared preserve primary prior privileges procedural procedure protocol queue quote randomly range read readable reads real reassign recheck recursive ref references reindex reject relative release rename repeatable replace replica reset resource restart restrict returning returns revoke right role rollback rollup rootpartition row rows rule savepoint scatter schema scroll search second security segment select sequence serializable session session_user set setof sets share show similar simple smallint some split sql stable standalone start statement statistics stdin stdout storage strict strip subpartition subpartitions substring superuser symmetric sysid system table tablespace temp template temporary text then threshold ties time timestamp to trailing transaction treat trigger trim true truncate trusted type unbounded uncommitted unencrypted union unique unknown unlisten until update user using vacuum valid validation validator value values varchar variadic varying verbose version view volatile web when where whitespace window with within without work writable write xml xmlattributes xmlconcat xmlelement xmlexists xmlforest xmlparse xmlpi xmlroot xmlserialize year yes zone"),
+    builtin: set("bigint int8 bigserial serial8 bit varying varbit boolean bool box bytea character char varchar cidr circle date double precision float float8 inet integer int int4 interval json jsonb line lseg macaddr macaddr8 money numeric decimal path pg_lsn point polygon real float4 smallint int2 smallserial serial2 serial serial4 text time without zone with timetz timestamp timestamptz tsquery tsvector txid_snapshot uuid xml"),
+    atoms: set("false true null unknown"),
+    operatorChars: /^[*+\-%<>!=&|^\/#@?~]/,
+    dateSQL: set("date time timestamp"),
+    support: set("ODBCdotTable decimallessFloat zerolessFloat binaryNumber hexNumber nCharCast charsetCast")
+  });
+
+  // Spark SQL
+  CodeMirror.defineMIME("text/x-sparksql", {
+    name: "sql",
+    keywords: set("add after all alter analyze and anti archive array as asc at between bucket buckets by cache cascade case cast change clear cluster clustered codegen collection column columns comment commit compact compactions compute concatenate cost create cross cube current current_date current_timestamp database databases datata dbproperties defined delete delimited desc describe dfs directories distinct distribute drop else end escaped except exchange exists explain export extended external false fields fileformat first following for format formatted from full function functions global grant group grouping having if ignore import in index indexes inner inpath inputformat insert intersect interval into is items join keys last lateral lazy left like limit lines list load local location lock locks logical macro map minus msck natural no not null nulls of on option options or order out outer outputformat over overwrite partition partitioned partitions percent preceding principals purge range recordreader recordwriter recover reduce refresh regexp rename repair replace reset restrict revoke right rlike role roles rollback rollup row rows schema schemas select semi separated serde serdeproperties set sets show skewed sort sorted start statistics stored stratify struct table tables tablesample tblproperties temp temporary terminated then to touch transaction transactions transform true truncate unarchive unbounded uncache union unlock unset use using values view when where window with"),
+    builtin: set("tinyint smallint int bigint boolean float double string binary timestamp decimal array map struct uniontype delimited serde sequencefile textfile rcfile inputformat outputformat"),
+    atoms: set("false true null"),
+    operatorChars: /^[*+\-%<>!=~&|^]/,
+    dateSQL: set("date time timestamp"),
+    support: set("ODBCdotTable doubleQuote zerolessFloat")
+  });
+
+  // Esper
+  CodeMirror.defineMIME("text/x-esper", {
+    name: "sql",
+    client: set("source"),
+    // http://www.espertech.com/esper/release-5.5.0/esper-reference/html/appendix_keywords.html
+    keywords: set("alter and as asc between by count create delete desc distinct drop from group having in insert into is join like not on or order select set table union update values where limit after all and as at asc avedev avg between by case cast coalesce count create current_timestamp day days delete define desc distinct else end escape events every exists false first from full group having hour hours in inner insert instanceof into irstream is istream join last lastweekday left limit like max match_recognize matches median measures metadatasql min minute minutes msec millisecond milliseconds not null offset on or order outer output partition pattern prev prior regexp retain-union retain-intersection right rstream sec second seconds select set some snapshot sql stddev sum then true unidirectional until update variable weekday when where window"),
+    builtin: {},
+    atoms: set("false true null"),
+    operatorChars: /^[*+\-%<>!=&|^\/#@?~]/,
+    dateSQL: set("time"),
+    support: set("decimallessFloat zerolessFloat binaryNumber hexNumber")
+  });
+}());
+
+});
+
+/*
+  How Properties of Mime Types are used by SQL Mode
+  =================================================
+
+  keywords:
+    A list of keywords you want to be highlighted.
+  builtin:
+    A list of builtin types you want to be highlighted (if you want types to be of class "builtin" instead of "keyword").
+  operatorChars:
+    All characters that must be handled as operators.
+  client:
+    Commands parsed and executed by the client (not the server).
+  support:
+    A list of supported syntaxes which are not common, but are supported by more than 1 DBMS.
+    * ODBCdotTable: .tableName
+    * zerolessFloat: .1
+    * doubleQuote
+    * nCharCast: N'string'
+    * charsetCast: _utf8'string'
+    * commentHash: use # char for comments
+    * commentSlashSlash: use // for comments
+    * commentSpaceRequired: require a space after -- for comments
+  atoms:
+    Keywords that must be highlighted as atoms,. Some DBMS's support more atoms than others:
+    UNKNOWN, INFINITY, UNDERFLOW, NaN...
+  dateSQL:
+    Used for date/time SQL standard syntax, because not all DBMS's support same temporal types.
+*/
+
+
+/***/ }),
+/* 2 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+const insertAfter = (el, referenceNode) =>
+    referenceNode.parentNode.insertBefore(el, referenceNode.nextSibling);
+/* harmony export (immutable) */ __webpack_exports__["a"] = insertAfter;
+
+
+// https://plainjs.com/javascript/ajax/serialize-form-data-into-a-query-string-45/
+const serialize = form => {
+    var field, l, s = [];
+    if (typeof form == 'object' && form.nodeName == "FORM") {
+        var len = form.elements.length;
+        for (var i=0; i<len; i++) {
+            field = form.elements[i];
+            if (field.name && !field.disabled && field.type != 'file' && field.type != 'reset' && field.type != 'submit' && field.type != 'button') {
+                if (field.type == 'select-multiple') {
+                    l = form.elements[i].options.length;
+                    for (var j=0; j<l; j++) {
+                        if(field.options[j].selected)
+                            s[s.length] = encodeURIComponent(field.name) + "=" + encodeURIComponent(field.options[j].value);
+                    }
+                } else if ((field.type != 'checkbox' && field.type != 'radio') || field.checked) {
+                    s[s.length] = encodeURIComponent(field.name) + "=" + encodeURIComponent(field.value);
+                }
+            }
+        }
+    }
+    return s.join('&').replace(/%20/g, '+');
+};
+/* harmony export (immutable) */ __webpack_exports__["b"] = serialize;
+
+
+
+/***/ }),
+/* 3 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__style_css__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__style_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__style_css__);
+
+__webpack_require__(9);
+
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(5);
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(7)(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {
+	module.hot.accept("!!../../node_modules/css-loader/index.js??ref--0-1!../../node_modules/postcss-loader/lib/index.js!./style.css", function() {
+		var newContent = require("!!../../node_modules/css-loader/index.js??ref--0-1!../../node_modules/postcss-loader/lib/index.js!./style.css");
+
+		if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+
+		var locals = (function(a, b) {
+			var key, idx = 0;
+
+			for(key in a) {
+				if(!b || a[key] !== b[key]) return false;
+				idx++;
+			}
+
+			for(key in b) idx--;
+
+			return idx === 0;
+		}(content.locals, newContent.locals));
+
+		if(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');
+
+		update(newContent);
+	});
+
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 5 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(6)(false);
+// imports
+
+
+// module
+exports.push([module.i, "/*!\n  Shoelace.css {{version}}\n  (c) A Beautiful Site, LLC\n\n  Released under the MIT license\n  Source: https://github.com/claviska/shoelace-css\n*/\n\n/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */\n\n/* Document\n   ========================================================================== */\n\n/**\n * 1. Correct the line height in all browsers.\n * 2. Prevent adjustments of font size after orientation changes in\n *    IE on Windows Phone and in iOS.\n */\n\nhtml {\n  line-height: 1.15; /* 1 */\n  -ms-text-size-adjust: 100%; /* 2 */\n  -webkit-text-size-adjust: 100%; /* 2 */\n}\n\n/* Sections\n   ========================================================================== */\n\n/**\n * Remove the margin in all browsers (opinionated).\n */\n\nbody {\n  margin: 0;\n}\n\n/**\n * Add the correct display in IE 9-.\n */\n\narticle,\naside,\nfooter,\nheader,\nnav,\nsection {\n  display: block;\n}\n\n/**\n * Correct the font size and margin on `h1` elements within `section` and\n * `article` contexts in Chrome, Firefox, and Safari.\n */\n\nh1 {\n  font-size: 2em;\n  margin: 0.67em 0;\n}\n\n/* Grouping content\n   ========================================================================== */\n\n/**\n * Add the correct display in IE 9-.\n * 1. Add the correct display in IE.\n */\n\nfigcaption,\nfigure,\nmain { /* 1 */\n  display: block;\n}\n\n/**\n * Add the correct margin in IE 8.\n */\n\nfigure {\n  margin: 1em 40px;\n}\n\n/**\n * 1. Add the correct box sizing in Firefox.\n * 2. Show the overflow in Edge and IE.\n */\n\nhr {\n  -webkit-box-sizing: content-box;\n          box-sizing: content-box; /* 1 */\n  height: 0; /* 1 */\n  overflow: visible; /* 2 */\n}\n\n/**\n * 1. Correct the inheritance and scaling of font size in all browsers.\n * 2. Correct the odd `em` font sizing in all browsers.\n */\n\npre {\n  font-family: monospace, monospace; /* 1 */\n  font-size: 1em; /* 2 */\n}\n\n/* Text-level semantics\n   ========================================================================== */\n\n/**\n * 1. Remove the gray background on active links in IE 10.\n * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.\n */\n\na {\n  background-color: transparent; /* 1 */\n  -webkit-text-decoration-skip: objects; /* 2 */\n}\n\n/**\n * 1. Remove the bottom border in Chrome 57- and Firefox 39-.\n * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.\n */\n\nabbr[title] {\n  border-bottom: none; /* 1 */\n  text-decoration: underline; /* 2 */\n  -webkit-text-decoration: underline dotted;\n          text-decoration: underline dotted; /* 2 */\n}\n\n/**\n * Prevent the duplicate application of `bolder` by the next rule in Safari 6.\n */\n\nb,\nstrong {\n  font-weight: inherit;\n}\n\n/**\n * Add the correct font weight in Chrome, Edge, and Safari.\n */\n\nb,\nstrong {\n  font-weight: bolder;\n}\n\n/**\n * 1. Correct the inheritance and scaling of font size in all browsers.\n * 2. Correct the odd `em` font sizing in all browsers.\n */\n\ncode,\nkbd,\nsamp {\n  font-family: monospace, monospace; /* 1 */\n  font-size: 1em; /* 2 */\n}\n\n/**\n * Add the correct font style in Android 4.3-.\n */\n\ndfn {\n  font-style: italic;\n}\n\n/**\n * Add the correct background and color in IE 9-.\n */\n\nmark {\n  background-color: #ff0;\n  color: #000;\n}\n\n/**\n * Add the correct font size in all browsers.\n */\n\nsmall {\n  font-size: 80%;\n}\n\n/**\n * Prevent `sub` and `sup` elements from affecting the line height in\n * all browsers.\n */\n\nsub,\nsup {\n  font-size: 75%;\n  line-height: 0;\n  position: relative;\n  vertical-align: baseline;\n}\n\nsub {\n  bottom: -0.25em;\n}\n\nsup {\n  top: -0.5em;\n}\n\n/* Embedded content\n   ========================================================================== */\n\n/**\n * Add the correct display in IE 9-.\n */\n\naudio,\nvideo {\n  display: inline-block;\n}\n\n/**\n * Add the correct display in iOS 4-7.\n */\n\naudio:not([controls]) {\n  display: none;\n  height: 0;\n}\n\n/**\n * Remove the border on images inside links in IE 10-.\n */\n\nimg {\n  border-style: none;\n}\n\n/**\n * Hide the overflow in IE.\n */\n\nsvg:not(:root) {\n  overflow: hidden;\n}\n\n/* Forms\n   ========================================================================== */\n\n/**\n * 1. Change the font styles in all browsers (opinionated).\n * 2. Remove the margin in Firefox and Safari.\n */\n\nbutton,\ninput,\noptgroup,\nselect,\ntextarea {\n  font-family: sans-serif; /* 1 */\n  font-size: 100%; /* 1 */\n  line-height: 1.15; /* 1 */\n  margin: 0; /* 2 */\n}\n\n/**\n * Show the overflow in IE.\n * 1. Show the overflow in Edge.\n */\n\nbutton,\ninput { /* 1 */\n  overflow: visible;\n}\n\n/**\n * Remove the inheritance of text transform in Edge, Firefox, and IE.\n * 1. Remove the inheritance of text transform in Firefox.\n */\n\nbutton,\nselect { /* 1 */\n  text-transform: none;\n}\n\n/**\n * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`\n *    controls in Android 4.\n * 2. Correct the inability to style clickable types in iOS and Safari.\n */\n\nbutton,\nhtml [type=\"button\"], /* 1 */\n[type=\"reset\"],\n[type=\"submit\"] {\n  -webkit-appearance: button; /* 2 */\n}\n\n/**\n * Remove the inner border and padding in Firefox.\n */\n\nbutton::-moz-focus-inner,\n[type=\"button\"]::-moz-focus-inner,\n[type=\"reset\"]::-moz-focus-inner,\n[type=\"submit\"]::-moz-focus-inner {\n  border-style: none;\n  padding: 0;\n}\n\n/**\n * Restore the focus styles unset by the previous rule.\n */\n\nbutton:-moz-focusring,\n[type=\"button\"]:-moz-focusring,\n[type=\"reset\"]:-moz-focusring,\n[type=\"submit\"]:-moz-focusring {\n  outline: 1px dotted ButtonText;\n}\n\n/**\n * Correct the padding in Firefox.\n */\n\nfieldset {\n  padding: 0.35em 0.75em 0.625em;\n}\n\n/**\n * 1. Correct the text wrapping in Edge and IE.\n * 2. Correct the color inheritance from `fieldset` elements in IE.\n * 3. Remove the padding so developers are not caught out when they zero out\n *    `fieldset` elements in all browsers.\n */\n\nlegend {\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box; /* 1 */\n  color: inherit; /* 2 */\n  display: table; /* 1 */\n  max-width: 100%; /* 1 */\n  padding: 0; /* 3 */\n  white-space: normal; /* 1 */\n}\n\n/**\n * 1. Add the correct display in IE 9-.\n * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.\n */\n\nprogress {\n  display: inline-block; /* 1 */\n  vertical-align: baseline; /* 2 */\n}\n\n/**\n * Remove the default vertical scrollbar in IE.\n */\n\ntextarea {\n  overflow: auto;\n}\n\n/**\n * 1. Add the correct box sizing in IE 10-.\n * 2. Remove the padding in IE 10-.\n */\n\n[type=\"checkbox\"],\n[type=\"radio\"] {\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box; /* 1 */\n  padding: 0; /* 2 */\n}\n\n/**\n * Correct the cursor style of increment and decrement buttons in Chrome.\n */\n\n[type=\"number\"]::-webkit-inner-spin-button,\n[type=\"number\"]::-webkit-outer-spin-button {\n  height: auto;\n}\n\n/**\n * 1. Correct the odd appearance in Chrome and Safari.\n * 2. Correct the outline style in Safari.\n */\n\n[type=\"search\"] {\n  -webkit-appearance: textfield; /* 1 */\n  outline-offset: -2px; /* 2 */\n}\n\n/**\n * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.\n */\n\n[type=\"search\"]::-webkit-search-cancel-button,\n[type=\"search\"]::-webkit-search-decoration {\n  -webkit-appearance: none;\n}\n\n/**\n * 1. Correct the inability to style clickable types in iOS and Safari.\n * 2. Change font properties to `inherit` in Safari.\n */\n\n::-webkit-file-upload-button {\n  -webkit-appearance: button; /* 1 */\n  font: inherit; /* 2 */\n}\n\n/* Interactive\n   ========================================================================== */\n\n/*\n * Add the correct display in IE 9-.\n * 1. Add the correct display in Edge, IE, and Firefox.\n */\n\ndetails, /* 1 */\nmenu {\n  display: block;\n}\n\n/*\n * Add the correct display in all browsers.\n */\n\nsummary {\n  display: list-item;\n}\n\n/* Scripting\n   ========================================================================== */\n\n/**\n * Add the correct display in IE 9-.\n */\n\ncanvas {\n  display: inline-block;\n}\n\n/**\n * Add the correct display in IE.\n */\n\ntemplate {\n  display: none;\n}\n\n/* Hidden\n   ========================================================================== */\n\n/**\n * Add the correct display in IE 10-.\n */\n\n[hidden] {\n  display: none;\n}\n\n/*! Content */\n\n/***************************************************************************************************\n* Resets\n***************************************************************************************************/\n\n/* Box sizing reset */\n\nhtml {\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n}\n\n*,\n*::before,\n*::after {\n  -webkit-box-sizing: inherit;\n          box-sizing: inherit;\n}\n\n/* Hidden property reset */\n\n[hidden] {\n  display: none !important;\n}\n\n/***************************************************************************************************\n* The basics\n***************************************************************************************************/\n\nbody {\n  background: white;\n  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue;\n  font-weight: 400;\n  font-size: 16px;\n  font-size: 1rem;\n  color: #111;\n  line-height: 1.5;\n}\n\na {\n  color: #0099ff;\n  text-decoration: none;\n}\n\na:hover {\n  color: #0099ff;\n  text-decoration: underline;\n}\n\nabbr[title] {\n  text-decoration: none;\n  border-bottom: dashed 2px currentcolor;\n}\n\nb,\nstrong {\n  font-weight: 700;\n}\n\nblockquote {\n  font-size: 120%;\n  border-left: solid 6.4px #ddd;\n  border-left: solid .4rem #ddd;\n  padding: 8px 8px 8px 16px;\n  padding: .5rem .5rem .5rem 1rem;\n  margin-bottom: 24px;\n  margin-bottom: 1.5rem;\n  margin-left: 0;\n}\n\nblockquote :last-child {\n  margin-bottom: 0;\n}\n\ncode {\n  font-family: Menlo, Consolas, \"DejaVu Sans Mono\", monospace;\n  font-size: 90%;\n  color: #111;\n  background-color: #f2f2f2;\n  border-radius: .25rem;\n  padding: 3.2px 6.4px;\n  padding: 0.2rem 0.4rem;\n}\n\ndel {\n  color: #ff4136;\n}\n\nfigure {\n  margin-top: 0;\n  margin-bottom: 24px;\n  margin-bottom: 1.5rem;\n}\n\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue;\n  font-weight: 300;\n  line-height: 1.1;\n  color: inherit;\n  margin-top: 0;\n  margin-bottom: 8px;\n  margin-bottom: .5rem;\n}\n\nh1 { font-size: 40px; font-size: 2.5rem; }\n\nh2 { font-size: 32px; font-size: 2rem; }\n\nh3 { font-size: 28px; font-size: 1.75rem; }\n\nh4 { font-size: 24px; font-size: 1.5rem; }\n\nh5 { font-size: 20px; font-size: 1.25rem; }\n\nh6 { font-size: 16px; font-size: 1rem; }\n\nhr {\n  border: none;\n  border-top: solid 1px #ddd;\n  margin: 32px 0;\n  margin: 2rem 0;\n}\n\nimg {\n  height: auto;\n  max-width: 100%;\n  vertical-align: middle;\n}\n\nins {\n  color: #2ecc40;\n}\n\nkbd {\n  font-family: Menlo, Consolas, \"DejaVu Sans Mono\", monospace;\n  font-size: 90%;\n  color: white;\n  background-color: #111;\n  border-radius: .25rem;\n  padding: 3.2px 6.4px;\n  padding: 0.2rem 0.4rem;\n}\n\nmark {\n  color: inherit;\n  background-color: #ffdc00;\n  padding: 3.2px 6.4px;\n  padding: 0.2rem 0.4rem;\n}\n\np {\n  margin-top: 0;\n  margin-bottom: 24px;\n  margin-bottom: 1.5rem;\n}\n\npre {\n  max-height: none;\n  overflow-y: auto;\n  font-family: Menlo, Consolas, \"DejaVu Sans Mono\", monospace;\n  color: #111;\n  background-color: #f2f2f2;\n  border-radius: .25rem;\n  padding: 16px;\n  padding: 1rem;\n  margin-top: 0;\n  margin-bottom: 24px;\n  margin-bottom: 1.5rem;\n}\n\nsmall {\n  font-size: 80%;\n}\n\n/***************************************************************************************************\n* Lists\n***************************************************************************************************/\n\ndl {\n  margin-bottom: 24px;\n  margin-bottom: 1.5rem;\n}\n\ndt {\n  font-weight: 700;\n}\n\ndd {\n  margin-left: 0;\n  margin-bottom: 24px;\n  margin-bottom: 1.5rem;\n}\n\nol,\nul {\n  line-height: 1.5;\n  margin-top: 0;\n  margin-bottom: 24px;\n  margin-bottom: 1.5rem\n}\n\nol ol,\n  ol ul,\n  ul ol,\n  ul ul {\n  margin-bottom: 0;\n}\n\n/***************************************************************************************************\n* Placeholders\n***************************************************************************************************/\n\n::-webkit-input-placeholder {\n  color: #aaa;\n}\n\n:-ms-input-placeholder {\n  color: #aaa;\n}\n\n::-ms-input-placeholder {\n  color: #aaa;\n}\n\n::placeholder {\n  color: #aaa;\n}\n\n/***************************************************************************************************\n* Selections\n***************************************************************************************************/\n\n::-moz-selection {\n  background-color: #0099ff;\n  color: white;\n  text-shadow: none !important;\n}\n\n::selection {\n  background-color: #0099ff;\n  color: white;\n  text-shadow: none !important;\n}\n\n/*! Alerts */\n\n.alert {\n  color: rgb(0, 76, 128);\n  background-color: rgb(191, 230, 255);\n  border-color: rgb(181, 219, 242);\n  border-style: solid;\n  border-width: 1px;\n  border-radius: .25rem;\n  padding: 16px 16px;\n  padding: 1rem 1rem;\n  margin-top: 0;\n  margin-bottom: 24px;\n  margin-bottom: 1.5rem\n}\n\n.alert:empty {\n  display: none;\n}\n\n.alert a {\n  color: currentcolor;\n  font-weight: 700;\n}\n\n.alert > :last-child {\n  margin-bottom: 0;\n}\n\n.alert {/*Variations\n*/\n}\n\n.alert.alert-secondary {\n  color: rgb(64, 64, 64);\n  background-color: rgb(234, 234, 234);\n  border-color: rgb(222, 222, 222);\n}\n\n.alert.alert-info {\n  color: rgb(26, 101, 101);\n  background-color: rgb(206, 242, 242);\n  border-color: rgb(196, 230, 230);\n}\n\n.alert.alert-success {\n  color: rgb(24, 104, 33);\n  background-color: rgb(203, 242, 207);\n  border-color: rgb(193, 230, 197);\n}\n\n.alert.alert-warning {\n  color: rgb(128, 60, 0);\n  background-color: rgb(255, 225, 198);\n  border-color: rgb(242, 214, 188);\n}\n\n.alert.alert-danger {\n  color: rgb(128, 6, 0);\n  background-color: rgb(255, 208, 205);\n  border-color: rgb(242, 198, 195);\n}\n\n.alert.alert-light {\n  color: rgb(128, 128, 128);\n  background-color: rgb(255, 255, 255);\n  border-color: rgb(242, 242, 242);\n}\n\n.alert.alert-dark {\n  color: rgb(64, 64, 64);\n  background-color: rgb(196, 196, 196);\n  border-color: rgb(186, 186, 186);\n}\n\n/*! Badges */\n\n.badge {\n  font-size: .8em;\n  color: white;\n  background-color: #0099ff;\n  border-radius: 1em;\n  padding: .2em .6em;\n  vertical-align: baseline;\n  display: inline-block;\n  -webkit-transition: .1s all;\n  transition: .1s all\n}\n\n.badge:empty {\n  display: none;\n}\n\n.badge {/*Variations\n*/\n}\n\n.badge.badge-secondary {\n  color: white;\n  background-color: #aaa;\n}\n\n.badge.badge-success {\n  color: white;\n  background-color: #2ecc40;\n}\n\n.badge.badge-info {\n  color: white;\n  background-color: #39cccc;\n}\n\n.badge.badge-warning {\n  color: white;\n  background-color: #ff851b;\n}\n\n.badge.badge-danger {\n  color: white;\n  background-color: #ff4136;\n}\n\n.badge.badge-light {\n  color: #111;\n  background-color: white;\n}\n\n.badge.badge-dark {\n  color: white;\n  background-color: #111;\n}\n\n/* Badge links */\n\na.badge:hover {\n  color: white;\n  background-color: rgb(0, 138, 230);\n  text-decoration: none;\n}\n\na.badge:focus {\n  outline: none;\n  -webkit-box-shadow: 0 0 0 2px rgba(0, 153, 255, 0.5);\n          box-shadow: 0 0 0 2px rgba(0, 153, 255, 0.5);\n}\n\na.badge.badge-secondary:hover {\n  color: white;\n  background-color: rgb(153, 153, 153);\n}\n\na.badge.badge-secondary:focus {\n  -webkit-box-shadow: 0 0 0 2px rgba(170, 170, 170, 0.5);\n          box-shadow: 0 0 0 2px rgba(170, 170, 170, 0.5);\n}\n\na.badge.badge-success:hover {\n  color: white;\n  background-color: rgb(41, 184, 58);\n}\n\na.badge.badge-success:focus {\n  -webkit-box-shadow: 0 0 0 2px rgba(46, 204, 64, 0.5);\n          box-shadow: 0 0 0 2px rgba(46, 204, 64, 0.5);\n}\n\na.badge.badge-info:hover {\n  color: white;\n  background-color: rgb(51, 184, 184);\n}\n\na.badge.badge-info:focus {\n  -webkit-box-shadow: 0 0 0 2px rgba(57, 204, 204, 0.5);\n          box-shadow: 0 0 0 2px rgba(57, 204, 204, 0.5);\n}\n\na.badge.badge-warning:hover {\n  color: white;\n  background-color: rgb(230, 120, 24);\n}\n\na.badge.badge-warning:focus {\n  -webkit-box-shadow: 0 0 0 2px rgba(255, 133, 27, 0.5);\n          box-shadow: 0 0 0 2px rgba(255, 133, 27, 0.5);\n}\n\na.badge.badge-danger:hover {\n  color: white;\n  background-color: rgb(230, 59, 49);\n}\n\na.badge.badge-danger:focus {\n  -webkit-box-shadow: 0 0 0 2px rgba(255, 65, 54, 0.5);\n          box-shadow: 0 0 0 2px rgba(255, 65, 54, 0.5);\n}\n\na.badge.badge-light:hover {\n  color: #111;\n  background-color: rgb(230, 230, 230);\n}\n\na.badge.badge-light:focus {\n  -webkit-box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);\n          box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);\n}\n\na.badge.badge-dark:hover {\n  color: white;\n  background-color: rgb(41, 41, 41);\n}\n\na.badge.badge-dark:focus {\n  -webkit-box-shadow: 0 0 0 2px rgba(17, 17, 17, 0.5);\n          box-shadow: 0 0 0 2px rgba(17, 17, 17, 0.5);\n}\n\n/*! Buttons */\n\nbutton,\n.button {\n  font-family: inherit;\n  font-size: 16px;\n  font-size: 1rem;\n  font-weight: inherit;\n  text-align: center;\n  text-decoration: none;\n  color: white;\n  background-color: #0099ff;\n  border-radius: .25rem;\n  border-style: solid;\n  border-width: 1px;\n  border-color: #0099ff;\n  border-top-color: rgb(25, 163, 255);\n  border-bottom-color: rgb(0, 138, 230);\n  height: 36px;\n  height: 2.25rem;\n  line-height: calc(2.25rem - 2px);\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n  vertical-align: middle;\n  white-space: nowrap;\n  padding: 0 .75em; /* ems for relative sizing */\n  cursor: pointer;\n  display: inline-block;\n  -webkit-transition: .1s all;\n  transition: .1s all\n}\n\nbutton:hover, .button:hover {\n  color: white;\n  text-decoration: none;\n  background-color: rgb(0, 138, 230);\n  border-color: rgb(0, 138, 230);\n  border-top-color: rgb(0, 153, 255);\n  border-bottom-color: rgb(0, 122, 204);\n}\n\nbutton:active,\n  button.active,\n  .button:active,\n  .button.active {\n  background-color: rgb(0, 138, 230);\n  border-color: rgb(0, 138, 230);\n  border-top-color: rgb(0, 122, 204);\n  border-bottom-color: rgb(0, 138, 230);\n}\n\nbutton:focus, .button:focus {\n  outline: none;\n  -webkit-box-shadow: 0 0 0 2px rgba(0, 153, 255, 0.5);\n          box-shadow: 0 0 0 2px rgba(0, 153, 255, 0.5);\n}\n\nbutton:disabled,\n  button.disabled,\n  .button:disabled,\n  .button.disabled {\n  background-color: rgb(0, 138, 230);\n  border-top-color: rgb(25, 163, 255);\n  border-bottom-color: rgb(0, 138, 230);\n  -webkit-box-shadow: none;\n          box-shadow: none;\n  text-decoration: none;\n  opacity: .5;\n  cursor: not-allowed;\n}\n\nbutton,\n.button {/*Sizes\n*/\n}\n\nbutton.button-xs, .button.button-xs {\n  font-size: 10px;\n  font-size: .625rem;\n  height: 20px;\n  height: 1.25rem;\n  line-height: calc(1.25rem - 2px);\n}\n\nbutton.button-sm, .button.button-sm {\n  font-size: 14px;\n  font-size: .875rem;\n  height: 28px;\n  height: 1.75rem;\n  line-height: calc(1.75rem - 2px);\n}\n\nbutton.button-lg, .button.button-lg {\n  font-size: 20px;\n  font-size: 1.25rem;\n  height: 44px;\n  height: 2.75rem;\n  line-height: calc(2.75rem - 2px);\n}\n\nbutton.button-xl, .button.button-xl {\n  font-size: 24px;\n  font-size: 1.5rem;\n  height: 52px;\n  height: 3.25rem;\n  line-height: calc(3.25rem - 2px);\n}\n\nbutton,\n.button {/*Variations\n*/\n}\n\nbutton.button-secondary, .button.button-secondary {\n  color: white;\n  background-color: #aaa;\n  border-color: #aaa;\n  border-top-color: rgb(179, 179, 179);\n  border-bottom-color: rgb(153, 153, 153);\n}\n\nbutton.button-secondary:hover, .button.button-secondary:hover {\n  color: white;\n  background-color: rgb(153, 153, 153);\n  border-color: rgb(153, 153, 153);\n  border-top-color: rgb(170, 170, 170);\n  border-bottom-color: rgb(136, 136, 136);\n}\n\nbutton.button-secondary:active,\n    button.button-secondary.active,\n    .button.button-secondary:active,\n    .button.button-secondary.active {\n  background-color: rgb(153, 153, 153);\n  border-color: rgb(153, 153, 153);\n  border-top-color: rgb(136, 136, 136);\n  border-bottom-color: rgb(153, 153, 153);\n}\n\nbutton.button-secondary:focus, .button.button-secondary:focus {\n  outline: none;\n  -webkit-box-shadow: 0 0 0 2px rgba(170, 170, 170, 0.5);\n          box-shadow: 0 0 0 2px rgba(170, 170, 170, 0.5);\n}\n\nbutton.button-secondary:disabled,\n    button.button-secondary.disabled,\n    .button.button-secondary:disabled,\n    .button.button-secondary.disabled {\n  background-color: rgb(153, 153, 153);\n  border-top-color: rgb(179, 179, 179);\n  border-bottom-color: rgb(153, 153, 153);\n  -webkit-box-shadow: none;\n          box-shadow: none;\n}\n\nbutton.button-success, .button.button-success {\n  color: white;\n  background-color: #2ecc40;\n  border-color: #2ecc40;\n  border-top-color: rgb(67, 209, 83);\n  border-bottom-color: rgb(41, 184, 58);\n}\n\nbutton.button-success:hover, .button.button-success:hover {\n  color: white;\n  background-color: rgb(41, 184, 58);\n  border-color: rgb(41, 184, 58);\n  border-top-color: rgb(46, 204, 64);\n  border-bottom-color: rgb(37, 163, 51);\n}\n\nbutton.button-success:active,\n    button.button-success.active,\n    .button.button-success:active,\n    .button.button-success.active {\n  background-color: rgb(41, 184, 58);\n  border-color: rgb(41, 184, 58);\n  border-top-color: rgb(37, 163, 51);\n  border-bottom-color: rgb(41, 184, 58);\n}\n\nbutton.button-success:focus, .button.button-success:focus {\n  outline: none;\n  -webkit-box-shadow: 0 0 0 2px rgba(46, 204, 64, 0.5);\n          box-shadow: 0 0 0 2px rgba(46, 204, 64, 0.5);\n}\n\nbutton.button-success:disabled,\n    button.button-success.disabled,\n    .button.button-success:disabled,\n    .button.button-success.disabled {\n  background-color: rgb(41, 184, 58);\n  border-top-color: rgb(67, 209, 83);\n  border-bottom-color: rgb(41, 184, 58);\n  -webkit-box-shadow: none;\n          box-shadow: none;\n}\n\nbutton.button-info, .button.button-info {\n  color: white;\n  background-color: #39cccc;\n  border-color: #39cccc;\n  border-top-color: rgb(77, 209, 209);\n  border-bottom-color: rgb(51, 184, 184);\n}\n\nbutton.button-info:hover, .button.button-info:hover {\n  color: white;\n  background-color: rgb(51, 184, 184);\n  border-color: rgb(51, 184, 184);\n  border-top-color: rgb(57, 204, 204);\n  border-bottom-color: rgb(46, 163, 163);\n}\n\nbutton.button-info:active,\n    button.button-info.active,\n    .button.button-info:active,\n    .button.button-info.active {\n  background-color: rgb(51, 184, 184);\n  border-color: rgb(51, 184, 184);\n  border-top-color: rgb(46, 163, 163);\n  border-bottom-color: rgb(51, 184, 184);\n}\n\nbutton.button-info:focus, .button.button-info:focus {\n  outline: none;\n  -webkit-box-shadow: 0 0 0 2px rgba(57, 204, 204, 0.5);\n          box-shadow: 0 0 0 2px rgba(57, 204, 204, 0.5);\n}\n\nbutton.button-info:disabled,\n    button.button-info.disabled,\n    .button.button-info:disabled,\n    .button.button-info.disabled {\n  background-color: rgb(51, 184, 184);\n  border-top-color: rgb(77, 209, 209);\n  border-bottom-color: rgb(51, 184, 184);\n  -webkit-box-shadow: none;\n          box-shadow: none;\n}\n\nbutton.button-warning, .button.button-warning {\n  color: white;\n  background-color: #ff851b;\n  border-color: #ff851b;\n  border-top-color: rgb(255, 145, 50);\n  border-bottom-color: rgb(230, 120, 24);\n}\n\nbutton.button-warning:hover, .button.button-warning:hover {\n  color: white;\n  background-color: rgb(230, 120, 24);\n  border-color: rgb(230, 120, 24);\n  border-top-color: rgb(255, 133, 27);\n  border-bottom-color: rgb(204, 106, 22);\n}\n\nbutton.button-warning:active,\n    button.button-warning.active,\n    .button.button-warning:active,\n    .button.button-warning.active {\n  background-color: rgb(230, 120, 24);\n  border-color: rgb(230, 120, 24);\n  border-top-color: rgb(204, 106, 22);\n  border-bottom-color: rgb(230, 120, 24);\n}\n\nbutton.button-warning:focus, .button.button-warning:focus {\n  outline: none;\n  -webkit-box-shadow: 0 0 0 2px rgba(255, 133, 27, 0.5);\n          box-shadow: 0 0 0 2px rgba(255, 133, 27, 0.5);\n}\n\nbutton.button-warning:disabled,\n    button.button-warning.disabled,\n    .button.button-warning:disabled,\n    .button.button-warning.disabled {\n  background-color: rgb(230, 120, 24);\n  border-top-color: rgb(255, 145, 50);\n  border-bottom-color: rgb(230, 120, 24);\n  -webkit-box-shadow: none;\n          box-shadow: none;\n}\n\nbutton.button-danger, .button.button-danger {\n  color: white;\n  background-color: #ff4136;\n  border-color: #ff4136;\n  border-top-color: rgb(255, 84, 74);\n  border-bottom-color: rgb(230, 59, 49);\n}\n\nbutton.button-danger:hover, .button.button-danger:hover {\n  color: white;\n  background-color: rgb(230, 59, 49);\n  border-color: rgb(230, 59, 49);\n  border-top-color: rgb(255, 65, 54);\n  border-bottom-color: rgb(204, 52, 43);\n}\n\nbutton.button-danger:active,\n    button.button-danger.active,\n    .button.button-danger:active,\n    .button.button-danger.active {\n  background-color: rgb(230, 59, 49);\n  border-color: rgb(230, 59, 49);\n  border-top-color: rgb(204, 52, 43);\n  border-bottom-color: rgb(230, 59, 49);\n}\n\nbutton.button-danger:focus, .button.button-danger:focus {\n  outline: none;\n  -webkit-box-shadow: 0 0 0 2px rgba(255, 65, 54, 0.5);\n          box-shadow: 0 0 0 2px rgba(255, 65, 54, 0.5);\n}\n\nbutton.button-danger:disabled,\n    button.button-danger.disabled,\n    .button.button-danger:disabled,\n    .button.button-danger.disabled {\n  background-color: rgb(230, 59, 49);\n  border-top-color: rgb(255, 84, 74);\n  border-bottom-color: rgb(230, 59, 49);\n  -webkit-box-shadow: none;\n          box-shadow: none;\n}\n\nbutton.button-light, .button.button-light {\n  color: #111;\n  background-color: rgb(230, 230, 230);\n  border-color: rgb(230, 230, 230);\n  border-top-color: rgb(233, 233, 233);\n  border-bottom-color: rgb(207, 207, 207);\n}\n\nbutton.button-light:hover, .button.button-light:hover {\n  color: #111;\n  background-color: rgb(207, 207, 207);\n  border-color: rgb(207, 207, 207);\n  border-top-color: rgb(230, 230, 230);\n  border-bottom-color: rgb(184, 184, 184);\n}\n\nbutton.button-light:active,\n    button.button-light.active,\n    .button.button-light:active,\n    .button.button-light.active {\n  background-color: rgb(207, 207, 207);\n  border-color: rgb(207, 207, 207);\n  border-top-color: rgb(184, 184, 184);\n  border-bottom-color: rgb(207, 207, 207);\n}\n\nbutton.button-light:focus, .button.button-light:focus {\n  outline: none;\n  -webkit-box-shadow: 0 0 0 2px rgba(230, 230, 230, 0.5);\n          box-shadow: 0 0 0 2px rgba(230, 230, 230, 0.5);\n}\n\nbutton.button-light:disabled,\n    button.button-light.disabled,\n    .button.button-light:disabled,\n    .button.button-light.disabled {\n  background-color: rgb(207, 207, 207);\n  border-top-color: rgb(233, 233, 233);\n  border-bottom-color: rgb(207, 207, 207);\n  -webkit-box-shadow: none;\n          box-shadow: none;\n}\n\nbutton.button-dark, .button.button-dark {\n  color: white;\n  background-color: rgb(41, 41, 41);\n  border-color: rgb(41, 41, 41);\n  border-top-color: rgb(62, 62, 62);\n  border-bottom-color: rgb(37, 37, 37);\n}\n\nbutton.button-dark:hover, .button.button-dark:hover {\n  color: white;\n  background-color: rgb(37, 37, 37);\n  border-color: rgb(37, 37, 37);\n  border-top-color: rgb(41, 41, 41);\n  border-bottom-color: rgb(33, 33, 33);\n}\n\nbutton.button-dark:active,\n    button.button-dark.active,\n    .button.button-dark:active,\n    .button.button-dark.active {\n  background-color: rgb(37, 37, 37);\n  border-color: rgb(37, 37, 37);\n  border-top-color: rgb(33, 33, 33);\n  border-bottom-color: rgb(37, 37, 37);\n}\n\nbutton.button-dark:focus, .button.button-dark:focus {\n  outline: none;\n  -webkit-box-shadow: 0 0 0 2px rgba(41, 41, 41, 0.5);\n          box-shadow: 0 0 0 2px rgba(41, 41, 41, 0.5);\n}\n\nbutton.button-dark:disabled,\n    button.button-dark.disabled,\n    .button.button-dark:disabled,\n    .button.button-dark.disabled {\n  background-color: rgb(37, 37, 37);\n  border-top-color: rgb(62, 62, 62);\n  border-bottom-color: rgb(37, 37, 37);\n  -webkit-box-shadow: none;\n          box-shadow: none;\n}\n\nbutton,\n.button {/*Block buttons\n*/\n}\n\nbutton.button-block, .button.button-block {\n  width: 100% !important;\n  display: block;\n}\n\nbutton,\n.button {/*Link buttons\n*/\n}\n\nbutton.button-link, .button.button-link {\n  border-color: transparent;\n  background-color: transparent;\n  color: #0099ff;\n  text-decoration: none;\n  -webkit-box-shadow: none;\n          box-shadow: none;\n}\n\nbutton.button-link:hover,\n  button.button-link:focus,\n  .button.button-link:hover,\n  .button.button-link:focus {\n  border-color: transparent;\n  background-color: transparent;\n  color: #0099ff;\n  text-decoration: underline;\n  -webkit-box-shadow: none;\n          box-shadow: none;\n}\n\n/* Loader buttons */\n\n.button-loader,\n.button-loader:hover {\n  position: relative;\n  min-width: 2em;\n  color: transparent !important;\n  overflow: hidden;\n}\n\n.button-loader::after {\n  content: '';\n  position: absolute;\n  top: calc(50% - 0.5em);\n  left: calc(50% - 0.5em);\n  width: 1em;\n  height: 1em;\n  border-radius: 50%;\n  border: solid .15em rgba(255, 255, 255, 0.2);\n  border-top-color: white;\n  border-left-color: white;\n  display: inline-block;\n  -webkit-animation: button-loader 750ms linear infinite;\n          animation: button-loader 750ms linear infinite;\n}\n\n.button-secondary.button-loader::after {\n  border-color: rgba(255, 255, 255, 0.2);\n  border-top-color: white;\n  border-left-color: white;\n}\n\n.button-success.button-loader::after {\n  border-color: rgba(255, 255, 255, 0.2);\n  border-top-color: white;\n  border-left-color: white;\n}\n\n.button-info.button-loader::after {\n  border-color: rgba(255, 255, 255, 0.2);\n  border-top-color: white;\n  border-left-color: white;\n}\n\n.button-warning.button-loader::after {\n  border-color: rgba(255, 255, 255, 0.2);\n  border-top-color: white;\n  border-left-color: white;\n}\n\n.button-danger.button-loader::after {\n  border-color: rgba(255, 255, 255, 0.2);\n  border-top-color: white;\n  border-left-color: white;\n}\n\n.button-light.button-loader::after {\n  border-color: rgba(17, 17, 17, 0.2);\n  border-top-color: #111;\n  border-left-color: #111;\n}\n\n.button-dark.button-loader::after {\n  border-color: rgba(255, 255, 255, 0.2);\n  border-top-color: white;\n  border-left-color: white;\n}\n\n@-webkit-keyframes button-loader {\n  0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }\n  100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }\n}\n\n@keyframes button-loader {\n  0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }\n  100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }\n}\n\n/*! Dropdowns */\n\n.dropdown {\n  position: relative;\n  display: inline-block\n}\n\n.dropdown .dropdown-trigger::after {\n  content: '';\n  width: .5em;\n  height: .5em;\n  border-top: solid 2px currentcolor;\n  border-right: solid 2px currentcolor;\n  margin-left: .5em;\n  margin-top: -0.5em;\n  -webkit-transform: rotate(135deg);\n          transform: rotate(135deg);\n  display: inline-block;\n  vertical-align: middle;\n}\n\n.dropdown.dropdown-top .dropdown-trigger::after {\n  -webkit-transform: rotate(315deg);\n          transform: rotate(315deg);\n  margin-top: 0;\n}\n\n.dropdown {/*Menu\n*/\n}\n\n.dropdown .dropdown-menu {\n  position: absolute;\n  top: calc(100% + 1px);\n  left: 0;\n  z-index: 100;\n  min-width: 160px;\n  min-width: 10rem;\n  max-width: 400px;\n  max-width: 25rem;\n  max-height: none;\n  line-height: 1.5;\n  font-size: inherit;\n  font-weight: inherit;\n  text-align: left;\n  background-color: white;\n  border: solid 1px #ddd;\n  border-radius: .25rem;\n  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, .05);\n          box-shadow: 0 1px 0 rgba(0, 0, 0, .05);\n  display: none;\n  padding: 4px 0;\n  padding: .25rem 0;\n  overflow-y: auto;\n  -webkit-transform: translateZ(0);\n          transform: translateZ(0);\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n}\n\n.dropdown .dropdown-menu a {\n  position: relative;\n  color: #111;\n  text-decoration: none;\n  padding: .25rem calc(1rem + 0.5em);\n  display: block;\n  white-space: nowrap;\n  overflow-x: hidden;\n  text-overflow: ellipsis;\n}\n\n.dropdown .dropdown-menu a:focus {\n  outline: none;\n  color: #111;\n  background-color: rgb(242, 242, 242);\n}\n\n.dropdown .dropdown-menu a:hover {\n  color: white;\n  background-color: #0099ff;\n}\n\n.dropdown .dropdown-menu a.disabled {\n  background-color: transparent;\n  color: #111;\n  outline: none;\n  cursor: not-allowed;\n  opacity: .5;\n}\n\n.dropdown .dropdown-menu a.checked::before {\n  position: absolute;\n  left: calc(0.5rem - 0.1em);\n  content: '\\2713';\n  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue;\n  font-weight: 600;\n}\n\n.dropdown .dropdown-menu hr {\n  width: 100%;\n  border-top: solid 1px #ddd;\n  margin: 4px 0;\n  margin: .25rem 0;\n}\n\n.dropdown .dropdown-menu .dropdown-heading {\n  font-size: 80%;\n  font-weight: inherit;\n  color: #aaa;\n  padding: .25rem calc(1rem + 0.5em);\n  cursor: default;\n}\n\n.dropdown.dropdown-top .dropdown-menu {\n  top: auto;\n  bottom: calc(100% + 1px);\n}\n\n.dropdown.dropdown-left .dropdown-menu {\n  left: auto;\n  right: 0;\n}\n\n.dropdown.dropdown.active .dropdown-menu {\n  display: block;\n}\n\n/*! File buttons */\n\n.file-button {\n  position: relative\n}\n\n.file-button input[type=\"file\"] {\n  position: absolute;\n  height: 1px;\n  width: 1px;\n  background: none;\n  border: 0;\n  clip: rect(0 0 0 0);\n  -webkit-clip-path: inset(50%);\n          clip-path: inset(50%);\n  overflow: hidden;\n  padding: 0;/*When the input receives focus, simulate button focus states on the label\n*/\n}\n\n.file-button input[type=\"file\"]:focus + label {\n  -webkit-box-shadow: 0 0 0 2px rgba(0, 153, 255, 0.5);\n          box-shadow: 0 0 0 2px rgba(0, 153, 255, 0.5);\n}\n\n.file-button input[type=\"file\"]:focus + label.button-secondary {\n  -webkit-box-shadow: 0 0 0 2px rgba(170, 170, 170, 0.5);\n          box-shadow: 0 0 0 2px rgba(170, 170, 170, 0.5);\n}\n\n.file-button input[type=\"file\"]:focus + label.button-success {\n  -webkit-box-shadow: 0 0 0 2px rgba(46, 204, 64, 0.5);\n          box-shadow: 0 0 0 2px rgba(46, 204, 64, 0.5);\n}\n\n.file-button input[type=\"file\"]:focus + label.button-info {\n  -webkit-box-shadow: 0 0 0 2px rgba(57, 204, 204, 0.5);\n          box-shadow: 0 0 0 2px rgba(57, 204, 204, 0.5);\n}\n\n.file-button input[type=\"file\"]:focus + label.button-warning {\n  -webkit-box-shadow: 0 0 0 2px rgba(255, 133, 27, 0.5);\n          box-shadow: 0 0 0 2px rgba(255, 133, 27, 0.5);\n}\n\n.file-button input[type=\"file\"]:focus + label.button-danger {\n  -webkit-box-shadow: 0 0 0 2px rgba(255, 65, 54, 0.5);\n          box-shadow: 0 0 0 2px rgba(255, 65, 54, 0.5);\n}\n\n.file-button input[type=\"file\"]:focus + label.button-light {\n  -webkit-box-shadow: 0 0 0 2px rgba(230, 230, 230, 0.5);\n          box-shadow: 0 0 0 2px rgba(230, 230, 230, 0.5);\n}\n\n.file-button input[type=\"file\"]:focus + label.button-dark {\n  -webkit-box-shadow: 0 0 0 2px rgba(41, 41, 41, 0.5);\n          box-shadow: 0 0 0 2px rgba(41, 41, 41, 0.5);\n}\n\n/*! Forms */\n\nfieldset {\n  border: solid 1px #ddd;\n  border-radius: .25rem;\n  padding: 24px 32px;\n  padding: 1.5rem 2rem;\n  margin-bottom: 24px;\n  margin-bottom: 1.5rem\n}\n\nfieldset legend {\n  font-weight: 700;\n  padding: 0 4px;\n  padding: 0 .25rem;\n}\n\nfieldset > :last-child {\n  margin-bottom: 0;\n}\n\nlabel {\n  color: inherit;\n  display: inline-block;\n  margin-bottom: 4px;\n  margin-bottom: .25rem\n}\n\nlabel + label {\n  margin-left: 16px;\n  margin-left: 1rem;\n}\n\ninput[type=\"color\"],\ninput[type=\"date\"],\ninput[type=\"datetime-local\"],\ninput[type=\"email\"],\ninput[type=\"month\"],\ninput[type=\"number\"],\ninput[type=\"password\"],\ninput[type=\"search\"],\ninput[type=\"tel\"],\ninput[type=\"text\"],\ninput[type=\"time\"],\ninput[type=\"url\"],\ninput[type=\"week\"],\nselect,\ntextarea {\n  width: 100%;\n  font-family: inherit;\n  font-size: 16px;\n  font-size: 1rem;\n  font-weight: inherit;\n  color: #111;\n  border: solid 1px #ddd;\n  border-radius: .25rem;\n  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);\n          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);\n  background-color: white;\n  height: 36px;\n  height: 2.25rem;\n  line-height: 36px;\n  line-height: 2.25rem;\n  vertical-align: middle;\n  display: block;\n  padding-left: 8px;\n  padding-left: .5rem;\n  padding-right: 8px;\n  padding-right: .5rem;\n  margin: 0;\n  -webkit-transition:\n    .1s border-color,\n    .1s background-color,\n    .1s color;\n  transition:\n    .1s border-color,\n    .1s background-color,\n    .1s color;\n  white-space: nowrap;\n  -moz-appearance: none;\n  -webkit-appearance: none\n}\n\ninput[type=\"color\"]:focus, input[type=\"date\"]:focus, input[type=\"datetime-local\"]:focus, input[type=\"email\"]:focus, input[type=\"month\"]:focus, input[type=\"number\"]:focus, input[type=\"password\"]:focus, input[type=\"search\"]:focus, input[type=\"tel\"]:focus, input[type=\"text\"]:focus, input[type=\"time\"]:focus, input[type=\"url\"]:focus, input[type=\"week\"]:focus, select:focus, textarea:focus {\n  outline: none;\n  border-color: #0099ff;\n}\n\ninput[type=\"color\"][disabled], input[type=\"date\"][disabled], input[type=\"datetime-local\"][disabled], input[type=\"email\"][disabled], input[type=\"month\"][disabled], input[type=\"number\"][disabled], input[type=\"password\"][disabled], input[type=\"search\"][disabled], input[type=\"tel\"][disabled], input[type=\"text\"][disabled], input[type=\"time\"][disabled], input[type=\"url\"][disabled], input[type=\"week\"][disabled], select[disabled], textarea[disabled] {\n  opacity: .5;\n  cursor: not-allowed;\n}\n\ninput[type=\"color\"][readonly], input[type=\"date\"][readonly], input[type=\"datetime-local\"][readonly], input[type=\"email\"][readonly], input[type=\"month\"][readonly], input[type=\"number\"][readonly], input[type=\"password\"][readonly], input[type=\"search\"][readonly], input[type=\"tel\"][readonly], input[type=\"text\"][readonly], input[type=\"time\"][readonly], input[type=\"url\"][readonly], input[type=\"week\"][readonly], select[readonly], textarea[readonly] {\n  background-color: #f2f2f2;\n}\n\ninput[type=\"color\"][type=\"color\"], input[type=\"date\"][type=\"color\"], input[type=\"datetime-local\"][type=\"color\"], input[type=\"email\"][type=\"color\"], input[type=\"month\"][type=\"color\"], input[type=\"number\"][type=\"color\"], input[type=\"password\"][type=\"color\"], input[type=\"search\"][type=\"color\"], input[type=\"tel\"][type=\"color\"], input[type=\"text\"][type=\"color\"], input[type=\"time\"][type=\"color\"], input[type=\"url\"][type=\"color\"], input[type=\"week\"][type=\"color\"], select[type=\"color\"], textarea[type=\"color\"] {\n  padding: 8px;\n  padding: .5rem;\n}\n\ninput[type=\"color\"][type=\"color\"]::-webkit-color-swatch-wrapper, input[type=\"date\"][type=\"color\"]::-webkit-color-swatch-wrapper, input[type=\"datetime-local\"][type=\"color\"]::-webkit-color-swatch-wrapper, input[type=\"email\"][type=\"color\"]::-webkit-color-swatch-wrapper, input[type=\"month\"][type=\"color\"]::-webkit-color-swatch-wrapper, input[type=\"number\"][type=\"color\"]::-webkit-color-swatch-wrapper, input[type=\"password\"][type=\"color\"]::-webkit-color-swatch-wrapper, input[type=\"search\"][type=\"color\"]::-webkit-color-swatch-wrapper, input[type=\"tel\"][type=\"color\"]::-webkit-color-swatch-wrapper, input[type=\"text\"][type=\"color\"]::-webkit-color-swatch-wrapper, input[type=\"time\"][type=\"color\"]::-webkit-color-swatch-wrapper, input[type=\"url\"][type=\"color\"]::-webkit-color-swatch-wrapper, input[type=\"week\"][type=\"color\"]::-webkit-color-swatch-wrapper, select[type=\"color\"]::-webkit-color-swatch-wrapper, textarea[type=\"color\"]::-webkit-color-swatch-wrapper {\n  padding: 0;\n}\n\ninput[type=\"color\"][type=\"color\"]::-webkit-color-swatch, input[type=\"date\"][type=\"color\"]::-webkit-color-swatch, input[type=\"datetime-local\"][type=\"color\"]::-webkit-color-swatch, input[type=\"email\"][type=\"color\"]::-webkit-color-swatch, input[type=\"month\"][type=\"color\"]::-webkit-color-swatch, input[type=\"number\"][type=\"color\"]::-webkit-color-swatch, input[type=\"password\"][type=\"color\"]::-webkit-color-swatch, input[type=\"search\"][type=\"color\"]::-webkit-color-swatch, input[type=\"tel\"][type=\"color\"]::-webkit-color-swatch, input[type=\"text\"][type=\"color\"]::-webkit-color-swatch, input[type=\"time\"][type=\"color\"]::-webkit-color-swatch, input[type=\"url\"][type=\"color\"]::-webkit-color-swatch, input[type=\"week\"][type=\"color\"]::-webkit-color-swatch, select[type=\"color\"]::-webkit-color-swatch, textarea[type=\"color\"]::-webkit-color-swatch {\n  border: none;\n  border-radius: .25rem;\n}\n\ninput[type=\"color\"].input-xs, input[type=\"date\"].input-xs, input[type=\"datetime-local\"].input-xs, input[type=\"email\"].input-xs, input[type=\"month\"].input-xs, input[type=\"number\"].input-xs, input[type=\"password\"].input-xs, input[type=\"search\"].input-xs, input[type=\"tel\"].input-xs, input[type=\"text\"].input-xs, input[type=\"time\"].input-xs, input[type=\"url\"].input-xs, input[type=\"week\"].input-xs, select.input-xs, textarea.input-xs {\n  font-size: 10px;\n  font-size: .625rem;\n  height: 20px;\n  height: 1.25rem;\n  line-height: 20px;\n  line-height: 1.25rem;\n}\n\ninput[type=\"color\"].input-sm, input[type=\"date\"].input-sm, input[type=\"datetime-local\"].input-sm, input[type=\"email\"].input-sm, input[type=\"month\"].input-sm, input[type=\"number\"].input-sm, input[type=\"password\"].input-sm, input[type=\"search\"].input-sm, input[type=\"tel\"].input-sm, input[type=\"text\"].input-sm, input[type=\"time\"].input-sm, input[type=\"url\"].input-sm, input[type=\"week\"].input-sm, select.input-sm, textarea.input-sm {\n  font-size: 14px;\n  font-size: .875rem;\n  height: 28px;\n  height: 1.75rem;\n  line-height: 28px;\n  line-height: 1.75rem;\n}\n\ninput[type=\"color\"].input-lg, input[type=\"date\"].input-lg, input[type=\"datetime-local\"].input-lg, input[type=\"email\"].input-lg, input[type=\"month\"].input-lg, input[type=\"number\"].input-lg, input[type=\"password\"].input-lg, input[type=\"search\"].input-lg, input[type=\"tel\"].input-lg, input[type=\"text\"].input-lg, input[type=\"time\"].input-lg, input[type=\"url\"].input-lg, input[type=\"week\"].input-lg, select.input-lg, textarea.input-lg {\n  font-size: 20px;\n  font-size: 1.25rem;\n  height: 44px;\n  height: 2.75rem;\n  line-height: 44px;\n  line-height: 2.75rem;\n}\n\ninput[type=\"color\"].input-xl, input[type=\"date\"].input-xl, input[type=\"datetime-local\"].input-xl, input[type=\"email\"].input-xl, input[type=\"month\"].input-xl, input[type=\"number\"].input-xl, input[type=\"password\"].input-xl, input[type=\"search\"].input-xl, input[type=\"tel\"].input-xl, input[type=\"text\"].input-xl, input[type=\"time\"].input-xl, input[type=\"url\"].input-xl, input[type=\"week\"].input-xl, select.input-xl, textarea.input-xl {\n  font-size: 24px;\n  font-size: 1.5rem;\n  height: 52px;\n  height: 3.25rem;\n  line-height: 52px;\n  line-height: 3.25rem;\n}\n\ninput[type=\"checkbox\"],\ninput[type=\"radio\"] {\n  vertical-align: 1px;\n}\n\nselect {\n  position: relative;\n  background-image: url(\"data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='41px' height='26px' viewBox='0 0 41 26' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdefs%3E%3C/defs%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cpolygon id='Path-3' fill='%23000000' points='0 5.38215461 19.9830489 25.3652035 40.1398855 5.20836689 34.9315186 0 19.8691842 15.0623344 4.83971338 0.0328636246'%3E%3C/polygon%3E%3C/g%3E%3C/svg%3E%0A\");\n  background-position: right 6.4px center;\n  background-position: right .4rem center;\n  background-repeat: no-repeat;\n  background-size: .75rem;\n  padding-top: 0;\n  padding-bottom: 0;\n  padding-right: 24px;\n  padding-right: 1.5rem;\n}\n\ntextarea,\ntextarea.input-xs,\ntextarea.input-sm,\ntextarea.input-lg,\ntextarea.input-xl {\n  height: auto;\n  resize: vertical;\n  line-height: 1.5;\n  white-space: normal;\n}\n\n/* Range */\n\ninput[type=\"range\"] {\n  -webkit-appearance: none;\n  width: 100%;\n  height: 36px;\n  height: 2.25rem;\n  line-height: 36px;\n  line-height: 2.25rem;\n  vertical-align: middle\n}\n\ninput[type=\"range\"]:focus {\n  outline: none;\n}\n\ninput[type=\"range\"] {/*Webkit\n*/\n}\n\ninput[type=\"range\"]::-webkit-slider-runnable-track {\n  width: 100%;\n  height: 8px;\n  height: .5rem;\n  cursor: pointer;\n  background: #f2f2f2;\n  border-radius: .25rem;\n  border: none;\n  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);\n          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);\n}\n\ninput[type=\"range\"]::-webkit-slider-thumb {\n  border: none;\n  width: 20px;\n  width: 1.25rem;\n  height: 20px;\n  height: 1.25rem;\n  border-radius: 50%;\n  background: #0099ff;\n  cursor: pointer;\n  -webkit-appearance: none;\n  margin-top: -6px;\n  margin-top: -0.375rem;\n}\n\ninput[type=\"range\"]:focus::-webkit-slider-runnable-track {\n  background: #f2f2f2;\n}\n\ninput[type=\"range\"]:focus::-webkit-slider-thumb {\n  -webkit-box-shadow: 0 0 0 2px rgba(0, 153, 255, 0.5);\n          box-shadow: 0 0 0 2px rgba(0, 153, 255, 0.5);\n}\n\ninput[type=\"range\"] {/*Firefox\n*/\n}\n\ninput[type=\"range\"]::-moz-range-track {\n  width: 100%;\n  height: 8px;\n  height: .5rem;\n  cursor: pointer;\n  background: #f2f2f2;\n  border-radius: .25rem;\n  border: none;\n  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);\n}\n\ninput[type=\"range\"]::-moz-range-thumb {\n  border: none;\n  height: 20px;\n  height: 1.25rem;\n  width: 20px;\n  width: 1.25rem;\n  border-radius: 50%;\n  background: #0099ff;\n  cursor: pointer;\n}\n\ninput[type=\"range\"]:focus::-moz-range-thumb {\n  box-shadow: 0 0 0 2px rgba(0, 153, 255, 0.5);\n}\n\ninput[type=\"range\"] {/*IE / Edge\n*/\n}\n\ninput[type=\"range\"]::-ms-track {\n  width: 100%;\n  height: 8px;\n  height: .5rem;\n  cursor: pointer;\n  background: transparent;\n  border-color: transparent;\n  color: transparent;\n}\n\ninput[type=\"range\"]::-ms-fill-lower {\n  background: #f2f2f2;\n  border: none;\n  border-radius: .25rem;\n}\n\ninput[type=\"range\"]::-ms-fill-upper {\n  background: #f2f2f2;\n  border: none;\n  border-radius: .25rem;\n}\n\ninput[type=\"range\"]::-ms-thumb {\n  border: none;\n  height: 20px;\n  height: 1.25rem;\n  width: 20px;\n  width: 1.25rem;\n  border-radius: 50%;\n  background: #0099ff;\n  cursor: pointer;\n  margin-top: -4px;\n  margin-top: -0.25rem;\n}\n\ninput[type=\"range\"]:focus::-ms-thumb {\n  box-shadow: 0 0 0 2px rgba(0, 153, 255, 0.5);\n}\n\ninput[type=\"range\"]:focus::-ms-fill-lower {\n  background: #f2f2f2;\n}\n\ninput[type=\"range\"]:focus::-ms-fill-upper {\n  background: #f2f2f2;\n}\n\n/* Input fields */\n\n.input-field {\n  margin-bottom: 24px;\n  margin-bottom: 1.5rem;\n}\n\n/* Input groups */\n\n.input-group {\n  width: 100%;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  margin-bottom: 24px;\n  margin-bottom: 1.5rem\n}\n\n.input-group > input,\n  .input-group > button,\n  .input-group > .button,\n  .input-group > .dropdown button,\n  .input-group > .dropdown .button,\n  .input-group > .file-button label,\n  .input-group > .input-icon input,\n  .input-group > .input-icon select {\n  border-radius: 0;\n}\n\n.input-group > input:first-child,\n  .input-group > button:first-child,\n  .input-group > .button:first-child,\n  .input-group > .dropdown:first-child button,\n  .input-group > .dropdown:first-child .button,\n  .input-group > .file-button:first-child label,\n  .input-group > .input-icon:first-child input,\n  .input-group > .input-icon:first-child select {\n  border-top-left-radius: 4px;\n  border-top-left-radius: .25rem;\n  border-bottom-left-radius: 4px;\n  border-bottom-left-radius: .25rem;\n}\n\n.input-group > input:last-child,\n  .input-group > button:last-child,\n  .input-group > .button:last-child,\n  .input-group > .dropdown:last-child button,\n  .input-group > .dropdown:last-child .button,\n  .input-group > .file-button:last-child label,\n  .input-group > .input-icon:last-child input,\n  .input-group > .input-icon:last-child select {\n  border-top-right-radius: 4px;\n  border-top-right-radius: .25rem;\n  border-bottom-right-radius: 4px;\n  border-bottom-right-radius: .25rem;\n}\n\n.input-group > input + input {\n  border-left-width: 0;\n}\n\n.input-group > input + input:focus {\n  border-left-width: 1px;\n  margin-left: -1px;\n}\n\n.input-group {/*Force a new stacking context so focus rings don't get truncated by adjacent elements\n*/\n}\n\n.input-group button:focus,\n  .input-group .button:focus,\n  .input-group .file-button input[type=\"file\"]:focus + label {\n  -webkit-transform: translateZ(0);\n          transform: translateZ(0);\n}\n\n/* Input hints */\n\n.input-hint {\n  font-size: 80%;\n  color: #aaa;\n  margin: 4px 0 0 0;\n  margin: .25rem 0 0 0;\n  display: block;\n}\n\n/* Input groups can have input hints, but we need to adjust margins a bit */\n\n.input-group + .input-hint {\n  margin-top: -20px;\n  margin-top: -1.25rem; /* input group margin - input hint margin */\n  margin-bottom: 24px;\n  margin-bottom: 1.5rem;\n}\n\n/* Input addons */\n\n.input-addon {\n  font-size: 16px;\n  font-size: 1rem;\n  height: 36px;\n  height: 2.25rem;\n  line-height: 36px;\n  line-height: 2.25rem;\n  border-top: solid 1px #ddd;\n  border-bottom: solid 1px #ddd;\n  background: #f2f2f2;\n  color: #aaa;\n  padding: 0 8px;\n  padding: 0 .5rem;\n  white-space: nowrap\n}\n\n.input-addon:first-child {\n  border-left: solid 1px #ddd;\n  border-top-left-radius: 4px;\n  border-top-left-radius: .25rem;\n  border-bottom-left-radius: 4px;\n  border-bottom-left-radius: .25rem;\n}\n\n.input-addon:last-child {\n  border-right: solid 1px #ddd;\n  border-top-right-radius: 4px;\n  border-top-right-radius: .25rem;\n  border-bottom-right-radius: 4px;\n  border-bottom-right-radius: .25rem;\n}\n\n.input-addon.input-addon-xs {\n  font-size: 10px;\n  font-size: .625rem;\n  height: 20px;\n  height: 1.25rem;\n  line-height: 20px;\n  line-height: 1.25rem;\n}\n\n.input-addon.input-addon-sm {\n  font-size: 14px;\n  font-size: .875rem;\n  height: 28px;\n  height: 1.75rem;\n  line-height: 28px;\n  line-height: 1.75rem;\n}\n\n.input-addon.input-addon-lg {\n  font-size: 20px;\n  font-size: 1.25rem;\n  height: 44px;\n  height: 2.75rem;\n  line-height: 44px;\n  line-height: 2.75rem;\n}\n\n.input-addon.input-addon-xl {\n  font-size: 24px;\n  font-size: 1.5rem;\n  height: 52px;\n  height: 3.25rem;\n  line-height: 52px;\n  line-height: 3.25rem;\n}\n\n/* Input icons */\n\n.input-icon {\n  position: relative;\n  width: 100%\n\n  /* Change default position for select controls so icons don't get hidden */\n}\n\n.input-icon select {\n  position: static;\n}\n\n.input-icon input:not(:first-child),\n  .input-icon select:not(:first-child) {\n  padding-left: 2em;\n}\n\n.input-icon input:not(:last-child) {\n  padding-right: 2em;\n}\n\n.input-icon :first-child:not(input):not(select), .input-icon :last-child:not(input):not(select) {\n  position: absolute;\n  top: 0;\n  left: .5em;\n  height: 36px;\n  height: 2.25rem;\n  line-height: 36px;\n  line-height: 2.25rem;\n  color: #aaa;\n  vertical-align: middle;\n  pointer-events: none;\n}\n\n.input-icon :last-child:not(input):not(select) {\n  left: auto;\n  right: .5em;\n}\n\n.input-icon.input-icon-xs :first-child:not(input):not(select), .input-icon.input-icon-xs :last-child:not(input):not(select) {\n  font-size: 10px;\n  font-size: .625rem;\n  height: 20px;\n  height: 1.25rem;\n  line-height: 20px;\n  line-height: 1.25rem;\n}\n\n.input-icon.input-icon-sm :first-child:not(input):not(select), .input-icon.input-icon-sm :last-child:not(input):not(select) {\n  font-size: 14px;\n  font-size: .875rem;\n  height: 28px;\n  height: 1.75rem;\n  line-height: 28px;\n  line-height: 1.75rem;\n}\n\n.input-icon.input-icon-lg :first-child:not(input):not(select), .input-icon.input-icon-lg :last-child:not(input):not(select) {\n  font-size: 20px;\n  font-size: 1.25rem;\n  height: 44px;\n  height: 2.75rem;\n  line-height: 44px;\n  line-height: 2.75rem;\n}\n\n.input-icon.input-icon-xl :first-child:not(input):not(select), .input-icon.input-icon-xl :last-child:not(input):not(select) {\n  font-size: 24px;\n  font-size: 1.5rem;\n  height: 52px;\n  height: 3.25rem;\n  line-height: 52px;\n  line-height: 3.25rem;\n}\n\n/* Validation */\n\n.input-invalid label {\n  color: #ff4136 !important;\n}\n\n.input-invalid input,\n  .input-invalid select,\n  .input-invalid textarea {\n  color: #ff4136 !important;\n  border-color: #ff4136 !important;\n}\n\n.input-invalid .input-icon :first-child:not(input):not(select), .input-invalid .input-icon :last-child:not(input):not(select) {\n  color: #ff4136;\n}\n\n.input-valid label {\n  color: #2ecc40 !important;\n}\n\n.input-valid input,\n  .input-valid select,\n  .input-valid textarea {\n  color: #2ecc40 !important;\n  border-color: #2ecc40 !important;\n}\n\n.input-valid .input-icon :first-child:not(input):not(select), .input-valid .input-icon :last-child:not(input):not(select) {\n  color: #2ecc40;\n}\n\n/*! Grid System\n\n  Forked from Bootstrap 4.\n\n  Copyright (c) 2011-2017 Twitter, Inc.\n  Copyright (c) 2011-2017 The Bootstrap Authors\n\n  Licensed under the MIT license.\n*/\n\n/* Containers */\n\n.container,\n.container-fluid {\n  width: 100%;\n  margin-right: auto;\n  margin-left: auto;\n  padding-right: 16px;\n  padding-right: 1rem;\n  padding-left: 16px;\n  padding-left: 1rem;\n}\n\n@media only screen and (min-width: 576px) {\n  .container {\n    max-width: 540px;\n  }\n}\n\n@media only screen and (min-width: 768px) {\n  .container {\n    max-width: 720px;\n  }\n}\n\n@media only screen and (min-width: 992px) {\n  .container {\n    max-width: 960px;\n  }\n}\n\n@media only screen and (min-width: 1200px) {\n  .container {\n    max-width: 1140px;\n  }\n}\n\n/* Rows */\n\n.row {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n  margin-right: -16px;\n  margin-right: -1rem;\n  margin-left: -16px;\n  margin-left: -1rem;\n}\n\n.row-flush {\n  margin-left: 0;\n  margin-right: 0;\n\n  > .col,\n  > [class*=\"col-\"] {\n    padding-left: 0;\n    padding-right: 0;\n  }\n}\n\n.row-start { -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; }\n\n.row-center { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }\n\n.row-end { -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; }\n\n.row-around { -ms-flex-pack: distribute; justify-content: space-around; }\n\n.row-between { -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }\n\n@media only screen and (min-width: 576px) {\n  .row-sm-start { -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; }\n  .row-sm-center { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }\n  .row-sm-end { -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; }\n  .row-sm-around { -ms-flex-pack: distribute; justify-content: space-around; }\n  .row-sm-between { -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }\n}\n\n@media only screen and (min-width: 768px) {\n  .row-md-start { -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; }\n  .row-md-center { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }\n  .row-md-end { -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; }\n  .row-md-around { -ms-flex-pack: distribute; justify-content: space-around; }\n  .row-md-between { -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }\n}\n\n@media only screen and (min-width: 992px) {\n  .row-lg-start { -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; }\n  .row-lg-center { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }\n  .row-lg-end { -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; }\n  .row-lg-around { -ms-flex-pack: distribute; justify-content: space-around; }\n  .row-lg-between { -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }\n}\n\n@media only screen and (min-width: 1200px) {\n  .row-xl-start { -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; }\n  .row-xl-center { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }\n  .row-xl-end { -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; }\n  .row-xl-around { -ms-flex-pack: distribute; justify-content: space-around; }\n  .row-xl-between { -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }\n}\n\n/* Columns */\n\n.col, .col-auto, .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12,\n.col-sm, .col-sm-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12,\n.col-md, .col-md-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12,\n.col-lg, .col-lg-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12,\n.col-xl, .col-xl-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12 {\n  position: relative;\n  width: 100%;\n  min-height: 1px;\n  padding-right: 16px;\n  padding-right: 1rem;\n  padding-left: 16px;\n  padding-left: 1rem;\n}\n\n.col {\n  -ms-flex-preferred-size: 0;\n      flex-basis: 0;\n  -webkit-box-flex: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1;\n  max-width: 100%;\n}\n\n.col-auto {\n  -webkit-box-flex: 0;\n      -ms-flex: 0 0 auto;\n          flex: 0 0 auto;\n  width: auto;\n  max-width: none;\n}\n\n.col-1 {\n  -webkit-box-flex: 0;\n      -ms-flex: 0 0 8.333333%;\n          flex: 0 0 8.333333%;\n  max-width: 8.333333%;\n}\n\n.col-2 {\n  -webkit-box-flex: 0;\n      -ms-flex: 0 0 16.666667%;\n          flex: 0 0 16.666667%;\n  max-width: 16.666667%;\n}\n\n.col-3 {\n  -webkit-box-flex: 0;\n      -ms-flex: 0 0 25%;\n          flex: 0 0 25%;\n  max-width: 25%;\n}\n\n.col-4 {\n  -webkit-box-flex: 0;\n      -ms-flex: 0 0 33.333333%;\n          flex: 0 0 33.333333%;\n  max-width: 33.333333%;\n}\n\n.col-5 {\n  -webkit-box-flex: 0;\n      -ms-flex: 0 0 41.666667%;\n          flex: 0 0 41.666667%;\n  max-width: 41.666667%;\n}\n\n.col-6 {\n  -webkit-box-flex: 0;\n      -ms-flex: 0 0 50%;\n          flex: 0 0 50%;\n  max-width: 50%;\n}\n\n.col-7 {\n  -webkit-box-flex: 0;\n      -ms-flex: 0 0 58.333333%;\n          flex: 0 0 58.333333%;\n  max-width: 58.333333%;\n}\n\n.col-8 {\n  -webkit-box-flex: 0;\n      -ms-flex: 0 0 66.666667%;\n          flex: 0 0 66.666667%;\n  max-width: 66.666667%;\n}\n\n.col-9 {\n  -webkit-box-flex: 0;\n      -ms-flex: 0 0 75%;\n          flex: 0 0 75%;\n  max-width: 75%;\n}\n\n.col-10 {\n  -webkit-box-flex: 0;\n      -ms-flex: 0 0 83.333333%;\n          flex: 0 0 83.333333%;\n  max-width: 83.333333%;\n}\n\n.col-11 {\n  -webkit-box-flex: 0;\n      -ms-flex: 0 0 91.666667%;\n          flex: 0 0 91.666667%;\n  max-width: 91.666667%;\n}\n\n.col-12 {\n  -webkit-box-flex: 0;\n      -ms-flex: 0 0 100%;\n          flex: 0 0 100%;\n  max-width: 100%;\n}\n\n.order-1 { -webkit-box-ordinal-group: 2; -ms-flex-order: 1; order: 1; }\n\n.order-2 { -webkit-box-ordinal-group: 3; -ms-flex-order: 2; order: 2; }\n\n.order-3 { -webkit-box-ordinal-group: 4; -ms-flex-order: 3; order: 3; }\n\n.order-4 { -webkit-box-ordinal-group: 5; -ms-flex-order: 4; order: 4; }\n\n.order-5 { -webkit-box-ordinal-group: 6; -ms-flex-order: 5; order: 5; }\n\n.order-6 { -webkit-box-ordinal-group: 7; -ms-flex-order: 6; order: 6; }\n\n.order-7 { -webkit-box-ordinal-group: 8; -ms-flex-order: 7; order: 7; }\n\n.order-8 { -webkit-box-ordinal-group: 9; -ms-flex-order: 8; order: 8; }\n\n.order-9 { -webkit-box-ordinal-group: 10; -ms-flex-order: 9; order: 9; }\n\n.order-10 { -webkit-box-ordinal-group: 11; -ms-flex-order: 10; order: 10; }\n\n.order-11 { -webkit-box-ordinal-group: 12; -ms-flex-order: 11; order: 11; }\n\n.order-12 { -webkit-box-ordinal-group: 13; -ms-flex-order: 12; order: 12; }\n\n.offset-1 { margin-left: 8.333333%; }\n\n.offset-2 { margin-left: 16.666667%; }\n\n.offset-3 { margin-left: 25%; }\n\n.offset-4 { margin-left: 33.333333%; }\n\n.offset-5 { margin-left: 41.666667%; }\n\n.offset-6 { margin-left: 50%; }\n\n.offset-7 { margin-left: 58.333333%; }\n\n.offset-8 { margin-left: 66.666667%; }\n\n.offset-9 { margin-left: 75%; }\n\n.offset-10 { margin-left: 83.333333%; }\n\n.offset-11 { margin-left: 91.666667%; }\n\n@media only screen and (min-width: 576px) {\n  .col-sm {\n    -ms-flex-preferred-size: 0;\n        flex-basis: 0;\n    -webkit-box-flex: 1;\n        -ms-flex-positive: 1;\n            flex-grow: 1;\n    max-width: 100%;\n  }\n\n  .col-sm-auto {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 auto;\n            flex: 0 0 auto;\n    width: auto;\n    max-width: none;\n  }\n\n  .col-sm-1 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 8.333333%;\n            flex: 0 0 8.333333%;\n    max-width: 8.333333%;\n  }\n\n  .col-sm-2 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 16.666667%;\n            flex: 0 0 16.666667%;\n    max-width: 16.666667%;\n  }\n\n  .col-sm-3 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 25%;\n            flex: 0 0 25%;\n    max-width: 25%;\n  }\n\n  .col-sm-4 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 33.333333%;\n            flex: 0 0 33.333333%;\n    max-width: 33.333333%;\n  }\n\n  .col-sm-5 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 41.666667%;\n            flex: 0 0 41.666667%;\n    max-width: 41.666667%;\n  }\n\n  .col-sm-6 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 50%;\n            flex: 0 0 50%;\n    max-width: 50%;\n  }\n\n  .col-sm-7 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 58.333333%;\n            flex: 0 0 58.333333%;\n    max-width: 58.333333%;\n  }\n\n  .col-sm-8 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 66.666667%;\n            flex: 0 0 66.666667%;\n    max-width: 66.666667%;\n  }\n\n  .col-sm-9 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 75%;\n            flex: 0 0 75%;\n    max-width: 75%;\n  }\n\n  .col-sm-10 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 83.333333%;\n            flex: 0 0 83.333333%;\n    max-width: 83.333333%;\n  }\n\n  .col-sm-11 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 91.666667%;\n            flex: 0 0 91.666667%;\n    max-width: 91.666667%;\n  }\n\n  .col-sm-12 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 100%;\n            flex: 0 0 100%;\n    max-width: 100%;\n  }\n\n  .order-sm-1 { -webkit-box-ordinal-group: 2; -ms-flex-order: 1; order: 1; }\n  .order-sm-2 { -webkit-box-ordinal-group: 3; -ms-flex-order: 2; order: 2; }\n  .order-sm-3 { -webkit-box-ordinal-group: 4; -ms-flex-order: 3; order: 3; }\n  .order-sm-4 { -webkit-box-ordinal-group: 5; -ms-flex-order: 4; order: 4; }\n  .order-sm-5 { -webkit-box-ordinal-group: 6; -ms-flex-order: 5; order: 5; }\n  .order-sm-6 { -webkit-box-ordinal-group: 7; -ms-flex-order: 6; order: 6; }\n  .order-sm-7 { -webkit-box-ordinal-group: 8; -ms-flex-order: 7; order: 7; }\n  .order-sm-8 { -webkit-box-ordinal-group: 9; -ms-flex-order: 8; order: 8; }\n  .order-sm-9 { -webkit-box-ordinal-group: 10; -ms-flex-order: 9; order: 9; }\n  .order-sm-10 { -webkit-box-ordinal-group: 11; -ms-flex-order: 10; order: 10; }\n  .order-sm-11 { -webkit-box-ordinal-group: 12; -ms-flex-order: 11; order: 11; }\n  .order-sm-12 { -webkit-box-ordinal-group: 13; -ms-flex-order: 12; order: 12; }\n\n  .offset-sm-0 { margin-left: 0%; }\n  .offset-sm-1 { margin-left: 8.333333%; }\n  .offset-sm-2 { margin-left: 16.666667%; }\n  .offset-sm-3 { margin-left: 25%; }\n  .offset-sm-4 { margin-left: 33.333333%; }\n  .offset-sm-5 { margin-left: 41.666667%; }\n  .offset-sm-6 { margin-left: 50%; }\n  .offset-sm-7 { margin-left: 58.333333%; }\n  .offset-sm-8 { margin-left: 66.666667%; }\n  .offset-sm-9 { margin-left: 75%; }\n  .offset-sm-10 { margin-left: 83.333333%; }\n  .offset-sm-11 { margin-left: 91.666667%; }\n}\n\n@media only screen and (min-width: 768px) {\n  .col-md {\n    -ms-flex-preferred-size: 0;\n        flex-basis: 0;\n    -webkit-box-flex: 1;\n        -ms-flex-positive: 1;\n            flex-grow: 1;\n    max-width: 100%;\n  }\n\n  .col-md-auto {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 auto;\n            flex: 0 0 auto;\n    width: auto;\n    max-width: none;\n  }\n\n  .col-md-1 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 8.333333%;\n            flex: 0 0 8.333333%;\n    max-width: 8.333333%;\n  }\n\n  .col-md-2 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 16.666667%;\n            flex: 0 0 16.666667%;\n    max-width: 16.666667%;\n  }\n\n  .col-md-3 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 25%;\n            flex: 0 0 25%;\n    max-width: 25%;\n  }\n\n  .col-md-4 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 33.333333%;\n            flex: 0 0 33.333333%;\n    max-width: 33.333333%;\n  }\n\n  .col-md-5 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 41.666667%;\n            flex: 0 0 41.666667%;\n    max-width: 41.666667%;\n  }\n\n  .col-md-6 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 50%;\n            flex: 0 0 50%;\n    max-width: 50%;\n  }\n\n  .col-md-7 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 58.333333%;\n            flex: 0 0 58.333333%;\n    max-width: 58.333333%;\n  }\n\n  .col-md-8 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 66.666667%;\n            flex: 0 0 66.666667%;\n    max-width: 66.666667%;\n  }\n\n  .col-md-9 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 75%;\n            flex: 0 0 75%;\n    max-width: 75%;\n  }\n\n  .col-md-10 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 83.333333%;\n            flex: 0 0 83.333333%;\n    max-width: 83.333333%;\n  }\n\n  .col-md-11 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 91.666667%;\n            flex: 0 0 91.666667%;\n    max-width: 91.666667%;\n  }\n\n  .col-md-12 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 100%;\n            flex: 0 0 100%;\n    max-width: 100%;\n  }\n\n  .order-md-1 { -webkit-box-ordinal-group: 2; -ms-flex-order: 1; order: 1; }\n  .order-md-2 { -webkit-box-ordinal-group: 3; -ms-flex-order: 2; order: 2; }\n  .order-md-3 { -webkit-box-ordinal-group: 4; -ms-flex-order: 3; order: 3; }\n  .order-md-4 { -webkit-box-ordinal-group: 5; -ms-flex-order: 4; order: 4; }\n  .order-md-5 { -webkit-box-ordinal-group: 6; -ms-flex-order: 5; order: 5; }\n  .order-md-6 { -webkit-box-ordinal-group: 7; -ms-flex-order: 6; order: 6; }\n  .order-md-7 { -webkit-box-ordinal-group: 8; -ms-flex-order: 7; order: 7; }\n  .order-md-8 { -webkit-box-ordinal-group: 9; -ms-flex-order: 8; order: 8; }\n  .order-md-9 { -webkit-box-ordinal-group: 10; -ms-flex-order: 9; order: 9; }\n  .order-md-10 { -webkit-box-ordinal-group: 11; -ms-flex-order: 10; order: 10; }\n  .order-md-11 { -webkit-box-ordinal-group: 12; -ms-flex-order: 11; order: 11; }\n  .order-md-12 { -webkit-box-ordinal-group: 13; -ms-flex-order: 12; order: 12; }\n\n  .offset-md-0 { margin-left: 0%; }\n  .offset-md-1 { margin-left: 8.333333%; }\n  .offset-md-2 { margin-left: 16.666667%; }\n  .offset-md-3 { margin-left: 25%; }\n  .offset-md-4 { margin-left: 33.333333%; }\n  .offset-md-5 { margin-left: 41.666667%; }\n  .offset-md-6 { margin-left: 50%; }\n  .offset-md-7 { margin-left: 58.333333%; }\n  .offset-md-8 { margin-left: 66.666667%; }\n  .offset-md-9 { margin-left: 75%; }\n  .offset-md-10 { margin-left: 83.333333%; }\n  .offset-md-11 { margin-left: 91.666667%; }\n}\n\n@media only screen and (min-width: 992px) {\n  .col-lg {\n    -ms-flex-preferred-size: 0;\n        flex-basis: 0;\n    -webkit-box-flex: 1;\n        -ms-flex-positive: 1;\n            flex-grow: 1;\n    max-width: 100%;\n  }\n\n  .col-lg-auto {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 auto;\n            flex: 0 0 auto;\n    width: auto;\n    max-width: none;\n  }\n\n  .col-lg-1 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 8.333333%;\n            flex: 0 0 8.333333%;\n    max-width: 8.333333%;\n  }\n\n  .col-lg-2 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 16.666667%;\n            flex: 0 0 16.666667%;\n    max-width: 16.666667%;\n  }\n\n  .col-lg-3 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 25%;\n            flex: 0 0 25%;\n    max-width: 25%;\n  }\n\n  .col-lg-4 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 33.333333%;\n            flex: 0 0 33.333333%;\n    max-width: 33.333333%;\n  }\n\n  .col-lg-5 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 41.666667%;\n            flex: 0 0 41.666667%;\n    max-width: 41.666667%;\n  }\n\n  .col-lg-6 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 50%;\n            flex: 0 0 50%;\n    max-width: 50%;\n  }\n\n  .col-lg-7 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 58.333333%;\n            flex: 0 0 58.333333%;\n    max-width: 58.333333%;\n  }\n\n  .col-lg-8 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 66.666667%;\n            flex: 0 0 66.666667%;\n    max-width: 66.666667%;\n  }\n\n  .col-lg-9 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 75%;\n            flex: 0 0 75%;\n    max-width: 75%;\n  }\n\n  .col-lg-10 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 83.333333%;\n            flex: 0 0 83.333333%;\n    max-width: 83.333333%;\n  }\n\n  .col-lg-11 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 91.666667%;\n            flex: 0 0 91.666667%;\n    max-width: 91.666667%;\n  }\n\n  .col-lg-12 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 100%;\n            flex: 0 0 100%;\n    max-width: 100%;\n  }\n\n  .order-lg-1 { -webkit-box-ordinal-group: 2; -ms-flex-order: 1; order: 1; }\n  .order-lg-2 { -webkit-box-ordinal-group: 3; -ms-flex-order: 2; order: 2; }\n  .order-lg-3 { -webkit-box-ordinal-group: 4; -ms-flex-order: 3; order: 3; }\n  .order-lg-4 { -webkit-box-ordinal-group: 5; -ms-flex-order: 4; order: 4; }\n  .order-lg-5 { -webkit-box-ordinal-group: 6; -ms-flex-order: 5; order: 5; }\n  .order-lg-6 { -webkit-box-ordinal-group: 7; -ms-flex-order: 6; order: 6; }\n  .order-lg-7 { -webkit-box-ordinal-group: 8; -ms-flex-order: 7; order: 7; }\n  .order-lg-8 { -webkit-box-ordinal-group: 9; -ms-flex-order: 8; order: 8; }\n  .order-lg-9 { -webkit-box-ordinal-group: 10; -ms-flex-order: 9; order: 9; }\n  .order-lg-10 { -webkit-box-ordinal-group: 11; -ms-flex-order: 10; order: 10; }\n  .order-lg-11 { -webkit-box-ordinal-group: 12; -ms-flex-order: 11; order: 11; }\n  .order-lg-12 { -webkit-box-ordinal-group: 13; -ms-flex-order: 12; order: 12; }\n\n  .offset-lg-0 { margin-left: 0%; }\n  .offset-lg-1 { margin-left: 8.333333%; }\n  .offset-lg-2 { margin-left: 16.666667%; }\n  .offset-lg-3 { margin-left: 25%; }\n  .offset-lg-4 { margin-left: 33.333333%; }\n  .offset-lg-5 { margin-left: 41.666667%; }\n  .offset-lg-6 { margin-left: 50%; }\n  .offset-lg-7 { margin-left: 58.333333%; }\n  .offset-lg-8 { margin-left: 66.666667%; }\n  .offset-lg-9 { margin-left: 75%; }\n  .offset-lg-10 { margin-left: 83.333333%; }\n  .offset-lg-11 { margin-left: 91.666667%; }\n}\n\n@media only screen and (min-width: 1200px) {\n  .col-xl {\n    -ms-flex-preferred-size: 0;\n        flex-basis: 0;\n    -webkit-box-flex: 1;\n        -ms-flex-positive: 1;\n            flex-grow: 1;\n    max-width: 100%;\n  }\n\n  .col-xl-auto {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 auto;\n            flex: 0 0 auto;\n    width: auto;\n    max-width: none;\n  }\n\n  .col-xl-1 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 8.333333%;\n            flex: 0 0 8.333333%;\n    max-width: 8.333333%;\n  }\n\n  .col-xl-2 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 16.666667%;\n            flex: 0 0 16.666667%;\n    max-width: 16.666667%;\n  }\n\n  .col-xl-3 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 25%;\n            flex: 0 0 25%;\n    max-width: 25%;\n  }\n\n  .col-xl-4 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 33.333333%;\n            flex: 0 0 33.333333%;\n    max-width: 33.333333%;\n  }\n\n  .col-xl-5 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 41.666667%;\n            flex: 0 0 41.666667%;\n    max-width: 41.666667%;\n  }\n\n  .col-xl-6 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 50%;\n            flex: 0 0 50%;\n    max-width: 50%;\n  }\n\n  .col-xl-7 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 58.333333%;\n            flex: 0 0 58.333333%;\n    max-width: 58.333333%;\n  }\n\n  .col-xl-8 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 66.666667%;\n            flex: 0 0 66.666667%;\n    max-width: 66.666667%;\n  }\n\n  .col-xl-9 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 75%;\n            flex: 0 0 75%;\n    max-width: 75%;\n  }\n\n  .col-xl-10 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 83.333333%;\n            flex: 0 0 83.333333%;\n    max-width: 83.333333%;\n  }\n\n  .col-xl-11 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 91.666667%;\n            flex: 0 0 91.666667%;\n    max-width: 91.666667%;\n  }\n\n  .col-xl-12 {\n    -webkit-box-flex: 0;\n        -ms-flex: 0 0 100%;\n            flex: 0 0 100%;\n    max-width: 100%;\n  }\n\n  .order-xl-1 { -webkit-box-ordinal-group: 2; -ms-flex-order: 1; order: 1; }\n  .order-xl-2 { -webkit-box-ordinal-group: 3; -ms-flex-order: 2; order: 2; }\n  .order-xl-3 { -webkit-box-ordinal-group: 4; -ms-flex-order: 3; order: 3; }\n  .order-xl-4 { -webkit-box-ordinal-group: 5; -ms-flex-order: 4; order: 4; }\n  .order-xl-5 { -webkit-box-ordinal-group: 6; -ms-flex-order: 5; order: 5; }\n  .order-xl-6 { -webkit-box-ordinal-group: 7; -ms-flex-order: 6; order: 6; }\n  .order-xl-7 { -webkit-box-ordinal-group: 8; -ms-flex-order: 7; order: 7; }\n  .order-xl-8 { -webkit-box-ordinal-group: 9; -ms-flex-order: 8; order: 8; }\n  .order-xl-9 { -webkit-box-ordinal-group: 10; -ms-flex-order: 9; order: 9; }\n  .order-xl-10 { -webkit-box-ordinal-group: 11; -ms-flex-order: 10; order: 10; }\n  .order-xl-11 { -webkit-box-ordinal-group: 12; -ms-flex-order: 11; order: 11; }\n  .order-xl-12 { -webkit-box-ordinal-group: 13; -ms-flex-order: 12; order: 12; }\n\n  .offset-xl-0 { margin-left: 0%; }\n  .offset-xl-1 { margin-left: 8.333333%; }\n  .offset-xl-2 { margin-left: 16.666667%; }\n  .offset-xl-3 { margin-left: 25%; }\n  .offset-xl-4 { margin-left: 33.333333%; }\n  .offset-xl-5 { margin-left: 41.666667%; }\n  .offset-xl-6 { margin-left: 50%; }\n  .offset-xl-7 { margin-left: 58.333333%; }\n  .offset-xl-8 { margin-left: 66.666667%; }\n  .offset-xl-9 { margin-left: 75%; }\n  .offset-xl-10 { margin-left: 83.333333%; }\n  .offset-xl-11 { margin-left: 91.666667%; }\n}\n\n/*! Loaders */\n\n.loader {\n  width: 36px;\n  width: 2.25rem;\n  height: 36px;\n  height: 2.25rem;\n  border-radius: 50%;\n  border-style: solid;\n  border-width: 3.2px;\n  border-width: .2rem;\n  border-color: rgb(204, 235, 255);\n  border-top-color: #0099ff;\n  border-left-color: #0099ff;\n  display: inline-block;\n  -webkit-animation: loader 750ms linear infinite;\n          animation: loader 750ms linear infinite;\n  margin: 0 .5em;\n  vertical-align: middle\n\n  /* Sizes */\n}\n\n.loader.loader-xs {\n  width: 20px;\n  width: 1.25rem;\n  height: 20px;\n  height: 1.25rem;\n  border-width: 1.6px;\n  border-width: 0.1rem;\n}\n\n.loader.loader-sm {\n  width: 28px;\n  width: 1.75rem;\n  height: 28px;\n  height: 1.75rem;\n  border-width: 2.133px;\n  border-width: 0.13333rem;\n}\n\n.loader.loader-lg {\n  width: 44px;\n  width: 2.75rem;\n  height: 44px;\n  height: 2.75rem;\n  border-width: 4.8px;\n  border-width: 0.3rem;\n}\n\n.loader.loader-xl {\n  width: 52px;\n  width: 3.25rem;\n  height: 52px;\n  height: 3.25rem;\n  border-width: 6.4px;\n  border-width: 0.4rem;\n}\n\n.loader {/*Variations\n*/\n}\n\n.loader.loader-secondary {\n  border-color: rgb(230, 230, 230);\n  border-top-color: #aaa;\n  border-left-color: #aaa;\n}\n\n.loader.loader-success {\n  border-color: rgb(213, 246, 217);\n  border-top-color: #2ecc40;\n  border-left-color: #2ecc40;\n}\n\n.loader.loader-info {\n  border-color: rgb(214, 245, 245);\n  border-top-color: #39cccc;\n  border-left-color: #39cccc;\n}\n\n.loader.loader-warning {\n  border-color: rgb(255, 228, 204);\n  border-top-color: #ff851b;\n  border-left-color: #ff851b;\n}\n\n.loader.loader-danger {\n  border-color: rgb(255, 207, 204);\n  border-top-color: #ff4136;\n  border-left-color: #ff4136;\n}\n\n.loader.loader-light {\n  border-color: rgb(230, 230, 230);\n  border-top-color: white;\n  border-left-color: white;\n}\n\n.loader.loader-dark {\n  border-color: rgb(230, 230, 230);\n  border-top-color: #111;\n  border-left-color: #111;\n}\n\n/* Background loaders */\n\n.loader-bg {\n  position: relative\n}\n\n.loader-bg::after {\n  content: '';\n  position: absolute;\n  top: calc(50% - 1.125rem);\n  left: calc(50% - 1.125rem);\n  width: 36px;\n  width: 2.25rem;\n  height: 36px;\n  height: 2.25rem;\n  border-radius: 50%;\n  border-style: solid;\n  border-width: 3.2px;\n  border-width: .2rem;\n  border-color: rgb(204, 235, 255);\n  border-top-color: #0099ff;\n  border-left-color: #0099ff;\n  -webkit-animation: loader 750ms linear infinite;\n          animation: loader 750ms linear infinite;\n}\n\n.loader-bg {/*Sizes\n*/\n}\n\n.loader-bg.loader-bg-xs::after {\n  top: calc(50% - 0.625rem);\n  left: calc(50% - 0.625rem);\n  width: 20px;\n  width: 1.25rem;\n  height: 20px;\n  height: 1.25rem;\n  border-width: 1.6px;\n  border-width: 0.1rem;\n}\n\n.loader-bg.loader-bg-sm::after {\n  top: calc(50% - 0.875rem);\n  left: calc(50% - 0.875rem);\n  width: 28px;\n  width: 1.75rem;\n  height: 28px;\n  height: 1.75rem;\n  border-width: 2.133px;\n  border-width: 0.13333rem;\n}\n\n.loader-bg.loader-bg-lg::after {\n  top: calc(50% - 1.375rem);\n  left: calc(50% - 1.375rem);\n  width: 44px;\n  width: 2.75rem;\n  height: 44px;\n  height: 2.75rem;\n  border-width: 4.8px;\n  border-width: 0.3rem;\n}\n\n.loader-bg.loader-bg-xl::after {\n  top: calc(50% - 1.625rem);\n  left: calc(50% - 1.625rem);\n  width: 52px;\n  width: 3.25rem;\n  height: 52px;\n  height: 3.25rem;\n  border-width: 6.4px;\n  border-width: 0.4rem;\n}\n\n.loader-bg {/*Variations\n*/\n}\n\n.loader-bg.loader-bg-secondary::after {\n  border-color: rgb(230, 230, 230);\n  border-top-color: #aaa;\n  border-left-color: #aaa;\n}\n\n.loader-bg.loader-bg-success::after {\n  border-color: rgb(213, 246, 217);\n  border-top-color: #2ecc40;\n  border-left-color: #2ecc40;\n}\n\n.loader-bg.loader-bg-info::after {\n  border-color: rgb(214, 245, 245);\n  border-top-color: #39cccc;\n  border-left-color: #39cccc;\n}\n\n.loader-bg.loader-bg-warning::after {\n  border-color: rgb(255, 228, 204);\n  border-top-color: #ff851b;\n  border-left-color: #ff851b;\n}\n\n.loader-bg.loader-bg-danger::after {\n  border-color: rgb(255, 207, 204);\n  border-top-color: #ff4136;\n  border-left-color: #ff4136;\n}\n\n.loader-bg.loader-bg-light::after {\n  border-color: rgb(230, 230, 230);\n  border-top-color: white;\n  border-left-color: white;\n}\n\n.loader-bg.loader-bg-dark::after {\n  border-color: rgb(230, 230, 230);\n  border-top-color: #111;\n  border-left-color: #111;\n}\n\n@-webkit-keyframes loader {\n  0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }\n  100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }\n}\n\n@keyframes loader {\n  0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }\n  100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }\n}\n\n/*! Progress Bars */\n\n.progress {\n  position: relative;\n  width: 100%;\n  height: 36px;\n  height: 2.25rem;\n  line-height: 36px;\n  line-height: 2.25rem;\n  font-size: 16px;\n  font-size: 1rem;\n  background-color: #f2f2f2;\n  border-radius: .25rem;\n  display: block;\n  overflow: hidden;\n  margin-bottom: 24px;\n  margin-bottom: 1.5rem;\n  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);\n          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05)\n}\n\n.progress .progress-bar {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 0;\n  height: 100%;\n  text-align: center;\n  color: white;\n  background-color: #0099ff;\n  -webkit-transition: .1s width;\n  transition: .1s width;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n  cursor: default;\n}\n\n.progress.progress-indeterminate .progress-bar {\n  width: 75% !important;\n  -webkit-animation: progress-indeterminate ease-in-out 3s infinite;\n          animation: progress-indeterminate ease-in-out 3s infinite;\n}\n\n.progress {/*Sizes\n*/\n}\n\n.progress.progress-xs {\n  font-size: 10px;\n  font-size: .625rem;\n  height: 20px;\n  height: 1.25rem;\n  line-height: 20px;\n  line-height: 1.25rem;\n}\n\n.progress.progress-sm {\n  font-size: 14px;\n  font-size: .875rem;\n  height: 28px;\n  height: 1.75rem;\n  line-height: 28px;\n  line-height: 1.75rem;\n}\n\n.progress.progress-lg {\n  font-size: 20px;\n  font-size: 1.25rem;\n  height: 44px;\n  height: 2.75rem;\n  line-height: 44px;\n  line-height: 2.75rem;\n}\n\n.progress.progress-xl {\n  font-size: 24px;\n  font-size: 1.5rem;\n  height: 52px;\n  height: 3.25rem;\n  line-height: 52px;\n  line-height: 3.25rem;\n}\n\n.progress {/*Variations\n*/\n}\n\n.progress.progress-secondary .progress-bar {\n  background-color: #aaa;\n}\n\n.progress.progress-success .progress-bar {\n  background-color: #2ecc40;\n}\n\n.progress.progress-info .progress-bar {\n  background-color: #39cccc;\n}\n\n.progress.progress-warning .progress-bar {\n  background-color: #ff851b;\n}\n\n.progress.progress-danger .progress-bar {\n  background-color: #ff4136;\n}\n\n.progress.progress-light {\n  background-color: #111;\n}\n\n.progress.progress-light .progress-bar {\n  color: #111;\n  background-color: white;\n}\n\n.progress.progress-dark {\n  background-color: white;\n}\n\n.progress.progress-dark .progress-bar {\n  color: white;\n  background-color: #111;\n}\n\n@-webkit-keyframes progress-indeterminate {\n  0% {\n    left: -65%;\n  }\n\n  50% {\n    left: 90%;\n  }\n\n  100% {\n    left: -65%;\n  }\n}\n\n@keyframes progress-indeterminate {\n  0% {\n    left: -65%;\n  }\n\n  50% {\n    left: 90%;\n  }\n\n  100% {\n    left: -65%;\n  }\n}\n\n/*! Switches */\n\n.switch {\n  font-size: 16px;\n  font-size: 1rem;\n  position: relative\n}\n\n.switch input {\n  position: absolute;\n  height: 1px;\n  width: 1px;\n  background: none;\n  border: 0;\n  clip: rect(0 0 0 0);\n  -webkit-clip-path: inset(50%);\n          clip-path: inset(50%);\n  overflow: hidden;\n  padding: 0;\n}\n\n.switch input + label {\n  position: relative;\n  min-width: 54px;\n  min-width: 3.375rem;\n  border-radius: 1.6875rem;\n  height: 27px;\n  height: 1.6875rem;\n  line-height: 27px;\n  line-height: 1.6875rem;\n  display: inline-block;\n  cursor: pointer;\n  outline: none;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n  vertical-align: middle;\n  text-indent: 62px;\n  text-indent: 3.875rem;\n}\n\n.switch input + label::before,\n    .switch input + label::after {\n  content: '';\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 54px;\n  width: 3.375rem;\n  bottom: 0;\n  display: block;\n}\n\n.switch input + label::before {\n  right: 0;\n  background-color: #ddd;\n  border-radius: 1.6875rem;\n  -webkit-transition: .1s all;\n  transition: .1s all;\n}\n\n.switch input + label::after {\n  top: 2px;\n  left: 2px;\n  width: calc(1.6875rem - 4px);\n  height: calc(1.6875rem - 4px);\n  border-radius: 50%;\n  background-color: white;\n  -webkit-transition: .1s margin;\n  transition: .1s margin;\n}\n\n.switch input:checked + label::before {\n  background-color: #0099ff;\n}\n\n.switch input:checked + label::after {\n  margin-left: 27px;\n  margin-left: 1.6875rem;\n}\n\n.switch input:focus + label::before {\n  outline: none;\n  -webkit-box-shadow: 0 0 0 2px rgba(0, 153, 255, 0.5);\n          box-shadow: 0 0 0 2px rgba(0, 153, 255, 0.5);\n}\n\n.switch input:disabled + label {\n  opacity: .5;\n  cursor: not-allowed;\n}\n\n.switch + .switch {\n  margin-left: 16px;\n  margin-left: 1rem;\n}\n\n.switch {/*Sizes\n*/\n}\n\n.switch.switch-xs {\n  font-size: 10px;\n  font-size: .625rem;\n}\n\n.switch.switch-xs input + label {\n  min-width: 30px;\n  min-width: 1.875rem;\n  height: 15px;\n  height: 0.9375rem;\n  line-height: 15px;\n  line-height: 0.9375rem;\n  text-indent: 38px;\n  text-indent: 2.375rem;\n}\n\n.switch.switch-xs input + label::before,\n      .switch.switch-xs input + label::after {\n  width: 30px;\n  width: 1.875rem;\n}\n\n.switch.switch-xs input + label::after {\n  width: calc(0.9375rem - 4px);\n  height: calc(0.9375rem - 4px);\n}\n\n.switch.switch-xs input:checked + label::after {\n  margin-left: 15px;\n  margin-left: 0.9375rem;\n}\n\n.switch.switch-sm {\n  font-size: 14px;\n  font-size: .875rem;\n}\n\n.switch.switch-sm input + label {\n  min-width: 42px;\n  min-width: 2.625rem;\n  height: 21px;\n  height: 1.3125rem;\n  line-height: 21px;\n  line-height: 1.3125rem;\n  text-indent: 50px;\n  text-indent: 3.125rem;\n}\n\n.switch.switch-sm input + label::before,\n      .switch.switch-sm input + label::after {\n  width: 42px;\n  width: 2.625rem;\n}\n\n.switch.switch-sm input + label::after {\n  width: calc(1.3125rem - 4px);\n  height: calc(1.3125rem - 4px);\n}\n\n.switch.switch-sm input:checked + label::after {\n  margin-left: 21px;\n  margin-left: 1.3125rem;\n}\n\n.switch.switch-lg {\n  font-size: 20px;\n  font-size: 1.25rem;\n}\n\n.switch.switch-lg input + label {\n  min-width: 66px;\n  min-width: 4.125rem;\n  height: 33px;\n  height: 2.0625rem;\n  line-height: 33px;\n  line-height: 2.0625rem;\n  text-indent: 74px;\n  text-indent: 4.625rem;\n}\n\n.switch.switch-lg input + label::before,\n      .switch.switch-lg input + label::after {\n  width: 66px;\n  width: 4.125rem;\n}\n\n.switch.switch-lg input + label::after {\n  width: calc(2.0625rem - 4px);\n  height: calc(2.0625rem - 4px);\n}\n\n.switch.switch-lg input:checked + label::after {\n  margin-left: 33px;\n  margin-left: 2.0625rem;\n}\n\n.switch.switch-xl {\n  font-size: 24px;\n  font-size: 1.5rem;\n}\n\n.switch.switch-xl input + label {\n  min-width: 78px;\n  min-width: 4.875rem;\n  height: 39px;\n  height: 2.4375rem;\n  line-height: 39px;\n  line-height: 2.4375rem;\n  text-indent: 86px;\n  text-indent: 5.375rem;\n}\n\n.switch.switch-xl input + label::before,\n      .switch.switch-xl input + label::after {\n  width: 78px;\n  width: 4.875rem;\n}\n\n.switch.switch-xl input + label::after {\n  width: calc(2.4375rem - 4px);\n  height: calc(2.4375rem - 4px);\n}\n\n.switch.switch-xl input:checked + label::after {\n  margin-left: 39px;\n  margin-left: 2.4375rem;\n}\n\n.switch {/*Variations\n*/\n}\n\n.switch.switch-secondary input {\n  background-color: #ddd;\n}\n\n.switch.switch-secondary input + label::after {\n  background-color: white;\n}\n\n.switch.switch-secondary input + label::before {\n  background-color: #ddd;\n}\n\n.switch.switch-secondary input:checked + label::before {\n  background-color: #aaa;\n}\n\n.switch.switch-secondary input:focus + label::before {\n  -webkit-box-shadow: 0 0 0 2px rgba(170, 170, 170, 0.5);\n          box-shadow: 0 0 0 2px rgba(170, 170, 170, 0.5);\n}\n\n.switch.switch-success input {\n  background-color: #ddd;\n}\n\n.switch.switch-success input + label::after {\n  background-color: white;\n}\n\n.switch.switch-success input + label::before {\n  background-color: #ddd;\n}\n\n.switch.switch-success input:checked + label::before {\n  background-color: #2ecc40;\n}\n\n.switch.switch-success input:focus + label::before {\n  -webkit-box-shadow: 0 0 0 2px rgba(46, 204, 64, 0.5);\n          box-shadow: 0 0 0 2px rgba(46, 204, 64, 0.5);\n}\n\n.switch.switch-info input {\n  background-color: #ddd;\n}\n\n.switch.switch-info input + label::after {\n  background-color: white;\n}\n\n.switch.switch-info input + label::before {\n  background-color: #ddd;\n}\n\n.switch.switch-info input:checked + label::before {\n  background-color: #39cccc;\n}\n\n.switch.switch-info input:focus + label::before {\n  -webkit-box-shadow: 0 0 0 2px rgba(57, 204, 204, 0.5);\n          box-shadow: 0 0 0 2px rgba(57, 204, 204, 0.5);\n}\n\n.switch.switch-warning input {\n  background-color: #ddd;\n}\n\n.switch.switch-warning input + label::after {\n  background-color: white;\n}\n\n.switch.switch-warning input + label::before {\n  background-color: #ddd;\n}\n\n.switch.switch-warning input:checked + label::before {\n  background-color: #ff851b;\n}\n\n.switch.switch-warning input:focus + label::before {\n  -webkit-box-shadow: 0 0 0 2px rgba(255, 133, 27, 0.5);\n          box-shadow: 0 0 0 2px rgba(255, 133, 27, 0.5);\n}\n\n.switch.switch-danger input {\n  background-color: #ddd;\n}\n\n.switch.switch-danger input + label::after {\n  background-color: white;\n}\n\n.switch.switch-danger input + label::before {\n  background-color: #ddd;\n}\n\n.switch.switch-danger input:checked + label::before {\n  background-color: #ff4136;\n}\n\n.switch.switch-danger input:focus + label::before {\n  -webkit-box-shadow: 0 0 0 2px rgba(255, 65, 54, 0.5);\n          box-shadow: 0 0 0 2px rgba(255, 65, 54, 0.5);\n}\n\n.switch.switch-light input {\n  background-color: rgb(230, 230, 230);\n}\n\n.switch.switch-light input + label::after {\n  background-color: white;\n}\n\n.switch.switch-light input + label::before {\n  background-color: rgb(230, 230, 230);\n}\n\n.switch.switch-light input:checked + label::before {\n  background-color: rgb(191, 191, 191);\n}\n\n.switch.switch-light input:focus + label::before {\n  -webkit-box-shadow: 0 0 0 2px rgba(191, 191, 191, 0.5);\n          box-shadow: 0 0 0 2px rgba(191, 191, 191, 0.5);\n}\n\n.switch.switch-dark input {\n  background-color: rgb(77, 77, 77);\n}\n\n.switch.switch-dark input + label::after {\n  background-color: white;\n}\n\n.switch.switch-dark input + label::before {\n  background-color: rgb(77, 77, 77);\n}\n\n.switch.switch-dark input:checked + label::before {\n  background-color: rgb(41, 41, 41);\n}\n\n.switch.switch-dark input:focus + label::before {\n  -webkit-box-shadow: 0 0 0 2px rgba(41, 41, 41, 0.5);\n          box-shadow: 0 0 0 2px rgba(41, 41, 41, 0.5);\n}\n\n/*! Tabs */\n\n.tabs {\n  width: 100%;\n  margin-bottom: 24px;\n  margin-bottom: 1.5rem\n}\n\n.tabs .tabs-nav {\n  margin-bottom: 24px;\n  margin-bottom: 1.5rem;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n}\n\n.tabs .tabs-nav a {\n  color: #0099ff;\n  text-decoration: none;\n  background-color: white;\n  border-radius: .25rem;\n  padding: 8px 16px;\n  padding: 0.5rem 1rem;\n  display: inline-block;\n  -webkit-transition: .1s box-shadow;\n  transition: .1s box-shadow;\n}\n\n.tabs .tabs-nav a:hover {\n  color: #0099ff;\n  background-color: white;\n  text-decoration: none;\n}\n\n.tabs .tabs-nav a.active {\n  color: white;\n  background-color: #0099ff;\n  cursor: default;\n}\n\n.tabs .tabs-nav a.disabled {\n  color: #aaa;\n  background-color: white;\n  cursor: not-allowed;\n}\n\n.tabs .tabs-nav.tabs-nav-block a {\n  display: block;\n}\n\n.tabs .tabs-pane {\n  border: solid 1px #ddd;\n  border-radius: .25rem;\n  padding: 16px 16px;\n  padding: 1rem 1rem;\n}\n\n.tabs .tabs-pane:not(.active) {\n  display: none;\n}\n\n.tabs .tabs-pane > :last-child {\n  margin-bottom: 0;\n}\n\n/*! Tables */\n\ntable {\n  width: 100%;\n  background-color: white;\n  border-collapse: collapse;\n  margin-bottom: 24px;\n  margin-bottom: 1.5rem\n}\n\ntable caption {\n  caption-side: bottom;\n  font-size: 80%;\n  color: #aaa;\n  text-align: center;\n  padding-top: 8px;\n  padding-top: .5rem;\n}\n\ntable th {\n  text-align: left;\n  background-color: transparent;\n  border-bottom: solid 2px #ddd;\n  padding: 8px 12px;\n  padding: .5rem .75rem;\n}\n\ntable td {\n  border-bottom: solid 1px #ddd;\n  padding: 8px 12px;\n  padding: .5rem .75rem;\n}\n\ntable {/*Variations\n*/\n}\n\ntable.table-bordered {\n  border: solid 1px #ddd;\n}\n\ntable.table-bordered td {\n  border-style: solid;\n  border-width: 1px;\n  border-color: #ddd;\n}\n\ntable.table-hoverable tbody tr:hover td {\n  color: white;\n  background-color: #0099ff;\n}\n\ntable.table-striped tr:nth-child(odd) td {\n  background-color: #f2f2f2;\n}\n\n/*! Utilties */\n\n/***************************************************************************************************\n* Text utilities\n***************************************************************************************************/\n\n/* Text color */\n\n.text-primary { color: #0099ff !important; }\n\n.text-secondary { color: #aaa !important; }\n\n.text-success { color: #2ecc40 !important; }\n\n.text-success { color: #2ecc40 !important; }\n\n.text-info { color: #39cccc !important; }\n\n.text-warning { color: #ff851b !important; }\n\n.text-danger { color: #ff4136 !important; }\n\n.text-light { color: white !important; }\n\n.text-dark { color: #111 !important; }\n\n/* Text style */\n\n.text-small { font-size: 80% !important; }\n\n.text-bold { font-weight: 700 !important; }\n\n.text-italic { font-style: italic !important; }\n\n.text-muted { color: #aaa !important; }\n\n/* Text alignment */\n\n.text-left { text-align: left !important; }\n\n.text-right { text-align: right !important; }\n\n.text-center { text-align: center !important; }\n\n.text-justify { text-align: justify !important; }\n\n/* Text case */\n\n.text-lowercase { text-transform: lowercase !important; }\n\n.text-uppercase { text-transform: uppercase !important; }\n\n.text-capitalize { text-transform: capitalize !important; }\n\n/* Text wrapping */\n\n.text-nowrap { white-space: nowrap !important; }\n\n/***************************************************************************************************\n* Background utilities\n***************************************************************************************************/\n\n.bg-primary { background-color: #0099ff !important; }\n\n.bg-secondary { background-color: #aaa !important; }\n\n.bg-success { background-color: #2ecc40 !important; }\n\n.bg-info { background-color: #39cccc !important; }\n\n.bg-warning { background-color: #ff851b !important; }\n\n.bg-danger { background-color: #ff4136 !important; }\n\n.bg-light { background-color: white !important; }\n\n.bg-dark { background-color: #111 !important; }\n\n/***************************************************************************************************\n* Display utilities\n***************************************************************************************************/\n\n@media only screen and (min-width: 0) and (max-width: 575px) { .hide-xs { display: none !important; } }\n\n@media only screen and (min-width: 0) { .hide-xs-up { display: none !important; } }\n\n@media only screen and (max-width: 575px) { .hide-xs-down { display: none !important; } }\n\n@media only screen and (min-width: 576px) and (max-width: 767px) { .hide-sm { display: none !important; } }\n\n@media only screen and (min-width: 576px) { .hide-sm-up { display: none !important; } }\n\n@media only screen and (max-width: 767px) { .hide-sm-down { display: none !important; } }\n\n@media only screen and (min-width: 768px) and (max-width: 991px) { .hide-md { display: none !important; } }\n\n@media only screen and (min-width: 768px) { .hide-md-up { display: none !important; } }\n\n@media only screen and (max-width: 991px) { .hide-md-down { display: none !important; } }\n\n@media only screen and (min-width: 992px) and (max-width: 1199px) { .hide-lg { display: none !important; } }\n\n@media only screen and (min-width: 992px) { .hide-lg-up { display: none !important; } }\n\n@media only screen and (max-width: 1199px) { .hide-lg-down { display: none !important; } }\n\n@media only screen and (min-width: 1200px) { .hide-xl { display: none !important; } }\n\n@media only screen and (min-width: 1200px) { .hide-xl-up { display: none !important; } }\n\n@media only screen and (min-width: 0) { .hide-xl-down { display: none !important; } }\n\n/***************************************************************************************************\n* Float utilities\n***************************************************************************************************/\n\n.clearfix::before,\n.clearfix::after {\n  content: '';\n  display: table;\n}\n\n.clearfix::after {\n  clear: both;\n}\n\n.float-left {\n  float: left !important;\n}\n\n.float-right {\n  float: right !important;\n}\n\n/***************************************************************************************************\n* Sizing utilities\n***************************************************************************************************/\n\n.w-0 { width: 0% !important; }\n\n.w-5 { width: 5% !important; }\n\n.w-10 { width: 10% !important; }\n\n.w-15 { width: 15% !important; }\n\n.w-20 { width: 20% !important; }\n\n.w-25 { width: 25% !important; }\n\n.w-30 { width: 30% !important; }\n\n.w-35 { width: 35% !important; }\n\n.w-40 { width: 40% !important; }\n\n.w-45 { width: 45% !important; }\n\n.w-50 { width: 50% !important; }\n\n.w-55 { width: 55% !important; }\n\n.w-60 { width: 60% !important; }\n\n.w-65 { width: 65% !important; }\n\n.w-70 { width: 70% !important; }\n\n.w-75 { width: 75% !important; }\n\n.w-80 { width: 80% !important; }\n\n.w-85 { width: 85% !important; }\n\n.w-90 { width: 90% !important; }\n\n.w-95 { width: 95% !important; }\n\n.w-100 { width: 100% !important; }\n\n.h-0 { height: 0% !important; }\n\n.h-5 { height: 5% !important; }\n\n.h-10 { height: 10% !important; }\n\n.h-15 { height: 15% !important; }\n\n.h-20 { height: 20% !important; }\n\n.h-25 { height: 25% !important; }\n\n.h-30 { height: 30% !important; }\n\n.h-35 { height: 35% !important; }\n\n.h-40 { height: 40% !important; }\n\n.h-45 { height: 45% !important; }\n\n.h-50 { height: 50% !important; }\n\n.h-55 { height: 55% !important; }\n\n.h-60 { height: 60% !important; }\n\n.h-65 { height: 65% !important; }\n\n.h-70 { height: 70% !important; }\n\n.h-75 { height: 75% !important; }\n\n.h-80 { height: 80% !important; }\n\n.h-85 { height: 85% !important; }\n\n.h-90 { height: 90% !important; }\n\n.h-95 { height: 95% !important; }\n\n.h-100 { height: 100% !important; }\n\n.w-max-100 { max-width: 100% !important; }\n\n.h-max-100 { max-width: 100% !important; }\n\n/***************************************************************************************************\n* Spacing utilities\n***************************************************************************************************/\n\n.pad-0 { padding: 0 !important; }\n\n.pad-x-0 { padding-left: 0 !important; padding-right: 0 !important; }\n\n.pad-y-0 { padding-top: 0 !important; padding-bottom: 0 !important; }\n\n.pad-t-0 { padding-top: 0 !important; }\n\n.pad-r-0 { padding-right: 0 !important; }\n\n.pad-b-0 { padding-bottom: 0 !important; }\n\n.pad-l-0 { padding-left: 0 !important; }\n\n.pad-xs { padding: 8px !important; padding: .5rem !important; }\n\n.pad-x-xs { padding-left: 8px !important; padding-left: .5rem !important; padding-right: 8px !important; padding-right: .5rem !important; }\n\n.pad-y-xs { padding-top: 8px !important; padding-top: .5rem !important; padding-bottom: 8px !important; padding-bottom: .5rem !important; }\n\n.pad-t-xs { padding-top: 8px !important; padding-top: .5rem !important; }\n\n.pad-r-xs { padding-right: 8px !important; padding-right: .5rem !important; }\n\n.pad-b-xs { padding-bottom: 8px !important; padding-bottom: .5rem !important; }\n\n.pad-l-xs { padding-left: 8px !important; padding-left: .5rem !important; }\n\n.pad-sm { padding: 16px !important; padding: 1rem !important; }\n\n.pad-x-sm { padding-left: 16px !important; padding-left: 1rem !important; padding-right: 16px !important; padding-right: 1rem !important; }\n\n.pad-y-sm { padding-top: 16px !important; padding-top: 1rem !important; padding-bottom: 16px !important; padding-bottom: 1rem !important; }\n\n.pad-t-sm { padding-top: 16px !important; padding-top: 1rem !important; }\n\n.pad-r-sm { padding-right: 16px !important; padding-right: 1rem !important; }\n\n.pad-b-sm { padding-bottom: 16px !important; padding-bottom: 1rem !important; }\n\n.pad-l-sm { padding-left: 16px !important; padding-left: 1rem !important; }\n\n.pad-md { padding: 24px !important; padding: 1.5rem !important; }\n\n.pad-x-md { padding-left: 24px !important; padding-left: 1.5rem !important; padding-right: 24px !important; padding-right: 1.5rem !important; }\n\n.pad-y-md { padding-top: 24px !important; padding-top: 1.5rem !important; padding-bottom: 24px !important; padding-bottom: 1.5rem !important; }\n\n.pad-t-md { padding-top: 24px !important; padding-top: 1.5rem !important; }\n\n.pad-r-md { padding-right: 24px !important; padding-right: 1.5rem !important; }\n\n.pad-b-md { padding-bottom: 24px !important; padding-bottom: 1.5rem !important; }\n\n.pad-l-md { padding-left: 24px !important; padding-left: 1.5rem !important; }\n\n.pad-lg { padding: 32px !important; padding: 2rem !important; }\n\n.pad-x-lg { padding-left: 32px !important; padding-left: 2rem !important; padding-right: 32px !important; padding-right: 2rem !important; }\n\n.pad-y-lg { padding-top: 32px !important; padding-top: 2rem !important; padding-bottom: 32px !important; padding-bottom: 2rem !important; }\n\n.pad-t-lg { padding-top: 32px !important; padding-top: 2rem !important; }\n\n.pad-r-lg { padding-right: 32px !important; padding-right: 2rem !important; }\n\n.pad-b-lg { padding-bottom: 32px !important; padding-bottom: 2rem !important; }\n\n.pad-l-lg { padding-left: 32px !important; padding-left: 2rem !important; }\n\n.pad-xl { padding: 40px !important; padding: 2.5rem !important; }\n\n.pad-x-xl { padding-left: 40px !important; padding-left: 2.5rem !important; padding-right: 40px !important; padding-right: 2.5rem !important; }\n\n.pad-y-xl { padding-top: 40px !important; padding-top: 2.5rem !important; padding-bottom: 40px !important; padding-bottom: 2.5rem !important; }\n\n.pad-t-xl { padding-top: 40px !important; padding-top: 2.5rem !important; }\n\n.pad-r-xl { padding-right: 40px !important; padding-right: 2.5rem !important; }\n\n.pad-b-xl { padding-bottom: 40px !important; padding-bottom: 2.5rem !important; }\n\n.pad-l-xl { padding-left: 40px !important; padding-left: 2.5rem !important; }\n\n.mar-0 { margin: 0 !important; }\n\n.mar-x-0 { margin-left: 0 !important; margin-right: 0 !important; }\n\n.mar-y-0 { margin-top: 0 !important; margin-bottom: 0 !important; }\n\n.mar-t-0 { margin-top: 0 !important; }\n\n.mar-r-0 { margin-right: 0 !important; }\n\n.mar-b-0 { margin-bottom: 0 !important; }\n\n.mar-l-0 { margin-left: 0 !important; }\n\n.mar-xs { margin: 8px !important; margin: .5rem !important; }\n\n.mar-x-xs { margin-left: 8px !important; margin-left: .5rem !important; margin-right: 8px !important; margin-right: .5rem !important; }\n\n.mar-y-xs { margin-top: 8px !important; margin-top: .5rem !important; margin-bottom: 8px !important; margin-bottom: .5rem !important; }\n\n.mar-t-xs { margin-top: 8px !important; margin-top: .5rem !important; }\n\n.mar-r-xs { margin-right: 8px !important; margin-right: .5rem !important; }\n\n.mar-b-xs { margin-bottom: 8px !important; margin-bottom: .5rem !important; }\n\n.mar-l-xs { margin-left: 8px !important; margin-left: .5rem !important; }\n\n.mar-sm { margin: 16px !important; margin: 1rem !important; }\n\n.mar-x-sm { margin-left: 16px !important; margin-left: 1rem !important; margin-right: 16px !important; margin-right: 1rem !important; }\n\n.mar-y-sm { margin-top: 16px !important; margin-top: 1rem !important; margin-bottom: 16px !important; margin-bottom: 1rem !important; }\n\n.mar-t-sm { margin-top: 16px !important; margin-top: 1rem !important; }\n\n.mar-r-sm { margin-right: 16px !important; margin-right: 1rem !important; }\n\n.mar-b-sm { margin-bottom: 16px !important; margin-bottom: 1rem !important; }\n\n.mar-l-sm { margin-left: 16px !important; margin-left: 1rem !important; }\n\n.mar-md { margin: 24px !important; margin: 1.5rem !important; }\n\n.mar-x-md { margin-left: 24px !important; margin-left: 1.5rem !important; margin-right: 24px !important; margin-right: 1.5rem !important; }\n\n.mar-y-md { margin-top: 24px !important; margin-top: 1.5rem !important; margin-bottom: 24px !important; margin-bottom: 1.5rem !important; }\n\n.mar-t-md { margin-top: 24px !important; margin-top: 1.5rem !important; }\n\n.mar-r-md { margin-right: 24px !important; margin-right: 1.5rem !important; }\n\n.mar-b-md { margin-bottom: 24px !important; margin-bottom: 1.5rem !important; }\n\n.mar-l-md { margin-left: 24px !important; margin-left: 1.5rem !important; }\n\n.mar-lg { margin: 32px !important; margin: 2rem !important; }\n\n.mar-x-lg { margin-left: 32px !important; margin-left: 2rem !important; margin-right: 32px !important; margin-right: 2rem !important; }\n\n.mar-y-lg { margin-top: 32px !important; margin-top: 2rem !important; margin-bottom: 32px !important; margin-bottom: 2rem !important; }\n\n.mar-t-lg { margin-top: 32px !important; margin-top: 2rem !important; }\n\n.mar-r-lg { margin-right: 32px !important; margin-right: 2rem !important; }\n\n.mar-b-lg { margin-bottom: 32px !important; margin-bottom: 2rem !important; }\n\n.mar-l-lg { margin-left: 32px !important; margin-left: 2rem !important; }\n\n.mar-xl { margin: 40px !important; margin: 2.5rem !important; }\n\n.mar-x-xl { margin-left: 40px !important; margin-left: 2.5rem !important; margin-right: 40px !important; margin-right: 2.5rem !important; }\n\n.mar-y-xl { margin-top: 40px !important; margin-top: 2.5rem !important; margin-bottom: 40px !important; margin-bottom: 2.5rem !important; }\n\n.mar-t-xl { margin-top: 40px !important; margin-top: 2.5rem !important; }\n\n.mar-r-xl { margin-right: 40px !important; margin-right: 2.5rem !important; }\n\n.mar-b-xl { margin-bottom: 40px !important; margin-bottom: 2.5rem !important; }\n\n.mar-l-xl { margin-left: 40px !important; margin-left: 2.5rem !important; }\n\n.mar-x-auto { margin-left: auto !important; margin-right: auto !important; }\n\n.mar-y-auto { margin-top: auto !important; margin-bottom: auto !important; }\n\n.mar-xy-auto { margin: auto !important; }\n\n:root {\n  /*************************************************************************************************\n  * Core variables\n  *************************************************************************************************/\n\n  /* Fonts */\n\n  /* Colors (most courtesy of http://clrs.cc/) */\n\n  /* States */\n\n  /* Components */\n\n  /*************************************************************************************************\n  * Alerts\n  *************************************************************************************************/\n\n  /* Default */\n\n  /* Secondary */\n\n  /* Success */\n\n  /* Info */\n\n  /* Warning */\n\n  /* Danger */\n\n  /* Light */\n\n  /* Dark */\n\n  /*************************************************************************************************\n  * Badges\n  *************************************************************************************************/ /* ems for relative sizing */  /* ems for relative sizing */\n\n  /* Default */\n\n  /* Secondary */\n\n  /* Success */\n\n  /* Info */\n\n  /* Warning */\n\n  /* Danger */\n\n  /* Light */\n\n  /* Dark */\n\n  /*************************************************************************************************\n  * Buttons\n  *************************************************************************************************/\n\n  /* Default */\n\n  /* Secondary */\n\n  /* Success */\n\n  /* Info */\n\n  /* Warning */\n\n  /* Danger */\n\n  /* Light */\n\n  /* Dark */\n\n  /*************************************************************************************************\n  * Content\n  *************************************************************************************************/ /* Most browsers use a default font size of 16px */\n\n  /*************************************************************************************************\n  * Dropdowns\n  *************************************************************************************************/\n\n  /*************************************************************************************************\n  * Forms\n  *************************************************************************************************/\n\n  /*************************************************************************************************\n  * Grid\n  *************************************************************************************************/\n\n  /*************************************************************************************************\n  * Loaders\n  *************************************************************************************************/\n\n  /* Default */\n\n  /* Secondary */\n\n  /* Success */\n\n  /* Info */\n\n  /* Warning */\n\n  /* Danger */\n\n  /* Light */\n\n  /* Dark */\n\n  /*************************************************************************************************\n  * Progress Bars\n  *************************************************************************************************/\n\n  /*************************************************************************************************\n  * Switches\n  *************************************************************************************************/\n\n  /* Default */\n\n  /* Secondary */\n\n  /* Success */\n\n  /* Info */\n\n  /* Warning */\n\n  /* Danger */\n\n  /* Light */\n\n  /* Dark */\n\n  /*************************************************************************************************\n  * Tables\n  *************************************************************************************************/\n\n  /*************************************************************************************************\n  * Tabs\n  *************************************************************************************************/\n\n  /*************************************************************************************************\n  * Utilities\n  *************************************************************************************************/\n}\n\n/* Core breakpoints */\n\n/* BASICS */\n\n.CodeMirror {\n  /* Set height, width, borders, and global font properties here */\n  font-family: monospace;\n  height: 300px;\n  color: black;\n  direction: ltr;\n}\n\n/* PADDING */\n\n.CodeMirror-lines {\n  padding: 4px 0; /* Vertical padding around content */\n}\n\n.CodeMirror pre {\n  padding: 0 4px; /* Horizontal padding of content */\n}\n\n.CodeMirror-scrollbar-filler, .CodeMirror-gutter-filler {\n  background-color: white; /* The little square between H and V scrollbars */\n}\n\n/* GUTTER */\n\n.CodeMirror-gutters {\n  border-right: 1px solid #ddd;\n  background-color: #f7f7f7;\n  white-space: nowrap;\n}\n\n.CodeMirror-linenumbers {}\n\n.CodeMirror-linenumber {\n  padding: 0 3px 0 5px;\n  min-width: 20px;\n  text-align: right;\n  color: #999;\n  white-space: nowrap;\n}\n\n.CodeMirror-guttermarker { color: black; }\n\n.CodeMirror-guttermarker-subtle { color: #999; }\n\n/* CURSOR */\n\n.CodeMirror-cursor {\n  border-left: 1px solid black;\n  border-right: none;\n  width: 0;\n}\n\n/* Shown when moving in bi-directional text */\n\n.CodeMirror div.CodeMirror-secondarycursor {\n  border-left: 1px solid silver;\n}\n\n.cm-fat-cursor .CodeMirror-cursor {\n  width: auto;\n  border: 0 !important;\n  background: #7e7;\n}\n\n.cm-fat-cursor div.CodeMirror-cursors {\n  z-index: 1;\n}\n\n.cm-fat-cursor-mark {\n  background-color: rgba(20, 255, 20, .5);\n  -webkit-animation: blink 1.06s steps(1) infinite;\n  animation: blink 1.06s steps(1) infinite;\n}\n\n.cm-animate-fat-cursor {\n  width: auto;\n  border: 0;\n  -webkit-animation: blink 1.06s steps(1) infinite;\n  animation: blink 1.06s steps(1) infinite;\n  background-color: #7e7;\n}\n\n@-webkit-keyframes blink {\n  0% {}\n  50% { background-color: transparent; }\n  100% {}\n}\n\n@keyframes blink {\n  0% {}\n  50% { background-color: transparent; }\n  100% {}\n}\n\n/* Can style cursor different in overwrite (non-insert) mode */\n\n.CodeMirror-overwrite .CodeMirror-cursor {}\n\n.cm-tab { display: inline-block; text-decoration: inherit; }\n\n.CodeMirror-rulers {\n  position: absolute;\n  left: 0; right: 0; top: -50px; bottom: -20px;\n  overflow: hidden;\n}\n\n.CodeMirror-ruler {\n  border-left: 1px solid #ccc;\n  top: 0; bottom: 0;\n  position: absolute;\n}\n\n/* DEFAULT THEME */\n\n.cm-s-default .cm-header {color: blue;}\n\n.cm-s-default .cm-quote {color: #090;}\n\n.cm-negative {color: #d44;}\n\n.cm-positive {color: #292;}\n\n.cm-header, .cm-strong {font-weight: bold;}\n\n.cm-em {font-style: italic;}\n\n.cm-link {text-decoration: underline;}\n\n.cm-strikethrough {text-decoration: line-through;}\n\n.cm-s-default .cm-keyword {color: #708;}\n\n.cm-s-default .cm-atom {color: #219;}\n\n.cm-s-default .cm-number {color: #164;}\n\n.cm-s-default .cm-def {color: #00f;}\n\n.cm-s-default .cm-variable,\n.cm-s-default .cm-punctuation,\n.cm-s-default .cm-property,\n.cm-s-default .cm-operator {}\n\n.cm-s-default .cm-variable-2 {color: #05a;}\n\n.cm-s-default .cm-variable-3, .cm-s-default .cm-type {color: #085;}\n\n.cm-s-default .cm-comment {color: #a50;}\n\n.cm-s-default .cm-string {color: #a11;}\n\n.cm-s-default .cm-string-2 {color: #f50;}\n\n.cm-s-default .cm-meta {color: #555;}\n\n.cm-s-default .cm-qualifier {color: #555;}\n\n.cm-s-default .cm-builtin {color: #30a;}\n\n.cm-s-default .cm-bracket {color: #997;}\n\n.cm-s-default .cm-tag {color: #170;}\n\n.cm-s-default .cm-attribute {color: #00c;}\n\n.cm-s-default .cm-hr {color: #999;}\n\n.cm-s-default .cm-link {color: #00c;}\n\n.cm-s-default .cm-error {color: #f00;}\n\n.cm-invalidchar {color: #f00;}\n\n.CodeMirror-composing { border-bottom: 2px solid; }\n\n/* Default styles for common addons */\n\ndiv.CodeMirror span.CodeMirror-matchingbracket {color: #0b0;}\n\ndiv.CodeMirror span.CodeMirror-nonmatchingbracket {color: #a22;}\n\n.CodeMirror-matchingtag { background: rgba(255, 150, 0, .3); }\n\n.CodeMirror-activeline-background {background: #e8f2ff;}\n\n/* STOP */\n\n/* The rest of this file contains styles related to the mechanics of\n   the editor. You probably shouldn't touch them. */\n\n.CodeMirror {\n  position: relative;\n  overflow: hidden;\n  background: white;\n}\n\n.CodeMirror-scroll {\n  overflow: scroll !important; /* Things will break if this is overridden */\n  /* 30px is the magic margin used to hide the element's real scrollbars */\n  /* See overflow: hidden in .CodeMirror */\n  margin-bottom: -30px; margin-right: -30px;\n  padding-bottom: 30px;\n  height: 100%;\n  outline: none; /* Prevent dragging from highlighting the element */\n  position: relative;\n}\n\n.CodeMirror-sizer {\n  position: relative;\n  border-right: 30px solid transparent;\n}\n\n/* The fake, visible scrollbars. Used to force redraw during scrolling\n   before actual scrolling happens, thus preventing shaking and\n   flickering artifacts. */\n\n.CodeMirror-vscrollbar, .CodeMirror-hscrollbar, .CodeMirror-scrollbar-filler, .CodeMirror-gutter-filler {\n  position: absolute;\n  z-index: 6;\n  display: none;\n}\n\n.CodeMirror-vscrollbar {\n  right: 0; top: 0;\n  overflow-x: hidden;\n  overflow-y: scroll;\n}\n\n.CodeMirror-hscrollbar {\n  bottom: 0; left: 0;\n  overflow-y: hidden;\n  overflow-x: scroll;\n}\n\n.CodeMirror-scrollbar-filler {\n  right: 0; bottom: 0;\n}\n\n.CodeMirror-gutter-filler {\n  left: 0; bottom: 0;\n}\n\n.CodeMirror-gutters {\n  position: absolute; left: 0; top: 0;\n  min-height: 100%;\n  z-index: 3;\n}\n\n.CodeMirror-gutter {\n  white-space: normal;\n  height: 100%;\n  display: inline-block;\n  vertical-align: top;\n  margin-bottom: -30px;\n}\n\n.CodeMirror-gutter-wrapper {\n  position: absolute;\n  z-index: 4;\n  background: none !important;\n  border: none !important;\n}\n\n.CodeMirror-gutter-background {\n  position: absolute;\n  top: 0; bottom: 0;\n  z-index: 4;\n}\n\n.CodeMirror-gutter-elt {\n  position: absolute;\n  cursor: default;\n  z-index: 4;\n}\n\n.CodeMirror-gutter-wrapper ::-moz-selection { background-color: transparent }\n\n.CodeMirror-gutter-wrapper ::selection { background-color: transparent }\n\n.CodeMirror-gutter-wrapper ::-moz-selection { background-color: transparent }\n\n.CodeMirror-lines {\n  cursor: text;\n  min-height: 1px; /* prevents collapsing before first draw */\n}\n\n.CodeMirror pre {\n  /* Reset some styles that the rest of the page might have set */ border-radius: 0;\n  border-width: 0;\n  background: transparent;\n  font-family: inherit;\n  font-size: inherit;\n  margin: 0;\n  white-space: pre;\n  word-wrap: normal;\n  line-height: inherit;\n  color: inherit;\n  z-index: 2;\n  position: relative;\n  overflow: visible;\n  -webkit-tap-highlight-color: transparent;\n  -webkit-font-variant-ligatures: contextual;\n  -webkit-font-feature-settings: \"calt\";\n          font-feature-settings: \"calt\";\n  font-variant-ligatures: contextual;\n}\n\n.CodeMirror-wrap pre {\n  word-wrap: break-word;\n  white-space: pre-wrap;\n  word-break: normal;\n}\n\n.CodeMirror-linebackground {\n  position: absolute;\n  left: 0; right: 0; top: 0; bottom: 0;\n  z-index: 0;\n}\n\n.CodeMirror-linewidget {\n  position: relative;\n  z-index: 2;\n  padding: 0.1px; /* Force widget margins to stay inside of the container */\n}\n\n.CodeMirror-widget {}\n\n.CodeMirror-rtl pre { direction: rtl; }\n\n.CodeMirror-code {\n  outline: none;\n}\n\n/* Force content-box sizing for the elements where we expect it */\n\n.CodeMirror-scroll,\n.CodeMirror-sizer,\n.CodeMirror-gutter,\n.CodeMirror-gutters,\n.CodeMirror-linenumber {\n  -webkit-box-sizing: content-box;\n          box-sizing: content-box;\n}\n\n.CodeMirror-measure {\n  position: absolute;\n  width: 100%;\n  height: 0;\n  overflow: hidden;\n  visibility: hidden;\n}\n\n.CodeMirror-cursor {\n  position: absolute;\n  pointer-events: none;\n}\n\n.CodeMirror-measure pre { position: static; }\n\ndiv.CodeMirror-cursors {\n  visibility: hidden;\n  position: relative;\n  z-index: 3;\n}\n\ndiv.CodeMirror-dragcursors {\n  visibility: visible;\n}\n\n.CodeMirror-focused div.CodeMirror-cursors {\n  visibility: visible;\n}\n\n.CodeMirror-selected { background: #d9d9d9; }\n\n.CodeMirror-focused .CodeMirror-selected { background: #d7d4f0; }\n\n.CodeMirror-crosshair { cursor: crosshair; }\n\n.CodeMirror-line::-moz-selection, .CodeMirror-line > span::-moz-selection, .CodeMirror-line > span > span::-moz-selection { background: #d7d4f0; }\n\n.CodeMirror-line::selection, .CodeMirror-line > span::selection, .CodeMirror-line > span > span::selection { background: #d7d4f0; }\n\n.CodeMirror-line::-moz-selection, .CodeMirror-line > span::-moz-selection, .CodeMirror-line > span > span::-moz-selection { background: #d7d4f0; }\n\n.cm-searching {\n  background-color: #ffa;\n  background-color: rgba(255, 255, 0, .4);\n}\n\n/* Used to force a border model for a node */\n\n.cm-force-border { padding-right: .1px; }\n\n@media print {\n  /* Hide the cursor when printing */\n  .CodeMirror div.CodeMirror-cursors {\n    visibility: hidden;\n  }\n}\n\n/* See issue #2901 */\n\n.cm-tab-wrap-hack:after { content: ''; }\n\n/* Help users use markselection to safely style text background */\n\nspan.CodeMirror-selectedtext { background: none; }\n\n.CodeMirror-merge {\n  position: relative;\n  border: 1px solid #ddd;\n  white-space: pre;\n}\n\n.CodeMirror-merge, .CodeMirror-merge .CodeMirror {\n  height: 350px;\n}\n\n.CodeMirror-merge-2pane .CodeMirror-merge-pane { width: 47%; }\n\n.CodeMirror-merge-2pane .CodeMirror-merge-gap { width: 6%; }\n\n.CodeMirror-merge-3pane .CodeMirror-merge-pane { width: 31%; }\n\n.CodeMirror-merge-3pane .CodeMirror-merge-gap { width: 3.5%; }\n\n.CodeMirror-merge-pane {\n  display: inline-block;\n  white-space: normal;\n  vertical-align: top;\n}\n\n.CodeMirror-merge-pane-rightmost {\n  position: absolute;\n  right: 0px;\n  z-index: 1;\n}\n\n.CodeMirror-merge-gap {\n  z-index: 2;\n  display: inline-block;\n  height: 100%;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  overflow: hidden;\n  border-left: 1px solid #ddd;\n  border-right: 1px solid #ddd;\n  position: relative;\n  background: #f8f8f8;\n}\n\n.CodeMirror-merge-scrolllock-wrap {\n  position: absolute;\n  bottom: 0; left: 50%;\n}\n\n.CodeMirror-merge-scrolllock {\n  position: relative;\n  left: -50%;\n  cursor: pointer;\n  color: #555;\n  line-height: 1;\n}\n\n.CodeMirror-merge-copybuttons-left, .CodeMirror-merge-copybuttons-right {\n  position: absolute;\n  left: 0; top: 0;\n  right: 0; bottom: 0;\n  line-height: 1;\n}\n\n.CodeMirror-merge-copy {\n  position: absolute;\n  cursor: pointer;\n  color: #44c;\n  z-index: 3;\n}\n\n.CodeMirror-merge-copy-reverse {\n  position: absolute;\n  cursor: pointer;\n  color: #44c;\n}\n\n.CodeMirror-merge-copybuttons-left .CodeMirror-merge-copy { left: 2px; }\n\n.CodeMirror-merge-copybuttons-right .CodeMirror-merge-copy { right: 2px; }\n\n.CodeMirror-merge-r-inserted, .CodeMirror-merge-l-inserted {\n  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAAGUlEQVQI12MwuCXy3+CWyH8GBgYGJgYkAABZbAQ9ELXurwAAAABJRU5ErkJggg==);\n  background-position: bottom left;\n  background-repeat: repeat-x;\n}\n\n.CodeMirror-merge-r-deleted, .CodeMirror-merge-l-deleted {\n  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAAGUlEQVQI12M4Kyb2/6yY2H8GBgYGJgYkAABURgPz6Ks7wQAAAABJRU5ErkJggg==);\n  background-position: bottom left;\n  background-repeat: repeat-x;\n}\n\n.CodeMirror-merge-r-chunk { background: #ffffe0; }\n\n.CodeMirror-merge-r-chunk-start { border-top: 1px solid #ee8; }\n\n.CodeMirror-merge-r-chunk-end { border-bottom: 1px solid #ee8; }\n\n.CodeMirror-merge-r-connect { fill: #ffffe0; stroke: #ee8; stroke-width: 1px; }\n\n.CodeMirror-merge-l-chunk { background: #eef; }\n\n.CodeMirror-merge-l-chunk-start { border-top: 1px solid #88e; }\n\n.CodeMirror-merge-l-chunk-end { border-bottom: 1px solid #88e; }\n\n.CodeMirror-merge-l-connect { fill: #eef; stroke: #88e; stroke-width: 1px; }\n\n.CodeMirror-merge-l-chunk.CodeMirror-merge-r-chunk { background: #dfd; }\n\n.CodeMirror-merge-l-chunk-start.CodeMirror-merge-r-chunk-start { border-top: 1px solid #4e4; }\n\n.CodeMirror-merge-l-chunk-end.CodeMirror-merge-r-chunk-end { border-bottom: 1px solid #4e4; }\n\n.CodeMirror-merge-collapsed-widget:before {\n  content: \"(...)\";\n}\n\n.CodeMirror-merge-collapsed-widget {\n  cursor: pointer;\n  color: #88b;\n  background: #eef;\n  border: 1px solid #ddf;\n  font-size: 90%;\n  padding: 0 3px;\n  border-radius: 4px;\n}\n\n.CodeMirror-merge-collapsed-line .CodeMirror-gutter-elt { display: none; }\n\n.CodeMirror-hints {\n  position: absolute;\n  z-index: 10;\n  overflow: hidden;\n  list-style: none;\n\n  margin: 0;\n  padding: 2px;\n\n  -webkit-box-shadow: 2px 3px 5px rgba(0, 0, 0, .2);\n  box-shadow: 2px 3px 5px rgba(0, 0, 0, .2);\n  border-radius: 3px;\n  border: 1px solid silver;\n\n  background: white;\n  font-size: 90%;\n  font-family: monospace;\n\n  max-height: 20em;\n  overflow-y: auto;\n}\n\n.CodeMirror-hint {\n  margin: 0;\n  padding: 0 4px;\n  border-radius: 2px;\n  white-space: pre;\n  color: black;\n  cursor: pointer;\n}\n\nli.CodeMirror-hint-active {\n  background: #08f;\n  color: white;\n}\n\n.l-body {\n    max-width: 100vw;\n    display: grid;\n    grid-template-rows: 48px 1fr;\n    grid-template-columns: 240px 1fr;\n    grid-template-areas:\n        \"logo searchbar\"\n        \"sidebar main\";\n\n    font-family: 'Work Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;\n\n    padding-right: 32px;\n}\n\n.l-logo {\n    grid-area: logo;\n    line-height: 48px;\n    position: -webkit-sticky;\n    position: sticky;\n    top: 0;\n    background: white;\n}\n\n.l-searchbar {\n    grid-area: searchbar;\n}\n\n.l-sidebar {\n    grid-area: sidebar;\n}\n\n.l-main {\n    grid-area: main;\n\n}\n\n.crudformsTable tr .crudformsTable__listingActions > * {\n    visibility: hidden;\n}\n\n.crudformsTable tr:hover .crudformsTable__listingActions > * {\n    visibility: inherit;\n}\n\n.crudformsTable__listingActions {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-pack:end;\n        -ms-flex-pack:end;\n            justify-content:flex-end;\n}\n\n.crudformsTable__listingActions > * {\n    display: block;\n    padding: 0 16px;\n}\n\n.form-group {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: column;\n            flex-direction: column;\n    margin-bottom: 8px;\n}\n\n.form-group__label {\n    -ms-flex-preferred-size: 16px;\n        flex-basis: 16px;\n    line-height: 16px;\n}\n\n.form-group__control {\n    -webkit-box-flex: 1;\n        -ms-flex-positive: 1;\n            flex-grow: 1;\n}\n\n.header {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: horizontal;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: row;\n            flex-direction: row;\n    padding-top: 8px;\n    margin-bottom: 32px;\n    position: -webkit-sticky;\n    position: sticky;\n    top: 0;\n    background: rgba(255, 255, 255, .8);\n}\n\n.header > *:first-child {\n    -webkit-box-flex: 1;\n        -ms-flex-positive: 1;\n            flex-grow: 1;\n}\n\n.header__toolbar {\n    -ms-flex-preferred-size:fit-content;\n        flex-basis:fit-content;\n}\n\n.logo {\n    font-size: 20px;\n    padding-left: 32px;\n}\n\n/* WORKAROUND */\n\n.queryCodeMirror {\n    width: calc(100vw - 256px);\n}\n\n/* WORKAROUND */\n\n.queryPackCodeMirror {\n    width: calc(100vw - 256px);\n}\n\n.searchbar {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n}\n\n.searchbar__input {\n    -webkit-box-flex: 1;\n        -ms-flex-positive: 1;\n            flex-grow: 1;\n}\n\n.sidebarMenu {\n    padding: 0;\n    list-style-type: none;\n}\n\n.sidebarMenu__item a {\n    --borderColorStripSize: 4px;\n    display: block;\n    padding-left: calc(32px - var(--borderColorStripSize));\n    color: #202020;\n    border-left: var(--borderColorStripSize) solid rgba(0, 0, 0, 0);\n    -webkit-box-sizing: border-box;\n            box-sizing: border-box;\n}\n\n.sidebarMenu__item a:hover {\n    text-decoration: none;\n    border-left-color: #0099ff;\n    background: #F1F1F1;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 6 */
+/***/ (function(module, exports) {
+
+/*
+	MIT License http://www.opensource.org/licenses/mit-license.php
+	Author Tobias Koppers @sokra
+*/
+// css base code, injected by the css-loader
+module.exports = function(useSourceMap) {
+	var list = [];
+
+	// return the list of modules as css string
+	list.toString = function toString() {
+		return this.map(function (item) {
+			var content = cssWithMappingToString(item, useSourceMap);
+			if(item[2]) {
+				return "@media " + item[2] + "{" + content + "}";
+			} else {
+				return content;
+			}
+		}).join("");
+	};
+
+	// import a list of modules into the list
+	list.i = function(modules, mediaQuery) {
+		if(typeof modules === "string")
+			modules = [[null, modules, ""]];
+		var alreadyImportedModules = {};
+		for(var i = 0; i < this.length; i++) {
+			var id = this[i][0];
+			if(typeof id === "number")
+				alreadyImportedModules[id] = true;
+		}
+		for(i = 0; i < modules.length; i++) {
+			var item = modules[i];
+			// skip already imported module
+			// this implementation is not 100% perfect for weird media query combinations
+			//  when a module is imported multiple times with different media queries.
+			//  I hope this will never occur (Hey this way we have smaller bundles)
+			if(typeof item[0] !== "number" || !alreadyImportedModules[item[0]]) {
+				if(mediaQuery && !item[2]) {
+					item[2] = mediaQuery;
+				} else if(mediaQuery) {
+					item[2] = "(" + item[2] + ") and (" + mediaQuery + ")";
+				}
+				list.push(item);
+			}
+		}
+	};
+	return list;
+};
+
+function cssWithMappingToString(item, useSourceMap) {
+	var content = item[1] || '';
+	var cssMapping = item[3];
+	if (!cssMapping) {
+		return content;
+	}
+
+	if (useSourceMap && typeof btoa === 'function') {
+		var sourceMapping = toComment(cssMapping);
+		var sourceURLs = cssMapping.sources.map(function (source) {
+			return '/*# sourceURL=' + cssMapping.sourceRoot + source + ' */'
+		});
+
+		return [content].concat(sourceURLs).concat([sourceMapping]).join('\n');
+	}
+
+	return [content].join('\n');
+}
+
+// Adapted from convert-source-map (MIT)
+function toComment(sourceMap) {
+	// eslint-disable-next-line no-undef
+	var base64 = btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap))));
+	var data = 'sourceMappingURL=data:application/json;charset=utf-8;base64,' + base64;
+
+	return '/*# ' + data + ' */';
+}
+
+
+/***/ }),
+/* 7 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/*
+	MIT License http://www.opensource.org/licenses/mit-license.php
+	Author Tobias Koppers @sokra
+*/
+
+var stylesInDom = {};
+
+var	memoize = function (fn) {
+	var memo;
+
+	return function () {
+		if (typeof memo === "undefined") memo = fn.apply(this, arguments);
+		return memo;
+	};
+};
+
+var isOldIE = memoize(function () {
+	// Test for IE <= 9 as proposed by Browserhacks
+	// @see http://browserhacks.com/#hack-e71d8692f65334173fee715c222cb805
+	// Tests for existence of standard globals is to allow style-loader
+	// to operate correctly into non-standard environments
+	// @see https://github.com/webpack-contrib/style-loader/issues/177
+	return window && document && document.all && !window.atob;
+});
+
+var getTarget = function (target) {
+  return document.querySelector(target);
+};
+
+var getElement = (function (fn) {
+	var memo = {};
+
+	return function(target) {
+                // If passing function in options, then use it for resolve "head" element.
+                // Useful for Shadow Root style i.e
+                // {
+                //   insertInto: function () { return document.querySelector("#foo").shadowRoot }
+                // }
+                if (typeof target === 'function') {
+                        return target();
+                }
+                if (typeof memo[target] === "undefined") {
+			var styleTarget = getTarget.call(this, target);
+			// Special case to return head of iframe instead of iframe itself
+			if (window.HTMLIFrameElement && styleTarget instanceof window.HTMLIFrameElement) {
+				try {
+					// This will throw an exception if access to iframe is blocked
+					// due to cross-origin restrictions
+					styleTarget = styleTarget.contentDocument.head;
+				} catch(e) {
+					styleTarget = null;
+				}
+			}
+			memo[target] = styleTarget;
+		}
+		return memo[target]
+	};
+})();
+
+var singleton = null;
+var	singletonCounter = 0;
+var	stylesInsertedAtTop = [];
+
+var	fixUrls = __webpack_require__(8);
+
+module.exports = function(list, options) {
+	if (typeof DEBUG !== "undefined" && DEBUG) {
+		if (typeof document !== "object") throw new Error("The style-loader cannot be used in a non-browser environment");
+	}
+
+	options = options || {};
+
+	options.attrs = typeof options.attrs === "object" ? options.attrs : {};
+
+	// Force single-tag solution on IE6-9, which has a hard limit on the # of <style>
+	// tags it will allow on a page
+	if (!options.singleton && typeof options.singleton !== "boolean") options.singleton = isOldIE();
+
+	// By default, add <style> tags to the <head> element
+        if (!options.insertInto) options.insertInto = "head";
+
+	// By default, add <style> tags to the bottom of the target
+	if (!options.insertAt) options.insertAt = "bottom";
+
+	var styles = listToStyles(list, options);
+
+	addStylesToDom(styles, options);
+
+	return function update (newList) {
+		var mayRemove = [];
+
+		for (var i = 0; i < styles.length; i++) {
+			var item = styles[i];
+			var domStyle = stylesInDom[item.id];
+
+			domStyle.refs--;
+			mayRemove.push(domStyle);
+		}
+
+		if(newList) {
+			var newStyles = listToStyles(newList, options);
+			addStylesToDom(newStyles, options);
+		}
+
+		for (var i = 0; i < mayRemove.length; i++) {
+			var domStyle = mayRemove[i];
+
+			if(domStyle.refs === 0) {
+				for (var j = 0; j < domStyle.parts.length; j++) domStyle.parts[j]();
+
+				delete stylesInDom[domStyle.id];
+			}
+		}
+	};
+};
+
+function addStylesToDom (styles, options) {
+	for (var i = 0; i < styles.length; i++) {
+		var item = styles[i];
+		var domStyle = stylesInDom[item.id];
+
+		if(domStyle) {
+			domStyle.refs++;
+
+			for(var j = 0; j < domStyle.parts.length; j++) {
+				domStyle.parts[j](item.parts[j]);
+			}
+
+			for(; j < item.parts.length; j++) {
+				domStyle.parts.push(addStyle(item.parts[j], options));
+			}
+		} else {
+			var parts = [];
+
+			for(var j = 0; j < item.parts.length; j++) {
+				parts.push(addStyle(item.parts[j], options));
+			}
+
+			stylesInDom[item.id] = {id: item.id, refs: 1, parts: parts};
+		}
+	}
+}
+
+function listToStyles (list, options) {
+	var styles = [];
+	var newStyles = {};
+
+	for (var i = 0; i < list.length; i++) {
+		var item = list[i];
+		var id = options.base ? item[0] + options.base : item[0];
+		var css = item[1];
+		var media = item[2];
+		var sourceMap = item[3];
+		var part = {css: css, media: media, sourceMap: sourceMap};
+
+		if(!newStyles[id]) styles.push(newStyles[id] = {id: id, parts: [part]});
+		else newStyles[id].parts.push(part);
+	}
+
+	return styles;
+}
+
+function insertStyleElement (options, style) {
+	var target = getElement(options.insertInto)
+
+	if (!target) {
+		throw new Error("Couldn't find a style target. This probably means that the value for the 'insertInto' parameter is invalid.");
+	}
+
+	var lastStyleElementInsertedAtTop = stylesInsertedAtTop[stylesInsertedAtTop.length - 1];
+
+	if (options.insertAt === "top") {
+		if (!lastStyleElementInsertedAtTop) {
+			target.insertBefore(style, target.firstChild);
+		} else if (lastStyleElementInsertedAtTop.nextSibling) {
+			target.insertBefore(style, lastStyleElementInsertedAtTop.nextSibling);
+		} else {
+			target.appendChild(style);
+		}
+		stylesInsertedAtTop.push(style);
+	} else if (options.insertAt === "bottom") {
+		target.appendChild(style);
+	} else if (typeof options.insertAt === "object" && options.insertAt.before) {
+		var nextSibling = getElement(options.insertInto + " " + options.insertAt.before);
+		target.insertBefore(style, nextSibling);
+	} else {
+		throw new Error("[Style Loader]\n\n Invalid value for parameter 'insertAt' ('options.insertAt') found.\n Must be 'top', 'bottom', or Object.\n (https://github.com/webpack-contrib/style-loader#insertat)\n");
+	}
+}
+
+function removeStyleElement (style) {
+	if (style.parentNode === null) return false;
+	style.parentNode.removeChild(style);
+
+	var idx = stylesInsertedAtTop.indexOf(style);
+	if(idx >= 0) {
+		stylesInsertedAtTop.splice(idx, 1);
+	}
+}
+
+function createStyleElement (options) {
+	var style = document.createElement("style");
+
+	options.attrs.type = "text/css";
+
+	addAttrs(style, options.attrs);
+	insertStyleElement(options, style);
+
+	return style;
+}
+
+function createLinkElement (options) {
+	var link = document.createElement("link");
+
+	options.attrs.type = "text/css";
+	options.attrs.rel = "stylesheet";
+
+	addAttrs(link, options.attrs);
+	insertStyleElement(options, link);
+
+	return link;
+}
+
+function addAttrs (el, attrs) {
+	Object.keys(attrs).forEach(function (key) {
+		el.setAttribute(key, attrs[key]);
+	});
+}
+
+function addStyle (obj, options) {
+	var style, update, remove, result;
+
+	// If a transform function was defined, run it on the css
+	if (options.transform && obj.css) {
+	    result = options.transform(obj.css);
+
+	    if (result) {
+	    	// If transform returns a value, use that instead of the original css.
+	    	// This allows running runtime transformations on the css.
+	    	obj.css = result;
+	    } else {
+	    	// If the transform function returns a falsy value, don't add this css.
+	    	// This allows conditional loading of css
+	    	return function() {
+	    		// noop
+	    	};
+	    }
+	}
+
+	if (options.singleton) {
+		var styleIndex = singletonCounter++;
+
+		style = singleton || (singleton = createStyleElement(options));
+
+		update = applyToSingletonTag.bind(null, style, styleIndex, false);
+		remove = applyToSingletonTag.bind(null, style, styleIndex, true);
+
+	} else if (
+		obj.sourceMap &&
+		typeof URL === "function" &&
+		typeof URL.createObjectURL === "function" &&
+		typeof URL.revokeObjectURL === "function" &&
+		typeof Blob === "function" &&
+		typeof btoa === "function"
+	) {
+		style = createLinkElement(options);
+		update = updateLink.bind(null, style, options);
+		remove = function () {
+			removeStyleElement(style);
+
+			if(style.href) URL.revokeObjectURL(style.href);
+		};
+	} else {
+		style = createStyleElement(options);
+		update = applyToTag.bind(null, style);
+		remove = function () {
+			removeStyleElement(style);
+		};
+	}
+
+	update(obj);
+
+	return function updateStyle (newObj) {
+		if (newObj) {
+			if (
+				newObj.css === obj.css &&
+				newObj.media === obj.media &&
+				newObj.sourceMap === obj.sourceMap
+			) {
+				return;
+			}
+
+			update(obj = newObj);
+		} else {
+			remove();
+		}
+	};
+}
+
+var replaceText = (function () {
+	var textStore = [];
+
+	return function (index, replacement) {
+		textStore[index] = replacement;
+
+		return textStore.filter(Boolean).join('\n');
+	};
+})();
+
+function applyToSingletonTag (style, index, remove, obj) {
+	var css = remove ? "" : obj.css;
+
+	if (style.styleSheet) {
+		style.styleSheet.cssText = replaceText(index, css);
+	} else {
+		var cssNode = document.createTextNode(css);
+		var childNodes = style.childNodes;
+
+		if (childNodes[index]) style.removeChild(childNodes[index]);
+
+		if (childNodes.length) {
+			style.insertBefore(cssNode, childNodes[index]);
+		} else {
+			style.appendChild(cssNode);
+		}
+	}
+}
+
+function applyToTag (style, obj) {
+	var css = obj.css;
+	var media = obj.media;
+
+	if(media) {
+		style.setAttribute("media", media)
+	}
+
+	if(style.styleSheet) {
+		style.styleSheet.cssText = css;
+	} else {
+		while(style.firstChild) {
+			style.removeChild(style.firstChild);
+		}
+
+		style.appendChild(document.createTextNode(css));
+	}
+}
+
+function updateLink (link, options, obj) {
+	var css = obj.css;
+	var sourceMap = obj.sourceMap;
+
+	/*
+		If convertToAbsoluteUrls isn't defined, but sourcemaps are enabled
+		and there is no publicPath defined then lets turn convertToAbsoluteUrls
+		on by default.  Otherwise default to the convertToAbsoluteUrls option
+		directly
+	*/
+	var autoFixUrls = options.convertToAbsoluteUrls === undefined && sourceMap;
+
+	if (options.convertToAbsoluteUrls || autoFixUrls) {
+		css = fixUrls(css);
+	}
+
+	if (sourceMap) {
+		// http://stackoverflow.com/a/26603875
+		css += "\n/*# sourceMappingURL=data:application/json;base64," + btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap)))) + " */";
+	}
+
+	var blob = new Blob([css], { type: "text/css" });
+
+	var oldSrc = link.href;
+
+	link.href = URL.createObjectURL(blob);
+
+	if(oldSrc) URL.revokeObjectURL(oldSrc);
+}
+
+
+/***/ }),
+/* 8 */
+/***/ (function(module, exports) {
+
+
+/**
+ * When source maps are enabled, `style-loader` uses a link element with a data-uri to
+ * embed the css on the page. This breaks all relative urls because now they are relative to a
+ * bundle instead of the current page.
+ *
+ * One solution is to only use full urls, but that may be impossible.
+ *
+ * Instead, this function "fixes" the relative urls to be absolute according to the current page location.
+ *
+ * A rudimentary test suite is located at `test/fixUrls.js` and can be run via the `npm test` command.
+ *
+ */
+
+module.exports = function (css) {
+  // get current location
+  var location = typeof window !== "undefined" && window.location;
+
+  if (!location) {
+    throw new Error("fixUrls requires window.location");
+  }
+
+	// blank or null?
+	if (!css || typeof css !== "string") {
+	  return css;
+  }
+
+  var baseUrl = location.protocol + "//" + location.host;
+  var currentDir = baseUrl + location.pathname.replace(/\/[^\/]*$/, "/");
+
+	// convert each url(...)
+	/*
+	This regular expression is just a way to recursively match brackets within
+	a string.
+
+	 /url\s*\(  = Match on the word "url" with any whitespace after it and then a parens
+	   (  = Start a capturing group
+	     (?:  = Start a non-capturing group
+	         [^)(]  = Match anything that isn't a parentheses
+	         |  = OR
+	         \(  = Match a start parentheses
+	             (?:  = Start another non-capturing groups
+	                 [^)(]+  = Match anything that isn't a parentheses
+	                 |  = OR
+	                 \(  = Match a start parentheses
+	                     [^)(]*  = Match anything that isn't a parentheses
+	                 \)  = Match a end parentheses
+	             )  = End Group
+              *\) = Match anything and then a close parens
+          )  = Close non-capturing group
+          *  = Match anything
+       )  = Close capturing group
+	 \)  = Match a close parens
+
+	 /gi  = Get all matches, not the first.  Be case insensitive.
+	 */
+	var fixedCss = css.replace(/url\s*\(((?:[^)(]|\((?:[^)(]+|\([^)(]*\))*\))*)\)/gi, function(fullMatch, origUrl) {
+		// strip quotes (if they exist)
+		var unquotedOrigUrl = origUrl
+			.trim()
+			.replace(/^"(.*)"$/, function(o, $1){ return $1; })
+			.replace(/^'(.*)'$/, function(o, $1){ return $1; });
+
+		// already a full url? no change
+		if (/^(#|data:|http:\/\/|https:\/\/|file:\/\/\/|\s*$)/i.test(unquotedOrigUrl)) {
+		  return fullMatch;
+		}
+
+		// convert the url to a full url
+		var newUrl;
+
+		if (unquotedOrigUrl.indexOf("//") === 0) {
+		  	//TODO: should we add protocol?
+			newUrl = unquotedOrigUrl;
+		} else if (unquotedOrigUrl.indexOf("/") === 0) {
+			// path should be relative to the base url
+			newUrl = baseUrl + unquotedOrigUrl; // already starts with '/'
+		} else {
+			// path should be relative to current directory
+			newUrl = currentDir + unquotedOrigUrl.replace(/^\.\//, ""); // Strip leading './'
+		}
+
+		// send back the fixed url(...)
+		return "url(" + JSON.stringify(newUrl) + ")";
+	});
+
+	// send back the fixed css
+	return fixedCss;
+};
+
+
+/***/ }),
+/* 9 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__AjaxModal__ = __webpack_require__(17);
+__webpack_require__(10);
+
+
+[].forEach.call(document.querySelectorAll("a[data-ajax-modal]"), triggerElement => {
+    Object(__WEBPACK_IMPORTED_MODULE_0__AjaxModal__["a" /* default */])(triggerElement);
+});
+
+
+/***/ }),
+/* 10 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_codemirror__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_codemirror___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_codemirror__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__CodeMirror_QueryPackEditor__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__CodeMirror_QueryEditor__ = __webpack_require__(16);
+
+__webpack_require__(11);
+__webpack_require__(1);
+__webpack_require__(12);
+__webpack_require__(13);
+__webpack_require__(14);
+
+
+
+
+const queryPackSourceJsonElement = document.getElementById('queryPackSourceJson');
+if  (queryPackSourceJsonElement) {
+    Object(__WEBPACK_IMPORTED_MODULE_1__CodeMirror_QueryPackEditor__["a" /* default */])(__WEBPACK_IMPORTED_MODULE_0_codemirror___default.a, queryPackSourceJsonElement);
+}
+
+
+const querySourceElement = document.getElementById('querySource');
+if  (querySourceElement) {
+    Object(__WEBPACK_IMPORTED_MODULE_2__CodeMirror_QueryEditor__["a" /* default */])(__WEBPACK_IMPORTED_MODULE_0_codemirror___default.a, querySourceElement);
+}
+
+
+/***/ }),
+/* 11 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// CodeMirror, copyright (c) by Marijn Haverbeke and others
+// Distributed under an MIT license: http://codemirror.net/LICENSE
+
+(function(mod) {
+  if (true) // CommonJS
+    mod(__webpack_require__(0));
   else if (typeof define == "function" && define.amd) // AMD
     define(["../../lib/codemirror"], mod);
   else // Plain browser env
@@ -11245,7 +11822,7 @@ CodeMirror.defineMIME("application/typescript", { name: "javascript", typescript
 
 
 /***/ }),
-/* 8 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // CodeMirror, copyright (c) by Marijn Haverbeke and others
@@ -11253,501 +11830,7 @@ CodeMirror.defineMIME("application/typescript", { name: "javascript", typescript
 
 (function(mod) {
   if (true) // CommonJS
-    mod(__webpack_require__(6));
-  else if (typeof define == "function" && define.amd) // AMD
-    define(["../../lib/codemirror"], mod);
-  else // Plain browser env
-    mod(CodeMirror);
-})(function(CodeMirror) {
-"use strict";
-
-CodeMirror.defineMode("sql", function(config, parserConfig) {
-  "use strict";
-
-  var client         = parserConfig.client || {},
-      atoms          = parserConfig.atoms || {"false": true, "true": true, "null": true},
-      builtin        = parserConfig.builtin || {},
-      keywords       = parserConfig.keywords || {},
-      operatorChars  = parserConfig.operatorChars || /^[*+\-%<>!=&|~^]/,
-      support        = parserConfig.support || {},
-      hooks          = parserConfig.hooks || {},
-      dateSQL        = parserConfig.dateSQL || {"date" : true, "time" : true, "timestamp" : true};
-
-  function tokenBase(stream, state) {
-    var ch = stream.next();
-
-    // call hooks from the mime type
-    if (hooks[ch]) {
-      var result = hooks[ch](stream, state);
-      if (result !== false) return result;
-    }
-
-    if (support.hexNumber &&
-      ((ch == "0" && stream.match(/^[xX][0-9a-fA-F]+/))
-      || (ch == "x" || ch == "X") && stream.match(/^'[0-9a-fA-F]+'/))) {
-      // hex
-      // ref: http://dev.mysql.com/doc/refman/5.5/en/hexadecimal-literals.html
-      return "number";
-    } else if (support.binaryNumber &&
-      (((ch == "b" || ch == "B") && stream.match(/^'[01]+'/))
-      || (ch == "0" && stream.match(/^b[01]+/)))) {
-      // bitstring
-      // ref: http://dev.mysql.com/doc/refman/5.5/en/bit-field-literals.html
-      return "number";
-    } else if (ch.charCodeAt(0) > 47 && ch.charCodeAt(0) < 58) {
-      // numbers
-      // ref: http://dev.mysql.com/doc/refman/5.5/en/number-literals.html
-      stream.match(/^[0-9]*(\.[0-9]+)?([eE][-+]?[0-9]+)?/);
-      support.decimallessFloat && stream.match(/^\.(?!\.)/);
-      return "number";
-    } else if (ch == "?" && (stream.eatSpace() || stream.eol() || stream.eat(";"))) {
-      // placeholders
-      return "variable-3";
-    } else if (ch == "'" || (ch == '"' && support.doubleQuote)) {
-      // strings
-      // ref: http://dev.mysql.com/doc/refman/5.5/en/string-literals.html
-      state.tokenize = tokenLiteral(ch);
-      return state.tokenize(stream, state);
-    } else if ((((support.nCharCast && (ch == "n" || ch == "N"))
-        || (support.charsetCast && ch == "_" && stream.match(/[a-z][a-z0-9]*/i)))
-        && (stream.peek() == "'" || stream.peek() == '"'))) {
-      // charset casting: _utf8'str', N'str', n'str'
-      // ref: http://dev.mysql.com/doc/refman/5.5/en/string-literals.html
-      return "keyword";
-    } else if (/^[\(\),\;\[\]]/.test(ch)) {
-      // no highlighting
-      return null;
-    } else if (support.commentSlashSlash && ch == "/" && stream.eat("/")) {
-      // 1-line comment
-      stream.skipToEnd();
-      return "comment";
-    } else if ((support.commentHash && ch == "#")
-        || (ch == "-" && stream.eat("-") && (!support.commentSpaceRequired || stream.eat(" ")))) {
-      // 1-line comments
-      // ref: https://kb.askmonty.org/en/comment-syntax/
-      stream.skipToEnd();
-      return "comment";
-    } else if (ch == "/" && stream.eat("*")) {
-      // multi-line comments
-      // ref: https://kb.askmonty.org/en/comment-syntax/
-      state.tokenize = tokenComment(1);
-      return state.tokenize(stream, state);
-    } else if (ch == ".") {
-      // .1 for 0.1
-      if (support.zerolessFloat && stream.match(/^(?:\d+(?:e[+-]?\d+)?)/i))
-        return "number";
-      if (stream.match(/^\.+/))
-        return null
-      // .table_name (ODBC)
-      // // ref: http://dev.mysql.com/doc/refman/5.6/en/identifier-qualifiers.html
-      if (support.ODBCdotTable && stream.match(/^[\w\d_]+/))
-        return "variable-2";
-    } else if (operatorChars.test(ch)) {
-      // operators
-      stream.eatWhile(operatorChars);
-      return null;
-    } else if (ch == '{' &&
-        (stream.match(/^( )*(d|D|t|T|ts|TS)( )*'[^']*'( )*}/) || stream.match(/^( )*(d|D|t|T|ts|TS)( )*"[^"]*"( )*}/))) {
-      // dates (weird ODBC syntax)
-      // ref: http://dev.mysql.com/doc/refman/5.5/en/date-and-time-literals.html
-      return "number";
-    } else {
-      stream.eatWhile(/^[_\w\d]/);
-      var word = stream.current().toLowerCase();
-      // dates (standard SQL syntax)
-      // ref: http://dev.mysql.com/doc/refman/5.5/en/date-and-time-literals.html
-      if (dateSQL.hasOwnProperty(word) && (stream.match(/^( )+'[^']*'/) || stream.match(/^( )+"[^"]*"/)))
-        return "number";
-      if (atoms.hasOwnProperty(word)) return "atom";
-      if (builtin.hasOwnProperty(word)) return "builtin";
-      if (keywords.hasOwnProperty(word)) return "keyword";
-      if (client.hasOwnProperty(word)) return "string-2";
-      return null;
-    }
-  }
-
-  // 'string', with char specified in quote escaped by '\'
-  function tokenLiteral(quote) {
-    return function(stream, state) {
-      var escaped = false, ch;
-      while ((ch = stream.next()) != null) {
-        if (ch == quote && !escaped) {
-          state.tokenize = tokenBase;
-          break;
-        }
-        escaped = !escaped && ch == "\\";
-      }
-      return "string";
-    };
-  }
-  function tokenComment(depth) {
-    return function(stream, state) {
-      var m = stream.match(/^.*?(\/\*|\*\/)/)
-      if (!m) stream.skipToEnd()
-      else if (m[1] == "/*") state.tokenize = tokenComment(depth + 1)
-      else if (depth > 1) state.tokenize = tokenComment(depth - 1)
-      else state.tokenize = tokenBase
-      return "comment"
-    }
-  }
-
-  function pushContext(stream, state, type) {
-    state.context = {
-      prev: state.context,
-      indent: stream.indentation(),
-      col: stream.column(),
-      type: type
-    };
-  }
-
-  function popContext(state) {
-    state.indent = state.context.indent;
-    state.context = state.context.prev;
-  }
-
-  return {
-    startState: function() {
-      return {tokenize: tokenBase, context: null};
-    },
-
-    token: function(stream, state) {
-      if (stream.sol()) {
-        if (state.context && state.context.align == null)
-          state.context.align = false;
-      }
-      if (state.tokenize == tokenBase && stream.eatSpace()) return null;
-
-      var style = state.tokenize(stream, state);
-      if (style == "comment") return style;
-
-      if (state.context && state.context.align == null)
-        state.context.align = true;
-
-      var tok = stream.current();
-      if (tok == "(")
-        pushContext(stream, state, ")");
-      else if (tok == "[")
-        pushContext(stream, state, "]");
-      else if (state.context && state.context.type == tok)
-        popContext(state);
-      return style;
-    },
-
-    indent: function(state, textAfter) {
-      var cx = state.context;
-      if (!cx) return CodeMirror.Pass;
-      var closing = textAfter.charAt(0) == cx.type;
-      if (cx.align) return cx.col + (closing ? 0 : 1);
-      else return cx.indent + (closing ? 0 : config.indentUnit);
-    },
-
-    blockCommentStart: "/*",
-    blockCommentEnd: "*/",
-    lineComment: support.commentSlashSlash ? "//" : support.commentHash ? "#" : "--"
-  };
-});
-
-(function() {
-  "use strict";
-
-  // `identifier`
-  function hookIdentifier(stream) {
-    // MySQL/MariaDB identifiers
-    // ref: http://dev.mysql.com/doc/refman/5.6/en/identifier-qualifiers.html
-    var ch;
-    while ((ch = stream.next()) != null) {
-      if (ch == "`" && !stream.eat("`")) return "variable-2";
-    }
-    stream.backUp(stream.current().length - 1);
-    return stream.eatWhile(/\w/) ? "variable-2" : null;
-  }
-
-  // "identifier"
-  function hookIdentifierDoublequote(stream) {
-    // Standard SQL /SQLite identifiers
-    // ref: http://web.archive.org/web/20160813185132/http://savage.net.au/SQL/sql-99.bnf.html#delimited%20identifier
-    // ref: http://sqlite.org/lang_keywords.html
-    var ch;
-    while ((ch = stream.next()) != null) {
-      if (ch == "\"" && !stream.eat("\"")) return "variable-2";
-    }
-    stream.backUp(stream.current().length - 1);
-    return stream.eatWhile(/\w/) ? "variable-2" : null;
-  }
-
-  // variable token
-  function hookVar(stream) {
-    // variables
-    // @@prefix.varName @varName
-    // varName can be quoted with ` or ' or "
-    // ref: http://dev.mysql.com/doc/refman/5.5/en/user-variables.html
-    if (stream.eat("@")) {
-      stream.match(/^session\./);
-      stream.match(/^local\./);
-      stream.match(/^global\./);
-    }
-
-    if (stream.eat("'")) {
-      stream.match(/^.*'/);
-      return "variable-2";
-    } else if (stream.eat('"')) {
-      stream.match(/^.*"/);
-      return "variable-2";
-    } else if (stream.eat("`")) {
-      stream.match(/^.*`/);
-      return "variable-2";
-    } else if (stream.match(/^[0-9a-zA-Z$\.\_]+/)) {
-      return "variable-2";
-    }
-    return null;
-  };
-
-  // short client keyword token
-  function hookClient(stream) {
-    // \N means NULL
-    // ref: http://dev.mysql.com/doc/refman/5.5/en/null-values.html
-    if (stream.eat("N")) {
-        return "atom";
-    }
-    // \g, etc
-    // ref: http://dev.mysql.com/doc/refman/5.5/en/mysql-commands.html
-    return stream.match(/^[a-zA-Z.#!?]/) ? "variable-2" : null;
-  }
-
-  // these keywords are used by all SQL dialects (however, a mode can still overwrite it)
-  var sqlKeywords = "alter and as asc between by count create delete desc distinct drop from group having in insert into is join like not on or order select set table union update values where limit ";
-
-  // turn a space-separated list into an array
-  function set(str) {
-    var obj = {}, words = str.split(" ");
-    for (var i = 0; i < words.length; ++i) obj[words[i]] = true;
-    return obj;
-  }
-
-  // A generic SQL Mode. It's not a standard, it just try to support what is generally supported
-  CodeMirror.defineMIME("text/x-sql", {
-    name: "sql",
-    keywords: set(sqlKeywords + "begin"),
-    builtin: set("bool boolean bit blob enum long longblob longtext medium mediumblob mediumint mediumtext time timestamp tinyblob tinyint tinytext text bigint int int1 int2 int3 int4 int8 integer float float4 float8 double char varbinary varchar varcharacter precision real date datetime year unsigned signed decimal numeric"),
-    atoms: set("false true null unknown"),
-    operatorChars: /^[*+\-%<>!=]/,
-    dateSQL: set("date time timestamp"),
-    support: set("ODBCdotTable doubleQuote binaryNumber hexNumber")
-  });
-
-  CodeMirror.defineMIME("text/x-mssql", {
-    name: "sql",
-    client: set("charset clear connect edit ego exit go help nopager notee nowarning pager print prompt quit rehash source status system tee"),
-    keywords: set(sqlKeywords + "begin trigger proc view index for add constraint key primary foreign collate clustered nonclustered declare exec"),
-    builtin: set("bigint numeric bit smallint decimal smallmoney int tinyint money float real char varchar text nchar nvarchar ntext binary varbinary image cursor timestamp hierarchyid uniqueidentifier sql_variant xml table "),
-    atoms: set("false true null unknown"),
-    operatorChars: /^[*+\-%<>!=]/,
-    dateSQL: set("date datetimeoffset datetime2 smalldatetime datetime time"),
-    hooks: {
-      "@":   hookVar
-    }
-  });
-
-  CodeMirror.defineMIME("text/x-mysql", {
-    name: "sql",
-    client: set("charset clear connect edit ego exit go help nopager notee nowarning pager print prompt quit rehash source status system tee"),
-    keywords: set(sqlKeywords + "accessible action add after algorithm all analyze asensitive at authors auto_increment autocommit avg avg_row_length before binary binlog both btree cache call cascade cascaded case catalog_name chain change changed character check checkpoint checksum class_origin client_statistics close coalesce code collate collation collations column columns comment commit committed completion concurrent condition connection consistent constraint contains continue contributors convert cross current current_date current_time current_timestamp current_user cursor data database databases day_hour day_microsecond day_minute day_second deallocate dec declare default delay_key_write delayed delimiter des_key_file describe deterministic dev_pop dev_samp deviance diagnostics directory disable discard distinctrow div dual dumpfile each elseif enable enclosed end ends engine engines enum errors escape escaped even event events every execute exists exit explain extended fast fetch field fields first flush for force foreign found_rows full fulltext function general get global grant grants group group_concat handler hash help high_priority hosts hour_microsecond hour_minute hour_second if ignore ignore_server_ids import index index_statistics infile inner innodb inout insensitive insert_method install interval invoker isolation iterate key keys kill language last leading leave left level limit linear lines list load local localtime localtimestamp lock logs low_priority master master_heartbeat_period master_ssl_verify_server_cert masters match max max_rows maxvalue message_text middleint migrate min min_rows minute_microsecond minute_second mod mode modifies modify mutex mysql_errno natural next no no_write_to_binlog offline offset one online open optimize option optionally out outer outfile pack_keys parser partition partitions password phase plugin plugins prepare preserve prev primary privileges procedure processlist profile profiles purge query quick range read read_write reads real rebuild recover references regexp relaylog release remove rename reorganize repair repeatable replace require resignal restrict resume return returns revoke right rlike rollback rollup row row_format rtree savepoint schedule schema schema_name schemas second_microsecond security sensitive separator serializable server session share show signal slave slow smallint snapshot soname spatial specific sql sql_big_result sql_buffer_result sql_cache sql_calc_found_rows sql_no_cache sql_small_result sqlexception sqlstate sqlwarning ssl start starting starts status std stddev stddev_pop stddev_samp storage straight_join subclass_origin sum suspend table_name table_statistics tables tablespace temporary terminated to trailing transaction trigger triggers truncate uncommitted undo uninstall unique unlock upgrade usage use use_frm user user_resources user_statistics using utc_date utc_time utc_timestamp value variables varying view views warnings when while with work write xa xor year_month zerofill begin do then else loop repeat"),
-    builtin: set("bool boolean bit blob decimal double float long longblob longtext medium mediumblob mediumint mediumtext time timestamp tinyblob tinyint tinytext text bigint int int1 int2 int3 int4 int8 integer float float4 float8 double char varbinary varchar varcharacter precision date datetime year unsigned signed numeric"),
-    atoms: set("false true null unknown"),
-    operatorChars: /^[*+\-%<>!=&|^]/,
-    dateSQL: set("date time timestamp"),
-    support: set("ODBCdotTable decimallessFloat zerolessFloat binaryNumber hexNumber doubleQuote nCharCast charsetCast commentHash commentSpaceRequired"),
-    hooks: {
-      "@":   hookVar,
-      "`":   hookIdentifier,
-      "\\":  hookClient
-    }
-  });
-
-  CodeMirror.defineMIME("text/x-mariadb", {
-    name: "sql",
-    client: set("charset clear connect edit ego exit go help nopager notee nowarning pager print prompt quit rehash source status system tee"),
-    keywords: set(sqlKeywords + "accessible action add after algorithm all always analyze asensitive at authors auto_increment autocommit avg avg_row_length before binary binlog both btree cache call cascade cascaded case catalog_name chain change changed character check checkpoint checksum class_origin client_statistics close coalesce code collate collation collations column columns comment commit committed completion concurrent condition connection consistent constraint contains continue contributors convert cross current current_date current_time current_timestamp current_user cursor data database databases day_hour day_microsecond day_minute day_second deallocate dec declare default delay_key_write delayed delimiter des_key_file describe deterministic dev_pop dev_samp deviance diagnostics directory disable discard distinctrow div dual dumpfile each elseif enable enclosed end ends engine engines enum errors escape escaped even event events every execute exists exit explain extended fast fetch field fields first flush for force foreign found_rows full fulltext function general generated get global grant grants group groupby_concat handler hard hash help high_priority hosts hour_microsecond hour_minute hour_second if ignore ignore_server_ids import index index_statistics infile inner innodb inout insensitive insert_method install interval invoker isolation iterate key keys kill language last leading leave left level limit linear lines list load local localtime localtimestamp lock logs low_priority master master_heartbeat_period master_ssl_verify_server_cert masters match max max_rows maxvalue message_text middleint migrate min min_rows minute_microsecond minute_second mod mode modifies modify mutex mysql_errno natural next no no_write_to_binlog offline offset one online open optimize option optionally out outer outfile pack_keys parser partition partitions password persistent phase plugin plugins prepare preserve prev primary privileges procedure processlist profile profiles purge query quick range read read_write reads real rebuild recover references regexp relaylog release remove rename reorganize repair repeatable replace require resignal restrict resume return returns revoke right rlike rollback rollup row row_format rtree savepoint schedule schema schema_name schemas second_microsecond security sensitive separator serializable server session share show shutdown signal slave slow smallint snapshot soft soname spatial specific sql sql_big_result sql_buffer_result sql_cache sql_calc_found_rows sql_no_cache sql_small_result sqlexception sqlstate sqlwarning ssl start starting starts status std stddev stddev_pop stddev_samp storage straight_join subclass_origin sum suspend table_name table_statistics tables tablespace temporary terminated to trailing transaction trigger triggers truncate uncommitted undo uninstall unique unlock upgrade usage use use_frm user user_resources user_statistics using utc_date utc_time utc_timestamp value variables varying view views virtual warnings when while with work write xa xor year_month zerofill begin do then else loop repeat"),
-    builtin: set("bool boolean bit blob decimal double float long longblob longtext medium mediumblob mediumint mediumtext time timestamp tinyblob tinyint tinytext text bigint int int1 int2 int3 int4 int8 integer float float4 float8 double char varbinary varchar varcharacter precision date datetime year unsigned signed numeric"),
-    atoms: set("false true null unknown"),
-    operatorChars: /^[*+\-%<>!=&|^]/,
-    dateSQL: set("date time timestamp"),
-    support: set("ODBCdotTable decimallessFloat zerolessFloat binaryNumber hexNumber doubleQuote nCharCast charsetCast commentHash commentSpaceRequired"),
-    hooks: {
-      "@":   hookVar,
-      "`":   hookIdentifier,
-      "\\":  hookClient
-    }
-  });
-
-  // provided by the phpLiteAdmin project - phpliteadmin.org
-  CodeMirror.defineMIME("text/x-sqlite", {
-    name: "sql",
-    // commands of the official SQLite client, ref: https://www.sqlite.org/cli.html#dotcmd
-    client: set("auth backup bail binary changes check clone databases dbinfo dump echo eqp exit explain fullschema headers help import imposter indexes iotrace limit lint load log mode nullvalue once open output print prompt quit read restore save scanstats schema separator session shell show stats system tables testcase timeout timer trace vfsinfo vfslist vfsname width"),
-    // ref: http://sqlite.org/lang_keywords.html
-    keywords: set(sqlKeywords + "abort action add after all analyze attach autoincrement before begin cascade case cast check collate column commit conflict constraint cross current_date current_time current_timestamp database default deferrable deferred detach each else end escape except exclusive exists explain fail for foreign full glob if ignore immediate index indexed initially inner instead intersect isnull key left limit match natural no notnull null of offset outer plan pragma primary query raise recursive references regexp reindex release rename replace restrict right rollback row savepoint temp temporary then to transaction trigger unique using vacuum view virtual when with without"),
-    // SQLite is weakly typed, ref: http://sqlite.org/datatype3.html. This is just a list of some common types.
-    builtin: set("bool boolean bit blob decimal double float long longblob longtext medium mediumblob mediumint mediumtext time timestamp tinyblob tinyint tinytext text clob bigint int int2 int8 integer float double char varchar date datetime year unsigned signed numeric real"),
-    // ref: http://sqlite.org/syntax/literal-value.html
-    atoms: set("null current_date current_time current_timestamp"),
-    // ref: http://sqlite.org/lang_expr.html#binaryops
-    operatorChars: /^[*+\-%<>!=&|/~]/,
-    // SQLite is weakly typed, ref: http://sqlite.org/datatype3.html. This is just a list of some common types.
-    dateSQL: set("date time timestamp datetime"),
-    support: set("decimallessFloat zerolessFloat"),
-    identifierQuote: "\"",  //ref: http://sqlite.org/lang_keywords.html
-    hooks: {
-      // bind-parameters ref:http://sqlite.org/lang_expr.html#varparam
-      "@":   hookVar,
-      ":":   hookVar,
-      "?":   hookVar,
-      "$":   hookVar,
-      // The preferred way to escape Identifiers is using double quotes, ref: http://sqlite.org/lang_keywords.html
-      "\"":   hookIdentifierDoublequote,
-      // there is also support for backtics, ref: http://sqlite.org/lang_keywords.html
-      "`":   hookIdentifier
-    }
-  });
-
-  // the query language used by Apache Cassandra is called CQL, but this mime type
-  // is called Cassandra to avoid confusion with Contextual Query Language
-  CodeMirror.defineMIME("text/x-cassandra", {
-    name: "sql",
-    client: { },
-    keywords: set("add all allow alter and any apply as asc authorize batch begin by clustering columnfamily compact consistency count create custom delete desc distinct drop each_quorum exists filtering from grant if in index insert into key keyspace keyspaces level limit local_one local_quorum modify nan norecursive nosuperuser not of on one order password permission permissions primary quorum rename revoke schema select set storage superuser table three to token truncate ttl two type unlogged update use user users using values where with writetime"),
-    builtin: set("ascii bigint blob boolean counter decimal double float frozen inet int list map static text timestamp timeuuid tuple uuid varchar varint"),
-    atoms: set("false true infinity NaN"),
-    operatorChars: /^[<>=]/,
-    dateSQL: { },
-    support: set("commentSlashSlash decimallessFloat"),
-    hooks: { }
-  });
-
-  // this is based on Peter Raganitsch's 'plsql' mode
-  CodeMirror.defineMIME("text/x-plsql", {
-    name:       "sql",
-    client:     set("appinfo arraysize autocommit autoprint autorecovery autotrace blockterminator break btitle cmdsep colsep compatibility compute concat copycommit copytypecheck define describe echo editfile embedded escape exec execute feedback flagger flush heading headsep instance linesize lno loboffset logsource long longchunksize markup native newpage numformat numwidth pagesize pause pno recsep recsepchar release repfooter repheader serveroutput shiftinout show showmode size spool sqlblanklines sqlcase sqlcode sqlcontinue sqlnumber sqlpluscompatibility sqlprefix sqlprompt sqlterminator suffix tab term termout time timing trimout trimspool ttitle underline verify version wrap"),
-    keywords:   set("abort accept access add all alter and any array arraylen as asc assert assign at attributes audit authorization avg base_table begin between binary_integer body boolean by case cast char char_base check close cluster clusters colauth column comment commit compress connect connected constant constraint crash create current currval cursor data_base database date dba deallocate debugoff debugon decimal declare default definition delay delete desc digits dispose distinct do drop else elseif elsif enable end entry escape exception exception_init exchange exclusive exists exit external fast fetch file for force form from function generic goto grant group having identified if immediate in increment index indexes indicator initial initrans insert interface intersect into is key level library like limited local lock log logging long loop master maxextents maxtrans member minextents minus mislabel mode modify multiset new next no noaudit nocompress nologging noparallel not nowait number_base object of off offline on online only open option or order out package parallel partition pctfree pctincrease pctused pls_integer positive positiven pragma primary prior private privileges procedure public raise range raw read rebuild record ref references refresh release rename replace resource restrict return returning returns reverse revoke rollback row rowid rowlabel rownum rows run savepoint schema segment select separate session set share snapshot some space split sql start statement storage subtype successful synonym tabauth table tables tablespace task terminate then to trigger truncate type union unique unlimited unrecoverable unusable update use using validate value values variable view views when whenever where while with work"),
-    builtin:    set("abs acos add_months ascii asin atan atan2 average bfile bfilename bigserial bit blob ceil character chartorowid chr clob concat convert cos cosh count dec decode deref dual dump dup_val_on_index empty error exp false float floor found glb greatest hextoraw initcap instr instrb int integer isopen last_day least length lengthb ln lower lpad ltrim lub make_ref max min mlslabel mod months_between natural naturaln nchar nclob new_time next_day nextval nls_charset_decl_len nls_charset_id nls_charset_name nls_initcap nls_lower nls_sort nls_upper nlssort no_data_found notfound null number numeric nvarchar2 nvl others power rawtohex real reftohex round rowcount rowidtochar rowtype rpad rtrim serial sign signtype sin sinh smallint soundex sqlcode sqlerrm sqrt stddev string substr substrb sum sysdate tan tanh to_char text to_date to_label to_multi_byte to_number to_single_byte translate true trunc uid unlogged upper user userenv varchar varchar2 variance varying vsize xml"),
-    operatorChars: /^[*+\-%<>!=~]/,
-    dateSQL:    set("date time timestamp"),
-    support:    set("doubleQuote nCharCast zerolessFloat binaryNumber hexNumber")
-  });
-
-  // Created to support specific hive keywords
-  CodeMirror.defineMIME("text/x-hive", {
-    name: "sql",
-    keywords: set("select alter $elem$ $key$ $value$ add after all analyze and archive as asc before between binary both bucket buckets by cascade case cast change cluster clustered clusterstatus collection column columns comment compute concatenate continue create cross cursor data database databases dbproperties deferred delete delimited desc describe directory disable distinct distribute drop else enable end escaped exclusive exists explain export extended external false fetch fields fileformat first format formatted from full function functions grant group having hold_ddltime idxproperties if import in index indexes inpath inputdriver inputformat insert intersect into is items join keys lateral left like limit lines load local location lock locks mapjoin materialized minus msck no_drop nocompress not of offline on option or order out outer outputdriver outputformat overwrite partition partitioned partitions percent plus preserve procedure purge range rcfile read readonly reads rebuild recordreader recordwriter recover reduce regexp rename repair replace restrict revoke right rlike row schema schemas semi sequencefile serde serdeproperties set shared show show_database sort sorted ssl statistics stored streamtable table tables tablesample tblproperties temporary terminated textfile then tmp to touch transform trigger true unarchive undo union uniquejoin unlock update use using utc utc_tmestamp view when where while with"),
-    builtin: set("bool boolean long timestamp tinyint smallint bigint int float double date datetime unsigned string array struct map uniontype"),
-    atoms: set("false true null unknown"),
-    operatorChars: /^[*+\-%<>!=]/,
-    dateSQL: set("date timestamp"),
-    support: set("ODBCdotTable doubleQuote binaryNumber hexNumber")
-  });
-
-  CodeMirror.defineMIME("text/x-pgsql", {
-    name: "sql",
-    client: set("source"),
-    // https://www.postgresql.org/docs/10/static/sql-keywords-appendix.html
-    keywords: set(sqlKeywords + "a abort abs absent absolute access according action ada add admin after aggregate all allocate also always analyse analyze any are array array_agg array_max_cardinality asensitive assertion assignment asymmetric at atomic attribute attributes authorization avg backward base64 before begin begin_frame begin_partition bernoulli binary bit_length blob blocked bom both breadth c cache call called cardinality cascade cascaded case cast catalog catalog_name ceil ceiling chain characteristics characters character_length character_set_catalog character_set_name character_set_schema char_length check checkpoint class class_origin clob close cluster coalesce cobol collate collation collation_catalog collation_name collation_schema collect column columns column_name command_function command_function_code comment comments commit committed concurrently condition condition_number configuration conflict connect connection connection_name constraint constraints constraint_catalog constraint_name constraint_schema constructor contains content continue control conversion convert copy corr corresponding cost covar_pop covar_samp cross csv cube cume_dist current current_catalog current_date current_default_transform_group current_path current_role current_row current_schema current_time current_timestamp current_transform_group_for_type current_user cursor cursor_name cycle data database datalink datetime_interval_code datetime_interval_precision day db deallocate dec declare default defaults deferrable deferred defined definer degree delimiter delimiters dense_rank depth deref derived describe descriptor deterministic diagnostics dictionary disable discard disconnect dispatch dlnewcopy dlpreviouscopy dlurlcomplete dlurlcompleteonly dlurlcompletewrite dlurlpath dlurlpathonly dlurlpathwrite dlurlscheme dlurlserver dlvalue do document domain dynamic dynamic_function dynamic_function_code each element else empty enable encoding encrypted end end-exec end_frame end_partition enforced enum equals escape event every except exception exclude excluding exclusive exec execute exists exp explain expression extension external extract false family fetch file filter final first first_value flag float floor following for force foreign fortran forward found frame_row free freeze fs full function functions fusion g general generated get global go goto grant granted greatest grouping groups handler header hex hierarchy hold hour id identity if ignore ilike immediate immediately immutable implementation implicit import including increment indent index indexes indicator inherit inherits initially inline inner inout input insensitive instance instantiable instead integrity intersect intersection invoker isnull isolation k key key_member key_type label lag language large last last_value lateral lc_collate lc_ctype lead leading leakproof least left length level library like_regex link listen ln load local localtime localtimestamp location locator lock locked logged lower m map mapping match matched materialized max maxvalue max_cardinality member merge message_length message_octet_length message_text method min minute minvalue mod mode modifies module month more move multiset mumps name names namespace national natural nchar nclob nesting new next nfc nfd nfkc nfkd nil no none normalize normalized nothing notify notnull nowait nth_value ntile null nullable nullif nulls number object occurrences_regex octets octet_length of off offset oids old only open operator option options ordering ordinality others out outer output over overlaps overlay overriding owned owner p pad parallel parameter parameter_mode parameter_name parameter_ordinal_position parameter_specific_catalog parameter_specific_name parameter_specific_schema parser partial partition pascal passing passthrough password percent percentile_cont percentile_disc percent_rank period permission placing plans pli policy portion position position_regex power precedes preceding prepare prepared preserve primary prior privileges procedural procedure program public quote range rank read reads reassign recheck recovery recursive ref references referencing refresh regr_avgx regr_avgy regr_count regr_intercept regr_r2 regr_slope regr_sxx regr_sxy regr_syy reindex relative release rename repeatable replace replica requiring reset respect restart restore restrict restricted result return returned_cardinality returned_length returned_octet_length returned_sqlstate returning returns revoke right role rollback rollup routine routine_catalog routine_name routine_schema row rows row_count row_number rule savepoint scale schema schema_name scope scope_catalog scope_name scope_schema scroll search second section security selective self sensitive sequence sequences serializable server server_name session session_user setof sets share show similar simple size skip snapshot some source space specific specifictype specific_name sql sqlcode sqlerror sqlexception sqlstate sqlwarning sqrt stable standalone start state statement static statistics stddev_pop stddev_samp stdin stdout storage strict strip structure style subclass_origin submultiset substring substring_regex succeeds sum symmetric sysid system system_time system_user t tables tablesample tablespace table_name temp template temporary then ties timezone_hour timezone_minute to token top_level_count trailing transaction transactions_committed transactions_rolled_back transaction_active transform transforms translate translate_regex translation treat trigger trigger_catalog trigger_name trigger_schema trim trim_array true truncate trusted type types uescape unbounded uncommitted under unencrypted unique unknown unlink unlisten unlogged unnamed unnest until untyped upper uri usage user user_defined_type_catalog user_defined_type_code user_defined_type_name user_defined_type_schema using vacuum valid validate validator value value_of varbinary variadic var_pop var_samp verbose version versioning view views volatile when whenever whitespace width_bucket window within work wrapper write xmlagg xmlattributes xmlbinary xmlcast xmlcomment xmlconcat xmldeclaration xmldocument xmlelement xmlexists xmlforest xmliterate xmlnamespaces xmlparse xmlpi xmlquery xmlroot xmlschema xmlserialize xmltable xmltext xmlvalidate year yes loop repeat attach path depends detach zone"),
-    // https://www.postgresql.org/docs/10/static/datatype.html
-    builtin: set("bigint int8 bigserial serial8 bit varying varbit boolean bool box bytea character char varchar cidr circle date double precision float8 inet integer int int4 interval json jsonb line lseg macaddr macaddr8 money numeric decimal path pg_lsn point polygon real float4 smallint int2 smallserial serial2 serial serial4 text time without zone with timetz timestamp timestamptz tsquery tsvector txid_snapshot uuid xml"),
-    atoms: set("false true null unknown"),
-    operatorChars: /^[*+\-%<>!=&|^\/#@?~]/,
-    dateSQL: set("date time timestamp"),
-    support: set("ODBCdotTable decimallessFloat zerolessFloat binaryNumber hexNumber nCharCast charsetCast")
-  });
-
-  // Google's SQL-like query language, GQL
-  CodeMirror.defineMIME("text/x-gql", {
-    name: "sql",
-    keywords: set("ancestor and asc by contains desc descendant distinct from group has in is limit offset on order select superset where"),
-    atoms: set("false true"),
-    builtin: set("blob datetime first key __key__ string integer double boolean null"),
-    operatorChars: /^[*+\-%<>!=]/
-  });
-
-  // Greenplum
-  CodeMirror.defineMIME("text/x-gpsql", {
-    name: "sql",
-    client: set("source"),
-    //https://github.com/greenplum-db/gpdb/blob/master/src/include/parser/kwlist.h
-    keywords: set("abort absolute access action active add admin after aggregate all also alter always analyse analyze and any array as asc assertion assignment asymmetric at authorization backward before begin between bigint binary bit boolean both by cache called cascade cascaded case cast chain char character characteristics check checkpoint class close cluster coalesce codegen collate column comment commit committed concurrency concurrently configuration connection constraint constraints contains content continue conversion copy cost cpu_rate_limit create createdb createexttable createrole createuser cross csv cube current current_catalog current_date current_role current_schema current_time current_timestamp current_user cursor cycle data database day deallocate dec decimal declare decode default defaults deferrable deferred definer delete delimiter delimiters deny desc dictionary disable discard distinct distributed do document domain double drop dxl each else enable encoding encrypted end enum errors escape every except exchange exclude excluding exclusive execute exists explain extension external extract false family fetch fields filespace fill filter first float following for force foreign format forward freeze from full function global grant granted greatest group group_id grouping handler hash having header hold host hour identity if ignore ilike immediate immutable implicit in including inclusive increment index indexes inherit inherits initially inline inner inout input insensitive insert instead int integer intersect interval into invoker is isnull isolation join key language large last leading least left level like limit list listen load local localtime localtimestamp location lock log login mapping master match maxvalue median merge minute minvalue missing mode modifies modify month move name names national natural nchar new newline next no nocreatedb nocreateexttable nocreaterole nocreateuser noinherit nologin none noovercommit nosuperuser not nothing notify notnull nowait null nullif nulls numeric object of off offset oids old on only operator option options or order ordered others out outer over overcommit overlaps overlay owned owner parser partial partition partitions passing password percent percentile_cont percentile_disc placing plans position preceding precision prepare prepared preserve primary prior privileges procedural procedure protocol queue quote randomly range read readable reads real reassign recheck recursive ref references reindex reject relative release rename repeatable replace replica reset resource restart restrict returning returns revoke right role rollback rollup rootpartition row rows rule savepoint scatter schema scroll search second security segment select sequence serializable session session_user set setof sets share show similar simple smallint some split sql stable standalone start statement statistics stdin stdout storage strict strip subpartition subpartitions substring superuser symmetric sysid system table tablespace temp template temporary text then threshold ties time timestamp to trailing transaction treat trigger trim true truncate trusted type unbounded uncommitted unencrypted union unique unknown unlisten until update user using vacuum valid validation validator value values varchar variadic varying verbose version view volatile web when where whitespace window with within without work writable write xml xmlattributes xmlconcat xmlelement xmlexists xmlforest xmlparse xmlpi xmlroot xmlserialize year yes zone"),
-    builtin: set("bigint int8 bigserial serial8 bit varying varbit boolean bool box bytea character char varchar cidr circle date double precision float float8 inet integer int int4 interval json jsonb line lseg macaddr macaddr8 money numeric decimal path pg_lsn point polygon real float4 smallint int2 smallserial serial2 serial serial4 text time without zone with timetz timestamp timestamptz tsquery tsvector txid_snapshot uuid xml"),
-    atoms: set("false true null unknown"),
-    operatorChars: /^[*+\-%<>!=&|^\/#@?~]/,
-    dateSQL: set("date time timestamp"),
-    support: set("ODBCdotTable decimallessFloat zerolessFloat binaryNumber hexNumber nCharCast charsetCast")
-  });
-
-  // Spark SQL
-  CodeMirror.defineMIME("text/x-sparksql", {
-    name: "sql",
-    keywords: set("add after all alter analyze and anti archive array as asc at between bucket buckets by cache cascade case cast change clear cluster clustered codegen collection column columns comment commit compact compactions compute concatenate cost create cross cube current current_date current_timestamp database databases datata dbproperties defined delete delimited desc describe dfs directories distinct distribute drop else end escaped except exchange exists explain export extended external false fields fileformat first following for format formatted from full function functions global grant group grouping having if ignore import in index indexes inner inpath inputformat insert intersect interval into is items join keys last lateral lazy left like limit lines list load local location lock locks logical macro map minus msck natural no not null nulls of on option options or order out outer outputformat over overwrite partition partitioned partitions percent preceding principals purge range recordreader recordwriter recover reduce refresh regexp rename repair replace reset restrict revoke right rlike role roles rollback rollup row rows schema schemas select semi separated serde serdeproperties set sets show skewed sort sorted start statistics stored stratify struct table tables tablesample tblproperties temp temporary terminated then to touch transaction transactions transform true truncate unarchive unbounded uncache union unlock unset use using values view when where window with"),
-    builtin: set("tinyint smallint int bigint boolean float double string binary timestamp decimal array map struct uniontype delimited serde sequencefile textfile rcfile inputformat outputformat"),
-    atoms: set("false true null"),
-    operatorChars: /^[*+\-%<>!=~&|^]/,
-    dateSQL: set("date time timestamp"),
-    support: set("ODBCdotTable doubleQuote zerolessFloat")
-  });
-
-  // Esper
-  CodeMirror.defineMIME("text/x-esper", {
-    name: "sql",
-    client: set("source"),
-    // http://www.espertech.com/esper/release-5.5.0/esper-reference/html/appendix_keywords.html
-    keywords: set("alter and as asc between by count create delete desc distinct drop from group having in insert into is join like not on or order select set table union update values where limit after all and as at asc avedev avg between by case cast coalesce count create current_timestamp day days delete define desc distinct else end escape events every exists false first from full group having hour hours in inner insert instanceof into irstream is istream join last lastweekday left limit like max match_recognize matches median measures metadatasql min minute minutes msec millisecond milliseconds not null offset on or order outer output partition pattern prev prior regexp retain-union retain-intersection right rstream sec second seconds select set some snapshot sql stddev sum then true unidirectional until update variable weekday when where window"),
-    builtin: {},
-    atoms: set("false true null"),
-    operatorChars: /^[*+\-%<>!=&|^\/#@?~]/,
-    dateSQL: set("time"),
-    support: set("decimallessFloat zerolessFloat binaryNumber hexNumber")
-  });
-}());
-
-});
-
-/*
-  How Properties of Mime Types are used by SQL Mode
-  =================================================
-
-  keywords:
-    A list of keywords you want to be highlighted.
-  builtin:
-    A list of builtin types you want to be highlighted (if you want types to be of class "builtin" instead of "keyword").
-  operatorChars:
-    All characters that must be handled as operators.
-  client:
-    Commands parsed and executed by the client (not the server).
-  support:
-    A list of supported syntaxes which are not common, but are supported by more than 1 DBMS.
-    * ODBCdotTable: .tableName
-    * zerolessFloat: .1
-    * doubleQuote
-    * nCharCast: N'string'
-    * charsetCast: _utf8'string'
-    * commentHash: use # char for comments
-    * commentSlashSlash: use // for comments
-    * commentSpaceRequired: require a space after -- for comments
-  atoms:
-    Keywords that must be highlighted as atoms,. Some DBMS's support more atoms than others:
-    UNKNOWN, INFINITY, UNDERFLOW, NaN...
-  dateSQL:
-    Used for date/time SQL standard syntax, because not all DBMS's support same temporal types.
-*/
-
-
-/***/ }),
-/* 9 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// CodeMirror, copyright (c) by Marijn Haverbeke and others
-// Distributed under an MIT license: http://codemirror.net/LICENSE
-
-(function(mod) {
-  if (true) // CommonJS
-    mod(__webpack_require__(6));
+    mod(__webpack_require__(0));
   else if (typeof define == "function" && define.amd) // AMD
     define(["../../lib/codemirror"], mod);
   else // Plain browser env
@@ -12177,7 +12260,7 @@ CodeMirror.defineMode("sql", function(config, parserConfig) {
 
 
 /***/ }),
-/* 10 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // CodeMirror, copyright (c) by Marijn Haverbeke and others
@@ -12185,7 +12268,7 @@ CodeMirror.defineMode("sql", function(config, parserConfig) {
 
 (function(mod) {
   if (true) // CommonJS
-    mod(__webpack_require__(6), __webpack_require__(8));
+    mod(__webpack_require__(0), __webpack_require__(1));
   else if (typeof define == "function" && define.amd) // AMD
     define(["../../lib/codemirror", "../../mode/sql/sql"], mod);
   else // Plain browser env
@@ -12469,7 +12552,7 @@ CodeMirror.defineMode("sql", function(config, parserConfig) {
 
 
 /***/ }),
-/* 11 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // CodeMirror, copyright (c) by Marijn Haverbeke and others
@@ -12479,7 +12562,7 @@ CodeMirror.defineMode("sql", function(config, parserConfig) {
 
 (function(mod) {
   if (true) // CommonJS
-    mod(__webpack_require__(6)); // Note non-packaged dependency diff_match_patch
+    mod(__webpack_require__(0)); // Note non-packaged dependency diff_match_patch
   else if (typeof define == "function" && define.amd) // AMD
     define(["../../lib/codemirror", "diff_match_patch"], mod);
   else // Plain browser env
@@ -13476,51 +13559,11 @@ CodeMirror.defineMode("sql", function(config, parserConfig) {
 
 
 /***/ }),
-/* 12 */,
-/* 13 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__AjaxModal__ = __webpack_require__(17);
-__webpack_require__(14);
-
-
-[].forEach.call(document.querySelectorAll("a[data-ajax-modal]"), triggerElement => {
-    Object(__WEBPACK_IMPORTED_MODULE_0__AjaxModal__["a" /* default */])(triggerElement);
-});
-
-
-/***/ }),
-/* 14 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_codemirror__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_codemirror___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_codemirror__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__CodeMirror_QueryPackEditor__ = __webpack_require__(15);
-
-__webpack_require__(7);
-__webpack_require__(8);
-__webpack_require__(9);
-__webpack_require__(10);
-__webpack_require__(11);
-
-
-
-const queryPackSourceJsonElement = document.getElementById('queryPackSourceJson');
-if  (queryPackSourceJsonElement) {
-    Object(__WEBPACK_IMPORTED_MODULE_1__CodeMirror_QueryPackEditor__["a" /* default */])(__WEBPACK_IMPORTED_MODULE_0_codemirror___default.a, queryPackSourceJsonElement);
-}
-
-
-/***/ }),
 /* 15 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Utility_dom__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Utility_dom__ = __webpack_require__(2);
 
 
 /* harmony default export */ __webpack_exports__["a"] = ((CodeMirror, queryPackSourceJsonElement) => {
@@ -13529,6 +13572,7 @@ if  (queryPackSourceJsonElement) {
     const previewUrl = queryPackSourceJsonElement.getAttribute('data-previewUrl');
 
     const editorElement = document.createElement('div');
+    editorElement.classList.add('queryPackCodeMirror');
     Object(__WEBPACK_IMPORTED_MODULE_0__Utility_dom__["a" /* insertAfter */])(editorElement, queryPackSourceJsonElement);
 
     const dv = CodeMirror.MergeView(editorElement, {
@@ -13576,34 +13620,36 @@ if  (queryPackSourceJsonElement) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-const insertAfter = (el, referenceNode) =>
-    referenceNode.parentNode.insertBefore(el, referenceNode.nextSibling);
-/* harmony export (immutable) */ __webpack_exports__["a"] = insertAfter;
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Utility_dom__ = __webpack_require__(2);
 
 
-// https://plainjs.com/javascript/ajax/serialize-form-data-into-a-query-string-45/
-const serialize = form => {
-    var field, l, s = [];
-    if (typeof form == 'object' && form.nodeName == "FORM") {
-        var len = form.elements.length;
-        for (var i=0; i<len; i++) {
-            field = form.elements[i];
-            if (field.name && !field.disabled && field.type != 'file' && field.type != 'reset' && field.type != 'submit' && field.type != 'button') {
-                if (field.type == 'select-multiple') {
-                    l = form.elements[i].options.length;
-                    for (var j=0; j<l; j++) {
-                        if(field.options[j].selected)
-                            s[s.length] = encodeURIComponent(field.name) + "=" + encodeURIComponent(field.options[j].value);
-                    }
-                } else if ((field.type != 'checkbox' && field.type != 'radio') || field.checked) {
-                    s[s.length] = encodeURIComponent(field.name) + "=" + encodeURIComponent(field.value);
-                }
-            }
+/* harmony default export */ __webpack_exports__["a"] = ((CodeMirror, querySourceElement) => {
+    const value = querySourceElement.getAttribute('value');
+
+    const editorElement = document.createElement('div');
+    editorElement.classList.add('queryCodeMirror');
+    Object(__WEBPACK_IMPORTED_MODULE_0__Utility_dom__["a" /* insertAfter */])(editorElement, querySourceElement);
+
+    const cm = CodeMirror(editorElement, {
+        value: value,
+        lineNumbers: true,
+        mode: "text/x-sql",
+        extraKeys: {"Ctrl-Space": "autocomplete"}, // To invoke the auto complete
+        hint: CodeMirror.hint.sql,
+        hintOptions: {
+            tables: OSQUERY_SCHEMA
         }
-    }
-    return s.join('&').replace(/%20/g, '+');
-};
-/* harmony export (immutable) */ __webpack_exports__["b"] = serialize;
+    });
+    cm.on("keyup", (cm, event) => {
+        if (!cm.state.completionActive && /*Enables keyboard navigation in autocomplete list*/
+            event.keyCode !== 13) {        /*Enter - do not open autocomplete list just after item has been selected in it*/
+            CodeMirror.commands.autocomplete(cm, null, {completeSingle: false});
+        }
+    });
+    cm.on('change', () => {
+        querySourceElement.setAttribute('value', cm.getValue());
+    });
+});
 
 
 
@@ -13620,22 +13666,17 @@ const serialize = form => {
     triggerElement.addEventListener('click', e => {
         e.preventDefault();
         const href = e.target.getAttribute('href');
-        fetch(href)
-            .then(response => response.text());
-
         __WEBPACK_IMPORTED_MODULE_0_sweetalert2___default()({
             title: e.target.getAttribute('data-ajax-modal'),
             onOpen: () => __WEBPACK_IMPORTED_MODULE_0_sweetalert2___default.a.showLoading()
         });
-        window.swal = __WEBPACK_IMPORTED_MODULE_0_sweetalert2___default.a;
-        window.setTimeout(() =>
-                __WEBPACK_IMPORTED_MODULE_0_sweetalert2___default()({
-                    title: e.target.getAttribute('data-ajax-modal'),
-                    html: 'Foo',
-                    animate: false
-                })
-            , 1000)
 
+        fetch(href)
+            .then(response => response.text())
+            .then(responseText => {
+                __WEBPACK_IMPORTED_MODULE_0_sweetalert2___default.a.getContent().innerHTML = responseText;
+                __WEBPACK_IMPORTED_MODULE_0_sweetalert2___default.a.hideLoading();
+            });
     })
 });
 

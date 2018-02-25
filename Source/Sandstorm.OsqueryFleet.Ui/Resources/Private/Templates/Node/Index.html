@@ -2,18 +2,15 @@
 <f:layout name="Default"/>
 
 <f:section name="Content">
-    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
-        <h1 class="h2">Nodes</h1>
-
-        <div class="button-toolbar mb-2 mb-md-0">
-            <div class="button-group mr-2">
-                <f:link.action action="new" class="button button-sm button-outline-secondary">Create new</f:link.action>
-            </div>
+    <div class="header">
+        <h1>Nodes</h1>
+        <div class="header__toolbar">
+            <f:link.action action="new" class="button">TODO</f:link.action>
         </div>
     </div>
 
     <f:flashMessages class="flashmessages"/>
 
-    <f:render partial="CrudForms/Bootstrap4/Listing" arguments="{crud:listDefinition(objects: objects, model: model)}"/>
+    <f:render partial="CrudForms/Custom/Listing" arguments="{crud:listDefinition(objects: objects, model: model)}"/>
 
 </f:section>

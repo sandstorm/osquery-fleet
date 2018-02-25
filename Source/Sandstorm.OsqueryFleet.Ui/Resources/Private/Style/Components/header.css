@@ -1,0 +1,15 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    padding-top: var(--goldenUnit);
+    margin-bottom: calc(4 * var(--goldenUnit));
+    position: sticky;
+    top: 0;
+    background: rgba(255,255,255,0.8);
+}
+.header > *:first-child {
+    flex-grow: 1;
+}
+.header__toolbar {
+    flex-basis:fit-content;
+}

@@ -1,0 +1,4 @@
+/* WORKAROUND */
+.queryCodeMirror {
+    width: calc(100vw - var(--layout-sidebarWidth) - var(--goldenUnit) * 2);
+}

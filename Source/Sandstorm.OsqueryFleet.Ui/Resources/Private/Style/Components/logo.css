@@ -1,4 +1,4 @@
 .logo {
-    text-align: center;
     font-size: 20px;
+    padding-left: calc(4 * var(--goldenUnit));
 }
