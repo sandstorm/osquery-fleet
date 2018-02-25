@@ -1,0 +1,42 @@
+{namespace crud=Sandstorm\CrudForms\ViewHelpers}
+<f:layout name="Default"/>
+
+<f:section name="Content">
+    <div class="header">
+        <h1>Enroll a new Node</h1>
+        <div class="header__toolbar">
+            <f:link.action action="index" class="button">go back</f:link.action>
+        </div>
+    </div>
+
+    This works by installing OSQuery on the node, and using the following configuration:
+
+    <h2>Mac</h2>
+    <ul>
+        <li><code>brew install osquery</code></li>
+        <li><code>sudo cp /usr/local/share/osquery/com.facebook.osqueryd.plist /Library/LaunchDaemons/</code></li>
+        <li><pre>cat << EOF > /private/var/osquery/osquery.flags
+--host_identifier=uuid
+--tls_hostname=TODO:8080
+--tls_server_certs=/var/osquery/cert.pem
+--config_plugin tls
+--enroll_tls_endpoint /api/osquery/enroll
+--enroll_secret_path=/var/osquery/enroll_secret
+--config_tls_endpoint /api/osquery/config
+--config_tls_refresh=600
+--config_tls_max_attempts=50
+--logger_plugin tls
+--logger_tls_endpoint /api/osquery/log
+--log_result_events=true
+--logger_tls_period=5
+--pack_delimiter=/
+--utc
+EOF
+        </pre></li>
+
+        <li>TODO fill /var/osquery/cert.pem</li>
+        <li>TODO fill /var/osquery/enroll_secret</li>
+        <li><code>sudo launchctl load /Library/LaunchDaemons/com.facebook.osqueryd.plist</code></li>
+    </ul>
+
+</f:section>

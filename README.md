@@ -22,3 +22,8 @@ yarn start
     - https://github.com/BlazeUI/blaze/blob/master/scss/src/components.buttons.scss
     - https://github.com/sitetent/tentcss/blob/master/src/06_components/_buttons.scss
     
+
+
+- support non-snapshot results
+- alert debugger
+- show previous results

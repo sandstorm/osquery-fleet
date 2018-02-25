@@ -5,6 +5,7 @@ namespace Sandstorm\OsqueryFleet\Ui\Controller;
 use Neos\Flow\Annotations as Flow;
 use Neos\Flow\Mvc\Controller\ActionController;
 use Sandstorm\CrudForms\Controller\CrudControllerTrait;
+use Sandstorm\OsqueryFleet\Core\Domain\Model\Node;
 use Sandstorm\OsqueryFleet\Core\Domain\Model\Query;
 use Sandstorm\OsqueryFleet\Core\Domain\Model\QueryPack;
 use Sandstorm\OsqueryFleet\Core\Domain\Repository\SnapshotLogRepository;
@@ -34,4 +35,10 @@ class QueryController extends ActionController
         $this->view->assign('query', $object);
     }
 
+    public function resultsForNodeAction(Query $object, Node $node)
+    {
+        $results = $this->snapshotLogRepository->findRecentResultsForSingleNode($object->identifier, $node->getHostIdentifier());
+        $this->view->assign('results', $results);
+        $this->view->assign('query', $object);
+    }
 }

@@ -78,4 +78,9 @@ class SnapshotLogRepository extends Repository
         $query->setParameter('queryOrQueryPackIdentifier', $queryIdentifier);
         return $query->getResult();
     }
+
+    public function findRecentResultsForSingleNode(string $queryIdentifier, $nodeHostIdentifier)
+    {
+        
+    }
 }
